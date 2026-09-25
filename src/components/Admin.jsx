@@ -77,6 +77,7 @@ function Scanner({ onBack }) {
   const [cameraReady, setCameraReady] = useState(false)
   const [showFinish, setShowFinish] = useState(false)
   const [selectedMatiere, setSelectedMatiere] = useState(null)
+  const [titreCours, setTitreCours] = useState('')
   const [cameraError, setCameraError] = useState('')
   const [uploading, setUploading] = useState(false)
   const [uploadResult, setUploadResult] = useState(null)
@@ -231,18 +232,35 @@ function Scanner({ onBack }) {
     return pdf
   }
 
-  const getFileName = () => {
-    const date = new Date().toISOString().slice(0, 10)
-    return `${selectedMatiere.id}_${date}.pdf`
+  const sanitizeTitle = (title) => {
+    return title
+      .toLowerCase()
+      .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+      .replace(/[^a-z0-9\s-]/g, '')
+      .trim()
+      .replace(/\s+/g, '-')
+      .replace(/-+/g, '-')
+      .slice(0, 50)
+      .replace(/-$/, '')
   }
 
+  const buildFileName = () => {
+    const now = new Date()
+    const pad = (n) => String(n).padStart(2, '0')
+    const date = `${now.getFullYear()}-${pad(now.getMonth() + 1)}-${pad(now.getDate())}_${pad(now.getHours())}-${pad(now.getMinutes())}-${pad(now.getSeconds())}`
+    const slug = sanitizeTitle(titreCours)
+    return `${selectedMatiere.id}_${slug}_${date}.pdf`
+  }
+
+  const canSend = selectedMatiere && titreCours.trim().length > 0 && pages.length > 0
+
   const downloadPdf = () => {
-    if (!selectedMatiere || pages.length === 0) return
-    buildPdf().save(getFileName())
+    if (!canSend) return
+    buildPdf().save(buildFileName())
   }
 
   const uploadPdf = async () => {
-    if (!selectedMatiere || pages.length === 0) return
+    if (!canSend) return
     if (!supabase) {
       setUploadResult({ ok: false, msg: 'Supabase non configure. Verifiez VITE_SUPABASE_URL et VITE_SUPABASE_ANON_KEY dans .env' })
       return
@@ -254,8 +272,7 @@ function Scanner({ onBack }) {
     try {
       const pdf = buildPdf()
       const blob = pdf.output('blob')
-      const date = new Date().toISOString().slice(0, 19).replace(/[T:]/g, '-')
-      const fileName = `${selectedMatiere.id}_${date}.pdf`
+      const fileName = buildFileName()
       const filePath = `${selectedMatiere.id}/${fileName}`
 
       const { error } = await supabase.storage
@@ -268,7 +285,7 @@ function Scanner({ onBack }) {
       if (error) {
         setUploadResult({ ok: false, msg: `Erreur : ${error.message}` })
       } else {
-        setUploadResult({ ok: true, msg: `${fileName} envoye avec succes.` })
+        setUploadResult({ ok: true, msg: `Envoye : ${fileName}` })
       }
     } catch (err) {
       setUploadResult({ ok: false, msg: `Erreur inattendue : ${err.message}` })
@@ -335,6 +352,28 @@ function Scanner({ onBack }) {
             ))}
           </div>
 
+          {/* Titre du cours */}
+          <div className="mb-6">
+            <label className="block text-[14px] font-medium text-charcoal mb-2">
+              Titre du cours <span className="text-error">*</span>
+            </label>
+            <input
+              type="text"
+              value={titreCours}
+              onChange={e => setTitreCours(e.target.value)}
+              placeholder='Ex : "Unit 3 present perfect"'
+              maxLength={80}
+              className="w-full rounded-xl border border-sand bg-white px-4 py-3.5 text-[15px]
+                         placeholder:text-warm-gray/40
+                         focus:outline-2 focus:outline-offset-0 focus:outline-charcoal focus:border-transparent"
+            />
+            {selectedMatiere && titreCours.trim() && (
+              <p className="mt-2 text-[12px] text-warm-gray font-mono break-all">
+                {selectedMatiere.id}/{buildFileName()}
+              </p>
+            )}
+          </div>
+
           {/* Upload result */}
           {uploadResult && (
             <div className={`mb-4 rounded-xl p-4 border ${
@@ -349,7 +388,7 @@ function Scanner({ onBack }) {
           {/* Actions */}
           <button
             onClick={uploadPdf}
-            disabled={!selectedMatiere || pages.length === 0 || uploading}
+            disabled={!canSend || uploading}
             className="w-full rounded-xl py-4 text-[16px] font-semibold text-white bg-charcoal
                        active:scale-[0.97] transition-transform duration-150
                        disabled:opacity-40 disabled:cursor-not-allowed
@@ -366,7 +405,7 @@ function Scanner({ onBack }) {
           </button>
           <button
             onClick={downloadPdf}
-            disabled={!selectedMatiere || pages.length === 0}
+            disabled={!canSend}
             className="w-full mt-2 text-warm-gray text-[13px] py-2 underline
                        disabled:opacity-30 disabled:cursor-not-allowed"
           >
