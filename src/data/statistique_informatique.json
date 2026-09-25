@@ -1,0 +1,13 @@
+[
+  {"type":"qcm","level":"facile","question":"Quelle est la moyenne de la serie : 2, 4, 6, 8, 10 ?","choices":["6","5","7","8"],"answer":"6","explanation":"Moyenne = (2+4+6+8+10)/5 = 30/5 = 6."},
+  {"type":"qcm","level":"facile","question":"La mediane d'une serie ordonnee de 5 valeurs est :","choices":["La 3eme valeur","La 2eme valeur","La moyenne des 5 valeurs","La valeur la plus frequente"],"answer":"La 3eme valeur","explanation":"Pour n impair, la mediane est la valeur de rang (n+1)/2, soit la 3eme sur 5."},
+  {"type":"qcm","level":"facile","question":"L'ecart-type mesure :","choices":["La dispersion des donnees autour de la moyenne","La valeur centrale","La tendance"],"answer":"La dispersion des donnees autour de la moyenne","explanation":"L'ecart-type est la racine carree de la variance, il mesure la dispersion."},
+
+  {"type":"qcm","level":"moyen","question":"Dans une loi normale, environ quel pourcentage des donnees se trouve a +/- 1 ecart-type ?","choices":["68%","50%","95%","99.7%"],"answer":"68%","explanation":"Regle 68-95-99.7 : 68% a +/- 1 sigma, 95% a +/- 2 sigma, 99.7% a +/- 3 sigma."},
+  {"type":"qcm","level":"moyen","question":"Le coefficient de correlation de Pearson varie entre :","choices":["-1 et +1","0 et 1","0 et 100","-100 et +100"],"answer":"-1 et +1","explanation":"r varie de -1 (correlation negative parfaite) a +1 (correlation positive parfaite)."},
+  {"type":"free","level":"moyen","question":"Si la variance d'une serie est 25, quel est l'ecart-type ?","answers":["5"],"explanation":"Ecart-type = racine carree de la variance = sqrt(25) = 5."},
+
+  {"type":"fill","level":"difficile","question":"La condition d'___ des residus est une hypothese fondamentale de la regression lineaire.","answers":["homoscedasticite"],"explanation":"Homoscedasticite : la variance des residus est constante. Sinon, heteroscedasticite."},
+  {"type":"fill","level":"difficile","question":"La methode des moindres ___ ordinaires minimise la somme des carres des residus.","answers":["carres"],"explanation":"MCO (OLS) : on minimise la somme des (yi - y_chapeau_i)^2."},
+  {"type":"free","level":"difficile","question":"Comment appelle-t-on l'erreur qui consiste a ne pas rejeter H0 alors qu'elle est fausse ?","answers":["erreur de type 2","erreur de type II","erreur de type ii","erreur beta","faux negatif"],"explanation":"Erreur de type II (beta) = faux negatif. La puissance du test = 1 - beta."}
+]

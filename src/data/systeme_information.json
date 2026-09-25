@@ -1,0 +1,13 @@
+[
+  {"type":"qcm","level":"facile","question":"Qu'est-ce qu'un ERP ?","choices":["Un progiciel de gestion integre","Un protocole reseau","Un langage de programmation","Un type de base de donnees"],"answer":"Un progiciel de gestion integre","explanation":"ERP (Enterprise Resource Planning) = PGI, il integre les differentes fonctions de l'entreprise."},
+  {"type":"qcm","level":"facile","question":"Quel est le role principal d'un CRM ?","choices":["Gerer la relation client","Gerer la comptabilite","Gerer les ressources humaines"],"answer":"Gerer la relation client","explanation":"CRM = Customer Relationship Management = gestion de la relation client."},
+  {"type":"qcm","level":"facile","question":"Le modele SaaS signifie :","choices":["Software as a Service","System as a Solution","Security as a Service","Storage as a System"],"answer":"Software as a Service","explanation":"SaaS : logiciel accessible en ligne par abonnement (ex: Google Workspace, Salesforce)."},
+
+  {"type":"qcm","level":"moyen","question":"Quelle methode agile utilise des sprints de 2 a 4 semaines ?","choices":["Scrum","Kanban","Lean","PRINCE2"],"answer":"Scrum","explanation":"Scrum organise le travail en sprints avec des ceremonies : daily standup, sprint review, retrospective."},
+  {"type":"qcm","level":"moyen","question":"Le MCD (Modele Conceptuel de Donnees) utilise :","choices":["Des entites et des associations","Des tables et des colonnes","Des classes et des objets","Des processus et des flux"],"answer":"Des entites et des associations","explanation":"Le MCD (methode Merise) represente les entites, leurs attributs et les associations entre elles."},
+  {"type":"free","level":"moyen","question":"Quel est l'acronyme du reglement europeen sur la protection des donnees (2018) ?","answers":["RGPD","GDPR"],"explanation":"RGPD = Reglement General sur la Protection des Donnees (GDPR en anglais)."},
+
+  {"type":"fill","level":"difficile","question":"Le schema directeur du SI est un document ___ qui definit les orientations du SI a moyen/long terme.","answers":["strategique"],"explanation":"Le SDSI traduit la strategie de l'entreprise en orientations pour le SI sur 3 a 5 ans."},
+  {"type":"fill","level":"difficile","question":"COBIT est un referentiel de ___ des systemes d'information.","answers":["gouvernance"],"explanation":"COBIT (Control Objectives for Information and Related Technologies) : cadre de gouvernance IT."},
+  {"type":"free","level":"difficile","question":"Comment appelle-t-on un SI qui integre tous les processus de l'entreprise dans une base de donnees unique ?","answers":["ERP","PGI","progiciel de gestion integre"],"explanation":"L'ERP/PGI centralise toutes les fonctions (finance, RH, production, ventes) dans une base unique."}
+]

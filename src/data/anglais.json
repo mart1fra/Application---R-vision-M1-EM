@@ -1,0 +1,13 @@
+[
+  {"type":"qcm","level":"facile","question":"Que signifie 'CEO' ?","choices":["Chief Executive Officer","Chief Economic Operator","Central Executive Office","Corporate Executive Officer"],"answer":"Chief Executive Officer","explanation":"CEO = Chief Executive Officer = Directeur General."},
+  {"type":"qcm","level":"facile","question":"'To hire' signifie :","choices":["Embaucher","Licencier","Promouvoir"],"answer":"Embaucher","explanation":"To hire = embaucher, recruter. To fire = licencier."},
+  {"type":"qcm","level":"facile","question":"Quel mot signifie 'benefice net' en anglais ?","choices":["Net profit","Gross margin","Revenue","Turnover"],"answer":"Net profit","explanation":"Net profit = benefice net, apres deduction de toutes les charges."},
+
+  {"type":"qcm","level":"moyen","question":"Que signifie 'a hostile takeover' ?","choices":["Une OPA hostile","Un licenciement massif","Une faillite","Une delocalisation"],"answer":"Une OPA hostile","explanation":"Hostile takeover = Offre Publique d'Achat hostile, prise de controle non souhaitee."},
+  {"type":"qcm","level":"moyen","question":"'A subsidiary' est :","choices":["Une filiale","Une succursale","Un fournisseur","Un sous-traitant"],"answer":"Une filiale","explanation":"Subsidiary = filiale (entreprise controllee par une societe mere)."},
+  {"type":"translation","level":"moyen","question":"Traduire : stakeholder","direction":"en-fr","answers":["partie prenante","parties prenantes"],"explanation":"Les stakeholders sont les parties prenantes d'un projet ou d'une entreprise."},
+
+  {"type":"translation","level":"difficile","question":"Traduire : amortissement","direction":"fr-en","answers":["depreciation","amortization"],"explanation":"'Depreciation' pour les actifs corporels, 'amortization' pour les actifs incorporels."},
+  {"type":"translation","level":"difficile","question":"Traduire : The board of directors approved the annual budget.","direction":"en-fr","answers":["Le conseil d'administration a approuve le budget annuel","Le conseil d administration a approuve le budget annuel"],"explanation":"Board of directors = conseil d'administration. Annual budget = budget annuel."},
+  {"type":"fill","level":"difficile","question":"The company decided to ___ its operations in order to focus on core business.","answers":["streamline","restructure","reorganize"],"explanation":"Streamline = rationaliser, simplifier les operations."}
+]
