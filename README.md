@@ -93,13 +93,22 @@ Toujours fournir plusieurs formulations acceptees dans `answers`.
 
 ## Regles de generation des exercices par niveau
 
-### ANGLAIS
+### ANGLAIS (vocabulaire uniquement)
+
+Les exercices d'anglais portent **exclusivement sur le vocabulaire** extrait des cours (pas de comprehension de texte).
+
+Le vocabulaire est stocke dans `src/data/vocabulaire-anglais.json` avec pour chaque entree : `francais`, `anglais` (traductions acceptees), `theme`, `cours_source`, `exemple` (phrase d'exemple en anglais).
 
 | Niveau | Types autorises | Contenu |
 |--------|----------------|---------|
-| **Facile** | QCM uniquement (3 ou 4 choix) | Vocabulaire simple, definitions de termes courants |
-| **Moyen** | QCM + traduction de mots (`translation`) | Vocabulaire plus difficile, termes techniques. Pour les traductions : un mot a traduire (FR→EN ou EN→FR) |
-| **Difficile** | Traduction de mots et phrases (`translation`) + texte a trous (`fill`) | Traductions de phrases completes (FR→EN et EN→FR), trouver le mot manquant dans une phrase en anglais |
+| **Facile** | QCM uniquement (3-4 choix) | "Comment dit-on 'X' en anglais ?" et "Que signifie 'X' ?". Mots courants. Les mauvaises reponses sont des mots du meme theme. |
+| **Moyen** | QCM + traduction ecrite (`translation`) | QCM avec mots/expressions plus difficiles. Traductions a ecrire (FR→EN et EN→FR) de mots individuels. |
+| **Difficile** | Traduction d'expressions (`translation`) + texte a trous (`fill`) | Traduire des expressions ou locutions completes (FR→EN et EN→FR). Retrouver le mot manquant dans une phrase d'exemple en anglais. |
+
+**Workflow pour ajouter un cours d'anglais :**
+1. Placer le PDF dans `/cours/anglais/`
+2. Extraire le vocabulaire dans `src/data/vocabulaire-anglais.json` (meme format)
+3. Regenerer `src/data/anglais.json` a partir de la liste de vocabulaire uniquement
 
 ### AUTRES MATIERES (Comportement humain, Statistique informatique, Systeme d'information, Droit des affaires)
 
