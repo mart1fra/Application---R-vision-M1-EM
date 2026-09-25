@@ -7,9 +7,12 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "oxlint",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "recuperer-cours": "node scripts/recuperer-cours.mjs"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.117.2",
+    "dotenv": "^18.0.3",
     "jscanify": "^1.4.3",
     "jspdf": "^4.2.1",
     "react": "^19.2.8",

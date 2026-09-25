@@ -15,10 +15,14 @@ dist-ssr
 # Env
 .env
 .env.*
+*.env
 !.env.example
 
 # Screenshots
 temporary screenshots/
+
+# Cours PDF (telecharges depuis Supabase)
+cours/
 
 # Editor directories and files
 .vscode/*

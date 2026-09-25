@@ -1,8 +1,15 @@
 import { useState, useRef, useEffect, useCallback } from 'react'
 import { jsPDF } from 'jspdf'
+import { createClient } from '@supabase/supabase-js'
 import { MATIERES } from '../utils'
 
 const ADMIN_PASSWORD = import.meta.env.VITE_ADMIN_PASSWORD || ''
+
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL
+const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY
+const supabase = supabaseUrl && supabaseAnonKey
+  ? createClient(supabaseUrl, supabaseAnonKey)
+  : null
 
 export default function Admin({ onBack }) {
   const [authenticated, setAuthenticated] = useState(!ADMIN_PASSWORD)
@@ -71,6 +78,8 @@ function Scanner({ onBack }) {
   const [showFinish, setShowFinish] = useState(false)
   const [selectedMatiere, setSelectedMatiere] = useState(null)
   const [cameraError, setCameraError] = useState('')
+  const [uploading, setUploading] = useState(false)
+  const [uploadResult, setUploadResult] = useState(null)
 
   // Load OpenCV.js
   useEffect(() => {
@@ -213,20 +222,58 @@ function Scanner({ onBack }) {
     setPages(prev => prev.filter((_, i) => i !== index))
   }
 
-  const generatePdf = () => {
-    if (!selectedMatiere || pages.length === 0) return
-
+  const buildPdf = () => {
     const pdf = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' })
-    const pageWidth = 210
-    const pageHeight = 297
-
     pages.forEach((dataUrl, i) => {
       if (i > 0) pdf.addPage()
-      pdf.addImage(dataUrl, 'JPEG', 0, 0, pageWidth, pageHeight)
+      pdf.addImage(dataUrl, 'JPEG', 0, 0, 210, 297)
     })
+    return pdf
+  }
 
+  const getFileName = () => {
     const date = new Date().toISOString().slice(0, 10)
-    pdf.save(`${selectedMatiere.id}_${date}.pdf`)
+    return `${selectedMatiere.id}_${date}.pdf`
+  }
+
+  const downloadPdf = () => {
+    if (!selectedMatiere || pages.length === 0) return
+    buildPdf().save(getFileName())
+  }
+
+  const uploadPdf = async () => {
+    if (!selectedMatiere || pages.length === 0) return
+    if (!supabase) {
+      setUploadResult({ ok: false, msg: 'Supabase non configure. Verifiez VITE_SUPABASE_URL et VITE_SUPABASE_ANON_KEY dans .env' })
+      return
+    }
+
+    setUploading(true)
+    setUploadResult(null)
+
+    try {
+      const pdf = buildPdf()
+      const blob = pdf.output('blob')
+      const fileName = getFileName()
+      const filePath = `${selectedMatiere.id}/${fileName}`
+
+      const { error } = await supabase.storage
+        .from('scans')
+        .upload(filePath, blob, {
+          contentType: 'application/pdf',
+          upsert: true
+        })
+
+      if (error) {
+        setUploadResult({ ok: false, msg: `Erreur : ${error.message}` })
+      } else {
+        setUploadResult({ ok: true, msg: `${fileName} envoye avec succes.` })
+      }
+    } catch (err) {
+      setUploadResult({ ok: false, msg: `Erreur inattendue : ${err.message}` })
+    } finally {
+      setUploading(false)
+    }
   }
 
   if (cameraError) {
@@ -287,18 +334,45 @@ function Scanner({ onBack }) {
             ))}
           </div>
 
+          {/* Upload result */}
+          {uploadResult && (
+            <div className={`mb-4 rounded-xl p-4 border ${
+              uploadResult.ok
+                ? 'bg-success-light border-success/20 text-success'
+                : 'bg-error-light border-error/20 text-error'
+            }`}>
+              <p className="text-[14px] font-medium">{uploadResult.msg}</p>
+            </div>
+          )}
+
           {/* Actions */}
           <button
-            onClick={generatePdf}
-            disabled={!selectedMatiere || pages.length === 0}
+            onClick={uploadPdf}
+            disabled={!selectedMatiere || pages.length === 0 || uploading}
             className="w-full rounded-xl py-4 text-[16px] font-semibold text-white bg-charcoal
                        active:scale-[0.97] transition-transform duration-150
-                       disabled:opacity-40 disabled:cursor-not-allowed"
+                       disabled:opacity-40 disabled:cursor-not-allowed
+                       flex items-center justify-center gap-2"
           >
-            Telecharger le PDF
+            {uploading ? (
+              <>
+                <span className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                Envoi en cours...
+              </>
+            ) : (
+              'Envoyer dans l\'appli'
+            )}
           </button>
           <button
-            onClick={() => setShowFinish(false)}
+            onClick={downloadPdf}
+            disabled={!selectedMatiere || pages.length === 0}
+            className="w-full mt-2 text-warm-gray text-[13px] py-2 underline
+                       disabled:opacity-30 disabled:cursor-not-allowed"
+          >
+            Telecharger le PDF en local
+          </button>
+          <button
+            onClick={() => { setShowFinish(false); setUploadResult(null) }}
             className="w-full mt-3 rounded-xl py-3 text-[14px] text-warm-gray border border-sand bg-white
                        active:scale-[0.97] transition-transform duration-150"
           >
