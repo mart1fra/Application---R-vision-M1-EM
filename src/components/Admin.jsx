@@ -254,14 +254,15 @@ function Scanner({ onBack }) {
     try {
       const pdf = buildPdf()
       const blob = pdf.output('blob')
-      const fileName = getFileName()
+      const date = new Date().toISOString().slice(0, 19).replace(/[T:]/g, '-')
+      const fileName = `${selectedMatiere.id}_${date}.pdf`
       const filePath = `${selectedMatiere.id}/${fileName}`
 
       const { error } = await supabase.storage
         .from('scans')
         .upload(filePath, blob, {
           contentType: 'application/pdf',
-          upsert: true
+          upsert: false
         })
 
       if (error) {
