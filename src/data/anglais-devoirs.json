@@ -1,0 +1,1700 @@
+[
+  {
+    "id": "t1p1-p6-choose",
+    "doc": "Theme 1 – Management (Part 1)",
+    "page": 6,
+    "kind": "cloze",
+    "keepOrder": true,
+    "title": "Choose the best word",
+    "titleFr": "Choisis le bon mot (A, B ou C)",
+    "instructions": "Choose the best word to fill each gap from the alternatives given below. Put a circle round the letter, A, B or C, of the word you choose.",
+    "instructionsFr": "Pour chaque trou, choisis le mot qui convient le mieux parmi les propositions A, B ou C.",
+    "passageTitle": "Results of the survey into staff attitudes to management – staff comments",
+    "passage": "Managers tend to {1} new procedures or systems without {2} employees.\nWe aren't given {3}.\nNo one seems interested in maintaining {4} amongst the staff.\nThe supervisors don't make us feel {5}.\nThere are few opportunities for staff to feel their job is {6}.\nManagers are {7} and expect {8} to be lazy.",
+    "items": [
+      {
+        "sentence": "Managers tend to ___ new procedures or systems…",
+        "choices": [
+          "order",
+          "imposing",
+          "impose"
+        ],
+        "answer": "impose",
+        "notes": {
+          "order": "« order » = commander, ordonner. « Order new procedures » voudrait dire commander des procédures comme un produit : ça n'a pas de sens ici.",
+          "imposing": "Après « tend to », il faut la base verbale (to + verbe). La forme en -ing est impossible ici."
+        },
+        "explanation": "« Tend to » (avoir tendance à) est suivi de la base verbale : tend to impose = ont tendance à imposer. C'est ce que fait Xavier dans le texte B : « Decisions must be imposed from above ».",
+        "translation": "Les managers ont tendance à imposer de nouvelles procédures ou de nouveaux systèmes…"
+      },
+      {
+        "sentence": "…without ___ employees.",
+        "choices": [
+          "insulting",
+          "consulting",
+          "resulting"
+        ],
+        "answer": "consulting",
+        "notes": {
+          "insulting": "« insulting » = en insultant. La forme -ing est correcte, mais le sens est absurde : « sans insulter les employés ».",
+          "resulting": "« resulting » = qui résulte. Le verbe « result » ne prend pas de complément direct (on dit « result in » ou « result from »)."
+        },
+        "explanation": "Après une préposition (ici « without »), le verbe se met en -ing : without consulting = sans consulter. Le texte B parle justement de décisions prises « without consultation ».",
+        "translation": "… sans consulter les employés."
+      },
+      {
+        "sentence": "We aren't given ___.",
+        "choices": [
+          "reliability",
+          "response",
+          "responsibility"
+        ],
+        "answer": "responsibility",
+        "notes": {
+          "reliability": "« reliability » = la fiabilité. On ne « donne » pas de la fiabilité à quelqu'un.",
+          "response": "« response » = une réponse. Il faudrait « a response », et ça ne parle pas de management."
+        },
+        "explanation": "« Give someone responsibility » = confier des responsabilités à quelqu'un. Ici au passif : we aren't given responsibility = on ne nous confie pas de responsabilités. Yolanda, elle, donne de la « responsibility » à ses employés (texte A).",
+        "translation": "On ne nous confie pas de responsabilités."
+      },
+      {
+        "sentence": "No one seems interested in maintaining ___ amongst the staff.",
+        "choices": [
+          "moral",
+          "morale",
+          "morality"
+        ],
+        "answer": "morale",
+        "notes": {
+          "moral": "« moral » (sans e) = l'adjectif « moral », ou le nom « la morale d'une histoire ». C'est un faux ami !",
+          "morality": "« morality » = la moralité, le sens du bien et du mal."
+        },
+        "explanation": "« Morale » (avec un e) = le moral d'un groupe : son humeur, sa confiance. Maintain morale = maintenir le moral. Texte A : « When everyone feels motivated, morale is good ».",
+        "translation": "Personne ne semble se soucier de maintenir le moral du personnel."
+      },
+      {
+        "sentence": "The supervisors don't make us feel ___.",
+        "choices": [
+          "valued",
+          "valuable",
+          "admired"
+        ],
+        "answer": "valued",
+        "notes": {
+          "valuable": "« valuable » = précieux, qui a de la valeur (un objet, une compétence). Le mot décrit une valeur, pas le sentiment d'être reconnu.",
+          "admired": "« admired » = admiré. C'est grammaticalement possible, mais on n'attend pas de ses superviseurs qu'ils nous admirent : on attend d'être reconnu."
+        },
+        "explanation": "« Feel valued » = se sentir valorisé, reconnu. C'est l'expression du cours (texte A : employees feel « that they are valued ») et la définition du tableau p. 3 : « Feeling appreciated or recognized for one's efforts or abilities ».",
+        "translation": "Les superviseurs ne nous donnent pas le sentiment d'être valorisés."
+      },
+      {
+        "sentence": "There are few opportunities for staff to feel their job is ___.",
+        "choices": [
+          "satisfying",
+          "satisfaction",
+          "satisfied"
+        ],
+        "answer": "satisfying",
+        "notes": {
+          "satisfaction": "« satisfaction » est un nom : « their job is satisfaction » n'est pas correct. Après « is », il faut un adjectif.",
+          "satisfied": "« satisfied » = satisfait. Les adjectifs en -ed décrivent ce que ressent une personne : un travail ne peut pas être « satisfait »."
+        },
+        "explanation": "Un adjectif en -ing décrit ce qui provoque le sentiment : a satisfying job = un travail satisfaisant. Un adjectif en -ed décrit la personne qui le ressent : I am satisfied. Même logique pour boring/bored et interesting/interested.",
+        "translation": "Le personnel a peu d'occasions de sentir que son travail est satisfaisant."
+      },
+      {
+        "sentence": "Managers are ___ …",
+        "choices": [
+          "authority",
+          "humanitarian",
+          "authoritarian"
+        ],
+        "answer": "authoritarian",
+        "notes": {
+          "authority": "« authority » est un nom (l'autorité). Après « are », il faut un adjectif.",
+          "humanitarian": "« humanitarian » = humanitaire (comme dans « l'aide humanitaire »). Hors sujet."
+        },
+        "explanation": "« Authoritarian » = autoritaire : un style de management fondé sur le contrôle strict et l'obéissance (définition p. 3). C'est le style de Xavier (texte B).",
+        "translation": "Les managers sont autoritaires…"
+      },
+      {
+        "sentence": "…and expect ___ to be lazy.",
+        "choices": [
+          "co-ordinates",
+          "subordinates",
+          "superiors"
+        ],
+        "answer": "subordinates",
+        "notes": {
+          "co-ordinates": "« co-ordinates » = des coordonnées (GPS), ou « il coordonne ». Aucun sens ici.",
+          "superiors": "« superiors » = les supérieurs hiérarchiques. Les managers ne pensent pas que leurs propres chefs sont paresseux : c'est le personnel qu'ils jugent."
+        },
+        "explanation": "« Subordinates » = les subordonnés, les personnes qui travaillent sous l'autorité de quelqu'un. Penser que ses subordonnés sont paresseux, c'est la Théorie X de McGregor, comme Xavier : « My subordinates … are basically lazy ».",
+        "translation": "… et s'attendent à ce que leurs subordonnés soient paresseux."
+      }
+    ]
+  },
+  {
+    "id": "t1p1-p6-choose-bonus",
+    "doc": "Theme 1 – Management (Part 1)",
+    "page": 6,
+    "kind": "cloze",
+    "bonus": true,
+    "title": "Choose the best word – variante",
+    "titleFr": "Même exercice, nouveau texte avec le vocabulaire du thème",
+    "instructions": "Choose the best word to fill each gap from the alternatives given below.",
+    "instructionsFr": "Pour chaque trou, choisis le mot qui convient le mieux. Exercice inventé sur le modèle de la page 6, avec le vocabulaire du thème.",
+    "passageTitle": "Follow-up survey – what staff would like to see",
+    "passage": "Managers should {1} tasks instead of doing everything themselves.\nStaff want more {2} – the authority to make their own decisions.\nEmployees would like to take part in the {3} process.\nPoor working conditions are a major cause of {4}.\nToo much {5} makes people feel they are not trusted.\nStaff feel that their efforts are not {6} by management.\nA more {7} style of management would increase job satisfaction.\nClear rules {8} good discipline, but they must not be imposed without consultation.",
+    "items": [
+      {
+        "sentence": "Managers should ___ tasks instead of doing everything themselves.",
+        "choices": [
+          "relegate",
+          "delete",
+          "delegate"
+        ],
+        "answer": "delegate",
+        "notes": {
+          "relegate": "« relegate » = reléguer, rétrograder (une équipe en division inférieure). Rien à voir avec confier une tâche.",
+          "delete": "« delete » = supprimer, effacer (un fichier, un message)."
+        },
+        "explanation": "« Delegate » = déléguer, confier une tâche à quelqu'un. C'est ce que font les managers participatifs et « laissez-faire » (vidéo p. 7).",
+        "translation": "Les managers devraient déléguer des tâches au lieu de tout faire eux-mêmes."
+      },
+      {
+        "sentence": "Staff want more ___ – the authority to make their own decisions.",
+        "choices": [
+          "employment",
+          "empowerment",
+          "enforcement"
+        ],
+        "answer": "empowerment",
+        "notes": {
+          "employment": "« employment » = l'emploi, le fait d'avoir un travail.",
+          "enforcement": "« enforcement » = l'application (d'une loi, d'une règle) : law enforcement = les forces de l'ordre."
+        },
+        "explanation": "« Empowerment » = le fait de donner à quelqu'un l'autorité ou le pouvoir de faire quelque chose ou de prendre des décisions (définition p. 3).",
+        "translation": "Le personnel veut plus d'autonomie : le pouvoir de prendre ses propres décisions."
+      },
+      {
+        "sentence": "Employees would like to take part in the ___ process.",
+        "choices": [
+          "money-making",
+          "match-making",
+          "decision-making"
+        ],
+        "answer": "decision-making",
+        "notes": {
+          "money-making": "« money-making » = lucratif, qui rapporte de l'argent.",
+          "match-making": "« match-making » = organiser des rencontres (amoureuses ou sportives)."
+        },
+        "explanation": "« The decision-making process » = le processus de prise de décision. Texte A : « employees take part in the decision-making process ».",
+        "translation": "Les employés aimeraient participer au processus de prise de décision."
+      },
+      {
+        "sentence": "Poor working conditions are a major cause of ___.",
+        "choices": [
+          "dissatisfaction",
+          "dissatisfied",
+          "unsatisfying"
+        ],
+        "answer": "dissatisfaction",
+        "notes": {
+          "dissatisfied": "« dissatisfied » = insatisfait. C'est un adjectif, or après « a cause of » il faut un nom.",
+          "unsatisfying": "« unsatisfying » = peu satisfaisant. C'est aussi un adjectif : impossible après « of »."
+        },
+        "explanation": "Après « a cause of », il faut un nom : dissatisfaction = l'insatisfaction. Chez Herzberg, de mauvaises conditions de travail (hygiene factors) créent de l'insatisfaction.",
+        "translation": "De mauvaises conditions de travail sont une cause majeure d'insatisfaction."
+      },
+      {
+        "sentence": "Too much ___ makes people feel they are not trusted.",
+        "choices": [
+          "vision",
+          "supervision",
+          "provision"
+        ],
+        "answer": "supervision",
+        "notes": {
+          "vision": "« vision » = la vision, une idée de l'avenir (comme un leader « visionary »).",
+          "provision": "« provision » = la fourniture (d'un service) ou une clause (d'un contrat)."
+        },
+        "explanation": "« Supervision » = surveiller et vérifier le travail des autres (définition p. 3). Trop de surveillance donne l'impression qu'on ne fait pas confiance aux gens : c'est le défaut de la Théorie X.",
+        "translation": "Trop de surveillance donne aux gens le sentiment qu'on ne leur fait pas confiance."
+      },
+      {
+        "sentence": "Staff feel that their efforts are not ___ by management.",
+        "choices": [
+          "recognised",
+          "recognisable",
+          "recognition"
+        ],
+        "answer": "recognised",
+        "notes": {
+          "recognisable": "« recognisable » = reconnaissable, qu'on peut identifier. Ce n'est pas le bon sens.",
+          "recognition": "« recognition » est un nom. Après « are not … by », il faut un participe passé (forme passive)."
+        },
+        "explanation": "Forme passive : are not recognised by management = ne sont pas reconnus par la direction. La « recognition » (la reconnaissance) est un facteur de motivation chez Herzberg.",
+        "translation": "Le personnel a le sentiment que ses efforts ne sont pas reconnus par la direction."
+      },
+      {
+        "sentence": "A more ___ style of management would increase job satisfaction.",
+        "choices": [
+          "participative",
+          "participating",
+          "particular"
+        ],
+        "answer": "participative",
+        "notes": {
+          "participating": "« participating » = qui participe (les pays participants). On ne dit pas « a participating style ».",
+          "particular": "« particular » = particulier, précis. Ça ne décrit pas un style de management."
+        },
+        "explanation": "« A participative style of management » = un management participatif, où les employés prennent part aux décisions. C'est le style de Yolanda (texte A).",
+        "translation": "Un style de management plus participatif augmenterait la satisfaction au travail."
+      },
+      {
+        "sentence": "Clear rules ___ good discipline, but they must not be imposed without consultation.",
+        "choices": [
+          "undermine",
+          "underline",
+          "underpin"
+        ],
+        "answer": "underpin",
+        "notes": {
+          "undermine": "« undermine » = saper, affaiblir. C'est presque le contraire de la bonne réponse !",
+          "underline": "« underline » = souligner (un mot, ou insister sur une idée)."
+        },
+        "explanation": "« Underpin » = soutenir, servir de base à quelque chose (définition p. 3 : « To support, strengthen, or form the basis of something »). Texte p. 5 : « theories that he felt underpinned the practices … of managers ».",
+        "translation": "Des règles claires sont la base d'une bonne discipline, mais elles ne doivent pas être imposées sans consultation."
+      }
+    ]
+  },
+  {
+    "id": "t1p1-p6-find",
+    "doc": "Theme 1 – Management (Part 1)",
+    "page": 6,
+    "kind": "write",
+    "title": "Find a word or phrase",
+    "titleFr": "Remplace le passage souligné par un mot du cours",
+    "instructions": "Find a word or phrase to replace the underlined phrase in each of the sentences below. Write the word or phrase at the end of the sentence.",
+    "instructionsFr": "Trouve un mot ou une expression du cours qui peut remplacer le passage souligné dans chaque phrase, puis écris-le.",
+    "items": [
+      {
+        "sentence": "When we are looking for new staff, we try to find people who can [[think and act independently]].",
+        "answers": [
+          "use their initiative",
+          "use their own initiative",
+          "take the initiative",
+          "take initiative",
+          "show initiative",
+          "use initiative"
+        ],
+        "hint": "Une expression du texte A construite avec le mot « initiative ».",
+        "explanation": "« Use their initiative » = prendre des initiatives, agir sans attendre qu'on leur dise quoi faire. Texte A : « encourage them to use their initiative – they don't have to ask me about every decision ». Définition p. 3 : « Take action or making decisions without being told to do so »."
+      },
+      {
+        "sentence": "It's very important that people in this department can work without [[someone telling them what to do and checking their work]].",
+        "answers": [
+          "supervision",
+          "constant supervision",
+          "close supervision"
+        ],
+        "hint": "Un nom qui vient du verbe « supervise ».",
+        "explanation": "« Supervision » = la surveillance, l'encadrement : vérifier ce que font les gens. Texte B : « They need constant supervision – we have to check what they are doing all the time ». Work without supervision = travailler sans être surveillé."
+      },
+      {
+        "sentence": "Now that we have reorganized the department, there are five people [[who report to me]].",
+        "answers": [
+          "who work under me",
+          "who work under",
+          "working under me",
+          "that work under me",
+          "who are working under me"
+        ],
+        "hint": "Le texte B explique le mot « subordinates » avec cette expression : « the people … under me ».",
+        "explanation": "« Who work under me » = qui travaillent sous mes ordres. Texte B : « My subordinates – the people working under me ». Report to someone = rendre compte à quelqu'un, être sous sa responsabilité. « Five subordinates » serait aussi juste, mais il faudrait alors supprimer « people »."
+      },
+      {
+        "sentence": "A successful company always pays attention to the [[health and happiness]] of its staff.",
+        "answers": [
+          "well-being",
+          "wellbeing",
+          "well being"
+        ],
+        "hint": "Un mot composé qui commence par « well ».",
+        "explanation": "« Well-being » = le bien-être : être en bonne santé, heureux et à l'aise. Définition p. 3 : « A state of being healthy, happy, and comfortable »."
+      },
+      {
+        "sentence": "To increase [[the desire to work]], some companies offer bonuses to employees who perform well.",
+        "answers": [
+          "motivation",
+          "staff motivation",
+          "employee motivation",
+          "their motivation",
+          "employees' motivation"
+        ],
+        "hint": "Le mot clé de toute la page 4.",
+        "explanation": "« Motivation » = la motivation, ce qui pousse quelqu'un à agir. Définition p. 3 : « The reason or drive behind someone's actions or behavior ». To increase motivation = augmenter la motivation."
+      }
+    ]
+  },
+  {
+    "id": "t1p1-p6-find-bonus",
+    "doc": "Theme 1 – Management (Part 1)",
+    "page": 6,
+    "kind": "write",
+    "bonus": true,
+    "title": "Find a word or phrase – variante",
+    "titleFr": "Même exercice, nouvelles phrases",
+    "instructions": "Find a word or phrase to replace the underlined phrase in each of the sentences below.",
+    "instructionsFr": "Trouve un mot ou une expression du cours qui peut remplacer le passage souligné. Exercice inventé sur le modèle de la page 6.",
+    "items": [
+      {
+        "sentence": "Xavier's style of management is [[based on strict control and obedience]].",
+        "answers": [
+          "authoritarian",
+          "autocratic"
+        ],
+        "hint": "Un adjectif du texte B qui commence par « author… ».",
+        "explanation": "« Authoritarian » = autoritaire : contrôle strict et obéissance (définition p. 3). « Autocratic » (vidéo p. 7) est accepté aussi. Attention : « authoritative » = qui fait autorité, assuré, sûr de lui. Ce n'est pas forcément négatif."
+      },
+      {
+        "sentence": "When everyone in the team feels motivated, [[the general mood and confidence of the group]] is good.",
+        "answers": [
+          "morale",
+          "staff morale",
+          "team morale",
+          "the morale"
+        ],
+        "hint": "« Le moral » en anglais. Attention à l'orthographe : il y a un « e » à la fin.",
+        "explanation": "« Morale » = le moral, l'humeur et la confiance d'un groupe. Texte A : « When everyone feels motivated, morale is good ». N'écris pas « moral » sans e : ça veut dire « moral » ou « la morale »."
+      },
+      {
+        "sentence": "Decisions are taken [[without asking the workers for their opinion]].",
+        "answers": [
+          "without consultation",
+          "without consulting the workers",
+          "without consulting workers",
+          "without consulting them"
+        ],
+        "hint": "Without + un nom de la famille de « consult ».",
+        "explanation": "« Without consultation » = sans consultation. Texte B : « Decisions must be imposed from above without consultation – we don't discuss decisions with workers »."
+      },
+      {
+        "sentence": "Employees want to feel [[appreciated and recognised for their efforts]].",
+        "answers": [
+          "valued"
+        ],
+        "hint": "Un seul mot en -ed : la case 7 du tableau p. 3.",
+        "explanation": "« Valued » = valorisé, apprécié pour ses efforts. Définition p. 3 : « Feeling appreciated or recognized for one's efforts or abilities »."
+      },
+      {
+        "sentence": "Giving staff [[the authority to make their own decisions]] can boost motivation.",
+        "answers": [
+          "empowerment"
+        ],
+        "hint": "Un nom qui contient le mot « power ».",
+        "explanation": "« Empowerment » = le fait de donner à quelqu'un l'autorité ou le pouvoir de décider (définition p. 3)."
+      },
+      {
+        "sentence": "Theory X managers think that people [[do not like]] work.",
+        "answers": [
+          "dislike"
+        ],
+        "hint": "Un seul verbe, formé avec un préfixe négatif.",
+        "explanation": "« Dislike » = ne pas aimer. Texte C : « Theory X – the idea that people dislike work and will do everything they can to avoid it »."
+      },
+      {
+        "sentence": "Strong values [[form the basis of]] the company's management practices.",
+        "answers": [
+          "underpin"
+        ],
+        "hint": "Un verbe en « under… » (et pas « undermine » !).",
+        "explanation": "« Underpin » = sous-tendre, servir de base à (définition p. 3). Texte p. 5 : « theories that he felt underpinned the practices and attitudes of managers »."
+      },
+      {
+        "sentence": "Every year, managers carry out [[an evaluation of each employee's work]].",
+        "answers": [
+          "a performance appraisal",
+          "a staff performance appraisal",
+          "an appraisal",
+          "performance appraisals",
+          "staff performance appraisals",
+          "a performance review"
+        ],
+        "hint": "Une expression du texte p. 5 : « staff performance a… ».",
+        "explanation": "« Staff performance appraisal » = l'évaluation (annuelle) des performances du personnel. Texte p. 5 : « staff performance appraisal – the evaluation of employees' work ». Attention : « appraisal » ≠ « praise » (les éloges)."
+      }
+    ]
+  },
+  {
+    "id": "t1p1-p9-match",
+    "doc": "Theme 1 – Management (Part 1)",
+    "page": 9,
+    "kind": "match",
+    "keepOrder": true,
+    "title": "The Zero Conditional – Draw a line",
+    "titleFr": "Relie chaque condition (if-clause) à son résultat",
+    "instructions": "Draw a line to connect each if-clause to a result clause.",
+    "instructionsFr": "Relie chaque proposition en « if » (la condition) à la proposition qui donne le résultat.",
+    "leftLabel": "If clause",
+    "rightLabel": "Result clause",
+    "explanation": "Zero conditional = If + présent simple, présent simple. On l'utilise pour une vérité générale, un fait ou une habitude : le résultat est toujours vrai quand la condition est remplie. Astuce : regarde les pronoms (he, she, they, it) et ce que dit chaque théorie. Théorie X : les gens n'aiment pas travailler, donc contrôle. Théorie Y : les gens sont motivés, donc participation.",
+    "right": [
+      "she thinks employees are self-motivated.",
+      "he assumes employees dislike work.",
+      "they feel empowered.",
+      "it imposes discipline and control.",
+      "they become less motivated.",
+      "it encourages participative management."
+    ],
+    "items": [
+      {
+        "left": "If Shawn believes in Theory X,",
+        "leftFr": "Si Shawn croit en la Théorie X,",
+        "right": "he assumes employees dislike work.",
+        "rightFr": "il suppose que les employés n'aiment pas travailler.",
+        "explanation": "Shawn = he. La Théorie X, c'est l'idée que les gens n'aiment pas le travail (« people dislike work »)."
+      },
+      {
+        "left": "If Carly adopts Theory Y,",
+        "leftFr": "Si Carly adopte la Théorie Y,",
+        "right": "she thinks employees are self-motivated.",
+        "rightFr": "elle pense que les employés sont motivés par eux-mêmes.",
+        "explanation": "Carly = she. Selon la Théorie Y, chacun peut trouver de la satisfaction au travail et se motiver seul."
+      },
+      {
+        "left": "If employees are treated according to Theory Y,",
+        "leftFr": "Si les employés sont traités selon la Théorie Y,",
+        "right": "they feel empowered.",
+        "rightFr": "ils se sentent responsabilisés (on leur donne du pouvoir).",
+        "explanation": "employees = they. La Théorie Y donne de l'« empowerment » : les employés se sentent capables de décider."
+      },
+      {
+        "left": "If you manage people with Theory X,",
+        "leftFr": "Si on dirige les gens selon la Théorie X,",
+        "right": "they become less motivated.",
+        "rightFr": "ils deviennent moins motivés.",
+        "explanation": "people = they. Le contrôle permanent de la Théorie X fait baisser la motivation. « it imposes… » ne va pas : « it » ne peut remplacer ni « you » ni « people »."
+      },
+      {
+        "left": "If a company follows Theory Y,",
+        "leftFr": "Si une entreprise suit la Théorie Y,",
+        "right": "it encourages participative management.",
+        "rightFr": "elle encourage un management participatif.",
+        "explanation": "a company = it. Avec la Théorie Y, les employés participent aux décisions (participative management)."
+      },
+      {
+        "left": "If a company relies on Theory X,",
+        "leftFr": "Si une entreprise s'appuie sur la Théorie X,",
+        "right": "it imposes discipline and control.",
+        "rightFr": "elle impose la discipline et le contrôle.",
+        "explanation": "a company = it. Théorie X = discipline, contrôle et décisions imposées, comme chez Xavier."
+      }
+    ]
+  },
+  {
+    "id": "t1p1-p9-complete",
+    "doc": "Theme 1 – Management (Part 1)",
+    "page": 9,
+    "kind": "open",
+    "title": "The First Conditional – Complete these sentences",
+    "titleFr": "Termine les phrases (first conditional)",
+    "instructions": "Complete these sentences.",
+    "instructionsFr": "Termine chaque phrase en anglais. Rappel : If + présent simple, will + base verbale, pour une situation réelle ou probable dans le futur.",
+    "items": [
+      {
+        "start": "If I become the manager at my company, I will",
+        "models": [
+          "make sure to listen to my team and foster engagement.",
+          "delegate more tasks and give my team more responsibility.",
+          "consult my employees before making important decisions."
+        ],
+        "explanation": "First conditional : If + présent simple (become), will + base verbale (make, delegate, consult…). La première réponse est celle du corrigé du document. Après « will » : pas de « to », pas de -s, pas de -ing."
+      },
+      {
+        "start": "If my manager starts using Theory Y at work, my colleagues will",
+        "models": [
+          "certainly be happier and more productive.",
+          "feel more valued and motivated.",
+          "use their initiative more often."
+        ],
+        "explanation": "On peut écrire « will be + adjectif » (be happier) ou « will + verbe » (feel, use). La première réponse est celle du corrigé du document. Réutilise le vocabulaire du thème : valued, motivated, use their initiative, job satisfaction…"
+      }
+    ]
+  },
+  {
+    "id": "t1p1-p9-conditionals-bonus",
+    "doc": "Theme 1 – Management (Part 1)",
+    "page": 9,
+    "kind": "choice",
+    "bonus": true,
+    "title": "Zero or First Conditional? – variante",
+    "titleFr": "Choisis la bonne forme du verbe",
+    "instructions": "Choose the correct verb form to complete each sentence.",
+    "instructionsFr": "Choisis la bonne forme du verbe. Zero conditional (vérité générale) : If + présent, présent. First conditional (futur probable) : If + présent, will + base verbale.",
+    "items": [
+      {
+        "sentence": "If you heat water to 100°C, it ___.",
+        "choices": [
+          "boils",
+          "will boiling",
+          "boil"
+        ],
+        "answer": "boils",
+        "notes": {
+          "will boiling": "Après « will », jamais de -ing : on dirait « will boil ».",
+          "boil": "Le sujet est « it » (3e personne du singulier) : il faut un -s au présent."
+        },
+        "explanation": "Zero conditional : un fait scientifique, toujours vrai. If + présent simple, présent simple. C'est l'exemple du document p. 9.",
+        "translation": "Si on chauffe l'eau à 100 °C, elle bout."
+      },
+      {
+        "sentence": "If the company increases salaries next year, employees ___ happier.",
+        "choices": [
+          "will be",
+          "would be",
+          "will are"
+        ],
+        "answer": "will be",
+        "notes": {
+          "would be": "« would » = conditionnel (second conditional), qui va avec un if au passé (If the company increased…). Ici le if est au présent, donc will.",
+          "will are": "Après « will », le verbe être reste à la base verbale : « be », jamais « are »."
+        },
+        "explanation": "First conditional : une situation probable dans le futur (« next year »). If + présent simple, will + base verbale : will be happier.",
+        "translation": "Si l'entreprise augmente les salaires l'an prochain, les employés seront plus heureux."
+      },
+      {
+        "sentence": "If you ___ hard, you will pass the exam.",
+        "choices": [
+          "study",
+          "will study",
+          "studied"
+        ],
+        "answer": "study",
+        "notes": {
+          "will study": "Jamais de « will » dans la partie en « if » : la condition reste au présent simple.",
+          "studied": "Le passé « studied » irait avec « would pass » (second conditional), pas avec « will pass »."
+        },
+        "explanation": "First conditional : If + présent simple (study), will + base verbale (will pass). C'est un exemple du document p. 9.",
+        "translation": "Si tu travailles sérieusement, tu réussiras l'examen."
+      },
+      {
+        "sentence": "If managers impose every decision, employees ___ less motivated.",
+        "choices": [
+          "becomes",
+          "become",
+          "became"
+        ],
+        "answer": "become",
+        "notes": {
+          "becomes": "« employees » est au pluriel : pas de -s au verbe.",
+          "became": "« became » est au passé. Une vérité générale se dit au présent."
+        },
+        "explanation": "Zero conditional : une vérité générale sur le management (la Théorie X). If + présent simple, présent simple : employees become less motivated.",
+        "translation": "Si les managers imposent toutes les décisions, les employés deviennent moins motivés."
+      },
+      {
+        "sentence": "If I ___ the manager next year, I will delegate more tasks.",
+        "choices": [
+          "will become",
+          "became",
+          "become"
+        ],
+        "answer": "become",
+        "notes": {
+          "will become": "Pas de « will » après « if » : If I become…, I will…",
+          "became": "Le passé ne s'utilise pas pour parler d'un futur probable avec « will »."
+        },
+        "explanation": "First conditional : If + présent simple (become), will + base verbale (will delegate).",
+        "translation": "Si je deviens manager l'an prochain, je déléguerai davantage de tâches."
+      },
+      {
+        "sentence": "If my team ___ the deadline, the client will be unhappy.",
+        "choices": [
+          "miss",
+          "will miss",
+          "misses"
+        ],
+        "answer": "misses",
+        "notes": {
+          "miss": "« my team » = it (singulier) : au présent simple, il faut un -s, donc « misses ».",
+          "will miss": "Pas de « will » dans la partie en « if »."
+        },
+        "explanation": "First conditional : If + présent simple (my team misses), will + base verbale (will be). « Miss a deadline » = ne pas respecter une date limite.",
+        "translation": "Si mon équipe ne respecte pas la date limite, le client sera mécontent."
+      },
+      {
+        "sentence": "If you give employees responsibility, they ___ their initiative.",
+        "choices": [
+          "uses",
+          "using",
+          "use"
+        ],
+        "answer": "use",
+        "notes": {
+          "uses": "Avec « they », pas de -s au présent.",
+          "using": "Il faut un verbe conjugué, pas une forme en -ing."
+        },
+        "explanation": "Zero conditional : une vérité générale (la Théorie Y). If + présent, présent : they use their initiative = ils prennent des initiatives.",
+        "translation": "Quand on donne des responsabilités aux employés, ils prennent des initiatives."
+      },
+      {
+        "sentence": "If employees feel valued, morale ___ good.",
+        "choices": [
+          "will",
+          "is",
+          "be"
+        ],
+        "answer": "is",
+        "notes": {
+          "will": "« will » seul ne suffit pas : il faudrait « will be ».",
+          "be": "Il faut conjuguer le verbe : « morale is »."
+        },
+        "explanation": "Zero conditional : un fait général. If + présent (feel), présent (is). « will be » serait possible au first conditional, mais « will » seul est incorrect.",
+        "translation": "Quand les employés se sentent valorisés, le moral est bon."
+      }
+    ]
+  },
+  {
+    "id": "t1p1-p9-complete-bonus",
+    "doc": "Theme 1 – Management (Part 1)",
+    "page": 9,
+    "kind": "open",
+    "bonus": true,
+    "title": "Complete these sentences – variante",
+    "titleFr": "Nouvelles phrases à terminer (first conditional)",
+    "instructions": "Complete these sentences.",
+    "instructionsFr": "Termine chaque phrase en anglais avec « will + base verbale ». Exercice inventé sur le modèle de la page 9.",
+    "items": [
+      {
+        "start": "If my company gives employees more responsibility, they will",
+        "models": [
+          "feel more valued.",
+          "use their initiative more often.",
+          "be more motivated at work."
+        ],
+        "explanation": "If + présent simple (gives : -s car « my company » = it), will + base verbale (feel, use, be)."
+      },
+      {
+        "start": "If managers impose every decision without consultation, morale will",
+        "models": [
+          "drop.",
+          "go down quickly.",
+          "be very low."
+        ],
+        "explanation": "« Morale will drop / go down » = le moral va baisser. Après « will » : base verbale, sans -s, sans « to »."
+      },
+      {
+        "start": "If I get a good mark in my English exam, I will",
+        "models": [
+          "celebrate with my friends.",
+          "be very proud of myself.",
+          "feel more confident."
+        ],
+        "explanation": "First conditional : une situation réelle et probable. If + présent simple (get), will + base verbale (celebrate, be, feel)."
+      }
+    ]
+  },
+  {
+    "id": "t1p1-p10-gofluent",
+    "doc": "Theme 1 – Management (Part 1)",
+    "page": 10,
+    "title": "goFluent",
+    "unavailable": "À faire sur la plateforme goFluent (Zero conditional, First conditional, Leadership styles, Management a profession?). Ces activités ne peuvent pas être recréées ici."
+  },
+  {
+    "id": "t1p2-p4-terms",
+    "doc": "Theme 1 – Management (Part 2)",
+    "page": 4,
+    "kind": "bank",
+    "shuffleItems": true,
+    "title": "Match each definition to the correct term",
+    "titleFr": "Relie chaque définition au bon mot (Herzberg)",
+    "instructions": "Match each definition to the correct term.",
+    "instructionsFr": "Pour chaque définition, choisis le bon mot dans la banque. Chaque mot ne sert qu’une fois : les mots déjà placés sont grisés.",
+    "prompt": "Quel mot correspond à cette définition ?",
+    "bank": [
+      "achievement",
+      "advancement",
+      "career ladder",
+      "consult",
+      "delegate",
+      "dissatisfaction",
+      "hierarchy",
+      "hygiene factors",
+      "motivator factors",
+      "peer relationships",
+      "personal growth",
+      "policy",
+      "positive feedback",
+      "recognition",
+      "responsibility",
+      "salary",
+      "security",
+      "supervision",
+      "the work itself",
+      "working conditions"
+    ],
+    "items": [
+      {
+        "text": "A feeling of being unhappy",
+        "answer": "dissatisfaction",
+        "translation": "Le fait d’être mécontent.",
+        "explanation": "« Dissatisfaction » = l’insatisfaction (dis- = le contraire de satisfaction). Chez Herzberg, elle apparaît quand les hygiene factors ne sont pas assez bons (p. 5)."
+      },
+      {
+        "text": "Aspects of the job that can prevent dissatisfaction but don’t motivate employees",
+        "answer": "hygiene factors",
+        "translation": "Les aspects du travail qui peuvent éviter l’insatisfaction mais ne motivent pas les employés.",
+        "explanation": "« Hygiene factors » (Herzberg) : salaire, conditions de travail, encadrement, politique de l’entreprise, relations entre collègues, sécurité. Ils évitent l’insatisfaction mais ne motivent pas, comme l’hygiène : indispensable, mais elle ne rend pas heureux."
+      },
+      {
+        "text": "The act of overseeing employees to ensure work is done correctly",
+        "answer": "supervision",
+        "translation": "Le fait de surveiller les employés pour s’assurer que le travail est bien fait.",
+        "explanation": "« Supervision » = l’encadrement, la surveillance du travail. Page 5 : « the way employees are managed »."
+      },
+      {
+        "text": "Guideline that governs actions within an organization",
+        "answer": "policy",
+        "translation": "Une ligne directrice qui encadre les actions dans une organisation.",
+        "explanation": "« Policy » = la politique, les règles de l’entreprise. Faux ami : la police = the police. Page 5 : « the overall purpose and goals of the organization »."
+      },
+      {
+        "text": "The physical environment where work is done, such as noise levels or equipment",
+        "answer": "working conditions",
+        "translation": "L’environnement physique où l’on travaille, comme le niveau de bruit ou l’équipement.",
+        "explanation": "« Working conditions » = les conditions de travail : le lieu, le bruit, l’équipement, les horaires (« hours worked », p. 5)."
+      },
+      {
+        "text": "Compensation provided for work performed",
+        "answer": "salary",
+        "translation": "La rémunération reçue pour le travail effectué.",
+        "explanation": "« Salary » = le salaire. « Compensation » = la rémunération : faux ami, ce n’est pas un dédommagement."
+      },
+      {
+        "text": "Interactions with colleagues in the workplace",
+        "answer": "peer relationships",
+        "translation": "Les échanges avec les collègues sur le lieu de travail.",
+        "explanation": "« Peer » = un pair, un collègue de même niveau. Page 5 : « how you relate to and work with others on the same level of the organization »."
+      },
+      {
+        "text": "A feeling of being safe and secure in a job, both physically and financially",
+        "answer": "security",
+        "translation": "Le sentiment d’être en sécurité dans son emploi, physiquement et financièrement.",
+        "explanation": "« Security » = la sécurité (de l’emploi). Page 5 : « level of confidence about the future of your job ». La sécurité contre les accidents se dit plutôt « safety »."
+      },
+      {
+        "text": "Factors that encourage employees to perform better and be more productive",
+        "answer": "motivator factors",
+        "translation": "Les facteurs qui poussent les employés à mieux travailler et à être plus productifs.",
+        "explanation": "« Motivator factors » (Herzberg) : accomplissement, reconnaissance, le travail en lui-même, responsabilités, avancement, développement personnel. Eux seuls créent une vraie satisfaction."
+      },
+      {
+        "text": "The accomplishment of a goal or task",
+        "answer": "achievement",
+        "translation": "Le fait d’atteindre un objectif ou de réussir une tâche.",
+        "explanation": "« Achievement » = la réussite, l’accomplissement (verbe : achieve). Page 5 : « the feeling that you have been successful in reaching your goals »."
+      },
+      {
+        "text": "Being acknowledged or appreciated for one’s efforts or achievements",
+        "answer": "recognition",
+        "translation": "Le fait d’être reconnu ou apprécié pour ses efforts ou ses réussites.",
+        "explanation": "« Recognition » = la reconnaissance (acknowledged = reconnu). Page 5 : « the feeling that your employers understand and value what you do ». Différence avec positive feedback : la recognition est le sentiment d’être reconnu, le feedback est le commentaire lui-même."
+      },
+      {
+        "text": "Constructive comments that help improve performance and morale",
+        "answer": "positive feedback",
+        "translation": "Des commentaires constructifs qui aident à améliorer les performances et le moral.",
+        "explanation": "« Positive feedback » = des retours positifs. Page 5 : « telling you what a good job you are doing ». C’est une façon de donner de la recognition."
+      },
+      {
+        "text": "The tasks or activities that make up a job",
+        "answer": "the work itself",
+        "translation": "Les tâches ou activités qui constituent un emploi.",
+        "explanation": "« The work itself » = le travail en lui-même : la nature et l’intérêt du poste (p. 5 : « the nature and interest of the job »)."
+      },
+      {
+        "text": "The obligation to carry out tasks or duties",
+        "answer": "responsibility",
+        "translation": "L’obligation d’accomplir des tâches ou des missions.",
+        "explanation": "« Responsibility » = la responsabilité. Page 5 : « when you are in charge of something and its success or failure »."
+      },
+      {
+        "text": "Opportunities for promotion",
+        "answer": "advancement",
+        "translation": "Les possibilités de promotion.",
+        "explanation": "« Advancement » = l’avancement, les possibilités de promotion (p. 5 : « how far you will be promoted »). À ne pas confondre avec career ladder (les échelons eux-mêmes)."
+      },
+      {
+        "text": "A series of steps for moving up in a job",
+        "answer": "career ladder",
+        "translation": "Une suite d’étapes pour progresser dans son emploi.",
+        "explanation": "« Career ladder » = l’échelle de carrière : les échelons qu’on gravit (ladder = une échelle). Attention à l’orthographe : career, comme le rappelle la note p. 5."
+      },
+      {
+        "text": "Self-improvement and skills development",
+        "answer": "personal growth",
+        "translation": "Le fait de s’améliorer et de développer ses compétences.",
+        "explanation": "« Personal growth » = le développement personnel (growth = la croissance). Page 5 : « how you develop personally in your work »."
+      },
+      {
+        "text": "Seek advice or guidance from others",
+        "answer": "consult",
+        "translation": "Demander des conseils ou des avis aux autres.",
+        "explanation": "« Consult » = consulter, demander l’avis de quelqu’un. Le nom est consultation."
+      },
+      {
+        "text": "Assign tasks or responsibilities to others",
+        "answer": "delegate",
+        "translation": "Confier des tâches ou des responsabilités à d’autres.",
+        "explanation": "« Delegate » = déléguer. Le nom est delegation. Page 5 : « managers have to delegate as much as possible »."
+      },
+      {
+        "text": "A system where members of an organization are ranked according to status or authority",
+        "answer": "hierarchy",
+        "translation": "Un système où les membres d’une organisation sont classés selon leur statut ou leur autorité.",
+        "explanation": "« Hierarchy » = la hiérarchie (adjectif : hierarchical). Avec l’empowerment, les organisations deviennent « less hierarchical » (p. 5)."
+      }
+    ]
+  },
+  {
+    "id": "t1p2-p6-advert",
+    "doc": "Theme 1 – Management (Part 2)",
+    "page": 6,
+    "kind": "match",
+    "memo": {
+      "ref": "t1p2-p5",
+      "sections": [
+        "A"
+      ]
+    },
+    "title": "3.1 The job advertisement",
+    "titleFr": "Relie les passages soulignés de l’annonce aux hygiene factors",
+    "instructions": "Look at this job advertisement. Match the underlined items (1–6) with the hygiene factors in A opposite.",
+    "instructionsFr": "Lis l’offre d’emploi. Relie chaque passage souligné (1 à 6) au hygiene factor qu’il décrit (liste A de la page 5).",
+    "passageTitle": "Duval and Smith – Legal Translator English–French",
+    "passage": "Paris (1) [[€50,000]]\nLarge Anglo-French law firm seeks legal translator to translate and correct French and English legal documents. Legal qualifications and experience essential.\nBased in the firm’s busy translation department, you will work (2) [[under the head of translation]] (3) [[as part of a team of five translators]] (4) [[in line with the overall policies of the firm]].\nYou will work (5) [[a 35-hour week]], with a (6) [[one-year contract in the first instance]].\nEmail CV to jmartin@duvalandsmith.fr",
+    "leftLabel": "Passages soulignés",
+    "rightLabel": "Hygiene factors",
+    "keepOrder": true,
+    "right": [
+      "supervision",
+      "policy",
+      "working conditions",
+      "salary",
+      "peer relationships",
+      "security"
+    ],
+    "explanation": "Une offre d’emploi décrit presque tous les hygiene factors de Herzberg : salaire, encadrement, collègues, politique de l’entreprise, horaires et sécurité du contrat. Ce sont des conditions de base, qui évitent l’insatisfaction.",
+    "items": [
+      {
+        "left": "(1) €50,000",
+        "leftFr": "50 000 € (par an)",
+        "right": "salary",
+        "rightFr": "le salaire",
+        "explanation": "Un montant annuel = le salaire."
+      },
+      {
+        "left": "(2) under the head of translation",
+        "leftFr": "sous la direction du chef du service traduction",
+        "right": "supervision",
+        "rightFr": "l’encadrement",
+        "explanation": "Travailler « under » quelqu’un = être encadré par lui : c’est la supervision."
+      },
+      {
+        "left": "(3) as part of a team of five translators",
+        "leftFr": "au sein d’une équipe de cinq traducteurs",
+        "right": "peer relationships",
+        "rightFr": "les relations entre collègues",
+        "explanation": "Une équipe de collègues de même niveau = les peer relationships."
+      },
+      {
+        "left": "(4) in line with the overall policies of the firm",
+        "leftFr": "conformément aux règles générales du cabinet",
+        "right": "policy",
+        "rightFr": "la politique de l’entreprise",
+        "explanation": "Le mot « policies » est dans l’annonce : c’est le facteur policy."
+      },
+      {
+        "left": "(5) a 35-hour week",
+        "leftFr": "une semaine de 35 heures",
+        "right": "working conditions",
+        "rightFr": "les conditions de travail",
+        "explanation": "Les horaires font partie des working conditions (« hours worked », p. 5)."
+      },
+      {
+        "left": "(6) one-year contract in the first instance",
+        "leftFr": "un contrat d’un an pour commencer",
+        "right": "security",
+        "rightFr": "la sécurité de l’emploi",
+        "explanation": "La durée du contrat dit à quel point l’emploi est sûr : c’est la security (« confidence about the future of your job »)."
+      }
+    ]
+  },
+  {
+    "id": "t1p2-p6-email",
+    "doc": "Theme 1 – Management (Part 2)",
+    "page": 6,
+    "kind": "bank",
+    "memo": {
+      "ref": "t1p2-p5",
+      "sections": [
+        "B"
+      ]
+    },
+    "title": "3.2 Vanessa’s email",
+    "titleFr": "Complète l’e-mail avec les motivator factors",
+    "instructions": "Vanessa Holt got the job in the advertisement in 3.1 above. Three months later, she writes an email to a friend. Complete the gaps in the email using expressions from B opposite.",
+    "instructionsFr": "Vanessa a obtenu le poste de l’exercice 3.1. Trois mois plus tard, elle écrit à une amie. Complète les trous avec les expressions de la liste B (motivator factors, p. 5).",
+    "passageTitle": "From: vanessaholt@aol.com – Subject: Back to the UK?",
+    "passage": "Hi Jane, How are you? I’ve been at Duval and Smith, an Anglo-French law firm in Paris, for three months now. I’ve had experience of translating a lot of different documents, so {1} is interesting enough, but I don’t get any {2} for the work I do – my boss never says anything. He never gives us any {3} – for example, he never lets us deal with clients directly. I never get a sense of {4} – my boss takes all the credit for the work we do.\nThere are quite good opportunities for promotion and {5} at Duval and Smith, but I’m not sure I want to stay. I think there must be better opportunities elsewhere for me to develop, and as {6} is important to me, I’ve decided to move back to the UK and look for a job there.\nSo hope to see you in London soon – I’ll give you a call.\nAll the best",
+    "bank": [
+      "achievement",
+      "recognition",
+      "positive feedback",
+      "the work itself",
+      "responsibility",
+      "advancement",
+      "career ladder",
+      "personal growth"
+    ],
+    "items": [
+      {
+        "sentence": "…so ___ is interesting enough",
+        "answer": "the work itself",
+        "translation": "… donc le travail en lui-même est assez intéressant",
+        "explanation": "« The work itself » = le travail en lui-même : traduire beaucoup de documents différents rend le poste intéressant."
+      },
+      {
+        "sentence": "…but I don’t get any ___ for the work I do",
+        "answer": "recognition",
+        "accept": [
+          "positive feedback"
+        ],
+        "translation": "… mais on ne reconnaît jamais mon travail : mon patron ne dit jamais rien.",
+        "explanation": "« I don’t get any recognition » = mon travail n’est pas reconnu, puisque « my boss never says anything ». « Positive feedback » est aussi accepté."
+      },
+      {
+        "sentence": "He never gives us any ___",
+        "answer": "responsibility",
+        "translation": "Il ne nous confie jamais de responsabilités : par exemple, il ne nous laisse jamais traiter directement avec les clients.",
+        "explanation": "« He never gives us any responsibility » : il ne les laisse jamais gérer les clients eux-mêmes."
+      },
+      {
+        "sentence": "I never get a sense of ___",
+        "answer": "achievement",
+        "translation": "Je n’ai jamais le sentiment d’avoir accompli quelque chose : mon patron s’attribue tout le mérite.",
+        "explanation": "« A sense of achievement » = le sentiment d’accomplissement. Impossible quand le patron « takes all the credit » (s’attribue tout le mérite)."
+      },
+      {
+        "sentence": "There are quite good opportunities for promotion and ___",
+        "answer": "advancement",
+        "translation": "Il y a d’assez bonnes possibilités de promotion et d’avancement chez Duval and Smith…",
+        "explanation": "« Promotion and advancement » = promotion et avancement. « Career ladder » ne va pas ici : il faudrait « the career ladder », et on ne dit pas « opportunities for … career ladder »."
+      },
+      {
+        "sentence": "…and as ___ is important to me",
+        "answer": "personal growth",
+        "translation": "… et comme le développement personnel compte pour moi, j’ai décidé de rentrer au Royaume-Uni.",
+        "explanation": "« Personal growth » = le développement personnel : elle veut « develop » (évoluer) ailleurs."
+      }
+    ]
+  },
+  {
+    "id": "t1p2-p6-table",
+    "doc": "Theme 1 – Management (Part 2)",
+    "page": 6,
+    "kind": "gaps",
+    "keepOrder": true,
+    "memo": {
+      "ref": "t1p2-p5",
+      "sections": [
+        "C"
+      ]
+    },
+    "title": "3.3 Verb, noun, adjective",
+    "titleFr": "Complète le tableau : verbe, nom, adjectif",
+    "instructions": "Complete this table with words from C opposite.",
+    "instructionsFr": "Complète le tableau avec les mots du texte C (Empowerment, p. 5) : trouve le verbe ou le nom qui manque sur chaque ligne.",
+    "prompt": "Écris le mot qui manque",
+    "items": [
+      {
+        "sentence": "Verb: empower → Noun: ___ → Adjective: empowered",
+        "answers": [
+          "empowerment"
+        ],
+        "hint": "Un nom en -ment (texte C, 1re ligne).",
+        "explanation": "empower (verbe) → empowerment (nom) → empowered (adjectif). Texte C : « Empowerment is the idea that decisions… should be made by employees »."
+      },
+      {
+        "sentence": "Verb: ___ → Noun: consultation → Adjective: consulted",
+        "answers": [
+          "consult"
+        ],
+        "hint": "Texte C : « without having to … their managers ».",
+        "explanation": "consult (verbe) → consultation (nom) → consulted (adjectif)."
+      },
+      {
+        "sentence": "Verb: – → Noun: ___ → Adjective: hierarchical",
+        "answers": [
+          "hierarchy"
+        ],
+        "hint": "Texte C : « further up the h… ».",
+        "explanation": "hierarchy (nom) → hierarchical (adjectif). Il n’existe pas de verbe dans cette famille, d’où le tiret."
+      },
+      {
+        "sentence": "Verb: ___ → Noun: … → Adjective: delegated",
+        "answers": [
+          "delegate"
+        ],
+        "hint": "Texte C : « managers have to d… as much as possible ».",
+        "explanation": "delegate (verbe) → delegation (nom) → delegated (adjectif)."
+      },
+      {
+        "sentence": "Verb: delegate → Noun: ___ → Adjective: delegated",
+        "answers": [
+          "delegation"
+        ],
+        "hint": "Texte C : « D… is one of the keys to employees being empowered ».",
+        "explanation": "delegation = la délégation (verbe delegate + -ion)."
+      }
+    ]
+  },
+  {
+    "id": "t1p2-p7-conversation",
+    "doc": "Theme 1 – Management (Part 2)",
+    "page": 7,
+    "kind": "gaps",
+    "keepOrder": true,
+    "memo": {
+      "ref": "t1p2-p5",
+      "sections": [
+        "A"
+      ]
+    },
+    "title": "Write one word in each gap",
+    "titleFr": "Complète la conversation (hygiene factors)",
+    "instructions": "An employee is talking to a recruitment consultant about the hygiene factors in his previous company. Write one word in each gap to complete the conversation.",
+    "instructionsFr": "Un employé parle à une consultante en recrutement des hygiene factors de son ancienne entreprise. Écris un mot par trou (le trou 1 en demande deux).",
+    "passage": "A: At Sandcrest, the offices were rather old-fashioned and there was no possibility of flexitime: they haven’t improved the {1} for years. Also, the managers were always checking how many hours you worked – the level of {2} was quite high.\nB: Yes, but I’ve heard that job {3} was good – people were very rarely made redundant. The company {4} of investing in training at all levels meant people felt valued working there. They got on well together and they built up good {5}.\nA: OK, but what about the {6}? I think a lot of staff were unhappy about how little they were earning.",
+    "items": [
+      {
+        "sentence": "they haven’t improved the ___ for years",
+        "answers": [
+          "working conditions"
+        ],
+        "placeholder": "w… c…",
+        "hint": "Deux mots : w… c…",
+        "explanation": "Des bureaux démodés et pas d’horaires flexibles (flexitime) : ce sont les working conditions."
+      },
+      {
+        "sentence": "the level of ___ was quite high",
+        "answers": [
+          "supervision"
+        ],
+        "placeholder": "s…",
+        "hint": "Commence par « s » : les managers vérifiaient sans arrêt les heures.",
+        "explanation": "Vérifier tout le temps les heures de travail = un niveau élevé de supervision."
+      },
+      {
+        "sentence": "job ___ was good",
+        "answers": [
+          "security"
+        ],
+        "placeholder": "s…",
+        "hint": "Commence par « s » : on licenciait très rarement.",
+        "explanation": "« Job security » = la sécurité de l’emploi : les gens étaient rarement licenciés (« made redundant »)."
+      },
+      {
+        "sentence": "The company ___ of investing in training",
+        "answers": [
+          "policy"
+        ],
+        "placeholder": "p…",
+        "hint": "Commence par « p » : la règle de l’entreprise.",
+        "explanation": "« The company policy of investing in training » = la politique de l’entreprise, qui investit dans la formation."
+      },
+      {
+        "sentence": "they built up good ___",
+        "answers": [
+          "relationships",
+          "peer relationships",
+          "working relationships",
+          "relations"
+        ],
+        "placeholder": "r…",
+        "hint": "Commence par « r » : ils s’entendaient bien.",
+        "explanation": "« Build up good relationships » = nouer de bonnes relations : ce sont les peer relationships."
+      },
+      {
+        "sentence": "what about the ___?",
+        "answers": [
+          "salary",
+          "salaries",
+          "pay",
+          "wages"
+        ],
+        "placeholder": "s…",
+        "hint": "Commence par « s » : ils gagnaient peu.",
+        "explanation": "« How little they were earning » = ils gagnaient peu : c’est le salary (salaire)."
+      }
+    ]
+  },
+  {
+    "id": "t1p2-p7-motivators",
+    "doc": "Theme 1 – Management (Part 2)",
+    "page": 7,
+    "kind": "bank",
+    "keepOrder": true,
+    "bankLetters": true,
+    "memo": {
+      "ref": "t1p2-p5",
+      "sections": [
+        "B"
+      ]
+    },
+    "title": "Which motivator factor? (A–F)",
+    "titleFr": "À quel motivator factor correspond chaque suggestion ?",
+    "instructions": "A group of managers are suggesting ways they can get the most from their employees and create positive job satisfaction. Decide which of the motivator factors (A–F) each suggestion refers to.",
+    "instructionsFr": "Des managers proposent des idées pour motiver leurs employés. Pour chaque suggestion, choisis le motivator factor concerné (A à F).",
+    "prompt": "Quel facteur de motivation ?",
+    "bank": [
+      "achievement",
+      "recognition",
+      "the work itself",
+      "responsibility",
+      "advancement",
+      "personal growth"
+    ],
+    "items": [
+      {
+        "text": "We need to put staff in charge of their own projects, allowing them to make more decisions.",
+        "answer": "responsibility",
+        "translation": "Nous devons rendre les employés responsables de leurs propres projets et les laisser prendre plus de décisions.",
+        "explanation": "« In charge of their own projects » = responsables de leurs projets : c’est la responsibility (p. 5 : « when you are in charge of something »)."
+      },
+      {
+        "text": "If we expanded some of the more routine jobs, it would make them more interesting.",
+        "answer": "the work itself",
+        "translation": "Si nous élargissions certains postes trop routiniers, ils deviendraient plus intéressants.",
+        "explanation": "Rendre un poste routinier plus intéressant, c’est agir sur le travail en lui-même (« the nature and interest of the job »). Remarque : la phrase est au second conditional (If + prétérit, would)."
+      },
+      {
+        "text": "We could give employees the chance to choose their own training courses in areas which they felt would be useful to them.",
+        "answer": "personal growth",
+        "translation": "Nous pourrions laisser les employés choisir leurs formations dans les domaines qui leur semblent utiles.",
+        "explanation": "Choisir ses formations pour se développer = le personal growth (développement personnel)."
+      },
+      {
+        "text": "Why don’t we set goals in staff appraisals and ensure we discuss these regularly?",
+        "answer": "achievement",
+        "translation": "Pourquoi ne pas fixer des objectifs lors des entretiens d’évaluation et en parler régulièrement ?",
+        "explanation": "Fixer des objectifs permet de ressentir l’achievement : « the feeling that you have been successful in reaching your goals »."
+      },
+      {
+        "text": "We could introduce an ‘award scheme’ for staff who have made a valuable contribution to the company.",
+        "answer": "recognition",
+        "translation": "Nous pourrions créer un système de récompenses pour les employés qui ont beaucoup apporté à l’entreprise.",
+        "explanation": "Un « award scheme » (système de récompenses) pour une contribution précieuse, c’est de la recognition (reconnaissance)."
+      },
+      {
+        "text": "Employees need to feel there are plenty of opportunities for promotion and that the system is fair.",
+        "answer": "advancement",
+        "translation": "Les employés doivent sentir qu’il y a beaucoup de possibilités de promotion et que le système est juste.",
+        "explanation": "Les possibilités de promotion = l’advancement (l’avancement)."
+      }
+    ]
+  },
+  {
+    "id": "t1p2-p7-clues",
+    "doc": "Theme 1 – Management (Part 2)",
+    "page": 7,
+    "kind": "gaps",
+    "keepOrder": true,
+    "title": "Find the answer to each clue",
+    "titleFr": "Trouve le mot à partir de sa première lettre",
+    "instructions": "Find the answer to each clue. The first letter has been given in each case.",
+    "instructionsFr": "Trouve le mot qui correspond à chaque définition. La première lettre est donnée.",
+    "prompt": "Trouve le mot",
+    "items": [
+      {
+        "text": "Giving responsibility for key decisions to employees involved with the issues",
+        "answers": [
+          "empowerment"
+        ],
+        "placeholder": "e…",
+        "hint": "e _ _ _ _ _ _ _ _ _ _ (11 lettres)",
+        "explanation": "« Empowerment » : confier les décisions aux employés proches des problèmes (texte C, p. 5)."
+      },
+      {
+        "text": "To ask for advice",
+        "answers": [
+          "consult"
+        ],
+        "placeholder": "c…",
+        "hint": "c _ _ _ _ _ _ (7 lettres)",
+        "explanation": "« Consult » = demander conseil, consulter."
+      },
+      {
+        "text": "To give responsibility to someone lower down in the organization",
+        "answers": [
+          "delegate"
+        ],
+        "placeholder": "d…",
+        "hint": "d _ _ _ _ _ _ _ (8 lettres)",
+        "explanation": "« Delegate » = déléguer, confier une responsabilité à quelqu’un placé plus bas dans la hiérarchie."
+      },
+      {
+        "text": "The management structure of a company",
+        "answers": [
+          "hierarchy"
+        ],
+        "placeholder": "h…",
+        "hint": "h _ _ _ _ _ _ _ _ (9 lettres)",
+        "explanation": "« Hierarchy » = la hiérarchie, la structure de direction."
+      },
+      {
+        "text": "A feeling that something is not as good as it should be",
+        "answers": [
+          "dissatisfaction"
+        ],
+        "placeholder": "d…",
+        "hint": "d _ _ _ _ _ _ _ _ _ _ _ _ _ _ (15 lettres)",
+        "explanation": "« Dissatisfaction » = l’insatisfaction : le sentiment que quelque chose n’est pas aussi bien qu’il le devrait."
+      }
+    ]
+  },
+  {
+    "id": "t1p2-p8-agile",
+    "doc": "Theme 1 – Management (Part 2)",
+    "page": "8-10",
+    "kind": "reading",
+    "title": "Agile Project Management",
+    "titleFr": "Compréhension écrite type examen : 10 questions",
+    "instructions": "Read the passage then answer the questions. Give yourself 20 minutes.",
+    "instructionsFr": "Lis le texte, puis réponds aux questions. Donne-toi 20 minutes, comme à l’examen. Tu peux revoir le texte à chaque question.",
+    "passageTitle": "Agile Project Management",
+    "source": "L’intégrale TOEFL iBT, Nathan",
+    "paragraphs": [
+      "The term “Agile” was first coined by William Royce in the 1970s when he published a paper on the development of large software systems. 30 years later, the Agile Manifesto was published by 17 leading software developers who used their combined experience to create and share four key values and twelve principles.",
+      "The change came about because flaws were found in the more traditional waterfall development system, with its large groups working on five clear steps (Requirements, Design, Development, Testing, Maintenance). Although cut-and-dried, it meant that one phase had to be completed before moving on to the next, and once that box was ticked, there was no going back. This process was proven to be highly risky and costly, especially as testing the software was done towards the end of the project. Stakeholders’ approval was required too late in the day, by which time there was no turning back; in case of anomaly the project, and all that investment, was abandoned.",
+      "Conventional development is cheaper at a first glance, but not so in the long run. In agile management, change is seen as a positive step and the ability to give up on something and add new features, as the project moves along. It is hard to get it right first time, but at least with Agile the possibility of getting to the end of a project to find the product no longer suits the market is no longer an issue.",
+      "In concrete terms, “Agile” is not a process or series of steps as above, but more a philosophy. It is all based on small, cross-functional, self-organizing “Scrum Teams”, who split the work up on small, concrete deliverables, sorted by priority. In visual terms, think of a snail shell. These teams will iterate and re-iterate a project in “sprints” each time weighing up the requirements, designing and documenting a prototype which is then demonstrated, and feedback provided. Any necessary iterations can be done at this time, and then quality assurance moves in to find any defects and resolve any bugs. Production and technical support will then double check and if all is well, the product can be delivered to the client. However, if there are some errors, it’s back to the drawing board and iteration (questioning, challenging), starts all over again, and again if necessary until the perfect, market-suited product is up and running.",
+      "In practical terms, daily meetings are essential. Scrum Team members talk about the project or product (the backlog) and discuss the features in terms of “user stories”. The workload associated with these is then calculated, and the backlog prioritized. All this gives a roadmap to be followed until the next iteration.",
+      "There are several assets of course. The first is better product quality. Owing to the proactive and just-in-time approach, the quality of the end product is as high as possible. Customers are content because not only are they involved throughout the project, but also the product is delivered to market quicker. In-house team morale within the scrums tends to be high owing to self-management which stimulates creativity and innovation, as well as cross-functionality which encourages both teaching and learning. Due to the iterative nature of Agile, the metrics tend to be more relevant and accurate, because they are updated again and again, based on the latest information and performance. As a result, it is easy to see how the project is getting on at any given time, to reduce risk and completely eliminate the possibility of absolute project failure.",
+      "Agile is not a passing fad. Time to market is key to the success of a project in the software business, and agility and iteration have become a business necessity. Nonetheless, Agile principles are not only being applied to I.T., but also financial and professional services, insurance, healthcare and even governments — all are adopting agile methodology. Nothing is perfect however — there are some drawbacks, and Agile is not suited to every project. When a customer is fuzzy about his goals, a team is inexperienced or does not work well under pressure, or when working within a large traditional organization, it may be worthwhile turning one’s back on agile or combining both agile and waterfall."
+    ],
+    "items": [
+      {
+        "question": "The word “coined” in paragraph 1 is closest in meaning to:",
+        "paragraphs": [
+          1
+        ],
+        "choices": [
+          "Counterfeited",
+          "Wrecked",
+          "Trumped up",
+          "Created"
+        ],
+        "answer": "Created",
+        "notes": {
+          "Counterfeited": "« counterfeited » = contrefait, falsifié (de la fausse monnaie).",
+          "Wrecked": "« wrecked » = détruit, démoli.",
+          "Trumped up": "« trumped up » = inventé de toutes pièces, au sens de mensonger (une fausse accusation)."
+        },
+        "explanation": "« To coin a term » = inventer, créer un mot, comme on frappe une pièce de monnaie (a coin). William Royce a créé le terme « Agile »."
+      },
+      {
+        "question": "According to paragraph 2, what is said to be mainly responsible for the need for change in project management?",
+        "paragraphs": [
+          2
+        ],
+        "choices": [
+          "The need for more than 5 clear steps.",
+          "The potential waste of time and expense.",
+          "Too much box-ticking.",
+          "The time it took to test the software."
+        ],
+        "answer": "The potential waste of time and expense.",
+        "notes": {
+          "The need for more than 5 clear steps.": "Le texte ne réclame pas plus d’étapes : il décrit les 5 étapes de la méthode en cascade.",
+          "Too much box-ticking.": "« Once that box was ticked » est une image (une fois l’étape validée, pas de retour en arrière). Ce n’est pas la cause principale.",
+          "The time it took to test the software.": "Le problème, c’est que les tests arrivaient trop tard, pas qu’ils duraient longtemps."
+        },
+        "explanation": "Le paragraphe 2 dit que la méthode en cascade était « highly risky and costly » et qu’en cas de problème, le projet « and all that investment » était abandonné : c’est le risque de gaspiller du temps et de l’argent."
+      },
+      {
+        "question": "According to paragraph 4, what is the overall key to Agile management?",
+        "paragraphs": [
+          4
+        ],
+        "choices": [
+          "Rugby scrums",
+          "A mindset",
+          "Priorities",
+          "Sizeable teams"
+        ],
+        "answer": "A mindset",
+        "notes": {
+          "Rugby scrums": "Les « Scrum Teams » tirent leur nom de la mêlée au rugby, mais ce n’est pas la clé de la méthode.",
+          "Priorities": "Les tâches sont triées par priorité, mais c’est un détail d’organisation.",
+          "Sizeable teams": "C’est faux : les équipes sont « small » (petites)."
+        },
+        "explanation": "« Agile is not a process or series of steps … but more a philosophy » : la clé, c’est un état d’esprit (a mindset)."
+      },
+      {
+        "question": "Why does the author mention a “snail shell” in paragraph 4?",
+        "paragraphs": [
+          4
+        ],
+        "choices": [
+          "Because Agile projects can be very slow.",
+          "So the reader can see a spiral in her/his mind’s eye.",
+          "Because each step of the project leaves a trace.",
+          "Because a shell is always somewhat fragile."
+        ],
+        "answer": "So the reader can see a spiral in her/his mind’s eye.",
+        "notes": {
+          "Because Agile projects can be very slow.": "C’est le piège : l’escargot est lent, mais l’auteur dit « in visual terms ». C’est la forme qui compte, pas la vitesse.",
+          "Because each step of the project leaves a trace.": "Le texte ne parle pas de traces laissées.",
+          "Because a shell is always somewhat fragile.": "Le texte ne parle pas de fragilité."
+        },
+        "explanation": "« In visual terms, think of a snail shell » : la coquille dessine une spirale, comme les itérations successives (on repasse par les mêmes étapes, chaque fois un peu plus loin)."
+      },
+      {
+        "question": "In paragraph 5, which noun does the pronoun “these” refer to in the sentence “The workload associated with these is then calculated, and the backlog prioritized”?",
+        "paragraphs": [
+          5
+        ],
+        "choices": [
+          "The daily meetings",
+          "The backlog",
+          "The team members",
+          "The features"
+        ],
+        "answer": "The features",
+        "notes": {
+          "The daily meetings": "On ne calcule pas la charge de travail des réunions.",
+          "The backlog": "« the backlog » est au singulier, alors que « these » est au pluriel. Et la même phrase le cite à part (« and the backlog prioritized »).",
+          "The team members": "On ne calcule pas une charge de travail « associée aux membres »."
+        },
+        "explanation": "« These » (pluriel) reprend le dernier nom pluriel qui a du sens : « the features », discutées sous forme de user stories. On calcule la charge de travail de chaque fonctionnalité."
+      },
+      {
+        "question": "According to paragraph 6, what is the main advantage to the customers?",
+        "paragraphs": [
+          6
+        ],
+        "choices": [
+          "They don’t have to get involved.",
+          "Better time-to-market.",
+          "Product quality can be variable.",
+          "Metrics give them clear information."
+        ],
+        "answer": "Better time-to-market.",
+        "notes": {
+          "They don’t have to get involved.": "C’est le contraire : « they are involved throughout the project ».",
+          "Product quality can be variable.": "Le texte dit que la qualité est « as high as possible », pas variable.",
+          "Metrics give them clear information.": "Les metrics (indicateurs) servent surtout à suivre le projet, pas spécialement aux clients."
+        },
+        "explanation": "« Customers are content because … the product is delivered to market quicker » : le produit arrive plus vite sur le marché (time-to-market)."
+      },
+      {
+        "question": "What is NOT mentioned as a particularity of Scrum teams?",
+        "paragraphs": [
+          4,
+          6
+        ],
+        "choices": [
+          "The employees receive advantageous salaries.",
+          "They include people from different areas of the organization.",
+          "They tend to be enthusiastic and confident.",
+          "They take responsibility for themselves."
+        ],
+        "answer": "The employees receive advantageous salaries.",
+        "notes": {
+          "They include people from different areas of the organization.": "C’est mentionné : « cross-functional » (des personnes de différents services).",
+          "They tend to be enthusiastic and confident.": "C’est mentionné : « team morale … tends to be high ».",
+          "They take responsibility for themselves.": "C’est mentionné : « self-organizing », « self-management »."
+        },
+        "explanation": "Le texte ne parle jamais de salaire : c’est la seule particularité NON mentionnée. Attention au NOT dans la question !"
+      },
+      {
+        "question": "What is the author’s purpose in mentioning large traditional organizations?",
+        "paragraphs": [
+          7
+        ],
+        "choices": [
+          "To show they are all changing over to Agile methods.",
+          "To explain they are under too much pressure to changeover.",
+          "To point out that they often have very fuzzy targets.",
+          "To explain that some are unsuitable structures for Agile methods."
+        ],
+        "answer": "To explain that some are unsuitable structures for Agile methods.",
+        "notes": {
+          "To show they are all changing over to Agile methods.": "Le texte dit l’inverse : dans ces organisations, il vaut parfois mieux renoncer à Agile.",
+          "To explain they are under too much pressure to changeover.": "La pression concerne les équipes (« does not work well under pressure »), pas les organisations.",
+          "To point out that they often have very fuzzy targets.": "Ce sont les clients qui peuvent avoir des objectifs flous (« a customer is fuzzy about his goals »)."
+        },
+        "explanation": "Paragraphe 7 : Agile « is not suited to every project ». Dans une grande organisation traditionnelle, « it may be worthwhile turning one’s back on agile or combining both »."
+      },
+      {
+        "question": "Look at the four letters (A, B, C, D) that indicate where the following sentence can be added to the passage: “Added to this is closer communication between all stakeholders, who meet on a daily basis at the scrum meetings and exchange at regular intervals during the sprint reviews.” Where would the sentence best fit?",
+        "extract": "There are several assets of course. The first is better product quality. Owing to the proactive and just-in-time approach, the quality of the end product is as high as possible. Customers are content because not only are they involved throughout the project, but also the product is delivered to market quicker. [A] In-house team morale within the scrums tends to be high owing to self-management which stimulates creativity and innovation, as well as cross-functionality which encourages both teaching and learning. [B] Due to the iterative nature of Agile, the metrics tend to be more relevant and accurate, because they are updated again and again, based on the latest information and performance. [C] As a result, it is easy to see how the project is getting on at any given time, to reduce risk and completely eliminate the possibility of absolute project failure. [D]",
+        "choices": [
+          "Position A",
+          "Position B",
+          "Position C",
+          "Position D"
+        ],
+        "answer": "Position C",
+        "notes": {
+          "Position A": "Tentant (les clients font partie des stakeholders), mais la phrase parle des réunions quotidiennes de l’équipe : elle se rattache mal à la satisfaction des clients.",
+          "Position B": "Ici, la phrase couperait le lien entre le moral de l’équipe et les metrics.",
+          "Position D": "Après « As a result… », qui conclut le paragraphe, un nouvel avantage arriverait trop tard."
+        },
+        "explanation": "En C, « Added to this » ajoute un avantage aux metrics à jour, puis la phrase suivante en tire la conséquence : grâce aux réunions quotidiennes et aux échanges réguliers, « it is easy to see how the project is getting on at any given time ». L’indice clé : « on a daily basis / at regular intervals » → « at any given time ». Le document ne donne pas de corrigé pour cette page : c’est la réponse la plus logique."
+      },
+      {
+        "question": "Complete the summary by selecting the THREE answer choices that express the most important ideas in the passage. Some sentences do not belong in the summary because they express ideas that are not presented in the passage or are minor ideas in the passage.",
+        "intro": "Agile management is revolutionizing project management systems in companies of all shapes and sizes.",
+        "choices": [
+          "Waterfall management has been eliminated from all project management.",
+          "Although it appears costlier, long-term savings are made by using Agile methods.",
+          "The scrum teams meet, assess, and update the situation every other day.",
+          "Continuous iteration means the right product gets to the market in time.",
+          "Staff morale in companies tends to be better with Agile project management.",
+          "It is not a one-size-fits-all solution and does not suit every case."
+        ],
+        "answers": [
+          "Although it appears costlier, long-term savings are made by using Agile methods.",
+          "Continuous iteration means the right product gets to the market in time.",
+          "It is not a one-size-fits-all solution and does not suit every case."
+        ],
+        "notes": {
+          "Waterfall management has been eliminated from all project management.": "Faux : le texte dit qu’on peut encore utiliser la méthode en cascade, ou combiner les deux (paragraphe 7).",
+          "Although it appears costlier, long-term savings are made by using Agile methods.": "Idée principale du paragraphe 3 : « cheaper at a first glance, but not so in the long run ».",
+          "The scrum teams meet, assess, and update the situation every other day.": "Faux : les réunions sont quotidiennes (« daily meetings »), pas tous les deux jours (every other day).",
+          "Continuous iteration means the right product gets to the market in time.": "Idée principale (paragraphes 3, 4 et 7) : grâce aux itérations, le produit est adapté au marché et livré à temps.",
+          "Staff morale in companies tends to be better with Agile project management.": "C’est vrai, mais c’est un détail du paragraphe 6 (minor idea), pas une idée principale.",
+          "It is not a one-size-fits-all solution and does not suit every case.": "Idée principale du paragraphe 7 : « Agile is not suited to every project »."
+        },
+        "explanation": "Un résumé garde les idées principales (B, D et F). On écarte ce qui est faux (A, C) ou secondaire (E). Le document ne donne pas de corrigé pour cette page."
+      }
+    ]
+  },
+  {
+    "id": "t1p2-p11-match",
+    "doc": "Theme 1 – Management (Part 2)",
+    "page": 11,
+    "kind": "match",
+    "keepOrder": true,
+    "memo": {
+      "ref": "t1p2-p11"
+    },
+    "title": "The Second Conditional – Match the halves",
+    "titleFr": "Relie les deux moitiés de chaque phrase (second conditional)",
+    "instructions": "Match the second conditional sentence halves together.",
+    "instructionsFr": "Relie chaque début de phrase à la fin qui convient. Second conditional : If + prétérit, would + base verbale (situation imaginaire ou peu probable).",
+    "leftLabel": "Début de phrase",
+    "rightLabel": "Fin de phrase",
+    "right": [
+      "if he knew how to swim.",
+      "if they didn’t work in the city.",
+      "I would visit Peru.",
+      "if I liked Mexican food.",
+      "if we took a taxi.",
+      "if we had a television.",
+      "he would get a Porsche.",
+      "if she wore less make-up.",
+      "if you washed it.",
+      "she would see more clearly."
+    ],
+    "explanation": "Second conditional : If + prétérit (went, wore, took, had, knew…), would/could + base verbale. La proposition en « if » peut être au début (suivie d’une virgule) ou à la fin (sans virgule). Pour relier les moitiés, vérifie les pronoms (he/she/we/they/it) et le sens.",
+    "items": [
+      {
+        "left": "If I went to South America,",
+        "leftFr": "Si j’allais en Amérique du Sud,",
+        "right": "I would visit Peru.",
+        "rightFr": "je visiterais le Pérou.",
+        "explanation": "Le début en « If… » (prétérit) appelle « I would + verbe ». Et le Pérou est en Amérique du Sud."
+      },
+      {
+        "left": "Mary would look better",
+        "leftFr": "Mary serait plus jolie",
+        "right": "if she wore less make-up.",
+        "rightFr": "si elle se maquillait moins.",
+        "explanation": "Mary = she. « wore » est le prétérit de « wear » (porter)."
+      },
+      {
+        "left": "We would save time",
+        "leftFr": "Nous gagnerions du temps",
+        "right": "if we took a taxi.",
+        "rightFr": "si nous prenions un taxi.",
+        "explanation": "« We » des deux côtés ; un taxi fait gagner du temps. « took » = prétérit de « take »."
+      },
+      {
+        "left": "If Jim could buy a new car,",
+        "leftFr": "Si Jim pouvait s’acheter une nouvelle voiture,",
+        "right": "he would get a Porsche.",
+        "rightFr": "il prendrait une Porsche.",
+        "explanation": "Jim = he ; une Porsche est une voiture. « could » = prétérit de « can »."
+      },
+      {
+        "left": "We wouldn’t be so bored",
+        "leftFr": "Nous ne nous ennuierions pas autant",
+        "right": "if we had a television.",
+        "rightFr": "si nous avions une télévision.",
+        "explanation": "« We » des deux côtés ; la télé contre l’ennui."
+      },
+      {
+        "left": "They would move to the countryside",
+        "leftFr": "Ils déménageraient à la campagne",
+        "right": "if they didn’t work in the city.",
+        "rightFr": "s’ils ne travaillaient pas en ville.",
+        "explanation": "« They » des deux côtés ; la campagne s’oppose à la ville."
+      },
+      {
+        "left": "I would go to the restaurant with you",
+        "leftFr": "J’irais au restaurant avec toi",
+        "right": "if I liked Mexican food.",
+        "rightFr": "si j’aimais la cuisine mexicaine.",
+        "explanation": "« I » des deux côtés ; le restaurant va avec la nourriture."
+      },
+      {
+        "left": "Tim would go surfing",
+        "leftFr": "Tim ferait du surf",
+        "right": "if he knew how to swim.",
+        "rightFr": "s’il savait nager.",
+        "explanation": "Tim = he ; pour surfer, il faut savoir nager. « knew » = prétérit de « know »."
+      },
+      {
+        "left": "If she got new glasses,",
+        "leftFr": "Si elle avait de nouvelles lunettes,",
+        "right": "she would see more clearly.",
+        "rightFr": "elle verrait plus clairement.",
+        "explanation": "« She » des deux côtés ; de nouvelles lunettes, pour mieux voir."
+      },
+      {
+        "left": "The car would look better",
+        "leftFr": "La voiture serait plus belle",
+        "right": "if you washed it.",
+        "rightFr": "si tu la lavais.",
+        "explanation": "« it » = the car. Piège : « if she wore less make-up » ne peut pas aller avec une voiture !"
+      }
+    ]
+  },
+  {
+    "id": "t1p2-p11-order",
+    "doc": "Theme 1 – Management (Part 2)",
+    "page": 11,
+    "kind": "order",
+    "comma": true,
+    "memo": {
+      "ref": "t1p2-p11"
+    },
+    "title": "The Second Conditional – Put the words in order",
+    "titleFr": "Remets les mots dans l’ordre (avec la virgule !)",
+    "instructions": "Put the words in the correct order to make second conditional sentences. Remember to add a comma when the sentence begins with an “if” clause.",
+    "instructionsFr": "Remets les mots dans l’ordre pour former une phrase au second conditional. Ajoute la virgule seulement si ta phrase commence par « if ».",
+    "items": [
+      {
+        "words": [
+          "vegetarian",
+          "become",
+          "I",
+          "If",
+          "liked",
+          "vegetables",
+          "would",
+          "a",
+          "I"
+        ],
+        "accept": [
+          "If I liked vegetables, I would become a vegetarian.",
+          "I would become a vegetarian if I liked vegetables."
+        ],
+        "translation": "Si j’aimais les légumes, je deviendrais végétarien.",
+        "explanation": "If + prétérit (liked), would + base verbale (become). Virgule seulement si la phrase commence par « If »."
+      },
+      {
+        "words": [
+          "school",
+          "would",
+          "more",
+          "if",
+          "They",
+          "lessons",
+          "the",
+          "fun",
+          "enjoy",
+          "included",
+          "Shawn Mendes songs"
+        ],
+        "accept": [
+          "They would enjoy school more if the lessons included fun Shawn Mendes songs.",
+          "If the lessons included fun Shawn Mendes songs, they would enjoy school more.",
+          "They would enjoy the lessons more if school included fun Shawn Mendes songs.",
+          "If school included fun Shawn Mendes songs, they would enjoy the lessons more."
+        ],
+        "translation": "Ils aimeraient davantage l’école si les cours comprenaient des chansons sympas de Shawn Mendes.",
+        "explanation": "would + enjoy (base verbale) ; If + prétérit (included). « more » se place après le complément : enjoy school more."
+      },
+      {
+        "words": [
+          "be",
+          "Our",
+          "wouldn’t",
+          "fat",
+          "we",
+          "so",
+          "didn’t",
+          "it",
+          "much",
+          "cat",
+          "so",
+          "if",
+          "feed"
+        ],
+        "accept": [
+          "Our cat wouldn’t be so fat if we didn’t feed it so much.",
+          "If we didn’t feed our cat so much, it wouldn’t be so fat.",
+          "If we didn’t feed it so much, our cat wouldn’t be so fat."
+        ],
+        "translation": "Notre chat ne serait pas aussi gros si nous ne le nourrissions pas autant.",
+        "explanation": "Négatif : wouldn’t + base verbale (be) ; didn’t + base verbale (feed). « so fat » = si gros ; « so much » = autant."
+      },
+      {
+        "words": [
+          "got",
+          "If",
+          "another",
+          "a",
+          "pet",
+          "I",
+          "I",
+          "get",
+          "would",
+          "parrot"
+        ],
+        "accept": [
+          "If I got another pet, I would get a parrot.",
+          "I would get a parrot if I got another pet.",
+          "If I got a pet, I would get another parrot.",
+          "I would get another parrot if I got a pet."
+        ],
+        "translation": "Si j’avais un autre animal, je prendrais un perroquet.",
+        "explanation": "If + prétérit (got), would + base verbale (get). « get » s’emploie deux fois : got (prétérit) et get (après would)."
+      }
+    ]
+  },
+  {
+    "id": "t1p2-p12-gofluent",
+    "doc": "Theme 1 – Management (Part 2)",
+    "page": 12,
+    "title": "goFluent",
+    "unavailable": "À faire sur la plateforme goFluent (Second conditional, Conditionals using COULD, « What’s the right kind of bonus to motivate your sales force? »). Ces activités ne peuvent pas être recréées ici."
+  }
+]

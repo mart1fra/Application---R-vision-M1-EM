@@ -42,7 +42,18 @@ Les exercices sont dans `src/data/<matiere>.json`. Chaque fichier est un tableau
   "explanation": "Explication apres reponse"
 }
 ```
-3 ou 4 choix, une seule bonne reponse.
+3 ou 4 choix, une seule bonne reponse. L'ordre des choix est melange a chaque affichage : la position dans le JSON n'a pas d'importance.
+
+Champs optionnels (QCM) :
+- `notes` : `{ "choix faux": "pourquoi c'est faux" }`, affiche sous chaque mauvais choix apres la reponse
+- `example` : phrase du cours (en anglais) affichee dans la correction
+- `source` : ex. `"Theme 1 Part 1 · p. 3"`
+- `prompt` + `word` : affichage "mot en grand" (`wordLang: "fr"` si le mot est en francais)
+- `definition` : definition anglaise affichee en citation
+- `sentence` : phrase anglaise avec `___` (QCM "mot en contexte")
+- `choicesLang: "en"` : les choix sont en anglais
+
+Chaque serie tire au hasard 20 questions du niveau (`SESSION_SIZE` dans `src/utils.js`).
 
 #### Texte a trous (`type: "fill"`)
 ```json
@@ -54,7 +65,7 @@ Les exercices sont dans `src/data/<matiere>.json`. Chaque fichier est un tableau
   "explanation": "Explication"
 }
 ```
-Utiliser `___` pour marquer le trou. Le champ `answers` accepte plusieurs variantes.
+Utiliser `___` pour marquer le trou. Le champ `answers` accepte plusieurs variantes. Champ optionnel `hint` : indice affiche a la demande (ex. la traduction francaise du mot manquant). `free` accepte aussi `definition` et `hint`.
 
 #### Reponse libre (`type: "free"`)
 ```json
@@ -84,8 +95,10 @@ Utiliser `___` pour marquer le trou. Le champ `answers` accepte plusieurs varian
 Les reponses ecrites sont comparees en ignorant :
 - Majuscules / minuscules
 - Accents (e = e)
-- Ponctuation
-- Espaces multiples
+- Ponctuation, tirets et espaces (`well-being` = `well being` = `wellbeing`)
+- Un article en tete (`le moral` = `moral`, `to avoid` = `avoid`)
+
+Une petite faute de frappe sur un mot long est acceptee mais signalee (`initiatve` -> correct, "attention a l'orthographe"). Une difference uniquement en fin de mot reste fausse, car c'est un autre mot ou une autre forme (`moral` ≠ `morale`, `value` ≠ `valued`).
 
 Toujours fournir plusieurs formulations acceptees dans `answers`.
 
@@ -101,14 +114,37 @@ Le vocabulaire est stocke dans `src/data/vocabulaire-anglais.json` avec pour cha
 
 | Niveau | Types autorises | Contenu |
 |--------|----------------|---------|
-| **Facile** | QCM uniquement (3-4 choix) | "Comment dit-on 'X' en anglais ?" et "Que signifie 'X' ?". Mots courants. Les mauvaises reponses sont des mots du meme theme. |
-| **Moyen** | QCM + traduction ecrite (`translation`) | QCM avec mots/expressions plus difficiles. Traductions a ecrire (FR→EN et EN→FR) de mots individuels. |
-| **Difficile** | Traduction d'expressions (`translation`) + texte a trous (`fill`) | Traduire des expressions ou locutions completes (FR→EN et EN→FR). Retrouver le mot manquant dans une phrase d'exemple en anglais. |
+| **Facile** | QCM uniquement, **3 choix** | Surtout "Que veut dire « X » ?" (mot anglais -> sens en francais), plus "Comment dit-on… en anglais ?" et "Quel mot correspond a cette definition ?" (tableau de vocabulaire du cours). Mots du cours (entreprise, management) **et** mots difficiles des textes. Les mauvais choix sont des pieges plausibles (faux amis, mots proches) et chacun a sa `note`. |
+| **Moyen** | QCM "mot en contexte" (`sentence`) + traduction ecrite (`translation`) | Phrases du cours avec un trou et 3 mots pieges (moral/morale, valued/valuable, underpin/undermine…). Traductions de mots a ecrire (FR→EN et EN→FR). |
+| **Difficile** | Traduction d'expressions (`translation`) + texte a trous (`fill`) + definition -> mot (`free`) | Expressions completes a traduire. Mot manquant a ecrire dans une phrase du cours (avec `hint`). Mot a retrouver a partir de sa definition anglaise. |
+
+**Traduction au toucher :** dans les textes anglais (definitions, phrases, exemples, devoirs), les mots presents dans `src/data/glossaire-anglais.json` sont soulignes en pointilles. Les toucher affiche leur traduction. Les mots de la reponse ne sont pas traduisibles tant que la question n'est pas corrigee. Le glossaire accepte des expressions de plusieurs mots ("use their initiative") et reconnait les formes flechies (managers -> manager, imposed -> impose).
 
 **Workflow pour ajouter un cours d'anglais :**
 1. Placer le PDF dans `/cours/anglais/`
-2. Extraire le vocabulaire dans `src/data/vocabulaire-anglais.json` (meme format)
-3. Regenerer `src/data/anglais.json` a partir de la liste de vocabulaire uniquement
+2. Ajouter le vocabulaire a `src/data/anglais.json` (3 niveaux, voir ci-dessus)
+3. Recreer les pages "AT HOME" du document dans `src/data/anglais-devoirs.json` (voir ci-dessous)
+4. Ajouter au glossaire les mots des nouveaux textes anglais
+
+### DEVOIRS "AT HOME" (anglais)
+
+Les pages "AT HOME / SELF-STUDY" des documents sont recreees en exercices interactifs dans `src/data/anglais-devoirs.json`. Elles s'affichent sous les niveaux dans l'ecran Anglais, groupees par document. Champs communs : `id`, `doc`, `page`, `kind`, `title`, `titleFr`, `instructions`, `instructionsFr`. Optionnels : `bonus: true` pour une variante inventee sur le meme modele, et `keepOrder: true` pour garder l'ordre A/B/C du document (sinon les choix sont melanges).
+
+| `kind` | Exercice | Donnees |
+|--------|----------|---------|
+| `cloze` | Texte a trous avec choix (A/B/C) | `passage` avec `{1}`, `{2}`… + `items[]` : `sentence`, `choices`, `answer`, `notes`, `explanation`, `translation` |
+| `choice` | QCM phrase par phrase | `items[]` comme `cloze`, sans `passage` |
+| `bank` | Banque de mots (choisir le mot parmi une liste commune) | `bank` (liste des mots, `bankLetters: true` pour A, B, C…) + `items[]` : `text` (definition) ou `sentence`, `answer`, `accept` (autres reponses justes), `explanation`, `translation`. `passage` optionnel. `shuffleItems: true` pour melanger l'ordre des items |
+| `gaps` | Mot a ecrire (trous d'un texte, tableau, indices) | `items[]` : `text` ou `sentence` avec `___`, `answers`, `placeholder` (ex. `"e…"`), `hint`, `explanation`. `passage` optionnel |
+| `write` | Remplacer le passage souligne | `items[]` : `sentence` avec `[[passage souligne]]`, `answers`, `hint`, `explanation` |
+| `match` | Relier (draw a line) | `items[]` : `left`, `leftFr`, `right`, `rightFr`, `explanation` + `right` (ordre du document), `leftLabel`, `rightLabel`, `explanation`. `passage` optionnel (texte de reference, passages soulignes entre `[[ ]]`) |
+| `open` | Phrase a terminer librement | `items[]` : `start`, `models` (exemples corrects), `explanation`. Correction par comparaison avec les modeles et auto-evaluation |
+| `reading` | Comprehension ecrite type examen | `paragraphs[]` + `items[]` : `question`, `paragraphs` (numeros des paragraphes a afficher) ou `extract` (extrait avec reperes `[A]`…`[D]`), `choices`, `answer` (ou `answers` pour plusieurs reponses), `notes`, `explanation` |
+| `order` | Remettre les mots dans l'ordre | `comma: true` ajoute une virgule a placer + `items[]` : `words`, `accept` (phrases correctes), `explanation`, `translation` |
+
+`memo: { "ref": "t1p2-p5", "sections": ["A"] }` ajoute un bouton "Rappel du cours" qui affiche une page de reference definie dans `src/data/anglais-memos.json` (ex. "the hygiene factors in A opposite").
+
+Une activite impossible a recreer (plateforme externe) peut etre listee avec `unavailable: "raison"`.
 
 ### AUTRES MATIERES (Comportement humain, Statistique informatique, Systeme d'information, Droit des affaires)
 

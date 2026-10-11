@@ -1,31 +1,42 @@
-import { useState, useEffect, useRef } from 'react'
-import { shuffle, checkAnswer } from '../utils'
+import { useState, useRef, useEffect } from 'react'
+import { shuffle, gradeAnswer, SESSION_SIZE } from '../utils'
+import { TappableText, GlossaryHint } from './Glossary'
+import {
+  ChoiceList, FeedbackCard, GapSentence, TextAnswer, HintButton, BackButton,
+  ProgressBar, TypeBadge, PrimaryButton, GhostButton,
+} from './ui'
 
-import anglais from '../data/anglais.json'
-import comportement_humain from '../data/comportement_humain.json'
-import statistique_informatique from '../data/statistique_informatique.json'
-import systeme_information from '../data/systeme_information.json'
-import droit_affaires from '../data/droit_affaires.json'
+import { DATA } from '../data'
 
-const DATA = { anglais, comportement_humain, statistique_informatique, systeme_information, droit_affaires }
+const TYPE_LABEL = { qcm: 'QCM', fill: 'Texte à trous', translation: 'Traduction', free: 'Réponse libre' }
+
+// Tire une serie de questions et melange l'ordre des choix de chaque QCM :
+// la bonne reponse n'est jamais toujours a la meme place.
+function buildSession(matiereId, level) {
+  const pool = (DATA[matiereId] || []).filter(q => q.level === level)
+  return shuffle(pool)
+    .slice(0, SESSION_SIZE)
+    .map(q => (q.type === 'qcm' ? { ...q, choices: shuffle(q.choices) } : q))
+}
 
 export default function Quiz({ matiere, level, onFinish, onBack }) {
-  const [questions, setQuestions] = useState([])
+  const [questions] = useState(() => buildSession(matiere.id, level))
   const [current, setCurrent] = useState(0)
   const [answered, setAnswered] = useState(false)
   const [selected, setSelected] = useState(null)
   const [inputVal, setInputVal] = useState('')
-  const [isCorrect, setIsCorrect] = useState(false)
+  const [grade, setGrade] = useState(null)
+  const [hintShown, setHintShown] = useState(false)
   const [results, setResults] = useState([])
-  const inputRef = useRef(null)
-
-  useEffect(() => {
-    const data = DATA[matiere.id] || []
-    const filtered = data.filter(q => q.level === level)
-    setQuestions(shuffle(filtered))
-  }, [matiere.id, level])
+  const nextRef = useRef(null)
 
   const q = questions[current]
+  const english = matiere.id === 'anglais'
+
+  useEffect(() => {
+    if (answered) nextRef.current?.focus()
+  }, [answered])
+
   if (!q) return (
     <div className="px-5 pt-14 text-center text-warm-gray">
       <p className="text-[17px]">Aucun exercice disponible pour ce niveau.</p>
@@ -34,216 +45,176 @@ export default function Quiz({ matiere, level, onFinish, onBack }) {
   )
 
   const total = questions.length
-  const progress = ((current) / total) * 100
+  const isWritten = q.type !== 'qcm'
+  const accepted = q.type === 'qcm' ? [q.answer] : q.answers
+  const isCorrect = grade?.correct
 
-  const handleAnswer = (answer) => {
-    if (answered) return
+  const record = (correct, userAnswer) => {
     setAnswered(true)
+    setResults(prev => [...prev, { question: q, correct, userAnswer }])
+  }
 
-    let correct = false
-    if (q.type === 'qcm') {
-      setSelected(answer)
-      correct = answer === q.answer
-    } else if (q.type === 'fill') {
-      correct = checkAnswer(inputVal, q.answers)
-    } else if (q.type === 'free' || q.type === 'translation') {
-      correct = checkAnswer(inputVal, q.answers)
-    }
-    setIsCorrect(correct)
-    setResults(prev => [...prev, { question: q, correct, userAnswer: q.type === 'qcm' ? answer : inputVal }])
+  const pickChoice = (choice) => {
+    if (answered) return
+    setSelected(choice)
+    const correct = choice === q.answer
+    setGrade({ correct, typo: false })
+    record(correct, choice)
+  }
+
+  const submitWritten = () => {
+    if (answered || !inputVal.trim()) return
+    const g = gradeAnswer(inputVal, q.answers)
+    setGrade(g)
+    record(g.correct, inputVal)
+  }
+
+  const giveUp = () => {
+    if (answered) return
+    setGrade({ correct: false, typo: false })
+    record(false, '—')
   }
 
   const next = () => {
     if (current + 1 >= total) {
       onFinish(results)
-    } else {
-      setCurrent(c => c + 1)
-      setAnswered(false)
-      setSelected(null)
-      setInputVal('')
-      setIsCorrect(false)
+      return
     }
+    setCurrent(c => c + 1)
+    setAnswered(false)
+    setSelected(null)
+    setInputVal('')
+    setGrade(null)
+    setHintShown(false)
   }
 
-  const handleKeyDown = (e) => {
-    if (e.key === 'Enter' && inputVal.trim() && !answered) {
-      handleAnswer()
-    } else if (e.key === 'Enter' && answered) {
-      next()
-    }
-  }
+  // Mots a ne pas traduire tant que la question n'est pas corrigee (sinon la traduction donne la reponse)
+  const exclude = answered ? undefined : [q.word, q.answer, ...(q.answers || []), ...(q.choices || [])].filter(Boolean)
+  const gapText = q.sentence || (q.type === 'fill' ? q.question : null)
+  const gapFill = answered ? (q.type === 'qcm' ? q.answer : q.answers[0]) : null
+  const prompt = q.prompt || (q.type === 'translation'
+    ? (q.direction === 'fr-en' ? 'Traduis en anglais' : 'Traduis en français')
+    : q.type === 'fill' ? 'Complète la phrase' : null)
+  const hasEnglishText = english && (q.definition || gapText || q.example)
 
   return (
     <div className="px-5 pt-6 pb-8 flex flex-col min-h-screen">
-      {/* Header */}
       <div className="flex items-center justify-between mb-4">
-        <button
-          onClick={onBack}
-          className="flex items-center gap-1 text-warm-gray text-[14px]
-                     active:opacity-60 transition-opacity
-                     focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-charcoal"
-        >
-          <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
-          </svg>
-          Quitter
-        </button>
-        <span className="text-[14px] text-warm-gray font-medium">
-          {current + 1} / {total}
-        </span>
+        <BackButton onClick={onBack} />
+        <span className="text-[14px] text-warm-gray font-medium tabular-nums">{current + 1} / {total}</span>
       </div>
 
-      {/* Progress bar */}
-      <div className="h-1.5 bg-sand rounded-full overflow-hidden mb-8">
-        <div
-          className="h-full rounded-full transition-all duration-500 ease-out"
-          style={{ width: `${progress}%`, background: matiere.color }}
-        />
+      <div className="mb-8">
+        <ProgressBar value={current / total} color={matiere.color} />
       </div>
 
-      {/* Question type badge */}
-      <div className="mb-3">
-        <span
-          className="inline-block text-[11px] font-semibold uppercase tracking-[0.08em] px-2.5 py-1 rounded-full"
-          style={{
-            color: matiere.color,
-            background: `color-mix(in srgb, ${matiere.color} 10%, transparent)`
-          }}
-        >
-          {q.type === 'qcm' ? 'QCM' : q.type === 'fill' ? 'Texte a trous' : q.type === 'translation' ? 'Traduction' : 'Reponse libre'}
-        </span>
+      <div className="mb-3 flex items-center gap-2">
+        <TypeBadge color={matiere.color}>{TYPE_LABEL[q.type]}</TypeBadge>
+        {q.source && <span className="text-[11px] text-warm-gray/80">{q.source}</span>}
       </div>
 
-      {/* Question */}
-      <h2 className="font-display font-bold text-[20px] leading-snug tracking-[-0.02em] text-charcoal mb-6">
-        {q.type === 'fill' ? (
-          <span dangerouslySetInnerHTML={{
-            __html: q.question.replace(/___/g, '<span class="inline-block w-24 border-b-2 border-dashed border-warm-gray/40 mx-1">&nbsp;</span>')
-          }} />
-        ) : q.question}
-      </h2>
+      {hasEnglishText && !answered && <GlossaryHint />}
 
-      {/* Answer area */}
+      {/* Enonce */}
+      <div className="mb-6">
+        {prompt && <p className="text-[14px] text-warm-gray font-medium mb-2">{prompt}</p>}
+        {q.word ? (
+          <h2
+            lang={q.wordLang === 'fr' ? 'fr' : english ? 'en' : undefined}
+            className="font-display font-bold text-[30px] leading-tight tracking-[-0.03em] text-charcoal"
+          >
+            {q.word}
+          </h2>
+        ) : q.definition ? (
+          <blockquote
+            lang="en"
+            className="font-display text-[20px] leading-snug tracking-[-0.01em] text-charcoal border-l-4 pl-4"
+            style={{ borderColor: matiere.color }}
+          >
+            {english ? <TappableText text={q.definition} exclude={exclude} /> : q.definition}
+          </blockquote>
+        ) : gapText ? (
+          <h2 lang={english ? 'en' : undefined} className="font-display font-bold text-[20px] leading-[1.6] tracking-[-0.02em] text-charcoal">
+            <GapSentence
+              text={gapText}
+              fill={gapFill}
+              fillTone="bg-success-light text-success"
+              exclude={exclude}
+              translatable={english}
+            />
+          </h2>
+        ) : (
+          <h2 className="font-display font-bold text-[20px] leading-snug tracking-[-0.02em] text-charcoal">
+            {q.question}
+          </h2>
+        )}
+      </div>
+
+      {/* Reponse */}
       <div className="flex-1">
         {q.type === 'qcm' && (
-          <div className="flex flex-col gap-3">
-            {q.choices.map((choice, i) => {
-              let bg = 'bg-white border-sand'
-              let textColor = 'text-charcoal'
-              if (answered) {
-                if (choice === q.answer) {
-                  bg = 'bg-success-light border-success/30'
-                  textColor = 'text-success'
-                } else if (choice === selected && !isCorrect) {
-                  bg = 'bg-error-light border-error/30'
-                  textColor = 'text-error'
-                }
-              }
-              return (
-                <button
-                  key={i}
-                  onClick={() => handleAnswer(choice)}
-                  disabled={answered}
-                  className={`w-full text-left rounded-xl p-4 border text-[16px] font-medium
-                             transition-all duration-200
-                             active:scale-[0.98]
-                             focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-charcoal
-                             disabled:cursor-default
-                             ${bg} ${textColor}`}
-                >
-                  <span className="flex items-center gap-3">
-                    <span className="flex items-center justify-center w-8 h-8 rounded-lg text-[13px] font-bold shrink-0
-                                     bg-sand/60 text-warm-gray">
-                      {String.fromCharCode(65 + i)}
-                    </span>
-                    {choice}
-                  </span>
-                </button>
-              )
-            })}
-          </div>
+          <ChoiceList
+            choices={q.choices}
+            answer={q.answer}
+            selected={selected}
+            answered={answered}
+            onPick={pickChoice}
+            notes={q.notes}
+            english={q.choicesLang === 'en'}
+          />
         )}
 
-        {(q.type === 'fill' || q.type === 'free' || q.type === 'translation') && (
+        {isWritten && (
           <div>
-            {q.type === 'translation' && q.direction && (
-              <p className="text-[13px] text-warm-gray mb-2">
-                {q.direction === 'fr-en' ? 'Traduire en anglais' : 'Traduire en francais'}
-              </p>
-            )}
-            <input
-              ref={inputRef}
-              type="text"
+            <TextAnswer
               value={inputVal}
-              onChange={e => setInputVal(e.target.value)}
-              onKeyDown={handleKeyDown}
+              onChange={setInputVal}
+              onSubmit={submitWritten}
               disabled={answered}
-              placeholder="Ta reponse..."
-              className="w-full rounded-xl border border-sand bg-white px-4 py-4 text-[16px]
-                         placeholder:text-warm-gray/40
-                         focus:outline-2 focus:outline-offset-0 focus:border-transparent
-                         disabled:bg-sand/30"
-              style={{ outlineColor: matiere.color }}
-              autoComplete="off"
-              autoCapitalize="off"
+              color={matiere.color}
             />
             {!answered && (
-              <button
-                onClick={() => handleAnswer()}
-                disabled={!inputVal.trim()}
-                className="w-full mt-4 rounded-xl py-4 text-[16px] font-semibold text-white
-                           transition-all duration-200
-                           active:scale-[0.97]
-                           disabled:opacity-40 disabled:cursor-not-allowed
-                           focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-                style={{ background: matiere.color }}
-              >
-                Valider
-              </button>
+              <>
+                <HintButton hint={q.hint} shown={hintShown} onShow={() => setHintShown(true)} />
+                <div className="flex gap-3 mt-4">
+                  <GhostButton onClick={giveUp} className="shrink-0">Je ne sais pas</GhostButton>
+                  <PrimaryButton color={matiere.color} onClick={submitWritten} disabled={!inputVal.trim()}>
+                    Valider
+                  </PrimaryButton>
+                </div>
+              </>
             )}
           </div>
         )}
       </div>
 
-      {/* Feedback */}
+      {/* Correction */}
       {answered && (
-        <div className={`mt-6 rounded-xl p-4 ${isCorrect ? 'bg-success-light border border-success/20' : 'bg-error-light border border-error/20'}`}>
-          <p className={`font-semibold text-[15px] mb-1 ${isCorrect ? 'text-success' : 'text-error'}`}>
-            {isCorrect ? 'Bonne reponse !' : 'Mauvaise reponse'}
-          </p>
+        <FeedbackCard status={grade.typo ? 'typo' : isCorrect ? 'correct' : 'wrong'}>
           {!isCorrect && q.type === 'qcm' && (
-            <p className="text-[14px] text-charcoal/70">
-              Reponse correcte : <strong>{q.answer}</strong>
+            <p>Réponse correcte : <strong lang={q.choicesLang === 'en' ? 'en' : undefined}>{q.answer}</strong></p>
+          )}
+          {isWritten && !isCorrect && (
+            <p>
+              {accepted.length === 1
+                ? <>Réponse attendue : <strong>{accepted[0]}</strong></>
+                : <>Réponses acceptées : <strong>{accepted.join(' / ')}</strong></>}
             </p>
           )}
-          {!isCorrect && (q.type === 'fill' || q.type === 'free' || q.type === 'translation') && (
-            <p className="text-[14px] text-charcoal/70">
-              {q.answers.length === 1
-                ? <>Reponse attendue : <strong>{q.answers[0]}</strong></>
-                : <>Reponses acceptees : <strong>{q.answers.join(' / ')}</strong></>
-              }
+          {grade.typo && <p>Orthographe exacte : <strong>{grade.closest}</strong></p>}
+          {q.explanation && <p>{q.explanation}</p>}
+          {q.example && (
+            <p lang="en" className="italic text-charcoal/70 border-l-2 border-charcoal/15 pl-3">
+              {english ? <TappableText text={q.example} /> : q.example}
             </p>
           )}
-          {q.explanation && (
-            <p className="text-[13px] text-charcoal/60 mt-2 leading-relaxed">
-              {q.explanation}
-            </p>
-          )}
-        </div>
+        </FeedbackCard>
       )}
 
-      {/* Next button */}
       {answered && (
-        <button
-          onClick={next}
-          className="w-full mt-4 rounded-xl py-4 text-[16px] font-semibold text-white
-                     transition-all duration-200
-                     active:scale-[0.97]
-                     focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-          style={{ background: matiere.color }}
-        >
+        <PrimaryButton ref={nextRef} color={matiere.color} onClick={next} className="mt-4">
           {current + 1 >= total ? 'Voir le score' : 'Question suivante'}
-        </button>
+        </PrimaryButton>
       )}
     </div>
   )

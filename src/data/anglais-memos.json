@@ -1,0 +1,52 @@
+{
+  "t1p2-p5": {
+    "label": "p. 5",
+    "sections": [
+      {
+        "id": "A",
+        "heading": "A · Hygiene factors",
+        "intro": "Some aspects of work can lead to dissatisfaction if they are not at a high enough standard. These are what Herzberg calls the hygiene factors:",
+        "entries": [
+          { "term": "supervision", "def": "the way employees are managed" },
+          { "term": "policy", "def": "the overall purpose and goals of the organization" },
+          { "term": "working conditions", "def": "the place where you work, hours worked, etc." },
+          { "term": "salary" },
+          { "term": "peer relationships", "def": "how you relate to and work with others on the same level of the organization" },
+          { "term": "security", "def": "level of confidence about the future of your job" }
+        ],
+        "fr": "Les hygiene factors évitent l’insatisfaction quand ils sont bons, mais ne motivent pas : encadrement, politique de l’entreprise, conditions de travail, salaire, relations entre collègues, sécurité de l’emploi."
+      },
+      {
+        "id": "B",
+        "heading": "B · Motivator factors",
+        "intro": "Other aspects of work can give positive satisfaction. These are the motivator factors:",
+        "entries": [
+          { "term": "achievement", "def": "the feeling that you have been successful in reaching your goals" },
+          { "term": "recognition", "def": "the feeling that your employers understand and value what you do by giving positive feedback, which means telling you what a good job you are doing" },
+          { "term": "the work itself", "def": "the nature and interest of the job" },
+          { "term": "responsibility", "def": "when you are in charge of something and its success or failure" },
+          { "term": "advancement", "def": "how far you will be promoted in the organization and/or how far you will go up the career ladder" },
+          { "term": "personal growth", "def": "how you develop personally in your work, and your opportunities to do this" }
+        ],
+        "fr": "Les motivator factors créent une vraie satisfaction : réussite, reconnaissance, intérêt du travail, responsabilités, avancement, développement personnel. Note : attention à l’orthographe de « career »."
+      },
+      {
+        "id": "C",
+        "heading": "C · Empowerment",
+        "text": "Empowerment is the idea that decisions, where possible, should be made by employees who are close to the issues or problems to be solved, without having to consult their managers further up the hierarchy. In other words, managers have to delegate as much as possible. Delegation is one of the keys to employees being empowered in this way. Also, organizations become less hierarchical, with fewer management levels.",
+        "fr": "L’empowerment : les décisions sont prises par les employés proches des problèmes, sans consulter les managers plus haut dans la hiérarchie. Les managers délèguent le plus possible, et les organisations deviennent moins hiérarchiques."
+      }
+    ]
+  },
+  "t1p2-p11": {
+    "label": "p. 11",
+    "sections": [
+      {
+        "id": "rule",
+        "heading": "The Second Conditional",
+        "text": "The second conditional is used for hypothetical or unreal situations in the present or future. These are often unlikely or imaginary situations.\nStructure: If + past simple, would + base verb.\nNote: \"were\" is used for all subjects in formal situations when conjugating \"to be\" in the \"if\" clause.\nExamples: If managers focused more on motivators, employees would feel more satisfied and productive at work. If hygiene factors were not addressed, employees would likely feel demotivated, even if motivators were present.\nKey points: The situations are unlikely or imaginary but theoretically possible. Even though the situation refers to the present or future, we use the past simple in the 'if' clause.\nOther modals like \"could\" or \"might\" can replace \"would\". Example: If I had more time, I could learn a new language.",
+        "fr": "Second conditional = situation imaginaire ou peu probable, au présent ou au futur. If + prétérit (went, had, liked…), would + base verbale. Avec « be », on dit « If I were… » (registre soutenu). « could » ou « might » peuvent remplacer « would ». Virgule après la proposition en if si elle est au début de la phrase."
+      }
+    ]
+  }
+}

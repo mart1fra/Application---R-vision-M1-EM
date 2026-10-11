@@ -2,7 +2,9 @@ import { useState, useEffect, lazy, Suspense } from 'react'
 import Home from './components/Home'
 import LevelSelect from './components/LevelSelect'
 import Quiz from './components/Quiz'
+import Devoir from './components/Devoir'
 import Score from './components/Score'
+import { GlossaryProvider } from './components/Glossary'
 
 const Admin = lazy(() => import('./components/Admin'))
 
@@ -10,7 +12,9 @@ function App() {
   const [screen, setScreen] = useState('home')
   const [matiere, setMatiere] = useState(null)
   const [level, setLevel] = useState(null)
+  const [devoir, setDevoir] = useState(null)
   const [results, setResults] = useState(null)
+  const [run, setRun] = useState(0)
 
   useEffect(() => {
     if (window.location.pathname === '/admin') {
@@ -18,12 +22,23 @@ function App() {
     }
   }, [])
 
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [screen, run])
+
   const goHome = () => {
     setScreen('home')
     setMatiere(null)
     setLevel(null)
+    setDevoir(null)
     setResults(null)
     window.history.replaceState(null, '', '/')
+  }
+
+  const goLevels = () => {
+    setScreen('level')
+    setDevoir(null)
+    setResults(null)
   }
 
   const selectMatiere = (m) => {
@@ -33,12 +48,24 @@ function App() {
 
   const selectLevel = (l) => {
     setLevel(l)
+    setDevoir(null)
     setScreen('quiz')
   }
 
-  const finishQuiz = (r) => {
+  const selectDevoir = (d) => {
+    setDevoir(d)
+    setScreen('devoir')
+  }
+
+  const finish = (r) => {
     setResults(r)
     setScreen('score')
+  }
+
+  const retry = () => {
+    setResults(null)
+    setRun(n => n + 1)
+    setScreen(devoir ? 'devoir' : 'quiz')
   }
 
   if (screen === 'admin') {
@@ -54,14 +81,32 @@ function App() {
   }
 
   return (
-    <div className="min-h-screen bg-cream">
-      <div className="max-w-[430px] mx-auto min-h-screen relative">
-        {screen === 'home' && <Home onSelect={selectMatiere} />}
-        {screen === 'level' && <LevelSelect matiere={matiere} onSelect={selectLevel} onBack={goHome} />}
-        {screen === 'quiz' && <Quiz matiere={matiere} level={level} onFinish={finishQuiz} onBack={goHome} />}
-        {screen === 'score' && <Score results={results} matiere={matiere} onHome={goHome} onRetry={() => { setResults(null); setScreen('quiz') }} />}
+    <GlossaryProvider>
+      <div className="min-h-screen bg-cream">
+        <div className="max-w-[430px] mx-auto min-h-screen relative">
+          {screen === 'home' && <Home onSelect={selectMatiere} />}
+          {screen === 'level' && (
+            <LevelSelect matiere={matiere} onSelect={selectLevel} onDevoir={selectDevoir} onBack={goHome} />
+          )}
+          {screen === 'quiz' && (
+            <Quiz key={run} matiere={matiere} level={level} onFinish={finish} onBack={goLevels} />
+          )}
+          {screen === 'devoir' && (
+            <Devoir key={`${devoir.id}-${run}`} devoir={devoir} matiere={matiere} onFinish={finish} onBack={goLevels} />
+          )}
+          {screen === 'score' && (
+            <Score
+              results={results}
+              matiere={matiere}
+              subtitle={devoir ? `${devoir.title} · p. ${devoir.page}` : undefined}
+              onRetry={retry}
+              onHome={devoir ? goLevels : goHome}
+              homeLabel={devoir ? 'Retour aux devoirs' : undefined}
+            />
+          )}
+        </div>
       </div>
-    </div>
+    </GlossaryProvider>
   )
 }
 

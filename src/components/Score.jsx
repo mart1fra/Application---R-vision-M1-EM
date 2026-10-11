@@ -1,4 +1,4 @@
-export default function Score({ results, matiere, onHome, onRetry }) {
+export default function Score({ results, matiere, subtitle, onHome, onRetry, homeLabel = 'Changer de matiere' }) {
   const correct = results.filter(r => r.correct).length
   const total = results.length
   const pct = Math.round((correct / total) * 100)
@@ -24,7 +24,7 @@ export default function Score({ results, matiere, onHome, onRetry }) {
       >
         {message}
       </h1>
-      <p className="text-warm-gray text-[15px] mb-10">{matiere.label}</p>
+      <p className="text-warm-gray text-[15px] mb-10 text-center">{subtitle || matiere.label}</p>
 
       {/* Score circle */}
       <div className="relative w-40 h-40 mb-10">
@@ -36,7 +36,7 @@ export default function Score({ results, matiere, onHome, onRetry }) {
             strokeLinecap="round"
             strokeDasharray={circumference}
             strokeDashoffset={strokeDashoffset}
-            className="transition-all duration-1000 ease-out"
+            className="transition-[stroke-dashoffset] duration-1000 ease-out"
           />
         </svg>
         <div className="absolute inset-0 flex flex-col items-center justify-center">
@@ -88,7 +88,7 @@ export default function Score({ results, matiere, onHome, onRetry }) {
                      active:scale-[0.97] transition-transform duration-150
                      focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-charcoal"
         >
-          Changer de matiere
+          {homeLabel}
         </button>
       </div>
     </div>
