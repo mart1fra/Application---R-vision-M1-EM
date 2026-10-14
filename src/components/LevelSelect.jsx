@@ -15,9 +15,9 @@ const LEVEL_DESC = {
     difficile: 'Expressions à traduire, phrases à compléter',
   },
   comportement_humain: {
-    facile: 'QCM : définitions, auteurs, films du cours',
-    moyen: 'Cas pratiques : quel mécanisme ? Auteurs à écrire',
-    difficile: 'Définitions à compléter, cas à analyser',
+    facile: 'QCM : comprendre chaque notion et ne plus la confondre',
+    moyen: 'Situations courtes : quel mécanisme ? Auteurs à écrire',
+    difficile: 'Études de cas type examen : analyser une situation',
   },
   systeme_information: {
     facile: 'QCM : définitions, acronymes, notions clés',
@@ -82,7 +82,7 @@ export default function LevelSelect({ matiere, onSelect, onDevoir, onFiche, onGl
               emoji="🗂️"
               title={glossaire.title}
               desc={glossaire.cardDesc}
-              meta={`${glossaire.entries.length} termes · 2 niveaux`}
+              meta={`${glossaire.entries.length} termes · 3 niveaux`}
               onClick={onGlossaire}
             />
           )}

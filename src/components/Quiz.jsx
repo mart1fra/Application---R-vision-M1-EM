@@ -109,11 +109,19 @@ export default function Quiz({ matiere, level, onFinish, onBack }) {
       </div>
 
       <div className="mb-3 flex items-center gap-2">
-        <TypeBadge color={matiere.color}>{TYPE_LABEL[q.type]}</TypeBadge>
+        <TypeBadge color={matiere.color}>{q.context ? 'Étude de cas' : TYPE_LABEL[q.type]}</TypeBadge>
         {q.source && <span className="text-[11px] text-warm-gray/80">{q.source}</span>}
       </div>
 
       {hasEnglishText && !answered && <GlossaryHint />}
+
+      {/* Situation d'une etude de cas */}
+      {q.context && (
+        <div className="rounded-2xl bg-white border border-sand px-4 py-4 mb-5 elevated">
+          <p className="text-[11px] font-bold uppercase tracking-[0.1em] mb-1.5" style={{ color: matiere.color }}>Situation</p>
+          <p className="text-[16px] leading-relaxed text-charcoal">{q.context}</p>
+        </div>
+      )}
 
       {/* Enonce */}
       <div className="mb-6">
