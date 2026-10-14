@@ -1,0 +1,541 @@
+{
+  "title": "Comportements humains",
+  "subtitle": "Chapitres 1 à 5 · Prof. Sébastien Point · EM Strasbourg 2026-2027",
+  "cardDesc": "Tout le polycopié expliqué simplement, avec des exemples concrets, et un lexique FR / EN",
+  "sections": [
+    {
+      "id": "apercu",
+      "title": "Le cours en un coup d'œil",
+      "source": "Objectifs · Plan du cours",
+      "blocks": [
+        { "type": "p", "text": "Le cours explique **pourquoi nous agissons comme nous agissons au travail**. Il étudie le comportement organisationnel à **trois niveaux d'analyse** qui interagissent : l'**individu** (attitudes, perceptions, personnalité, motivation), le **groupe** (interactions, rôles, normes, cohésion) et l'**organisation** (structure, culture, politiques)." },
+        { "type": "table", "wide": 700, "title": "Plan du polycopié", "head": ["Partie", "Chapitres", "Questions clés", "Films du cours"], "rows": [
+          ["1. L'individu au travail : les sources d'influence", "Ch. 1 & 2 : l'influence sociale (foules, normes, conformisme, obéissance, persuasion, influence minoritaire)", "Pourquoi se conformer ? Pourquoi obéir à l'autorité ?", "I… comme Icare, Don't Look Up, 12 Hommes en colère, Le Cercle des poètes disparus"],
+          ["2. Les mécanismes de groupes", "Ch. 3 & 4 : le groupe (types, étapes, dynamique, rôles, identité sociale, décisions, pensée groupale)", "Comment fonctionne un groupe ? Comment avoir une équipe performante ?", "Oppenheimer, Das Experiment"],
+          ["3. Pouvoir et leadership dans les organisations", "Ch. 5 : pouvoir et leadership", "Quelles sont les sources de pouvoir ? Naît-on leader ou le devient-on ?", "Gourou, Air, et une infographie inspirée du Diable s'habille en Prada"]
+        ] },
+        { "type": "tip", "text": "**L'examen** : un texte ou une vidéo à analyser. Il ne faut pas réciter le cours mais **raisonner** : repérer les mécanismes (conformisme, état agentique, pensée groupale…), les relier aux **auteurs et théories** (Le Bon, Asch, Milgram, Janis, French et Raven, Bales…) et les **illustrer** avec des exemples de la vie de tous les jours. C'est pour ça que chaque partie de cette fiche a des exemples concrets." },
+        { "type": "p", "text": "Objectif du cours selon le professeur : « Il ne s'agit pas d'apprendre par cœur les concepts. Il s'agit de donner des **grilles d'interprétation de la réalité** et d'apprendre à **réfléchir sur le quotidien**. » « Mieux vaut une tête bien faite qu'une tête bien pleine » (Montaigne)." }
+      ]
+    },
+    {
+      "id": "influence",
+      "title": "L'influence sociale : de quoi parle-t-on ?",
+      "source": "Ch. 1 & 2 · p. 3",
+      "blocks": [
+        { "type": "p", "text": "Depuis notre petite enfance, les autres influencent énormément notre comportement. Cette influence nous pousse même à nous mettre d'accord avec des valeurs ou des idées que nous n'approuvons pas, souvent **sans en avoir conscience**. Elle fixe le **champ normatif** des gens : leur cadre de référence." },
+        { "type": "def", "term": "Influence sociale", "en": "social influence", "text": "Tout ce qui produit un **changement de conduite** en vertu de **pressions dominantes** dans un contexte donné, que ce soit sur des comportements, des attitudes ou des croyances. C'est une sorte d'**imitation sociale** : l'ensemble des pressions sociales qui visent à modifier nos comportements." },
+        { "type": "tip", "text": "Idée essentielle : nos comportements ne résultent pas uniquement de décisions individuelles ; ils sont aussi **façonnés par le contexte social**." },
+        { "type": "table", "title": "Les 5 formes d'influence sociale du cours", "head": ["Forme", "D'où vient la pression ?", "En une phrase"], "rows": [
+          ["**Normes** et **conformisme**", "Du groupe, de façon indirecte", "Je fais comme les autres pour être accepté ou parce que je pense qu'ils ont raison."],
+          ["**Obéissance**", "D'une autorité, de façon directe", "Je fais ce qu'on m'ordonne parce que l'ordre vient d'une autorité légitime."],
+          ["**Persuasion**", "D'un message argumenté", "Je change d'avis parce qu'on m'a convaincu (ou manipulé) en me laissant libre."],
+          ["**Influence minoritaire**", "D'une minorité qui tient bon", "Le groupe finit par changer parce qu'une minorité défend son idée avec constance."],
+          ["**Contagion** (foules)", "De la masse", "Dans la foule, je perds mon sens critique et je suis l'émotion collective."]
+        ] },
+        { "type": "p", "text": "Citation d'ouverture : « Le monde est dangereux à vivre non à cause de ceux qui font le mal, mais à cause de ceux qui regardent et laissent faire » (Albert Einstein)." }
+      ]
+    },
+    {
+      "id": "foules",
+      "title": "La contagion sociale : la psychologie des foules",
+      "source": "Ch. 1 & 2 · p. 3-4",
+      "blocks": [
+        { "type": "p", "text": "**Gustave Le Bon**, médecin et sociologue français, est l'un des premiers à étudier l'influence sociale. Il montre le rôle capital des **émotions** dans les sociétés. Son livre **Psychologie des foules** (1895) marque un pas important des sciences sociales." },
+        { "type": "def", "term": "Loi de l'unité mentale", "text": "Dans une foule, sous l'effet de certains **« excitants »** (menaces, slogans, images suggestives, émotions…), la personnalité consciente de chacun s'évanouit : les sentiments et les idées de tous vont dans la même direction. Il se forme une **âme collective**, qui, par **contagion émotionnelle**, fait perdre aux individus leur sens critique et les fait régresser à un état strictement **affectif**." },
+        { "type": "list", "title": "Ce que la foule fait naître chez l'individu :", "items": [
+          "**1. Un sentiment de puissance invincible**, qui grandit avec l'anonymat : « on est nombreux, on ne risque rien ».",
+          "**2. Une contagion mentale**, semblable à l'hypnose : l'individu sacrifie son intérêt personnel à l'intérêt collectif.",
+          "**3. Une suggestibilité**, comme un hypnotisé dans les mains d'un hypnotiseur (le meneur). L'**hypnose** est le moteur qui explique pourquoi émotions et sentiments se propagent : ils sont **socialement contagieux**."
+        ] },
+        { "type": "def", "term": "Dépersonnalisation", "en": "depersonalization", "text": "L'individu se trouve **noyé** dans la masse jusqu'à perdre son **autonomie**, son sens et sa **responsabilité**. Il abandonne sa conscience individuelle au profit d'une **conscience collective** : les membres de la foule deviennent capables de comportements extrêmes (violence, mais aussi héroïsme)." },
+        { "type": "tip", "text": "**Équation de Le Bon** : l'intelligence et la moralité d'une foule sont **inférieures** à la moyenne des intelligences et des moralités des individus qui la composent. Conséquence : le social ne peut pas se réduire à l'individu ; il s'explique par des **phénomènes sociaux**." },
+        { "type": "def", "term": "Contagion sociale", "en": "social contagion", "text": "La tendance à **imiter un modèle dominant** de comportement, qui se propage d'une personne à l'autre : les émotions et les opinions se communiquent, se multiplient et se renforcent." },
+        { "type": "example", "text": "Une manifestation qui dégénère (la couverture du polycopié montre des heurts sur les Champs-Élysées) : des personnes pacifiques seules cassent une vitrine parce que « tout le monde le fait ». Même mécanisme, sans violence : un stade entier qui hurle ou chante d'une seule voix, ou une rumeur qui enflamme les réseaux sociaux en quelques heures sans que personne ne vérifie." },
+        { "type": "example", "text": "En entreprise : lors d'une annonce de restructuration, une inquiétude née dans un open space se propage à tout un étage. Les salariés reprennent les mêmes phrases et les mêmes peurs, même sans information nouvelle." }
+      ]
+    },
+    {
+      "id": "normes",
+      "title": "Le principe des normes",
+      "source": "Ch. 1 & 2 · p. 5 et 7",
+      "blocks": [
+        { "type": "p", "text": "Les **normes** sont la forme d'influence la plus connue et la plus banale. Quand il n'existe pas encore de norme, les individus tentent d'en établir une en s'influençant les uns les autres. En se structurant, un groupe produit « naturellement » des règles et des codes qui régissent les comportements entre membres et avec « l'extérieur »." },
+        { "type": "def", "term": "Norme", "en": "norm", "text": "Une **règle explicite ou implicite** qui impose, de façon plus ou moins pressante, un **mode organisé de conduite sociale**. Elle se présente comme un **ensemble de valeurs dominantes**." },
+        { "type": "tip", "text": "Idée essentielle : nos comportements sont largement guidés par des normes sociales, explicites ou implicites, que nous **intériorisons** et qui favorisent l'**uniformité** des conduites au sein d'un groupe. La plupart du temps, nous les respectons sans même nous en rendre compte." },
+        { "type": "list", "items": [
+          "**Pourquoi les respecte-t-on ?** Pour **être accepté**, on accepte, voire on imite les autres.",
+          "**Le premier système de normes** que nous intériorisons, c'est l'**éducation** : politesse et savoir-vivre. Dire « bonjour » en entrant dans une pièce, « merci » quand on reçoit quelque chose.",
+          "**Fonction** : les normes organisent la vie quotidienne par des rituels et disent comment se comporter dans les situations sociales.",
+          "**Effet** : elles engendrent une certaine **uniformité**.",
+          "**Évolution** : avec le temps, certaines normes tombent en désuétude et paraissent alors arbitraires."
+        ] },
+        { "type": "def", "term": "Normalisation", "en": "normalization", "text": "L'interaction entre individus ou groupes qui aboutit à un **compromis** et à un **nivellement des positions**. C'est une **pression réciproque** (chacun influence chacun) qui vise à dégager une norme de jugement **acceptable par tous**." },
+        { "type": "example", "text": "Au bureau, personne n'a écrit qu'il fallait rester jusqu'à 19 h, mais le nouveau salarié remarque que partir à 17 h 30 attire les regards : il s'aligne. Autre norme implicite : le tutoiement immédiat dans une start-up, le vouvoiement dans un cabinet d'avocats. Exemple de normalisation : une équipe qui doit estimer la durée d'un projet ; l'un dit 2 mois, l'autre 6, et tout le monde converge vers « environ 4 mois »." },
+        { "type": "p", "text": "Illustration du cours : **Le Cercle des poètes disparus** (« I sound my barbaric yawp over the roofs of the world », Walt Whitman). Le professeur Keating pousse ses élèves à questionner les normes rigides de leur école." }
+      ]
+    },
+    {
+      "id": "conformisme",
+      "title": "Le conformisme",
+      "source": "Ch. 1 & 2 · p. 5-7 · Plan du cours",
+      "blocks": [
+        { "type": "def", "term": "Pression de conformité", "en": "conformity pressure", "text": "L'ensemble des pressions, **conscientes ou inconscientes**, qu'exerce un groupe (ou ses représentants) sur une personne pour lui faire accepter ses normes. Il y a **conformisme** quand le comportement, les opinions ou les perceptions changent sous l'effet de la présence **réelle ou imaginée** d'une personne ou d'un groupe." },
+        { "type": "p", "text": "**Pourquoi y sommes-nous sensibles ?** Nous ne nous basons pas seulement sur notre propre expérience pour définir la réalité : nous nous reposons beaucoup sur **les idées des autres**. Quand nous ne sommes pas d'accord, la solution la plus simple est de s'en remettre à l'avis des autres." },
+        { "type": "def", "term": "Conformisation", "text": "Le processus par lequel un individu modifie son comportement, sa conduite, son attitude pour les mettre en harmonie avec ceux de la **majorité** du groupe. Le conformisme existe quand une norme de groupe est acceptée par les individus : c'est une forme d'**influence passive** (indirecte : personne ne donne d'ordre)." },
+        { "type": "p", "text": "**L'expérience de Solomon Asch** (années 1950) : on montre une ligne de référence et trois lignes à comparer ; la bonne réponse est évidente. Mais les autres participants, des **compères**, donnent tous la même mauvaise réponse avant le vrai sujet. Beaucoup de sujets finissent par donner, eux aussi, la mauvaise réponse pour ne pas se démarquer." },
+        { "type": "table", "title": "Les deux mécanismes (plan du cours)", "head": ["Pression", "Besoin", "Exemple"], "rows": [
+          ["**Normative**", "**Être accepté**, éviter le rejet ou le conflit", "Je dis que la présentation du chef était « top » parce que tout le monde l'a dit."],
+          ["**Informationnelle**", "Trouver la **« bonne réponse »** quand on n'est pas sûr", "Nouveau dans l'entreprise, je copie la façon dont mes collègues remplissent les notes de frais : ils doivent savoir."]
+        ] },
+        { "type": "table", "title": "Les facteurs qui influencent le conformisme", "head": ["Facteurs liés…", "Ce que dit le cours"], "rows": [
+          ["**À l'individu** (cible d'influence)", "Sexe, nationalité, culture, âge. **Plus l'individu se sent compétent, moins il se conforme.** Exemples du cours : les femmes se conformeraient plus que les hommes ; les Norvégiens plus que les Français (à leurs compatriotes)."],
+          ["**Au groupe** (source d'influence)", "**Taille** : selon Asch, le conformisme augmente jusqu'à **3 compères**, puis atteint un palier. **Unanimité** : plus le groupe est unanime, plus la pression augmente. Statut et cohésion du groupe."],
+          ["**À la relation** groupe-individu", "Plus grand si le groupe travaille pour une **récompense commune**, si le sujet trouve le groupe **attirant** et veut être accepté, si la tâche est **difficile ou ambiguë** (on utilise alors le groupe comme ressource)."]
+        ] },
+        { "type": "def", "term": "Intériorisation de la norme", "en": "internalization", "text": "Face à une situation, on a deux choix : se conformer (rester dans le groupe, l'anxiété diminue) ou garder son propre système de réponse (et risquer d'être exclu). Comme le groupe a si souvent raison, on préfère s'y référer : la norme du groupe devient alors **la norme de l'individu**. C'est le **besoin d'acceptation sociale** et de **réduction de l'anxiété**." },
+        { "type": "tip", "text": "Idée essentielle : face à l'**incertitude** ou au **désaccord**, l'individu tend à se conformer à l'opinion majoritaire, qu'il utilise comme **repère** pour interpréter la réalité." },
+        { "type": "example", "text": "En réunion, le directeur propose un plan ; les trois premiers à parler l'approuvent. Le quatrième, qui avait des doutes, se tait ou dit « je suis d'accord ». Plus le groupe paraît unanime, plus il est dur de dire non. Au quotidien : choisir le restaurant plein plutôt que le restaurant vide d'à côté (« s'il y a du monde, c'est qu'il est bon »), c'est de l'influence informationnelle." }
+      ]
+    },
+    {
+      "id": "obeissance",
+      "title": "L'obéissance à l'autorité",
+      "source": "Ch. 1 & 2 · p. 8-9 · Plan du cours",
+      "blocks": [
+        { "type": "p", "text": "L'obéissance est la **deuxième forme** d'influence sociale. Si le conformisme est une force d'influence **indirecte**, l'obéissance (la soumission) est une forme d'influence **directe** : il y a un **ordre**." },
+        { "type": "def", "term": "Obéissance", "en": "obedience", "text": "Le changement psychologique et comportemental qui se produit lorsqu'un individu accepte de suivre les **instructions d'une autorité**. On parle de **soumission à l'autorité** quand un individu change de comportement pour se soumettre aux **ordres** émanant d'une **autorité perçue**." },
+        { "type": "list", "title": "Pourquoi obéit-on ?", "items": [
+          "L'obéissance est **apprise et valorisée dès l'enfance** (aux parents, aux professeurs, aux gendarmes, aux médecins…) : la soumission est devenue une norme.",
+          "Il se produit une **intériorisation de la norme d'obéissance** aux supérieurs.",
+          "L'autorité apporte **cadre, sécurité et reconnaissance**.",
+          "Condition : l'autorité doit être **clairement identifiable** (âge, uniforme, blouse, statut)."
+        ] },
+        { "type": "table", "title": "Les mécanismes psychologiques", "head": ["Mécanisme", "Explication"], "rows": [
+          ["**État agentique**", "En s'intégrant dans la hiérarchie, l'individu perd son autonomie : il se voit comme l'**instrument** de la volonté d'autrui (« je ne fais qu'obéir ») et laisse l'autorité juger si l'action est bonne ou mauvaise."],
+          ["**Dilution de la responsabilité**", "Il se sent engagé envers l'autorité, mais **pas responsable** des actes qu'elle lui prescrit."],
+          ["**Syntonisation**", "Le sujet est réceptif à tout ce qui vient de l'autorité et très peu à ce qui vient d'ailleurs : son **attention est focalisée** sur l'autorité."],
+          ["**L'autorité, juge moral**", "L'autorité devient **source de reconnaissance et juge moral** du sujet."]
+        ] },
+        { "type": "p", "text": "**L'expérience de Stanley Milgram** (années 1960) : un « expérimentateur » en blouse blanche demande au sujet d'envoyer des décharges électriques de plus en plus fortes à un « élève » (un comédien, les chocs sont faux) à chaque erreur. Quand le sujet hésite, l'autorité insiste (« l'expérience exige que vous continuiez »). Une majorité de sujets va jusqu'au bout." },
+        { "type": "list", "title": "Ce qui favorise l'obéissance (poly et plan du cours)", "items": [
+          "avoir reçu des **récompenses antérieurement** ;",
+          "une situation **perçue comme légitime** (une expérience scientifique, une université), une autorité jugée **compétente et légitime** ;",
+          "un **cadre hiérarchique fort** et la **culture de l'organisation** ;",
+          "la **distance** à l'autorité (l'obéissance baisse quand elle s'éloigne) et la **gradualité** des demandes (on monte petit à petit) ;",
+          "l'**absence de responsabilité personnelle** perçue."
+        ] },
+        { "type": "tip", "text": "Leçon de Milgram : des individus **ordinaires** peuvent obéir **contre leurs convictions** ; le conflit moral n'empêche pas toujours la soumission ; **résister à l'autorité est difficile**. À retenir : on peut obéir à une autorité légitime au point d'abandonner une part de sa responsabilité personnelle." },
+        { "type": "table", "title": "Conformisme ou obéissance ?", "head": ["", "Conformisme", "Obéissance"], "rows": [
+          ["Source", "Le **groupe** (des égaux)", "Une **autorité** (un supérieur)"],
+          ["Type d'influence", "Indirecte, implicite : personne ne demande rien", "Directe, explicite : un **ordre**"],
+          ["Exemple", "Je ris aux blagues du groupe pour m'intégrer.", "J'applique une consigne du manager que je trouve injuste."]
+        ] },
+        { "type": "example", "text": "Un commercial applique une consigne de son manager : pousser des clients âgés à souscrire une option inutile. Il n'est pas d'accord mais se dit « ce n'est pas moi qui décide, ce sont les objectifs de la direction » : c'est l'**état agentique** et la **dilution de la responsabilité**. Dans le film **I… comme Icare** (Henri Verneuil, 1979), qui reconstitue l'expérience de Milgram, le sujet hésite devant la souffrance de l'autre, l'autorité insiste, et la scène révèle la puissance de la soumission." }
+      ]
+    },
+    {
+      "id": "persuasion",
+      "title": "La persuasion",
+      "source": "Ch. 1 & 2 · p. 10-11",
+      "blocks": [
+        { "type": "def", "term": "Persuasion", "en": "persuasion", "text": "Une forme d'influence sociale qui cherche à modifier **librement** une attitude, une opinion ou un comportement au moyen d'un **message argumenté**. On utilise des arguments et des moyens pour obtenir un changement **sur la base d'un accord librement consenti**." },
+        { "type": "table", "title": "Ce qui rend un message persuasif", "head": ["Facteur", "Explication"], "rows": [
+          ["**Crédibilité de la source**", "Elle résulte de la **compétence** et de la **confiance** qu'on accorde à la source. Pour inspirer confiance, la source doit paraître **désintéressée, objective et honnête**."],
+          ["**Public ciblé**", "Adapter le message aux valeurs, croyances, besoins et préoccupations du public."],
+          ["**Qualité du message**", "Clair, cohérent, pertinent, il suscite l'adhésion : des arguments pertinents ont plus d'impact."],
+          ["**Éviter l'effet boomerang**", "Si le message défend une position **trop éloignée** de celle du récepteur, il produit l'effet inverse : il **renforce l'attitude initiale**, voire la change dans le sens opposé."]
+        ] },
+        { "type": "def", "term": "Soumission librement consentie", "en": "freely consented compliance", "text": "Un mécanisme qui vise à obtenir d'un individu un changement de comportement en lui donnant **le sentiment de s'y engager librement**. Cela s'apparente à de la **manipulation** : une action programmée et consciente qui applique des connaissances psychologiques pour influencer autrui sans qu'il se rende compte de la pression." },
+        { "type": "table", "wide": 700, "title": "Les 3 techniques de soumission librement consentie", "head": ["Technique", "Principe", "Exemples"], "rows": [
+          ["**Le pied dans la porte**", "D'abord une **petite faveur**, facile à accepter, puis une **demande plus importante**. Le premier acte doit ressembler au comportement attendu, sauf en matière de coût.", "Poly : « d'abord informer, puis faire accepter des mesures coûteuses ». Un collègue vous demande de relire une diapo, puis de préparer toute la présentation."],
+          ["**La porte au nez**", "D'abord une **demande exagérée** (généralement refusée), puis une demande **moins exigeante**, qui paraît raisonnable par contraste.", "Poly : médias et politiciens demandent beaucoup, puis proposent « un compromis ». Un salarié demande 3 jours de télétravail, se voit refuser, puis obtient 1 jour."],
+          ["**L'amorçage**", "On attire avec un **appât** : des subterfuges ou des avantages fictifs. On amène la personne à prendre une décision dont la concrétisation est impossible, puis on propose un **comportement de substitution**, forcément moins intéressant. Elle l'accepte car elle n'aime pas ne pas faire ce qu'elle avait prévu.", "Poly : promesses de sécurité, de richesse ou de protection. Un billet d'avion annoncé à 29 €… plus disponible ; on vous propose le vol d'à côté à 89 €."]
+        ] },
+        { "type": "tip", "text": "Idée essentielle : la soumission librement consentie amène une personne à adopter un comportement **sans contrainte apparente**, en **structurant progressivement les demandes**. À retenir : rester **critique** face aux messages persuasifs." },
+        { "type": "example", "text": "Illustration du cours : **Don't Look Up : Déni cosmique**. 1) Des scientifiques **informent** les responsables politiques qu'une comète va détruire la Terre. 2) Ils tentent de **convaincre** avec des données… mais sont peu écoutés. 3) Les médias **détournent le message** (buzz, sondages, « pas de danger réel »). 4) Le public, dans la **résistance et le déni**, préfère des discours rassurants ou complotistes qui confirment ses croyances. C'est un exemple parfait d'échec de la persuasion quand la source manque de crédibilité ou que le message contredit les croyances du public (effet boomerang)." }
+      ]
+    },
+    {
+      "id": "minoritaire",
+      "title": "L'influence minoritaire",
+      "source": "Ch. 1 & 2 · p. 12-14",
+      "blocks": [
+        { "type": "p", "text": "Jusqu'ici, l'influence allait du **groupe vers l'individu**. Mais il existe aussi une influence **minoritaire** : un individu ou un petit groupe, en désaccord avec l'ensemble du groupe, exprime ses propres points de vue pour faire changer la norme. On parle alors de **minorité agissante**. Le psychologue qui a étudié ce phénomène est **Serge Moscovici** (il n'est pas nommé dans le polycopié)." },
+        { "type": "p", "text": "Contrairement à la majorité, la minorité n'a pas la force du nombre : il suffit qu'elle ait un caractère marquant. Un seul mot d'ordre : avoir un **comportement consistant**. Ses membres doivent être d'accord entre eux (**consistance synchronique**) et garder le même comportement dans le temps (**consistance diachronique**)." },
+        { "type": "tip", "text": "Idée essentielle : une minorité **cohérente, constante et déterminée** peut modifier les normes et faire évoluer le groupe. Elle introduit l'**innovation**, fait émerger une alternative et ouvre le débat." },
+        { "type": "table", "wide": 560, "title": "Majorité ou minorité : deux façons de traiter l'information", "head": ["", "Influence majoritaire", "Influence minoritaire"], "rows": [
+          ["Traitement", "**Superficiel** : on se focalise sur l'aspect social (comme dans l'expérience d'Asch, où l'on ne traite pas vraiment l'information)", "**Cognitif scrupuleux** : la majorité examine le point de vue minoritaire pour comprendre pourquoi il est défendu"],
+          ["Résultat", "Conformisme", "Doute, réexamen en profondeur, **innovation** et changement social"]
+        ] },
+        { "type": "table", "title": "Les 5 styles de comportement de la minorité agissante", "head": ["Style", "Définition"], "rows": [
+          ["**L'investissement**", "L'importance que la minorité accorde à son objectif ou à ses idées."],
+          ["**L'autonomie**", "L'indépendance du jugement et des attitudes : on agit selon ses propres principes."],
+          ["**La consistance**", "Maintenir toujours la même idée : refuser de changer de position, de façon ferme et répétée."],
+          ["**La rigidité**", "Être **à mi-chemin entre rigidité et souplesse** : c'est le meilleur moyen d'influencer (trop rigide, on est rejeté)."],
+          ["**L'équité**", "Le souci d'établir des relations réciproques avec la majorité."]
+        ] },
+        { "type": "p", "text": "Autres facteurs d'efficacité : la **confiance en soi**, une position **pas trop extrême** (sinon la majorité la rejette), une influence **répétée dans le temps**. Réaction du groupe : il exerce une **pression sur le déviant** pour le ramener « dans le droit chemin » ; la déviation est perçue comme une **menace** pour l'intégrité du groupe (risque de dislocation)." },
+        { "type": "def", "term": "Désindividualisation", "text": "Le fait d'adopter en groupe des comportements qu'on n'aurait pas seul. Quand un individu cherche à se particulariser, il entraîne un **comportement déviant**, et les membres du groupe déploient une grande énergie pour le ramener à la conformité." },
+        { "type": "example", "text": "Illustration du cours : **12 Hommes en colère** (Sidney Lumet, 1957). 1) **11 contre 1** : la majorité vote « coupable » rapidement, un seul juré doute. 2) **Le doute** : le dissident pose des questions et rouvre la discussion. 3) **Réexaminer** : le groupe étudie les arguments et les preuves. 4) **Renversement** : le point de vue minoritaire gagne progressivement la majorité. À retenir : la minorité influence par sa **constance**, elle fait penser autrement la majorité, son pouvoir est **limité mais réel** : « c'est juste une question de temps »." },
+        { "type": "example", "text": "En entreprise : une salariée défend seule, réunion après réunion, la réduction des déplacements en avion. Elle reste calme, cohérente, apporte des chiffres et accepte d'adapter certains points (ni rigide, ni molle). Au bout d'un an, la politique de voyage change." }
+      ]
+    },
+    {
+      "id": "groupe",
+      "title": "Le groupe : définition et types de groupes",
+      "source": "Ch. 3 & 4 · p. 15-17",
+      "blocks": [
+        { "type": "def", "term": "Groupe", "en": "group", "text": "**Deux ou plus de deux individus** qui s'influencent réciproquement à travers une interaction sociale. C'est un ensemble d'**au moins trois personnes** qui **collaborent de façon régulière** à l'atteinte d'**objectifs communs**." },
+        { "type": "list", "items": [
+          "Un groupe prend vraiment naissance avec **trois participants** ; avec l'arrivée d'un quatrième, les phénomènes de groupe se dévoilent.",
+          "Les membres sont en **interdépendance** pour atteindre leurs objectifs (aspect structurel) et en interaction régulière (aspect relationnel).",
+          "C'est le **sentiment d'appartenance** qui lie l'individu au groupe.",
+          "Le groupe régule les interactions par des **normes**, des **rôles** et des **statuts**. L'objectif commun est un facteur d'**unification sociale** : on rejoint un groupe pour atteindre des buts qu'on n'atteindrait pas seul."
+        ] },
+        { "type": "tip", "text": "Idée essentielle : un groupe n'est **pas une simple addition d'individus** : c'est un **système d'interactions et d'interdépendances** organisé autour d'objectifs communs. Proverbe chinois du chapitre : « Quand un seul chien se met à aboyer à une ombre, dix mille chiens en font une réalité. »" },
+        { "type": "table", "wide": 640, "title": "Les différents groupes", "head": ["Type", "Définition du cours", "Exemple"], "rows": [
+          ["**Foule**", "Rassemblement d'un très grand nombre de personnes au même endroit pour satisfaire en même temps un même besoin. Peu de contact entre elles ; émotions amplifiées par la masse.", "Les supporters d'un stade."],
+          ["**Bande**", "Personnes aux profils similaires (même âge, milieu, idéologie) qui cherchent la chaleur d'être ensemble et identiques. Organisation très faible.", "Une bande d'amis du lycée."],
+          ["**Groupement**", "Personnes ayant un objectif commun, qui se réunissent régulièrement pour le défendre. Peu de liens affectifs, confiance aux représentants.", "Une association de consommateurs."],
+          ["**Équipe**", "Chacun a des **compétences complémentaires**, collabore activement à un objectif commun et se sent **collectivement responsable**.", "Une équipe projet marketing."],
+          ["**Groupe formel**", "Officiellement désigné pour un rôle précis dans l'organisation ; permanent ou temporaire.", "Le service comptable, un comité de pilotage."],
+          ["**Groupe informel**", "Se forme spontanément autour d'intérêts communs, souvent au sein des groupes formels.", "Les collègues qui déjeunent ensemble."],
+          ["**Groupe primaire**", "Assez **restreint** pour que ses membres se connaissent vraiment ; organisation élevée, forte interdépendance, rôles multiples, normes et signes propres.", "Une équipe de foot, une famille."],
+          ["**Groupe secondaire**", "Rassemblement où l'appartenance est **purement intellectuelle**.", "Les « fans » d'une marque, les anciens d'une école."],
+          ["**Groupe virtuel**", "Membres qui travaillent via des ordinateurs en réseau. Bon rapport coût / efficacité, mais peu de contacts et d'affectif.", "Une équipe qui ne se voit que sur Teams."],
+          ["**Groupe restreint**", "Circonscrit dans l'espace et le temps (« l'ici et maintenant »), perception réciproque et interaction directe.", "Les participants d'une réunion."],
+          ["**Groupe de référence**", "Véhicule une idéologie, des valeurs, des goûts : c'est de lui que l'individu tire ses **modèles de conduite**.", "Les « grands chefs » pour un apprenti cuisinier."],
+          ["**Groupe d'appartenance**", "Groupe auquel on se rattache comme membre actuel, ou auquel on **aspire** à se rattacher : ceux auxquels on s'identifie ou on désire s'identifier.", "Sa promotion à l'EM Strasbourg."]
+        ] },
+        { "type": "table", "title": "Les 3 fonctions d'un groupe de référence", "head": ["Fonction", "Ce qu'elle fait"], "rows": [
+          ["**Normative**", "Le sujet se plie volontairement aux normes du groupe (« règles du jeu ») pour plus d'efficacité. Ne pas se conformer, c'est risquer le **rejet**."],
+          ["**Évaluative**", "Le sujet se compare aux autres pour évaluer ses attitudes et valeurs, et se rassurer. **Théorie de la comparaison sociale (Festinger)** : le besoin de se comparer croît avec l'incertitude, et l'on va vers des groupes aux opinions et compétences proches des siennes."],
+          ["**Protectrice**", "« L'union fait la force » : le groupe apporte sécurité et soutien… et il est aussi synonyme de **pression sociale**."]
+        ] }
+      ]
+    },
+    {
+      "id": "etapes",
+      "title": "Les 5 étapes de développement d'un groupe",
+      "source": "Ch. 3 & 4 · p. 18-19 · Plan du cours",
+      "blocks": [
+        { "type": "p", "text": "Tout groupe traverse **cinq étapes** au cours de son existence, « et il n'y a pas d'exceptions ! ». Le plan du cours les rattache au modèle de **Tuckman** (noms anglais entre parenthèses)." },
+        { "type": "flow", "steps": [
+          "1. Constitution (forming) : découverte, anxiété",
+          "2. Formation des tensions (storming) : clans, compétition",
+          "3. Cohésion (norming) : coordination, conformité",
+          "4. Intégration totale (performing) : efficacité",
+          "5. Dissolution (adjourning) : mission accomplie, « deuil »"
+        ] },
+        { "type": "table", "wide": 620, "head": ["Étape", "Ce qui se passe", "Exemple : un projet de groupe à l'EM"], "rows": [
+          ["**1. Constitution**", "Chacun s'interroge : que peut m'offrir le groupe, qu'attend-il de moi ? Anxiété, introversion, besoin d'appartenance. S'il y a un leader désigné, tout ce qu'il fait prend **valeur d'exemple et de norme**.", "Premier rendez-vous : on se présente, on reste poli, on attend de voir qui prend la parole."],
+          ["**2. Formation des tensions**", "Chacun défend ses idées et entre en **compétition** ; formation de **clans et d'alliances**. Les membres **sondent leurs propres forces**.", "Désaccord sur le sujet et sur qui fait quoi ; deux camps se forment."],
+          ["**3. Cohésion**", "Le groupe commence à se **coordonner**, les conflits disparaissent. On tend à **décourager les opinions minoritaires** et les conduites déviantes.", "On se met d'accord sur un plan et un calendrier ; on évite de relancer les débats."],
+          ["**4. Intégration totale**", "Équipe bien organisée et opérationnelle : elle s'acquitte de **tâches complexes**, structure stable, membres satisfaits et stimulés.", "Chacun avance sur sa partie, les relectures sont rapides et efficaces."],
+          ["**5. Dissolution**", "Le groupe a accompli sa mission ; les interactions vont manquer : une étape de **« deuil »**.", "Après la soutenance, le groupe se sépare, un peu de nostalgie."]
+        ] },
+        { "type": "tip", "text": "À retenir : tout groupe passe par ces étapes : **se former, se confronter, se souder, agir efficacement, puis se dissoudre**. Les tensions de l'étape 2 sont **normales** : elles ne veulent pas dire que le groupe va échouer." }
+      ]
+    },
+    {
+      "id": "dynamique",
+      "title": "Dynamique de groupe, cohésion et rôles",
+      "source": "Ch. 3 & 4 · p. 19-20 · Plan du cours",
+      "blocks": [
+        { "type": "def", "term": "Dynamique de groupe", "en": "group dynamics", "text": "L'ensemble des **phénomènes psychosociaux** qui influent sur les relations personnelles et professionnelles des membres d'un groupe : les **interactions** et les **effets** qui apparaissent dans les groupes humains." },
+        { "type": "list", "items": [
+          "**Espace de vie** : la totalité des facteurs (individus, groupes, environnement) en jeu à un moment donné. Le groupe est une **totalité dynamique** qui a ses propriétés propres, distinctes de celles des individus.",
+          "**Dynamique intergroupe** : rivalités entre groupes. Un conflit peut détourner l'énergie de la tâche, mais aussi créer un esprit de compétition et de la créativité (stratégie courante dans les entreprises japonaises).",
+          "**Lewin** distingue la **dépendance constitutive** (les membres ont besoin les uns des autres pour atteindre leurs objectifs) et la **dépendance de référence** (les membres sont les uns pour les autres un cadre de référence)."
+        ] },
+        { "type": "def", "term": "Cohésion", "en": "cohesion", "text": "Les **forces réciproques d'attraction** entre les membres : le désir de chacun d'appartenir au groupe et d'y participer activement. Elle est plus forte quand les membres ont un âge, des attitudes, des besoins et des antécédents semblables. Une forte cohésion profite au groupe (on respecte mieux les normes) et à chaque membre (sécurité, loyauté, estime)." },
+        { "type": "def", "term": "Rôle", "en": "role", "text": "L'éventail des conduites possibles perçues par les membres comme **« normales »** : un **ensemble d'attentes** associées à un poste ou une fonction. C'est « un costume que l'individu endosse », avec une certaine liberté dans des limites à ne pas dépasser." },
+        { "type": "table", "title": "Quand les rôles posent problème", "head": ["Problème", "Cause", "Exemple"], "rows": [
+          ["**Surcharge de rôle**", "Attentes **trop élevées**", "Un manager à qui l'on demande aussi de gérer le recrutement, le budget et deux projets."],
+          ["**Insuffisance des rôles**", "Attentes **trop faibles**", "Un stagiaire à qui l'on ne confie rien d'intéressant."],
+          ["**Conflit de rôle**", "Attentes **contradictoires** : entre le groupe et l'individu, ou entre ses différents rôles", "Un salarié promu chef de ses anciens collègues : rester « le pote » ou évaluer leur travail ?"]
+        ] },
+        { "type": "p", "text": "Si les rôles ne sont **pas clairement établis** ou sont conflictuels, il peut en résulter des **problèmes de rendement**." },
+        { "type": "def", "term": "L'expérience de Stanford", "en": "Stanford prison experiment", "text": "Elle a montré de façon spectaculaire et brutale qu'en quelques jours, de jeunes hommes équilibrés pouvaient devenir des **loques** (prisonniers) ou des **gardiens zélés, parfois sadiques**, selon le rôle qu'on leur donne. Elle prolonge les recherches sur l'**anomie** (la déstructuration d'un groupe ou d'une société) et la **désindividuation** (adopter des comportements antisociaux, par exemple dans une foule)." },
+        { "type": "tip", "text": "**Diffusion de la responsabilité** : en groupe, la responsabilité est **diluée** dans l'action collective ; chacun se sent moins engagé. Cela expliquerait l'**augmentation de la prise de risque** en groupe. Film du cours : **Das Experiment**. « Un être normal, soumis à des conditions extrêmes, peut s'écraser complètement ; si on lui donne une parcelle de pouvoir, il peut devenir le pire des monstres. »" },
+        { "type": "table", "title": "Les phénomènes de groupe (plan du cours)", "head": ["Phénomène", "En bref", "Exemple"], "rows": [
+          ["**Facilitation sociale**", "On en fait **plus** à plusieurs.", "On court plus vite avec un partenaire d'entraînement."],
+          ["**Paresse sociale**", "On en fait **moins** quand on est **moins identifiable**.", "Dans un exposé à 6, l'un se cache derrière les autres."],
+          ["**Pensée de groupe**", "Recherche excessive d'**harmonie** au détriment de la meilleure décision.", "Voir la partie sur la pensée groupale."],
+          ["**Polarisation des opinions**", "Les idées deviennent **plus extrêmes** après la discussion.", "Un comité un peu favorable à un rachat en sort convaincu qu'il faut l'acheter à tout prix."]
+        ] },
+        { "type": "list", "title": "Comment avoir une équipe performante ? (plan du cours)", "items": [
+          "des **objectifs clairs et partagés** ;",
+          "de la **confiance** et de la **sécurité psychologique** ;",
+          "des **compétences complémentaires** ;",
+          "un **leadership adapté** ;",
+          "une **communication efficace** ;",
+          "de la **reconnaissance** et du **feedback**."
+        ] }
+      ]
+    },
+    {
+      "id": "identite",
+      "title": "L'identité sociale",
+      "source": "Ch. 3 & 4 · p. 20-21",
+      "blocks": [
+        { "type": "def", "term": "Identité sociale", "en": "social identity", "text": "La **conscience** qu'a un individu d'appartenir à certains groupes sociaux, et la **valeur** que cette appartenance implique : la conception de soi en tant que membre d'un groupe. Elle implique des émotions et des valeurs. Le chercheur de référence est **Henri Tajfel** (il n'est pas nommé dans le polycopié)." },
+        { "type": "p", "text": "Chacun cherche des groupes capables de renforcer les **aspects positifs** de son identité sociale. Par **comparaison sociale**, on se compare à d'autres groupes pertinents pour s'évaluer : on cherche d'abord à maintenir ou accroître son **estime de soi** (« mon groupe est meilleur »)." },
+        { "type": "table", "title": "Deux grands processus de socialisation", "head": ["Socialisation", "Où ?", "Exemple"], "rows": [
+          ["**Primaire**", "L'éducation, la famille, la religion…", "Apprendre la politesse en famille."],
+          ["**Secondaire**", "Le monde professionnel : l'entreprise crée des liens et un sentiment d'appartenance, « un peu comme une tribu »", "Se sentir « un Airbus » ou « un Decathlon », porter les couleurs de son entreprise."]
+        ] },
+        { "type": "p", "text": "Le sentiment d'appartenance amène un processus d'**identification sociale** : il en résulte généralement une **conformité** aux normes du groupe (leur adoption ou intériorisation). Il existe autant d'identités sociales que de groupes auxquels on peut s'identifier : famille, école, travail, amis, religion, association, politique…" },
+        { "type": "table", "title": "Les 3 étapes de l'identification (influence informationnelle et référentielle)", "head": ["Étape", "Ce qui se passe"], "rows": [
+          ["**1. Aspect inférentiel**", "Les individus utilisent la **catégorisation sociale** pour se définir comme membres d'une catégorie et se forger une identité sociale."],
+          ["**2. Aspect inductif**", "Ils prennent connaissance des **normes** de chaque catégorie et de ses caractéristiques (stéréotypées ou non)."],
+          ["**3. Aspect déductif**", "Ils s'**auto-attribuent** les normes de la catégorie : leurs comportements et jugements se rapprochent de ceux du groupe auquel ils s'identifient."]
+        ] },
+        { "type": "p", "text": "L'identité sociale **« principale »** d'un individu vient de sa **socialisation** et du **jugement** que les autres portent sur lui. Chacun réagit différemment au chômage, aux pressions… selon ses expériences et ses croyances : il existe donc différentes formes identitaires." },
+        { "type": "example", "text": "Un nouvel étudiant d'école de commerce se définit d'abord comme « étudiant de l'EM » (inférentiel), observe comment s'habillent et parlent les élèves des associations (inductif), puis adopte le même vocabulaire et les mêmes codes (déductif). Rivalité EM Strasbourg contre une autre école lors d'un tournoi : on valorise son groupe pour se valoriser soi-même." }
+      ]
+    },
+    {
+      "id": "decisions",
+      "title": "Les décisions de groupe et la pensée groupale",
+      "source": "Ch. 3 & 4 · p. 21-22",
+      "blocks": [
+        { "type": "p", "text": "Décider en groupe, c'est chercher un **consensus** (un processus de normalisation), alors que les membres ont des opinions différentes. La décision est un processus ordonné par des **conflits substantiels** (sur le fond) ou **affectifs** (entre personnes). Le groupe devient un **modérateur de décision**." },
+        { "type": "table", "title": "Les 6 modes de prise de décision selon Schein", "head": ["Mode", "Exemple"], "rows": [
+          ["**L'absence de réaction**", "« Qui ne dit mot consent » : personne ne réagit à une proposition, elle passe."],
+          ["**Par autorité**", "Le chef tranche seul."],
+          ["**Par la minorité** (minorité active)", "Deux personnes motivées imposent leur idée à un groupe passif."],
+          ["**Par la majorité** (conformisation)", "On vote, la majorité l'emporte."],
+          ["**Par consensus**", "Discussions, voire négociations, jusqu'à une solution que tous acceptent."],
+          ["**L'unanimité**", "Tout le monde est réellement d'accord."]
+        ] },
+        { "type": "list", "title": "La décision dépend de 4 facteurs", "items": [
+          "la **structure de communication** et d'influence (la performance dépend des relations entre membres) ;",
+          "les **réseaux formels et informels** (les relations formelles diminuent les interactions et favorisent le compromis, une solution moyenne) ;",
+          "le **type de discussion** entre les membres ;",
+          "l'**autorité** et le **type de leader** qui préside la discussion."
+        ] },
+        { "type": "def", "term": "Pensée groupale", "en": "groupthink", "text": "Un **piège** dans la prise de décision : à l'intérieur du groupe se développent des mécanismes psychologiques qui poussent les individus à **rapprocher leurs points de vue** et à développer une **cohésion** qui leur fait prendre des **positions irrationnelles**. On ne tient plus compte des **réalités extérieures**.", "author": "Irving Janis" },
+        { "type": "p", "text": "**Mécanisme** : on veut à tout prix un **consensus**, qui finalement ne satisfait personne, car l'accord du groupe passe avant la pertinence de la décision (cohésion > pertinence). On évite les discussions sources de conflit, on ne propose pas de contre-hypothèses." },
+        { "type": "table", "title": "Les 2 symptômes de la pensée groupale (cours)", "head": ["Symptôme", "Contenu"], "rows": [
+          ["**1. L'illusion collective**", "Illusions de **moralité**, de **rationalité**, d'**unanimité** et d'**invulnérabilité** du groupe."],
+          ["**2. La censure collective**", "Elle s'applique **à soi-même** (autocensure) et **aux autres** membres (pression sur les dissidents, silence des objections)."]
+        ] },
+        { "type": "p", "text": "**Conséquences** : un **sentiment d'invulnérabilité** (le groupe se croit au-dessus des lois, convaincu d'être dans son bon droit), des **informations contraires dénaturées**, des **stéréotypes** sur les personnes opposées à la décision, des réalités extérieures négligées, des décisions irrationnelles." },
+        { "type": "tip", "text": "À retenir : plus un groupe veut préserver son unité, plus il risque de mal décider. Pour s'en protéger : garder un **regard critique**, **encourager la contradiction**, rechercher la **diversité des points de vue**, **tester les hypothèses** et des scénarios alternatifs, et **décider avec lucidité, pas avec confort**." },
+        { "type": "example", "text": "Illustration du cours : **Oppenheimer** (Christopher Nolan, 2023). En entreprise : un comité de direction très soudé lance un produit malgré des études de marché défavorables. Chacun garde ses doutes pour ne pas casser l'ambiance (autocensure), le PDG répète « on a toujours réussi » (illusion d'invulnérabilité), et les concurrents sont décrits comme « des amateurs » (stéréotypes). Le lancement échoue." }
+      ]
+    },
+    {
+      "id": "pouvoir",
+      "title": "Le pouvoir",
+      "source": "Ch. 5 · p. 24-26 et 30",
+      "blocks": [
+        { "type": "p", "text": "« Pouvoir », « autorité » et « leadership » prennent des sens différents selon le contexte. Un dirigeant a des leviers concrets (augmenter, promouvoir, licencier) : il a l'autorité de punir ou de récompenser. Mais un salarié qui a une **compétence rare** a aussi du pouvoir, tout comme des salariés qui font **grève** (le **pouvoir des coalitions**). Un premier aspect est donc celui des **rapports de force**." },
+        { "type": "tip", "text": "Idée essentielle : le pouvoir est la **capacité d'influencer le comportement d'autrui** ; il peut venir de ressources variées : position hiérarchique, récompenses, sanctions, expertise ou action collective. On distingue l'**influence morale** (jouer sur le système de valeurs d'autrui) et l'**influence légitime** (l'autorité, liée à une position sociale jugée légitime)." },
+        { "type": "def", "term": "Pouvoir", "en": "power", "text": "La capacité de faire ou d'être quelque chose, associée à la **domination** (une emprise d'un individu, d'un groupe ou d'une institution sur d'autres). Un individu exerce un pouvoir sur un autre **dans la mesure où il obtient de lui des comportements, des actions, voire des conceptions qu'il n'aurait pas eus sans son intervention**." },
+        { "type": "table", "wide": 640, "title": "Les 5 bases du pouvoir social (French et Raven, 1959)", "head": ["Base", "Sur quoi elle repose", "Exemple"], "rows": [
+          ["**1. Coercition**", "La source peut **punir** la cible ; la cible se conforme pour éviter la sanction (soumission visible).", "« Si le rapport n'est pas prêt lundi, pas de prime. »"],
+          ["**2. Récompense**", "La cible désire obtenir un **avantage** (promotion, reconnaissance).", "Un manager promet une promotion à celui qui atteint ses objectifs."],
+          ["**3. Expertise**", "La **compétence perçue** de la source et la **dépendance informationnelle** de la cible.", "Le seul informaticien qui sait réparer le serveur."],
+          ["**4. Pouvoir référentiel**", "L'**identification** : la cible admire la source et veut **lui ressembler**.", "Un influenceur ou un manager charismatique qu'on a envie d'imiter."],
+          ["**5. Pouvoir légitime**", "La **hiérarchie** : dans les organisations très structurées, on accepte les ordres d'un niveau supérieur (droit de donner des ordres).", "Le directeur qui fixe le planning."]
+        ] },
+        { "type": "p", "text": "Les deux premières bases (coercition, récompense) reposent sur l'**emprise normative** de la source et demandent une **surveillance constante**. Le plan du cours ajoute une sixième source, le pouvoir **informationnel** (contrôle de l'information). Infographie du cours inspirée du **Diable s'habille en Prada** : « Le pouvoir n'est pas seulement ce que l'on a, c'est aussi ce que les autres acceptent de nous accorder. »" },
+        { "type": "table", "title": "Pouvoir formel et pouvoir informel", "head": ["", "Pouvoir formel", "Pouvoir informel"], "rows": [
+          ["Relations", "Clairement établies, **légitimées** par les règles de l'organisation", "**Implicites** : elles existent mais ne sont pas légitimées"],
+          ["Outils", "Règles officielles, organigramme, autorité reconnue", "Réseaux, **contrôle de l'incertitude**, jouer sur les règles"]
+        ] },
+        { "type": "def", "term": "Crozier et Friedberg : les zones d'incertitude", "en": "zones of uncertainty", "text": "Le pouvoir sur quelqu'un vient du **contrôle d'une ressource dont il a besoin**, ou de la **maîtrise d'un risque, d'une incertitude** qu'il craint. Le pouvoir n'est pas un état, c'est le **produit d'une situation** : tout le monde détient quelques ressources, dirigeants comme salariés. Ressources : l'**expertise** (maîtriser un aléa), l'**information** (surtout si l'on décide de la donner ou non), les **relations** avec l'environnement (clients, administrations), la **bonne volonté** des salariés (indispensable face à l'imprévu)." },
+        { "type": "tip", "text": "Idée essentielle : le pouvoir dépend du **contrôle de ressources et de zones d'incertitude** dont les autres ont besoin ; il ne découle donc pas uniquement de la position hiérarchique. « La position hiérarchique donne du pouvoir, ce n'est pas une garantie de pouvoir ! » Il n'y a pas de frontière définitive pour le pouvoir : l'individu peut mobiliser toutes les sources pour influencer son environnement." },
+        { "type": "example", "text": "Exemple classique : dans une usine, le technicien de maintenance est le seul à savoir réparer les machines quand elles tombent en panne (l'incertitude majeure de l'atelier). Le directeur de l'usine a l'autorité, mais c'est le technicien qui a le vrai pouvoir. Autre exemple : l'assistante de direction qui gère l'agenda du PDG décide qui obtient un rendez-vous (elle contrôle l'information et l'accès)." },
+        { "type": "tip", "text": "Conclusion du chapitre : la conception même du pouvoir nous indique que nous sommes **toujours impliqués** dans des relations de pouvoir : chaque interaction avec autrui est marquée par des différences de pouvoir. Être conscient du pouvoir est un premier pas **pour éviter son influence… et non pour l'exercer !**" }
+      ]
+    },
+    {
+      "id": "leadership",
+      "title": "Le leadership",
+      "source": "Ch. 5 · p. 26-28",
+      "blocks": [
+        { "type": "def", "term": "Leadership", "en": "leadership", "text": "La capacité générale à **entraîner les autres derrière soi**. Il regroupe l'**autorité légitime**, l'**autorité personnelle** et le **charisme** : un leader est un dirigeant qui s'appuie en priorité sur son leadership." },
+        { "type": "def", "term": "Définition de Lévy-Leboyer", "text": "Le leadership est « un **processus d'influence sociale** par lequel un individu amène un groupe à atteindre des objectifs ». Il ne s'agit pas seulement de **faire faire** quelque chose à d'autres (ce qui n'est pas le cas pour les relations d'autorité), mais de **changer l'attitude** des membres du groupe, de les **mobiliser** et d'**entraîner leur adhésion** à des buts communs. Le leader doit savoir susciter les motivations et entraîner ceux qui le suivent bien plus que les diriger de manière autoritaire." },
+        { "type": "table", "title": "Les deux fonctions clés du leader (Bales, 1958)", "head": ["", "Fonction socio-émotionnelle", "Fonction-tâche"], "rows": [
+          ["Exercée par", "Le **leader informel**", "Le **leader formel**"],
+          ["But", "Garantir de **bonnes relations**, un **climat agréable**", "Évaluer les performances, **planifier** le travail"],
+          ["Actions", "Écoute, empathie, soutien, renforcer la cohésion", "Fixer des objectifs, organiser, décider, contrôler"]
+        ] },
+        { "type": "tip", "text": "Idée essentielle : le leadership combine deux fonctions complémentaires : **orienter le groupe vers la tâche et la performance**, tout en **entretenant de bonnes relations socio-émotionnelles** pour favoriser l'adhésion volontaire. « Le leader idéal sait allier le cœur et la raison. »" },
+        { "type": "list", "title": "Les facteurs d'une relation de leadership efficace", "items": [
+          "**comprendre son groupe**, interpréter ses aspirations ;",
+          "**exploiter les motivations** et instaurer la **confiance** ;",
+          "avoir des **objectifs communs** ou complémentaires avec le groupe ;",
+          "**montrer le chemin**, donner du sens, servir d'**exemple** ;",
+          "être **stratège**, prendre les bonnes initiatives et **faire gagner le groupe**."
+        ] },
+        { "type": "p", "text": "Idée essentielle : l'efficacité du leadership dépend de l'**adéquation entre le leader, le groupe et la situation**. Le leader influence d'autant mieux qu'il comprend les attentes du groupe, inspire confiance et l'aide concrètement à atteindre ses objectifs." },
+        { "type": "list", "title": "Trois capacités coexistent dans le leadership", "items": [
+          "la capacité à **se rendre légitime** ;",
+          "la capacité à **se faire obéir naturellement** ;",
+          "la capacité à **mobiliser les énergies** en suscitant la **sympathie**."
+        ] },
+        { "type": "p", "text": "**Les traits** : on a cherché les caractéristiques physiques, de personnalité (estime de soi, agressivité, sympathie) et de compétence (intelligence, créativité) des leaders. Mais cumuler des traits ne suffit pas : les traits efficaces **varient selon les groupes**, leurs valeurs, attentes et objectifs. **Il n'existe pas une seule façon d'être un leader.**" },
+        { "type": "table", "title": "Leadership ou autorité ?", "head": ["Leadership", "Autorité"], "rows": [
+          ["Pouvoir **émergent** des relations", "Pouvoir **prescrit** par l'organisation"],
+          ["**Multidirectionnel**", "**Unidirectionnel**"],
+          ["**Tout le monde** peut en exercer", "Lié à la **hiérarchie formelle**"]
+        ] },
+        { "type": "tip", "text": "Les deux ne s'opposent pas : l'exercice de l'autorité n'est **nullement incompatible** avec celui du leadership, bien au contraire ! « Un leader inspire. Une autorité impose. » Idée essentielle : il n'existe **pas de profil universel** du leader ; le leadership repose sur des qualités individuelles **et** sur leur adéquation au contexte, aux attentes et aux valeurs du groupe." },
+        { "type": "example", "text": "Illustration du cours : **Gourou** (Yann Gozlan, 2026, avec Pierre Niney). « Un leader ne cherche pas des suiveurs, mais des alliés. » « Les gens ne te suivent pas parce que tu es le chef. Ils te suivent parce qu'ils croient en toi et en ce que tu représentes. » Le film montre aussi la face sombre : le même pouvoir référentiel peut créer de la **dépendance**." },
+        { "type": "example", "text": "Dans un open space, la cheffe d'équipe nommée (leader formel) fixe les objectifs et suit les chiffres, tandis qu'un collègue apprécié de tous, sans titre, remonte le moral, désamorce les conflits et que tout le monde consulte avant de décider (leader informel, fonction socio-émotionnelle)." }
+      ]
+    },
+    {
+      "id": "theories",
+      "title": "Les théories du leadership",
+      "source": "Ch. 5 · p. 29-30 · Plan du cours",
+      "blocks": [
+        { "type": "table", "wide": 640, "head": ["Théorie", "Idée centrale", "Limite ou exemple"], "rows": [
+          ["**1. Approche personnaliste** (des traits)", "Définir le leader par ses **caractéristiques** : un « **portrait-robot** » du leader type (dans les années 1950 : un homme grand, beau, intelligent, avec une forte personnalité).", "**Aucune étude** n'a pu révéler de corrélation entre leadership et attributs physiques, âge, taille, expertise ou motivations. Aucun trait physique ne suffit."],
+          ["**2. Approches interactionnistes / situationnistes**", "Le leader se définit par son **rôle émergent** dans un groupe, selon une situation donnée, les besoins, valeurs et attentes des participants. Le leadership **naît de la relation**.", "Une qualité utile dans une situation peut être **inefficace ailleurs** : le chef idéal en temps de crise peut être étouffant en temps calme."],
+          ["**3. Théories behavioristes**", "Ce que **fait** le leader : la dimension **initiative** (il planifie et coordonne : **orienté tâche**) et la dimension **considération** (il prête attention aux aspirations : **orienté personnes**).", "Le style du leader varie selon la situation."],
+          ["**4. Théories néo-charismatiques**", "Dimensions symboliques et cognitives : le leadership est un **processus d'influence** avec un ressort **transactionnel** et un ressort **transformationnel**.", "Voir le tableau suivant."]
+        ] },
+        { "type": "table", "title": "Transactionnel ou transformationnel ?", "head": ["", "Leader transactionnel", "Leader transformationnel"], "rows": [
+          ["Principe", "La relation est une **négociation d'objectifs** : **récompense contingente contre soutien**", "Il motive au-delà des **intérêts personnels** : **transformer une vision en réalité**"],
+          ["Exemple", "« Si tu atteins 120 % de ton objectif, tu auras ta prime. »", "Un dirigeant qui embarque ses équipes dans la transition écologique de l'entreprise parce qu'il y croit."]
+        ] },
+        { "type": "table", "title": "Les approches contemporaines", "head": ["Leadership", "Ce qu'il met en avant"], "rows": [
+          ["**Charismatique**", "Susciter une forte **identification**, incarner une vision, mobiliser par son **influence personnelle**."],
+          ["**Servant**", "Inverse la perspective : le leader se met d'abord **au service** de ses collaborateurs (leur développement, autonomie, bien-être)."],
+          ["**Authentique**", "La **connaissance de soi**, la **cohérence** entre valeurs affichées et comportements, la **transparence** relationnelle."],
+          ["**Éthique**", "L'**exemplarité morale**, l'**équité**, la promotion de comportements **responsables**."],
+          ["**Partagé ou distribué**", "Le leadership n'est pas forcément concentré sur **une seule personne** : l'influence et les fonctions de leadership peuvent être **réparties** selon les compétences et les situations."]
+        ] },
+        { "type": "tip", "text": "Idée essentielle : les théories ont progressivement **abandonné l'idée d'un leader défini par des traits universels**. Le leadership est aujourd'hui compris comme un **processus d'influence** qui dépend de la **situation**, des **relations** avec le groupe et des **comportements** adoptés. Naît-on leader ou le devient-on ? On peut le devenir : expérience, apprentissage, feedback, développement personnel (plan du cours)." },
+        { "type": "table", "title": "Les 4 styles de leadership de Hersey et Blanchard (plan du cours)", "head": ["Style", "Verbe clé", "Comportement"], "rows": [
+          ["**Directif**", "Diriger", "Beaucoup de tâche, peu de relation : consignes précises."],
+          ["**Persuasif**", "Expliquer", "Beaucoup de tâche et beaucoup de relation."],
+          ["**Participatif**", "Associer", "Peu de tâche, beaucoup de relation."],
+          ["**Délégatif**", "Confier", "Peu de tâche, peu de relation : autonomie."]
+        ] },
+        { "type": "p", "text": "Le **leadership est situationnel** : un leader efficace **adapte son style** au contexte, à son équipe et aux objectifs. Exemple : directif avec un stagiaire le premier jour, délégatif avec un expert confirmé." },
+        { "type": "example", "text": "Illustration du cours : **Air** (Ben Affleck, 2023). Sonny Vaccaro convainc Nike de tout miser sur Michael Jordan : **vision, persuasion, expertise, prise de risque, mobilisation collective**. Il défend une idée contre les routines, convainc des interlocuteurs différents, mise sur son expertise du marché, ose une décision risquée et fédère autour d'un projet ambitieux. « Les gens ne veulent pas juste des chaussures. Ils veulent croire en quelque chose. » À retenir : le leadership ne repose pas sur des traits fixes seulement ; il dépend du contexte, des relations, des comportements et de la capacité à transformer une vision en action collective." }
+      ]
+    },
+    {
+      "id": "conclusion",
+      "title": "Conclusion du cours",
+      "source": "Conclusion · Plan du cours",
+      "blocks": [
+        { "type": "p", "text": "« Alors demandez-vous, à chaque fois que vous jugez et que vous percevez quelque chose, **si c'est bien la réalité ou si c'est ce qu'on a bien voulu nous faire voir**. » La réalité… ou une illusion imposée ? Comme un **kaléidoscope**, la réalité peut être perçue de bien des manières différentes." },
+        { "type": "list", "title": "En pratique", "items": [
+          "**Observer** sans juger ;",
+          "**Questionner** les évidences ;",
+          "**Analyser** les mécanismes (normes, conformisme, autorité, pensée groupale, pouvoir…) ;",
+          "**Agir** avec discernement."
+        ] },
+        { "type": "tip", "text": "À retenir des trois parties : nos comportements sont influencés par de multiples forces et nous ne sommes pas toujours entièrement libres de nos choix ; un groupe n'est pas la somme des individus ; le pouvoir existe dans toutes les relations, et chacun peut développer son influence et son leadership." }
+      ]
+    }
+  ],
+  "glossaryCats": [
+    { "id": "influence", "label": "Influence sociale" },
+    { "id": "groupe", "label": "Le groupe" },
+    { "id": "pouvoir", "label": "Pouvoir et leadership" },
+    { "id": "auteurs", "label": "Auteurs et expériences" },
+    { "id": "films", "label": "Films du cours (titre original)" }
+  ],
+  "glossary": [
+    { "cat": "influence", "term": "Influence sociale", "en": "social influence", "def": "Tout changement de conduite produit par des pressions dominantes dans un contexte donné (comportements, attitudes, croyances)." },
+    { "cat": "influence", "term": "Champ normatif", "en": "normative frame", "def": "Le cadre de référence des gens, fixé et modifié par l'influence sociale." },
+    { "cat": "influence", "term": "Contagion sociale", "en": "social contagion", "def": "Tendance à imiter un modèle dominant de comportement qui se propage d'une personne à l'autre." },
+    { "cat": "influence", "term": "Âme collective", "en": "collective mind", "def": "Selon Le Bon, la conscience collective qui remplace les consciences individuelles dans une foule (loi de l'unité mentale)." },
+    { "cat": "influence", "term": "Suggestibilité", "en": "suggestibility", "def": "État de l'individu dans la foule, influençable comme un hypnotisé dans les mains d'un hypnotiseur." },
+    { "cat": "influence", "term": "Dépersonnalisation", "en": "depersonalization", "def": "Perte du sentiment d'être un individu unique : on abandonne sa conscience individuelle au profit d'une conscience collective." },
+    { "cat": "influence", "term": "Norme", "en": "social norm", "def": "Règle explicite ou implicite qui impose un mode organisé de conduite sociale ; ensemble de valeurs dominantes." },
+    { "cat": "influence", "term": "Normalisation", "en": "normalization", "def": "Interaction qui aboutit à un compromis et à un nivellement des positions, par pression réciproque." },
+    { "cat": "influence", "term": "Conformisme", "en": "conformity", "def": "Changement de comportement, d'opinion ou de perception sous la pression réelle ou imaginée d'un groupe. Influence passive." },
+    { "cat": "influence", "term": "Pression normative / informationnelle", "en": "normative / informational influence", "def": "Normative : se conformer pour être accepté. Informationnelle : se conformer pour trouver la « bonne réponse »." },
+    { "cat": "influence", "term": "Intériorisation de la norme", "en": "internalization", "def": "La norme du groupe devient la norme de l'individu (besoin d'acceptation, réduction de l'anxiété)." },
+    { "cat": "influence", "term": "Obéissance", "en": "obedience", "def": "Changement de comportement pour se soumettre aux ordres d'une autorité perçue comme légitime. Influence directe." },
+    { "cat": "influence", "term": "État agentique", "en": "agentic state", "def": "L'individu se voit comme l'instrument de la volonté d'autrui et laisse l'autorité juger ses actes (« je ne fais qu'obéir »)." },
+    { "cat": "influence", "term": "Dilution de la responsabilité", "en": "diffusion of responsibility", "def": "On ne se sent plus responsable des actes : l'autorité (ou le groupe) porte la responsabilité." },
+    { "cat": "influence", "term": "Syntonisation", "en": "tuning", "def": "Le sujet est réceptif à tout ce qui vient de l'autorité et très peu au reste : attention focalisée sur l'autorité." },
+    { "cat": "influence", "term": "Persuasion", "en": "persuasion", "def": "Modifier librement une attitude, une opinion ou un comportement par un message argumenté." },
+    { "cat": "influence", "term": "Effet boomerang", "en": "boomerang effect", "def": "Un message trop éloigné des convictions du récepteur renforce son attitude initiale, voire l'inverse." },
+    { "cat": "influence", "term": "Soumission librement consentie", "en": "freely consented compliance", "def": "Obtenir un comportement en donnant le sentiment de s'y engager librement ; proche de la manipulation." },
+    { "cat": "influence", "term": "Pied dans la porte", "en": "foot-in-the-door", "def": "Une petite faveur d'abord, puis une demande plus importante." },
+    { "cat": "influence", "term": "Porte au nez", "en": "door-in-the-face", "def": "Une demande exagérée (refusée) d'abord, puis une demande plus raisonnable." },
+    { "cat": "influence", "term": "Amorçage", "en": "lure / low-ball technique", "def": "Attirer avec un appât ou des avantages fictifs, puis proposer un comportement de substitution moins intéressant." },
+    { "cat": "influence", "term": "Influence minoritaire", "en": "minority influence", "def": "Une minorité consistante fait évoluer les normes de la majorité." },
+    { "cat": "influence", "term": "Minorité agissante", "en": "active minority", "def": "Individu ou petit groupe qui exprime son désaccord pour faire changer la norme du groupe." },
+    { "cat": "influence", "term": "Consistance synchronique / diachronique", "en": "synchronic / diachronic consistency", "def": "Synchronique : les membres de la minorité sont d'accord entre eux. Diachronique : ils gardent la même position dans le temps." },
+    { "cat": "groupe", "term": "Groupe", "en": "group", "def": "Au moins trois personnes qui collaborent régulièrement à des objectifs communs et s'influencent réciproquement." },
+    { "cat": "groupe", "term": "Interdépendance", "en": "interdependence", "def": "Les membres ont besoin les uns des autres pour atteindre leurs objectifs communs." },
+    { "cat": "groupe", "term": "Sentiment d'appartenance", "en": "sense of belonging", "def": "Ce qui lie l'individu à un ou plusieurs groupes." },
+    { "cat": "groupe", "term": "Équipe", "en": "team", "def": "Groupe aux compétences complémentaires, qui collabore à un objectif commun et se sent collectivement responsable." },
+    { "cat": "groupe", "term": "Groupe formel / informel", "en": "formal / informal group", "def": "Formel : officiellement désigné par l'organisation. Informel : formé spontanément autour d'intérêts communs." },
+    { "cat": "groupe", "term": "Groupe primaire / secondaire", "en": "primary / secondary group", "def": "Primaire : assez restreint pour que les membres se connaissent vraiment. Secondaire : appartenance purement intellectuelle." },
+    { "cat": "groupe", "term": "Groupe de référence", "en": "reference group", "def": "Groupe dont on tire ses modèles de conduite ; fonctions normative, évaluative et protectrice." },
+    { "cat": "groupe", "term": "Groupe d'appartenance", "en": "membership group", "def": "Groupe dont on est membre ou auquel on aspire à se rattacher." },
+    { "cat": "groupe", "term": "Comparaison sociale", "en": "social comparison", "def": "Se comparer aux autres pour évaluer ses attitudes et capacités (Festinger)." },
+    { "cat": "groupe", "term": "Dynamique de groupe", "en": "group dynamics", "def": "Ensemble des phénomènes psychosociaux qui influent sur les relations entre les membres d'un groupe." },
+    { "cat": "groupe", "term": "Cohésion", "en": "cohesion", "def": "Forces réciproques d'attraction entre les membres ; désir d'appartenir au groupe et d'y participer." },
+    { "cat": "groupe", "term": "Rôle", "en": "role", "def": "Ensemble d'attentes associées à un poste ou une fonction dans un groupe." },
+    { "cat": "groupe", "term": "Conflit / surcharge de rôle", "en": "role conflict / role overload", "def": "Conflit : attentes contradictoires. Surcharge : attentes trop élevées. Insuffisance : attentes trop faibles." },
+    { "cat": "groupe", "term": "Désindividuation", "en": "deindividuation", "def": "Adopter des comportements antisociaux quand on est noyé dans un groupe ou une foule." },
+    { "cat": "groupe", "term": "Anomie", "en": "anomie", "def": "Déstructuration d'un groupe ou d'une société." },
+    { "cat": "groupe", "term": "Facilitation sociale", "en": "social facilitation", "def": "On en fait plus en présence des autres." },
+    { "cat": "groupe", "term": "Paresse sociale", "en": "social loafing", "def": "On en fait moins quand sa contribution est peu identifiable." },
+    { "cat": "groupe", "term": "Polarisation", "en": "group polarization", "def": "Après discussion, les opinions du groupe deviennent plus extrêmes." },
+    { "cat": "groupe", "term": "Identité sociale", "en": "social identity", "def": "Conscience d'appartenir à des groupes et valeur de cette appartenance pour l'image de soi." },
+    { "cat": "groupe", "term": "Catégorisation sociale", "en": "social categorization", "def": "Se classer, et classer les autres, dans des catégories sociales (1re étape de l'identification)." },
+    { "cat": "groupe", "term": "Socialisation primaire / secondaire", "en": "primary / secondary socialization", "def": "Primaire : famille, école, religion. Secondaire : monde professionnel." },
+    { "cat": "groupe", "term": "Pensée groupale", "en": "groupthink", "def": "Recherche de consensus à tout prix qui pousse un groupe soudé à des décisions irrationnelles (Janis)." },
+    { "cat": "groupe", "term": "Censure collective", "en": "self-censorship", "def": "Symptôme de la pensée groupale : censure de soi et des autres membres." },
+    { "cat": "pouvoir", "term": "Pouvoir", "en": "power", "def": "Capacité d'obtenir d'autrui des comportements qu'il n'aurait pas eus sans notre intervention." },
+    { "cat": "pouvoir", "term": "Coercition", "en": "coercive power", "def": "Base de pouvoir : la source peut punir la cible." },
+    { "cat": "pouvoir", "term": "Pouvoir de récompense", "en": "reward power", "def": "Base de pouvoir : la cible veut obtenir un avantage de la source." },
+    { "cat": "pouvoir", "term": "Pouvoir d'expertise", "en": "expert power", "def": "Base de pouvoir : compétence perçue de la source, dépendance informationnelle." },
+    { "cat": "pouvoir", "term": "Pouvoir référentiel", "en": "referent power", "def": "Base de pouvoir : identification, admiration, envie de ressembler à la source." },
+    { "cat": "pouvoir", "term": "Pouvoir légitime", "en": "legitimate power", "def": "Base de pouvoir : position hiérarchique, droit reconnu de donner des ordres." },
+    { "cat": "pouvoir", "term": "Pouvoir formel / informel", "en": "formal / informal power", "def": "Formel : légitimé par les règles. Informel : relations implicites, réseaux, contrôle de l'incertitude." },
+    { "cat": "pouvoir", "term": "Zone d'incertitude", "en": "zone of uncertainty", "def": "Ce que l'on maîtrise et dont les autres ont besoin : source de pouvoir (Crozier et Friedberg)." },
+    { "cat": "pouvoir", "term": "Rapport de force", "en": "power relationship", "def": "Premier aspect du pouvoir : qui peut imposer quoi à qui (ex. pouvoir des coalitions, la grève)." },
+    { "cat": "pouvoir", "term": "Leadership", "en": "leadership", "def": "Processus d'influence sociale par lequel un individu amène un groupe à atteindre des objectifs (Lévy-Leboyer)." },
+    { "cat": "pouvoir", "term": "Autorité", "en": "authority", "def": "Pouvoir prescrit par l'organisation, unidirectionnel, lié à la hiérarchie formelle." },
+    { "cat": "pouvoir", "term": "Leader formel / informel", "en": "formal / informal leader", "def": "Formel : nommé, fonction-tâche. Informel : émerge du groupe, fonction socio-émotionnelle (Bales)." },
+    { "cat": "pouvoir", "term": "Leadership transactionnel", "en": "transactional leadership", "def": "Négociation d'objectifs : récompense contingente contre soutien." },
+    { "cat": "pouvoir", "term": "Leadership transformationnel", "en": "transformational leadership", "def": "Motiver au-delà des intérêts personnels pour transformer une vision en réalité." },
+    { "cat": "pouvoir", "term": "Servant leadership", "en": "servant leadership", "def": "Le leader se met au service de ses collaborateurs (développement, autonomie, bien-être)." },
+    { "cat": "pouvoir", "term": "Leadership authentique / éthique", "en": "authentic / ethical leadership", "def": "Authentique : connaissance de soi, cohérence, transparence. Éthique : exemplarité morale, équité." },
+    { "cat": "pouvoir", "term": "Leadership partagé / distribué", "en": "shared / distributed leadership", "def": "Les fonctions de leadership sont réparties entre plusieurs membres." },
+    { "cat": "pouvoir", "term": "Leadership situationnel", "en": "situational leadership", "def": "Le leader adapte son style (directif, persuasif, participatif, délégatif) à la situation (Hersey et Blanchard)." },
+    { "cat": "auteurs", "term": "Gustave Le Bon", "en": "The Crowd: A Study of the Popular Mind", "def": "Psychologie des foules (1895) : âme collective, contagion mentale, suggestibilité, dépersonnalisation." },
+    { "cat": "auteurs", "term": "Solomon Asch", "en": "Asch conformity experiments", "def": "Expérience des lignes : on donne une réponse fausse pour s'aligner sur la majorité ; le conformisme augmente jusqu'à 3 compères." },
+    { "cat": "auteurs", "term": "Stanley Milgram", "en": "Milgram obedience experiment", "def": "Expérience des faux chocs électriques : des individus ordinaires obéissent à une autorité contre leurs convictions." },
+    { "cat": "auteurs", "term": "Serge Moscovici", "en": "minority influence", "def": "Théorie de l'influence minoritaire (minorité consistante). Non nommé dans le polycopié.", "extra": true },
+    { "cat": "auteurs", "term": "Leon Festinger", "en": "social comparison theory", "def": "Théorie de la comparaison sociale : fonction évaluative du groupe de référence." },
+    { "cat": "auteurs", "term": "Kurt Lewin", "en": "group dynamics", "def": "Dépendance constitutive et dépendance de référence ; espace de vie ; dynamique de groupe." },
+    { "cat": "auteurs", "term": "Henri Tajfel", "en": "social identity theory", "def": "Théorie de l'identité sociale. Non nommé dans le polycopié.", "extra": true },
+    { "cat": "auteurs", "term": "Edgar Schein", "en": "group decision-making modes", "def": "6 modes de décision : absence de réaction, autorité, minorité, majorité, consensus, unanimité." },
+    { "cat": "auteurs", "term": "Irving Janis", "en": "groupthink", "def": "Pensée groupale : illusion collective et censure collective." },
+    { "cat": "auteurs", "term": "Expérience de Stanford", "en": "Stanford prison experiment", "def": "Des étudiants deviennent gardiens sadiques ou prisonniers brisés selon leur rôle (désindividuation)." },
+    { "cat": "auteurs", "term": "French et Raven (1959)", "en": "bases of social power", "def": "5 bases du pouvoir : coercition, récompense, expertise, référentiel, légitime." },
+    { "cat": "auteurs", "term": "Crozier et Friedberg", "en": "strategic analysis of organizations", "def": "Le pouvoir vient du contrôle de ressources et de zones d'incertitude." },
+    { "cat": "auteurs", "term": "Claude Lévy-Leboyer", "en": "leadership as social influence", "def": "Le leadership, processus d'influence sociale qui amène un groupe à atteindre des objectifs." },
+    { "cat": "auteurs", "term": "Robert Bales (1958)", "en": "task / socio-emotional leadership", "def": "Deux fonctions du leader : fonction-tâche et fonction socio-émotionnelle." },
+    { "cat": "auteurs", "term": "Bruce Tuckman", "en": "forming, storming, norming, performing, adjourning", "def": "Les 5 étapes de développement d'un groupe (plan du cours)." },
+    { "cat": "auteurs", "term": "Hersey et Blanchard", "en": "situational leadership model", "def": "4 styles de leadership : directif, persuasif, participatif, délégatif (plan du cours)." },
+    { "cat": "films", "term": "I… comme Icare (1979)", "en": "I as in Icarus", "def": "Obéissance à l'autorité : reconstitution de l'expérience de Milgram." },
+    { "cat": "films", "term": "Don't Look Up : Déni cosmique (2021)", "en": "Don't Look Up", "def": "Persuasion et son échec : manipulation médiatique, déni, effet boomerang." },
+    { "cat": "films", "term": "12 Hommes en colère (1957)", "en": "12 Angry Men", "def": "Influence minoritaire : un juré seul retourne les 11 autres par sa constance." },
+    { "cat": "films", "term": "Le Cercle des poètes disparus (1989)", "en": "Dead Poets Society", "def": "Normes et conformisme (« I sound my barbaric yawp »)." },
+    { "cat": "films", "term": "Oppenheimer (2023)", "en": "Oppenheimer", "def": "Pensée groupale : quand la cohésion du groupe devient un piège pour la décision." },
+    { "cat": "films", "term": "Das Experiment (2001)", "en": "The Experiment", "def": "Le groupe peut transformer l'individu : rôles, pouvoir, soumission (expérience de Stanford)." },
+    { "cat": "films", "term": "Le Diable s'habille en Prada (2006)", "en": "The Devil Wears Prada", "def": "Inspire l'infographie des 5 bases du pouvoir social et du pouvoir formel / informel." },
+    { "cat": "films", "term": "Gourou (2026)", "en": "Gourou", "def": "Leadership, relation d'influence, leader vs autorité ; dérive vers la dépendance." },
+    { "cat": "films", "term": "Air (2023)", "en": "Air", "def": "Leadership : vision, persuasion, expertise, prise de risque, mobilisation collective." }
+  ]
+}

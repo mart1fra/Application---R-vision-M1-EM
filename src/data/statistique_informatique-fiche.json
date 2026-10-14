@@ -1,0 +1,454 @@
+{
+  "title": "Informatique et statistiques",
+  "subtitle": "Séances 1 à 5 · TP 1 à 3 corrigés · A. Callet-Feltz · EM Strasbourg",
+  "cardDesc": "Résumé des 5 fiches de cours, résultats des TP 1 à 3 et lexique FR / EN",
+  "sections": [
+    {
+      "id": "apercu",
+      "title": "Le cours en un coup d'œil",
+      "source": "Séances 1 à 5 · TP 1 à 3",
+      "blocks": [
+        { "type": "p", "text": "Le cours apprend à **calculer et analyser des statistiques sur Excel**. Chaque séance a une fiche de cours et un TP sur tableur (exercice 0 « à la main », puis exercices sur Excel)." },
+        { "type": "table", "title": "Plan du cours", "head": ["#", "Séance", "Ce qu'on y apprend", "TP corrigé ?"], "rows": [
+          ["1", "Statistiques descriptives", "Moyenne, médiane, variance, écart-type, quartiles, valeurs aberrantes, graphiques", "Oui (TP 1)"],
+          ["2", "Lois de probabilités usuelles", "Binomiale, Poisson, normale, exponentielle, géométrique, uniforme", "Oui (TP 2)"],
+          ["3", "Régression linéaire, loi normale et théorème limite", "Droite de régression, r, R², loi N(0 ; 1), théorème central limite", "Oui (TP 3)"],
+          ["4", "Intervalles de confiance", "Estimer une moyenne, un écart-type, une proportion", "Fiche seulement"],
+          ["5", "Tests d'hypothèses", "H0 / H1, risque α, p-valeur, tests de Student, Z et du khi-deux", "Fiche seulement"]
+        ] },
+        { "type": "tip", "text": "Dans Excel en français, les arguments d'une formule sont séparés par **« ; »** et les décimales s'écrivent avec une **virgule**. Le nom anglais de chaque fonction est dans l'onglet **Lexique FR / EN** (utile si ton Excel est en anglais)." },
+        { "type": "tip", "text": "Les corrections des TP contiennent quelques **coquilles** : elles sont signalées dans les parties concernées, avec le bon résultat (vérifié dans le tableur corrigé ou recalculé)." }
+      ]
+    },
+    {
+      "id": "indicateurs",
+      "title": "Statistiques descriptives : les indicateurs",
+      "source": "Séance 1 · p. 1",
+      "blocks": [
+        { "type": "p", "text": "Dans les formules, **DATA** représente une colonne de données à analyser (par exemple A1:A50)." },
+        { "type": "table", "wide": 780, "head": ["Statistique", "Formule Excel", "Interprétation"], "rows": [
+          ["Minimum", "=MIN(DATA)", "Valeur minimale"],
+          ["Maximum", "=MAX(DATA)", "Valeur maximale"],
+          ["**Étendue**", "=MAX(DATA)-MIN(DATA)", "Étendue des données"],
+          ["Somme", "=SOMME(DATA)", "Somme des valeurs de l'échantillon"],
+          ["Cardinal de l'échantillon", "=NB(DATA)", "Nombre de valeurs dans l'échantillon"],
+          ["**Moyenne**", "=MOYENNE(DATA)", "Valeur **centrale** typique"],
+          ["**Médiane**", "=MEDIANE(DATA)", "Valeur **intermédiaire** : divise les données en deux parties égales (si proche de la moyenne : distribution symétrique)"],
+          ["**Variance**", "=VAR.S(DATA)", "Mesure de **dispersion** (unité au carré) : moyenne des écarts à la moyenne au carré"],
+          ["**Écart-type**", "=ECARTYPE.STANDARD(DATA)", "Mesure de **dispersion** (même unité que les données) : racine de la variance"],
+          ["Erreur-type", "=ECARTYPE.STANDARD(DATA)/RACINE(NB(DATA))", "Estimation de l'écart-type de la moyenne d'échantillon (**variation de la moyenne** si on prenait plusieurs échantillons)"],
+          ["**Coefficient de variation**", "=ECARTYPE.STANDARD(DATA)/MOYENNE(DATA)*100", "Mesure de **dispersion relative** (en %)"]
+        ] },
+        { "type": "p", "text": "Les TP classent ces indicateurs en deux familles : les **caractéristiques de position** (où se situent les valeurs : moyenne, médiane, quartiles, min, max) et les **caractéristiques de dispersion** (à quel point elles sont étalées : étendue, variance, écart-type, coefficient de variation, écart interquartile)." },
+        { "type": "tip", "text": "La **variance** est en unité au carré (des €² si les données sont en €) : on l'interprète via l'**écart-type**, qui est dans l'unité des données. Le **coefficient de variation** n'a pas d'unité : c'est lui qui permet de comparer la dispersion de séries de niveaux différents." },
+        { "type": "p", "text": "Raccourci : onglet **Données** → **Utilitaire d'analyse** (module à installer) → **Statistiques descriptives** donne tous ces indicateurs d'un coup (avec en plus le mode, l'aplatissement et l'asymétrie)." }
+      ]
+    },
+    {
+      "id": "formules",
+      "title": "Les formules mathématiques de base",
+      "source": "Séance 1 · p. 2",
+      "blocks": [
+        { "type": "p", "text": "On note (x1, …, xn) le jeu de données qui contient **n observations**. C'est généralement un **échantillon** et pas la **population entière** : la moyenne ou l'écart-type calculés sont donc de simples **estimations**." },
+        { "type": "def", "term": "Moyenne", "en": "mean", "text": "**m = (1/n) × Σ xi** : la somme des valeurs divisée par le nombre de valeurs." },
+        { "type": "def", "term": "Variance", "en": "variance", "text": "**V = 1/(n − 1) × Σ (xi − m)²** : la somme des carrés des écarts à la moyenne, divisée par **n − 1** (et pas par n, car on travaille sur un échantillon : c'est ce que calcule VAR.S)." },
+        { "type": "def", "term": "Écart-type", "en": "standard deviation", "text": "**σ = √V** : la racine carrée de la variance." },
+        { "type": "def", "term": "Médiane", "en": "median", "text": "On trie les valeurs par ordre croissant. Si le nombre de valeurs est **impair**, on prend la **valeur centrale** ; s'il est **pair**, on prend la **somme des deux valeurs centrales divisée par deux**." },
+        { "type": "example", "text": "TP 1, exo 0.2 (températures de Jean sur 10 jours) : somme = 197,2 donc **m = 19,72 °C** ; variance **σ² ≈ 0,677** ; écart-type ≈ 0,82 ; CV ≈ **4,2 %** (série très peu dispersée). Valeurs triées : 18,4 ; 18,5 ; 19,4 ; 19,6 ; **19,7 ; 19,8** ; 19,9 ; 20,4 ; 20,5 ; 21,0 → 10 valeurs, donc médiane = (19,7 + 19,8)/2 = **19,75**." },
+        { "type": "example", "text": "TP 1, exo 0.3 (salaires de 12 personnes, en milliers d'euros) : moyenne ≈ **2,38** ; médiane = (2,4 + 2,5)/2 = **2,45** ; écart-type ≈ 0,50 ; CV ≈ **21 %**. Q1 = 1,95 et Q3 = 2,775 : bornes [0,71 ; 4,01], donc **aucune valeur aberrante**." }
+      ]
+    },
+    {
+      "id": "quartiles",
+      "title": "Quartiles, valeurs aberrantes et graphiques",
+      "source": "Séance 1 · p. 2",
+      "blocks": [
+        { "type": "p", "text": "Les **quartiles** répartissent les données en paquets de **25 %**. On les représente par une **boîte à moustaches**." },
+        { "type": "table", "wide": true, "head": ["Statistique", "Formule Excel", "Interprétation"], "rows": [
+          ["1er quartile (Q1)", "=QUARTILE.EXCLURE(DATA ; 1)", "Sépare les données en 25 % / 75 %"],
+          ["2e quartile (Q2)", "=MEDIANE(DATA)", "Sépare les données en 50 % / 50 % (c'est la médiane)"],
+          ["3e quartile (Q3)", "=QUARTILE.EXCLURE(DATA ; 3)", "Sépare les données en 75 % / 25 %"],
+          ["Écart interquartile (IQR)", "=Q3-Q1", "Intervalle qui contient **50 %** des données"],
+          ["Borne inférieure", "=Q1-(1,5*IQR)", "Une valeur **inférieure** à cette borne est **aberrante**"],
+          ["Borne supérieure", "=Q3+(1,5*IQR)", "Une valeur **supérieure** à cette borne est **aberrante**"]
+        ] },
+        { "type": "flow", "title": "Lire une boîte à moustaches (de haut en bas)", "steps": [
+          "Points isolés au-dessus : valeurs aberrantes",
+          "Bout de la moustache haute : min(max ; Q3 + 1,5 × IQR)",
+          "Haut de la boîte : 3e quartile",
+          "Trait dans la boîte : médiane",
+          "Bas de la boîte : 1er quartile",
+          "Bout de la moustache basse : max(min ; Q1 − 1,5 × IQR)",
+          "Points isolés en dessous : valeurs aberrantes"
+        ] },
+        { "type": "tip", "text": "Avec QUARTILE.EXCLURE, Q1 est la valeur de **rang (n + 1)/4** et Q3 celle de **rang 3(n + 1)/4** dans la série triée (en interpolant si le rang n'est pas entier). À la main, d'autres méthodes donnent parfois des quartiles légèrement différents : sur Excel, utilise toujours QUARTILE.EXCLURE comme dans le cours." },
+        { "type": "example", "text": "TP 1, exo 0.1 (gains d'un joueur, 12 parties). Série triée : −5 ; −4 ; −3 ; −1 ; 0 ; **1 ; 2** ; 5 ; 5 ; 6 ; 7 ; 20. Médiane = (1 + 2)/2 = **1,5**. Q1 = **−2,5** (rang 3,25) et Q3 = **5,75** (rang 9,75), donc IQR = 8,25. Bornes : −2,5 − 12,375 = **−14,875** et 5,75 + 12,375 = **18,125** → **20 est une valeur aberrante**. Moyenne = 33/12 = **2,75** ; écart-type ≈ 6,74 ; CV ≈ 245 %." },
+        { "type": "list", "title": "Quels graphiques ?", "items": [
+          "**Données quantitatives** (des nombres) : histogramme par classes, courbe, diagramme circulaire, boîte à moustaches, nuage de points.",
+          "**Données qualitatives** (des catégories : sport, couleur…) : histogramme des effectifs, diagramme circulaire des effectifs."
+        ] }
+      ]
+    },
+    {
+      "id": "tp1",
+      "title": "TP 1 : les réflexes d'analyse",
+      "source": "TP 1 · corrigé",
+      "blocks": [
+        { "type": "example", "text": "Exo 1 (dossiers traités par deux équipes de 30 salariés). Équipe B : moyenne **158,3**, CV **7,1 %**. Équipe A : moyenne **125,9**, CV **10,4 %**. Conclusion : l'équipe B est **plus productive** et **plus homogène** (plus faible variation interne)." },
+        { "type": "example", "text": "Exo 2 (chiffre d'affaires de deux équipes de commerciaux). Équipe A : moyenne 88, médiane 91, écart-type 14,3. Équipe B : moyenne 86,6, médiane 89,5, écart-type 13,6. Position légèrement plus basse pour B, dispersion similaire : le CA de B est globalement un peu en dessous de celui de A." },
+        { "type": "example", "text": "Exo 2, question 3 : on avait saisi **101 au lieu de 143**. Une fois corrigée, la moyenne passe de 88 à **92,2**, l'écart-type de 14,3 à **22,4** et le CV de 16,3 % à **24,3 %**. La médiane (91) et les quartiles bougent à peine. Intervalle retenu : **[33 ; 142]** → 143 en sort : c'est une **valeur aberrante**. Il faut vérifier la valeur et chercher une explication ; en attendant, on peut l'écarter de l'analyse en le signalant." },
+        { "type": "tip", "text": "La **moyenne**, la **variance** et l'**écart-type** sont **sensibles aux valeurs aberrantes**. La **médiane** et les **quartiles** sont **peu impactés** (robustes)." },
+        { "type": "example", "text": "Exo 5 (satisfaction de 3 agences, de 0 à 6). Moyennes 3,1 / 4,2 / 5,0 et **le même écart-type (0,60)**… mais des CV de **19,1 %**, **14,1 %** et **11,9 %**. Un écart-type de 1 ne représente pas la même variation si les valeurs tournent autour de 1 ou de 100 : **l'agence A est relativement la plus dispersée**." },
+        { "type": "tip", "text": "Pour comparer la dispersion de séries qui n'ont pas la même moyenne, compare les **coefficients de variation**, pas les écarts-types." },
+        { "type": "example", "text": "Histogrammes (exo 1, classes de 5, 10 puis 20) : avec des classes **trop petites**, les données sont peu regroupées donc peu résumées ; avec des classes **trop grandes**, on ne voit plus les tendances. Il faut une **longueur de classe adaptée** aux données." },
+        { "type": "example", "text": "Exo 3 (sports pratiqués par 450 employés) : on ajoute les **fréquences** (effectif / total), les **effectifs cumulés croissants** et **décroissants**. Les jeux de ballons (203, soit 45 %) dominent, puis la course à pied (102), le VTT (63) et l'escalade (53)." },
+        { "type": "tip", "text": "Sur un graphique d'**effectifs cumulés**, la dernière barre vaut toujours le total : le sport le plus pratiqué n'est pas la plus haute barre, c'est celui où la courbe fait le **plus grand saut**." },
+        { "type": "p", "text": "**Données groupées en classes** (exos 4 et 6) : on remplace chaque classe par son **centre** (valeur centrale), pondéré par l'effectif : moyenne = SOMMEPROD(centres ; effectifs) / effectif total." },
+        { "type": "example", "text": "Exo 4 (140 commandes) : temps moyen **1,12 h**, écart-type 0,46, CV **41 %**. **62** commandes traitées en moins d'1 h et **66** entre 1 h et 1,8 h (en sommant les effectifs, ou par différence d'effectifs cumulés). Exo 6 : salaire moyen **2 246 €** (entreprise A) contre **3 050 €** (B) ; écart-type plus faible dans A, salaires élevés plus nombreux dans B." },
+        { "type": "example", "text": "Exo 7 (84 temps d'attente entre deux innovations) : moyenne **8,15 ans**, médiane 6, de 0 à 56 ans, écart-type 9,7, donc CV **119 %** : très forte variation. 27 fois moins de 2 ans, 18 fois entre 2 et 6 ans ; la classe [6 ; 12[ représente **29,8 %** des attentes." }
+      ]
+    },
+    {
+      "id": "probas",
+      "title": "Probabilités : les règles de base",
+      "source": "Séance 2 · p. 1",
+      "blocks": [
+        { "type": "def", "term": "Probabilité P(A)", "en": "probability", "text": "La probabilité qu'un événement A se produise. Elle est **toujours comprise entre 0 et 1**. En la multipliant par 100, on la traduit en **fréquence** (pourcentage)." },
+        { "type": "def", "term": "Variable aléatoire X", "en": "random variable", "text": "Permet de **modéliser un phénomène aléatoire**." },
+        { "type": "example", "text": "On lance un dé et on note X le score obtenu (de 1 à 6). P(X = 2) = 1/6 ≈ 0,17 : l'événement « obtenir un 2 » se produit avec une fréquence d'environ **17 %**." },
+        { "type": "def", "term": "Événement contraire", "en": "complementary event", "text": "Si Ā est l'événement contraire de A, alors **P(Ā) = 1 − P(A)**. Exemple : P(X ≥ 4) = 1 − P(X < 4)." },
+        { "type": "table", "head": ["", "Phénomène discret", "Phénomène continu"], "rows": [
+          ["Définition", "On peut **énumérer** toutes les valeurs possibles", "Une **infinité de valeurs** possibles dans un intervalle"],
+          ["Exemples", "Lancer de dé, nombre de tests positifs, nombre de clients", "Taille, température, temps d'attente, poids"],
+          ["Ce qu'on calcule", "P(X = a), P(X ≤ a), P(X ≥ a)…", "Seulement P(X ≤ a) ou P(X ≥ a), **jamais P(X = a)**"],
+          ["Lois du cours", "Binomiale, Poisson, géométrique", "Normale, exponentielle, uniforme"]
+        ] }
+      ]
+    },
+    {
+      "id": "binomiale-poisson",
+      "title": "Loi binomiale et loi de Poisson (discrètes)",
+      "source": "Séance 2 · p. 1 · TP 2",
+      "blocks": [
+        { "type": "def", "term": "Loi binomiale B(n ; p)", "en": "binomial distribution", "text": "X suit une loi binomiale si elle compte le **nombre de succès** de probabilité **p** dans **n expériences indépendantes**. Moyenne = **np** ; variance = **np(1 − p)**." },
+        { "type": "example", "text": "On administre un vaccin efficace à 80 % à 10 patients : X = nombre de fois où le vaccin est efficace suit B(10 ; 0,8). En moyenne, il est efficace sur 10 × 0,8 = 8 patients." },
+        { "type": "def", "term": "Loi de Poisson P(a)", "en": "Poisson distribution", "text": "X suit une loi de Poisson si elle compte le nombre d'**événements rares** qui arrivent **en moyenne a fois** dans un intervalle fixe. Moyenne = **a** ; variance = **a** (le paramètre est parfois noté λ)." },
+        { "type": "example", "text": "Une réaction allergique survient en moyenne deux fois par semaine : le nombre de réactions sur une semaine suit une loi de Poisson de paramètre a = 2." },
+        { "type": "table", "wide": true, "title": "Sur Excel : traduire la question", "head": ["On cherche…", "Binomiale", "Poisson"], "rows": [
+          ["**Exactement** 7 : P(X = 7)", "LOI.BINOMIALE.N(7 ; n ; p ; **FAUX**)", "LOI.POISSON.N(7 ; a ; **FAUX**)"],
+          ["**Au plus** 9 : P(X ≤ 9)", "LOI.BINOMIALE.N(9 ; n ; p ; **VRAI**)", "LOI.POISSON.N(9 ; a ; **VRAI**)"],
+          ["**Au moins** 4 : P(X ≥ 4) = 1 − P(X ≤ 3)", "1 − LOI.BINOMIALE.N(**3** ; n ; p ; VRAI)", "1 − LOI.POISSON.N(**3** ; a ; VRAI)"],
+          ["**Entre** 4 et 8 inclus : P(X ≤ 8) − P(X ≤ 3)", "LOI.BINOMIALE.N(8 ; …) − LOI.BINOMIALE.N(3 ; …), en VRAI", "LOI.POISSON.N(8 ; …) − LOI.POISSON.N(3 ; …), en VRAI"]
+        ] },
+        { "type": "tip", "text": "**FAUX** = probabilité d'une valeur exacte ; **VRAI** = mode **cumulatif**, probabilité d'obtenir une valeur **inférieure ou égale**. Pour « au moins k », passe par l'événement contraire : 1 − P(X ≤ k − 1)." },
+        { "type": "p", "text": "Pour **tracer la courbe de distribution** : on calcule la probabilité de chaque valeur possible (de 0 à n) avec FAUX, puis on place ces points sur un graphique." },
+        { "type": "example", "text": "TP 2, exo 1 : satisfaction de 85 %, 50 clients → X ∼ B(50 ; 0,85), moyenne théorique **42,5**. P(X = 35) ≈ **0,003** ; P(X ≤ 40) ≈ **0,209** ; P(X ≥ 45) ≈ **0,219** ; P(40 ≤ X ≤ 45) ≈ **0,768**. Simulation d'une réponse : ENT(ALEA()<0,85) vaut 1 (satisfait) ou 0." },
+        { "type": "tip", "text": "Coquille : la correction PDF donne 0,880 pour « au moins 45 », mais c'est P(X ≤ 45). Le tableur corrigé donne bien **0,219**." },
+        { "type": "example", "text": "TP 2, exo 2 : 6 réclamations par jour en moyenne → Poisson de paramètre 6. P(X = 4) ≈ **0,134** ; P(X ≤ 10) ≈ **0,957** ; P(X ≥ 2) = 1 − P(X ≤ 1) ≈ **0,983** ; P(4 ≤ X ≤ 8) ≈ **0,696**. La moyenne estimée vaut 6 = λ, l'écart-type théorique √6 ≈ **2,45**." },
+        { "type": "tip", "text": "Coquilles de l'exo 2 : le PDF affiche 0,0174 pour « au plus 10 » (le tableur donne 0,957). Le corrigé calcule aussi 1 − P(X ≤ 2) = 0,938 (c'est « au moins 3 ») et P(X ≤ 8) − P(X ≤ 4) = 0,562 (4 exclu). Bornes comprises, « au moins 2 » = 0,983 et « entre 4 et 8 » = 0,696." },
+        { "type": "example", "text": "TP 2, exo 0.1 : accidents sur 200 jours. On estime λ par la moyenne de l'échantillon : (0 × 86 + 1 × 82 + 2 × 22 + 3 × 7 + 4 × 2 + 5 × 1) / 200 = 160 / 200 = **0,8** accident par jour." },
+        { "type": "example", "text": "TP 2, exo 0.2 (QCM de 10 questions, 3 réponses, réussite à 8 bonnes réponses) : étudiant préparé, B(10 ; 0,8) → P(X ≥ 8) ≈ **0,678** ; non préparé, B(10 ; 1/3) → ≈ **0,003** ; étudiant pris au hasard (70 % préparés) : 0,7 × 0,678 + 0,3 × 0,003 ≈ **0,475**." }
+      ]
+    },
+    {
+      "id": "normale",
+      "title": "Loi normale (continue)",
+      "source": "Séance 2 · p. 2 · TP 2",
+      "blocks": [
+        { "type": "def", "term": "Loi normale N(μ ; σ²)", "en": "normal distribution", "text": "Une des lois les plus utilisées : elle modélise beaucoup de phénomènes issus de **plusieurs événements aléatoires**. Elle se reconnaît à sa **courbe en cloche centrée en la moyenne**. On écrit X ∼ N(μ ; σ²) : **μ = moyenne**, **σ² = variance**, **σ = écart-type**." },
+        { "type": "p", "text": "Exemples : taille ou poids d'une population, croissance des plantes, erreurs de mesure, temps de trajet, QI…" },
+        { "type": "table", "wide": true, "title": "Sur Excel", "head": ["On cherche…", "Formule"], "rows": [
+          ["P(X ≤ 7)", "LOI.NORMALE.N(7 ; μ ; σ ; VRAI)"],
+          ["P(X ≥ 9)", "1 − LOI.NORMALE.N(9 ; μ ; σ ; VRAI)"],
+          ["P(a ≤ X ≤ b)", "LOI.NORMALE.N(b ; μ ; σ ; VRAI) − LOI.NORMALE.N(a ; μ ; σ ; VRAI)"],
+          ["Simuler une valeur", "LOI.NORMALE.INVERSE.N(ALEA() ; μ ; σ)"]
+        ] },
+        { "type": "list", "title": "Sur la courbe de distribution :", "items": [
+          "la probabilité étudiée correspond à l'**aire sous la courbe** (l'aire totale vaut 1) ;",
+          "la courbe est toujours **centrée en la moyenne** (axe de symétrie) ;",
+          "pour une variable continue, on ne calcule **jamais P(X = a)** ;",
+          "P(μ − σ ≤ X ≤ μ + σ) ≈ **0,68** : 68 % des valeurs sont à moins d'un écart-type de la moyenne ;",
+          "P(μ − 2σ ≤ X ≤ μ + 2σ) ≈ **0,95** : 95 % des valeurs sont à moins de deux écarts-types ;",
+          "le schéma du cours donne aussi **99,7 %** pour μ ± 3σ."
+        ] },
+        { "type": "tip", "text": "Attention à l'écriture N(μ ; **σ²**) : le 2e paramètre est la **variance**. Mais dans LOI.NORMALE.N, on donne l'**écart-type σ**." },
+        { "type": "example", "text": "TP 2, exo 4 : score de performance, μ = 100 et σ = 15. P(X > 120) ≈ **0,091** (9,1 %) ; P(X < 90) ≈ **0,252** ; P(85 ≤ X ≤ 115) ≈ **0,683** (c'est μ ± σ). Avec un échantillon simulé de 200 scores, la moyenne et l'écart-type empiriques sont très proches de 100 et 15." },
+        { "type": "example", "text": "TP 2, exo 6 (contrôle qualité, poids étiqueté 100 g, μ = 100 et σ = 1). P(X < 98) ≈ **0,023** (aire à gauche de 98) ; P(X > 100) = **0,5** (symétrie) ; P(X < 102) ≈ **0,977** ; P(98 ≤ X ≤ 102) ≈ **0,95** (μ ± 2σ : 95 % des produits sont dans la tolérance et mis sur le marché) ; P(99 ≤ X ≤ 101) ≈ **0,68** (μ ± σ)." },
+        { "type": "example", "text": "TP 2, exo 0.5 : poids moyen 1,5 kg, écart-type 0,01 kg. P(X < 1,475) = P(Z < (1,475 − 1,5)/0,01) = P(Z < −2,5) ≈ **0,006**." }
+      ]
+    },
+    {
+      "id": "autres-lois",
+      "title": "Autres lois et données empiriques",
+      "source": "Séance 2 · p. 2 · TP 2",
+      "blocks": [
+        { "type": "table", "wide": true, "title": "Les lois du cours", "head": ["Loi", "Type", "Modélise…", "Moyenne", "Variance", "Excel"], "rows": [
+          ["Binomiale B(n ; p)", "Discrète", "le nombre de succès sur n essais indépendants", "np", "np(1 − p)", "LOI.BINOMIALE.N"],
+          ["Poisson P(a)", "Discrète", "le nombre d'événements rares sur un intervalle fixe", "a", "a", "LOI.POISSON.N"],
+          ["Géométrique", "Discrète", "le nombre d'essais avant le premier succès", "1/p", "(1 − p)/p²", "P(X = k) = p(1 − p)^(k − 1)"],
+          ["Normale N(μ ; σ²)", "Continue", "les phénomènes issus de nombreux aléas", "μ", "σ²", "LOI.NORMALE.N"],
+          ["Exponentielle E(λ)", "Continue", "des temps d'attente, des durées de vie sans vieillissement", "1/λ", "1/λ²", "LOI.EXPONENTIELLE.N"],
+          ["Uniforme sur [a ; b]", "Continue", "des événements équiprobables", "(a + b)/2", "—", "—"]
+        ] },
+        { "type": "p", "text": "Les moyennes et variances des lois géométrique et exponentielle viennent du TP 2 ; la moyenne de la loi uniforme (le milieu de l'intervalle) sert dans l'exo 0.3." },
+        { "type": "example", "text": "TP 2, exo 3 (loi géométrique, p = 0,05 qu'un client accepte) : il faut en moyenne **1/p = 20** personnes contactées avant la première vente (écart-type ≈ 19,5). P(une des 5 premières) ≈ **0,226** ; P(après la 10e) = 0,95^10 ≈ **0,599**." },
+        { "type": "example", "text": "TP 2, exo 5 (attente au standard, loi exponentielle de paramètre λ = 0,2) : moyenne **1/λ = 5 min**, écart-type 5 min. Simulation : −1 × LN(ALEA())/λ. P(X < 3) ≈ **0,451** ; P(X > 8) ≈ **0,202** ; P(4 ≤ X ≤ 6) ≈ **0,148**." },
+        { "type": "example", "text": "TP 2, exo 0.3 : T ∼ exponentielle de paramètre 2 et U ∼ uniforme sur [0 ; 1] (en minutes). P(0,5 ≤ T ≤ 1) = e^−1 − e^−2 ≈ **0,233** ; P(0,5 ≤ U ≤ 1) = **0,5** (la moitié de l'intervalle). Temps moyen d'un produit : E(T) + E(U) = 1/2 + 1/2 = **1 minute**." },
+        { "type": "tip", "text": "Pour une loi **continue**, LOI.…(x ; … ; FAUX) donne la **densité** autour de x, pas une probabilité : on ne peut pas additionner ces valeurs. On utilise toujours la version **VRAI** (cumulée) et une **différence**." },
+        { "type": "def", "term": "Moyenne empirique", "en": "sample (empirical) mean", "text": "La moyenne calculée sur des **expériences réalisées**. C'est une **estimation de la moyenne théorique** : avec 100 expériences d'une loi binomiale, la moyenne observée n'est pas exactement np, mais proche. On parle de données **empiriques** par opposition à **théoriques**." },
+        { "type": "tip", "text": "Plus l'échantillon est **grand**, plus les valeurs empiriques sont proches des valeurs théoriques (TP 2 : avec 200 valeurs simulées, on retrouve presque μ et σ). Avec trop peu de valeurs, l'estimation peut être loin (exo 3 : 14,6 au lieu de 20)." }
+      ]
+    },
+    {
+      "id": "regression",
+      "title": "Régression linéaire simple",
+      "source": "Séance 3 · p. 1 · TP 3 partie A",
+      "blocks": [
+        { "type": "p", "text": "La régression linéaire simple modélise la **relation entre une variable dépendante (Y) et une variable explicative (X)**. Le lien potentiel entre les deux variables s'appelle la **corrélation**." },
+        { "type": "example", "text": "Croissance d'une plante en fonction de la lumière reçue : la variable explicative X est l'**intensité lumineuse** (en lux), la variable dépendante Y est la **taille de la plante**." },
+        { "type": "flow", "title": "La démarche", "steps": [
+          "Nuage de points : X en abscisse, Y en ordonnée",
+          "Les points semblent former une droite ? → corrélation",
+          "Droite de régression (courbe de tendance linéaire)",
+          "Quantifier le lien : r, puis valider le modèle : R²",
+          "Exploiter : estimer y pour un x donné"
+        ] },
+        { "type": "table", "wide": true, "title": "Sur Excel", "head": ["Élément", "Formule", "À retenir"], "rows": [
+          ["Pente a", "=PENTE(Y ; X)", "Pente > 0 → corrélation positive (croissante)"],
+          ["Ordonnée à l'origine b", "=ORDONNEE.ORIGINE(Y ; X)", "Valeur de y quand x = 0"],
+          ["Coefficient de corrélation r", "=COEFFICIENT.CORRELATION(X ; Y)", "Entre −1 et 1"],
+          ["Coefficient de détermination R²", "=COEFFICIENT.DETERMINATION(Y ; X)", "Entre 0 et 1"],
+          ["Tout d'un coup", "=DROITEREG(plageY ; plageX ; ; V/F) ou l'utilitaire d'analyse", "Remarque du TP 3"]
+        ] },
+        { "type": "def", "term": "Coefficient de corrélation r", "en": "correlation coefficient", "text": "r ∈ [−1 ; 1] **quantifie le lien** entre les variables : proche de **1** → corrélation forte et **croissante** ; proche de **−1** → forte et **décroissante** ; proche de **0** → corrélation **faible**." },
+        { "type": "def", "term": "Coefficient de détermination R²", "en": "coefficient of determination", "text": "R² ∈ [0 ; 1] permet de **valider le modèle** : plus il est proche de 1, plus le modèle est **fiable**. Il mesure aussi la **part de la variabilité de Y expliquée par X** : R² = 0,97 → 97 % de la variabilité de la taille est expliquée par l'intensité lumineuse." },
+        { "type": "p", "text": "La droite s'écrit **y = a x + b**. La pente a (« coefficient de régression ») se lit ainsi : **quand x augmente de 1, y augmente en moyenne de a**. La droite passe toujours par le **point moyen** ({{x}} ; {{y}})." },
+        { "type": "example", "text": "Plante : y = 0,0054x + 5,7705 et R² = 0,9738. Pour 3 200 lux : y = 0,0054 × 3 200 + 5,7705 ≈ **23,05 cm**." },
+        { "type": "tip", "text": "Pour qu'une estimation soit fiable, la valeur de x doit être **dans l'intervalle des données étudiées**. En dehors (extrapolation), le modèle n'est plus valable." },
+        { "type": "example", "text": "TP 3, exo 1 (30 employés : X = score de performance, Y = jours de formation). r = **0,842** (corrélation croissante assez bonne) ; R² = **0,71** (modèle plutôt fiable, pas très robuste) ; y = **0,1339x − 15,518**. Score de 210 → ≈ **12,6 jours** (fiable : milieu du nuage). Score de 300 → hors des données : on ne peut pas utiliser le modèle." },
+        { "type": "example", "text": "TP 3, exo 1, question 6 : en inversant X et Y, on retrouve **les mêmes r et R²** (le lien est symétrique) mais **une autre équation** : y = 5,301x + 141,57. Pour 13 jours de formation : ≈ **210** avec cette droite, contre 213 en inversant la première. Pour exploiter un modèle, mets en **abscisse la variable que tu connais**." },
+        { "type": "tip", "text": "Coquille : la correction PDF écrit y = 0,1339x − 15,158 ; le tableur donne **−15,518** (c'est bien cette valeur qui donne 12,6 jours). Les 29 % restants s'expliquent par d'autres facteurs (formations plus ou moins pertinentes, autres façons de progresser…)." },
+        { "type": "example", "text": "TP 3, exo 2 (commerciaux et chiffre d'affaires) : r = **0,963** et R² = **0,928** → modèle très fiable. y = **14,07x + 16,92**. Pour 28 commerciaux : ≈ **410,9 milliers d'euros**, mais **peu fiable** car 28 est loin des données (16 à 26)." },
+        { "type": "example", "text": "TP 3, exo 0.1 (stock de dossiers S selon les semaines T) : point moyen (6,86 ; 8,6) ; S = **−1,209T + 16,889** ; r ≈ −0,924 et R² ≈ **0,854**. S(7) ≈ 8,4 est fiable ; S(1) ≈ 15,7 et S(20) ≈ **−7,3** (un stock négatif, absurde !) sont des extrapolations." },
+        { "type": "example", "text": "TP 3, exo 0.2 (modèle D = 1/(aJ + b)) : on pose **Y = 1/D**, qui est une fonction linéaire de J. Régression : Y ≈ −0,0100J + 0,170, donc a ≈ **−0,01** et b ≈ **0,17**. Après 6 jours : D = 1/(0,17 − 0,06) ≈ **9,1** demandes." }
+      ]
+    },
+    {
+      "id": "tcl",
+      "title": "Loi normale centrée réduite et théorème central limite",
+      "source": "Séance 3 · p. 2 · TP 3 partie B",
+      "blocks": [
+        { "type": "def", "term": "Loi normale centrée réduite N(0 ; 1)", "en": "standard normal distribution", "text": "La loi normale de paramètres **μ = 0** et **σ² = 1**. Mêmes propriétés que la loi normale classique ; elle apparaît très souvent grâce au **théorème central limite**. Une **table de valeurs** donne les aires sous la courbe." },
+        { "type": "table", "title": "À connaître", "head": ["Résultat", "Signification"], "rows": [
+          ["P(−1,96 < Z < 1,96) = **0,95**", "95 % des valeurs sont dans [−1,96 ; 1,96]"],
+          ["Aires du schéma", "34,1 % entre 0 et 1σ, 13,6 % entre 1σ et 2σ, 2,1 % entre 2σ et 3σ, 0,1 % au-delà"],
+          ["LOI.NORMALE.N(a ; 0 ; 1 ; VRAI)", "Donne **P(Z < a)**"],
+          ["LOI.NORMALE.INVERSE.N(p ; 0 ; 1)", "Donne le **a tel que P(Z < a) = p** (remplace la table)"]
+        ] },
+        { "type": "def", "term": "Centrer et réduire", "en": "standardization (z-score)", "text": "**Si X ∼ N(μ ; σ²), alors Z = (X − μ)/σ ∼ N(0 ; 1).** On retire la moyenne (centrer) puis on divise par l'écart-type (réduire)." },
+        { "type": "example", "text": "TP 3, exo 0.1 (taille d'un homme : N(175 ; 5²)). P(X > 185) = P(Z > (185 − 175)/5) = P(Z > 2) ≈ **2,3 %**. Parmi ceux qui mesurent plus de 1,80 m, la part de plus de 1,90 m : P(Z > 3)/P(Z > 1) ≈ 0,00135/0,159 ≈ **0,85 %**." },
+        { "type": "example", "text": "TP 3, exo 0.2 (pièces de 86 mm, 3 % < 83 mm et 5 % > 89 mm) : (83 − m)/σ = −1,881 et (89 − m)/σ = 1,645. En soustrayant : 6/σ = 3,526 → σ ≈ **1,70 mm**, puis m ≈ **86,2 mm**." },
+        { "type": "example", "text": "TP 3, exo 2 (indice de vente, μ = 84 et P(X ≤ 64) = 0,16) : par symétrie, P(X ≥ 104) = 0,16 aussi, donc P(64 ≤ X ≤ 104) = 1 − 0,16 − 0,16 = **0,68** : c'est l'intervalle μ ± σ, donc **σ ≈ 20**. Plus précisément, −20/σ = LOI.NORMALE.INVERSE.N(0,16 ; 0 ; 1) ≈ −0,994, d'où σ ≈ **20,11**. Avec σ = 20,1 : P(24 ≤ X ≤ 60) ≈ **11,5 %** et P(X > 120) ≈ **3,7 %**." },
+        { "type": "example", "text": "TP 2 exo 6 / TP 3 exo 1 (régler σ pour que 97 % des produits soient entre 98 et 102 g) : P(98 ≤ X ≤ 102) = 0,97 ⇔ 1 − 2 × P(Z ≤ −2/σ) = 0,97 ⇔ P(Z ≤ −2/σ) = 0,015 ⇔ −2/σ = LOI.NORMALE.INVERSE.N(0,015 ; 0 ; 1) ≈ −2,170 ⇔ **σ ≈ 0,9216**." },
+        { "type": "def", "term": "Théorème central limite", "en": "central limit theorem", "text": "Si X1, …, Xn sont **n variables aléatoires indépendantes et de même loi**, de moyenne m et d'écart-type σ, et S = X1 + … + Xn, alors **(S − n × m)/(√n × σ) ∼ N(0 ; 1)**. Autrement dit : la somme d'événements aléatoires indépendants suit (approximativement) une loi normale, centrée réduite une fois renormalisée." },
+        { "type": "tip", "text": "Il faut un nombre **suffisamment grand** de variables : en général **n > 30**. Exemple du cours : la somme d'un grand nombre de lancers de dé suit approximativement une loi normale." },
+        { "type": "example", "text": "TP 3, exo 3 (usine, 100 lots par jour, temps d'un lot ∼ exponentielle de paramètre 0,25) : moyenne d'un lot = 1/λ = **4 min**, écart-type = 1/λ = **4 min** (variance 1/λ² = 16). Somme des 100 lots : moyenne 100 × 4 = **400 min**, écart-type √100 × 4 = **40 min**. Journée tenue en 420 min : P(S ≤ 420) = P(Z ≤ (420 − 400)/40) = P(Z ≤ 0,5) ≈ **0,69**. Pour une probabilité de 0,9 : z = 1,2816, donc capacité ≥ 400 + 1,2816 × 40 ≈ **451 min** (environ 7 h 30)." },
+        { "type": "tip", "text": "Coquille importante : la correction écrit « écart-type = 1/λ² = 16 minutes » (16 est la **variance**) puis divise par 160, d'où 0,5497 et 605 minutes. Le tableur centre-réduit pourtant bien avec 40 (ligne « Centrée / Réduite »), et la simulation donne 31 journées réussies sur 50 (62 %), bien plus proche de 0,69. Résultats justes : **0,69** et **≈ 451 min**. Même chose pour l'exo 0.3 (guichet, E(1/4), 100 clients en 420 min)." }
+      ]
+    },
+    {
+      "id": "ic",
+      "title": "Intervalles de confiance",
+      "source": "Séance 4",
+      "blocks": [
+        { "type": "p", "text": "L'**estimation statistique** évalue, à partir d'un **échantillon**, une caractéristique inconnue d'une **population** (moyenne, proportion, variance)." },
+        { "type": "list", "items": [
+          "**Estimation ponctuelle** : une **valeur unique** comme approximation du paramètre (formules classiques de la moyenne, de la variance, de la proportion).",
+          "**Estimation par intervalle** : une **plage** dans laquelle le paramètre a une forte probabilité de se trouver (en général **95 %**)."
+        ] },
+        { "type": "p", "text": "Notations : en général **α = 0,05**, soit un **risque de 5 %** et un **niveau de confiance de 95 %** ; **n** est la taille de l'échantillon. On utilise trois lois : la **loi normale**, la **loi de Student** et la **loi du khi-deux**." },
+        { "type": "table", "wide": 720, "head": ["Loi", "Valeur pour un risque α", "Sur Excel", "À retenir"], "rows": [
+          ["Normale centrée réduite", "zα", "LOI.NORMALE.INVERSE.N(1 − α/2 ; 0 ; 1)", "**zα = 1,96** pour 5 % ; zα = 2,58 pour 1 %"],
+          ["Student à n − 1 degrés de liberté", "t(α ; n − 1)", "LOI.STUDENT.INVERSE.N(1 − α/2 ; n − 1)", "Dépend de n ; si **n > 30**, proche de la loi normale"],
+          ["Khi-deux à n − 1 degrés de liberté", "χ²(α/2 ; n − 1) et χ²(1 − α/2 ; n − 1)", "LOI.KHIDEUX.INVERSE(α/2 ; n − 1) et LOI.KHIDEUX.INVERSE(1 − α/2 ; n − 1)", "**Pas symétrique** : on calcule deux bornes"]
+        ] },
+        { "type": "p", "text": "Pour ces trois lois, des **tables** donnent aussi les valeurs cherchées." },
+        { "type": "h", "text": "Estimer une moyenne" },
+        { "type": "table", "wide": true, "head": ["", "Formule"], "rows": [
+          ["Estimation ponctuelle", "{{x}} = (1/n) × Σ xi (moyenne empirique, =MOYENNE)"],
+          ["IC si **σ connu**", "[{{x}} − zα × σ/√n ; {{x}} + zα × σ/√n]"],
+          ["IC si **σ inconnu** (cas le plus fréquent)", "[{{x}} − t(α ; n − 1) × {{σ}}/√n ; {{x}} + t(α ; n − 1) × {{σ}}/√n]"]
+        ] },
+        { "type": "tip", "text": "Ces intervalles fonctionnent vraiment si l'échantillon **suit une loi normale**. Sinon, il faut **n > 30**, et on utilise le premier intervalle (avec zα) en remplaçant σ par son estimation {{σ}}." },
+        { "type": "p", "text": "Sur Excel : =INTERVALLE.CONFIANCE.NORMAL() ou =INTERVALLE.CONFIANCE.STUDENT() selon le cas. Ces fonctions renvoient la **marge** (la demi-largeur) : l'intervalle est {{x}} ± ce résultat." },
+        { "type": "example", "text": "σ connu (exemple calculé pour la fiche) : {{x}} = 50, σ = 10, n = 100. Marge = 1,96 × 10/√100 = 1,96 → IC à 95 % = **[48,04 ; 51,96]**." },
+        { "type": "example", "text": "σ inconnu (exemple calculé pour la fiche) : n = 25, {{x}} = 12, {{σ}} = 3. t(0,05 ; 24) ≈ 2,064 → marge = 2,064 × 3/5 ≈ 1,24 → IC à 95 % ≈ **[10,76 ; 13,24]**." },
+        { "type": "h", "text": "Estimer un écart-type" },
+        { "type": "p", "text": "On estime **d'abord la variance**, puis on passe à la **racine carrée**. Estimation ponctuelle : **{{σ}}² = 1/(n − 1) × Σ (xi − {{x}})²** (variance empirique, =VAR.S). Intervalle au risque α : **[(n − 1){{σ}}² / χ²(1 − α/2 ; n − 1) ; (n − 1){{σ}}² / χ²(α/2 ; n − 1)]**." },
+        { "type": "p", "text": "Remarque : si la moyenne est connue (extrêmement rare), on **gagne un degré de liberté**." },
+        { "type": "example", "text": "Exemple calculé pour la fiche : n = 25 et {{σ}}² = 9. χ²(0,975 ; 24) ≈ 39,36 et χ²(0,025 ; 24) ≈ 12,40. IC de la variance : [24 × 9/39,36 ; 24 × 9/12,40] ≈ **[5,49 ; 17,42]**, donc IC de l'écart-type ≈ **[2,34 ; 4,17]**." },
+        { "type": "h", "text": "Estimer une proportion" },
+        { "type": "p", "text": "Estimation ponctuelle : **{{p}} = x/n** (proportion empirique : x succès sur n). Intervalle au risque α : **[{{p}} − zα × √({{p}}(1 − {{p}})/n) ; {{p}} + zα × √({{p}}(1 − {{p}})/n)]**." },
+        { "type": "example", "text": "Exemple calculé pour la fiche : 120 clients satisfaits sur 400. {{p}} = 0,30 ; marge = 1,96 × √(0,3 × 0,7/400) ≈ 0,045 → IC à 95 % ≈ **[0,255 ; 0,345]**, soit entre 25,5 % et 34,5 % de clients satisfaits." }
+      ]
+    },
+    {
+      "id": "tests",
+      "title": "Tests d'hypothèses",
+      "source": "Séance 5",
+      "blocks": [
+        { "type": "p", "text": "Un **test d'hypothèse** vérifie si une **affirmation sur une population est compatible avec les données observées**, pour aider à la prise de décision." },
+        { "type": "example", "text": "Un commercial affirme que son chiffre d'affaires moyen est de 13,5 milliers d'euros. Sur 30 jours, on mesure une moyenne de 12,3. La différence est-elle suffisamment grande pour être **significative** ?" },
+        { "type": "def", "term": "Hypothèse nulle H0", "en": "null hypothesis", "text": "L'**hypothèse de référence**. Exemple : le chiffre moyen est de 13,5 milliers." },
+        { "type": "def", "term": "Hypothèse alternative H1", "en": "alternative hypothesis", "text": "L'hypothèse que l'on veut **démontrer** ou mettre en évidence. Exemple : le chiffre moyen est inférieur à 13,5 milliers." },
+        { "type": "table", "title": "Les quatre décisions possibles", "head": ["Décision", "H0 est vraie", "H0 est fausse"], "rows": [
+          ["**H0 n'est pas rejetée**", "1 − α : décision correcte", "**β : erreur de 2e espèce**"],
+          ["**H0 est rejetée**", "**α : erreur de 1re espèce**", "1 − β : décision correcte"]
+        ] },
+        { "type": "list", "items": [
+          "**α** = **seuil de signification** ou **risque** (souvent 5 %), **fixé au début du test** : la probabilité de rejeter H0 alors qu'elle est vraie.",
+          "**1 − β** = **puissance du test** : la probabilité que le test détecte un effet réel.",
+          "On choisit une **variable de décision** (qui dépend du test : Student, khi-deux…) ; elle permet de calculer la **p-valeur**, que l'on compare au risque."
+        ] },
+        { "type": "flow", "title": "Protocole d'un test", "steps": [
+          "a) Choisir H0 et H1, fixer le risque α",
+          "b) Déterminer la variable de décision (selon le test)",
+          "c) Calculer la p-valeur",
+          "d) Conclure en comparant la p-valeur à α"
+        ], "note": "Si **p-valeur < α** : on **rejette H0** et on décide H1, avec un risque d'erreur α. Si **p-valeur > α** : on **ne rejette pas H0**, avec un risque d'erreur β." },
+        { "type": "tip", "text": "Ne pas rejeter H0 **ne veut pas dire que H0 est vraie** : on n'a peut-être juste pas assez de preuves pour montrer qu'elle est fausse." },
+        { "type": "table", "title": "Bilatéral ou unilatéral ?", "head": ["Test", "Une valeur à vérifier", "Deux jeux de données"], "rows": [
+          ["**Bilatéral**", "H0 : μ = μ0 et H1 : μ ≠ μ0", "H0 : μA = μB et H1 : μA ≠ μB"],
+          ["**Unilatéral (droite)**", "H0 : μ = μ0 et H1 : μ > μ0", "H0 : μA = μB et H1 : μA > μB"],
+          ["Unilatéral (gauche)", "H0 : μ = μ0 et H1 : μ < μ0", "H0 : μA = μB et H1 : μA < μB"]
+        ] },
+        { "type": "tip", "text": "Pour les tests de Student et Z, **les échantillons doivent suivre une loi normale, ou n doit être au moins égal à 30**." },
+        { "type": "table", "title": "Les différents tests", "head": ["Type de test", "Variable de décision"], "rows": [
+          ["**Conformité d'une moyenne** (test de Student)", "t = ({{x}} − μ0) / ({{σ}}/√n)"],
+          ["**Conformité d'une proportion** (test Z)", "z = ({{p}} − p0) / √(p0(1 − p0)/n)"],
+          ["**Comparaison de deux moyennes** (test de Student)", "Directement sur Excel (T.TEST)"],
+          ["**Comparaison de deux proportions** (test Z)", "z = ({{pA}} − {{pB}}) / √(p(1 − p)(1/nA + 1/nB)), avec p = (xA + xB)/(nA + nB)"],
+          ["**Indépendance de deux variables qualitatives** (test du khi-deux χ²)", "Directement sur Excel (CHISQ.TEST). H0 : pas de lien (pas de corrélation) ; H1 : lien"]
+        ] },
+        { "type": "table", "title": "Calculer la p-valeur sur Excel", "head": ["Test", "Formule"], "rows": [
+          ["Moyenne, **bilatéral**", "LOI.STUDENT.BILATERALE(|t| ; n − 1)"],
+          ["Moyenne, **unilatéral droite**", "LOI.STUDENT.DROITE(t ; n − 1)"],
+          ["Moyenne, **unilatéral gauche**", "1 − LOI.STUDENT.DROITE(t ; n − 1)"],
+          ["Proportion(s), **bilatéral**", "2 × (1 − LOI.NORMALE.N(|z| ; 0 ; 1 ; VRAI))"],
+          ["Proportion(s), **unilatéral droite**", "1 − LOI.NORMALE.N(z ; 0 ; 1 ; VRAI)"],
+          ["Proportion(s), **unilatéral gauche**", "LOI.NORMALE.N(z ; 0 ; 1 ; VRAI)"],
+          ["Deux moyennes", "T.TEST(données1 ; données2 ; uni = 1 ou bil = 2 ; type)"],
+          ["Indépendance", "CHISQ.TEST(plage_observée ; plage_attendue)"]
+        ] },
+        { "type": "p", "text": "Dans T.TEST, le **type** dépend des données : **type 1** = mêmes individus (par exemple avant / après) ; **type 2 ou 3** = échantillons indépendants, de variances égales (2) ou non (3)." },
+        { "type": "p", "text": "Test du khi-deux : on compare les **effectifs observés** aux **effectifs théoriques** (attendus), calculés pour chaque case par **(effectif total de la variable 1 × effectif total de la variable 2) / effectif total**." },
+        { "type": "example", "text": "Effectif théorique (exemple calculé pour la fiche) : 200 salariés, dont 120 hommes, et 90 salariés sportifs. S'il n'y avait aucun lien, on attendrait 120 × 90 / 200 = **54** hommes sportifs." },
+        { "type": "example", "text": "Le commercial (exemple complété pour la fiche, avec un écart-type estimé de 3) : t = (12,3 − 13,5)/(3/√30) ≈ **−2,19**. Test unilatéral gauche (H1 : μ < 13,5) : p-valeur = 1 − LOI.STUDENT.DROITE(−2,19 ; 29) ≈ **0,018 < 0,05** → on rejette H0 : son CA moyen est significativement inférieur à 13,5." },
+        { "type": "example", "text": "Proportion (exemple calculé pour la fiche) : H0 : p = 0,5 ; on observe 60 « oui » sur 100. z = (0,6 − 0,5)/√(0,5 × 0,5/100) = **2**. Test bilatéral : p-valeur = 2 × (1 − 0,977) ≈ **0,046 < 0,05** → on rejette H0." }
+      ]
+    }
+  ],
+  "glossaryCats": [
+    { "id": "descriptives", "label": "Statistiques descriptives" },
+    { "id": "lois", "label": "Probabilités et lois" },
+    { "id": "regression", "label": "Régression et théorème limite" },
+    { "id": "estimation", "label": "Intervalles de confiance" },
+    { "id": "tests", "label": "Tests d'hypothèses" },
+    { "id": "excel", "label": "Fonctions Excel (nom français → anglais)" }
+  ],
+  "glossary": [
+    { "cat": "descriptives", "term": "Échantillon", "en": "sample", "def": "Les n observations réellement étudiées. Les statistiques calculées dessus sont des estimations de celles de la population." },
+    { "cat": "descriptives", "term": "Population", "en": "population", "def": "L'ensemble complet que l'on veut étudier ; on n'en observe en général qu'un échantillon." },
+    { "cat": "descriptives", "term": "Moyenne", "en": "mean / average", "def": "Somme des valeurs divisée par leur nombre : m = (1/n) × Σ xi. Valeur centrale typique (=MOYENNE)." },
+    { "cat": "descriptives", "term": "Médiane", "en": "median", "def": "Valeur qui divise les données triées en deux parties égales (=MEDIANE). Proche de la moyenne si la distribution est symétrique." },
+    { "cat": "descriptives", "term": "Mode", "en": "mode", "def": "La valeur la plus fréquente de la série. Donné par l'utilitaire « Statistiques descriptives ».", "extra": true },
+    { "cat": "descriptives", "term": "Étendue", "en": "range", "def": "Maximum − minimum (=MAX(DATA)-MIN(DATA))." },
+    { "cat": "descriptives", "term": "Variance", "en": "variance", "def": "Moyenne des écarts à la moyenne au carré : V = 1/(n − 1) × Σ (xi − m)². Mesure de dispersion en unité au carré (=VAR.S)." },
+    { "cat": "descriptives", "term": "Écart-type", "en": "standard deviation", "def": "Racine carrée de la variance (σ = √V). Mesure de dispersion dans l'unité des données (=ECARTYPE.STANDARD)." },
+    { "cat": "descriptives", "term": "Erreur-type", "en": "standard error", "def": "Écart-type / √n : estimation de l'écart-type de la moyenne d'échantillon (variation de la moyenne d'un échantillon à l'autre)." },
+    { "cat": "descriptives", "term": "Coefficient de variation", "en": "coefficient of variation", "def": "Écart-type / moyenne × 100. Mesure de dispersion relative, sans unité : sert à comparer la dispersion de séries différentes." },
+    { "cat": "descriptives", "term": "Quartiles (Q1, Q2, Q3)", "en": "quartiles", "def": "Valeurs qui coupent les données triées en paquets de 25 %. Q2 est la médiane (=QUARTILE.EXCLURE)." },
+    { "cat": "descriptives", "term": "Écart interquartile (IQR)", "en": "interquartile range", "def": "Q3 − Q1 : intervalle qui contient les 50 % de valeurs centrales." },
+    { "cat": "descriptives", "term": "Valeur aberrante", "en": "outlier", "def": "Valeur inférieure à Q1 − 1,5 × IQR ou supérieure à Q3 + 1,5 × IQR." },
+    { "cat": "descriptives", "term": "Boîte à moustaches", "en": "box plot / box-and-whisker plot", "def": "Graphique qui représente Q1, la médiane, Q3, les moustaches et les valeurs aberrantes." },
+    { "cat": "descriptives", "term": "Histogramme", "en": "histogram", "def": "Graphique en barres des effectifs par classe (données quantitatives) ou par catégorie (données qualitatives)." },
+    { "cat": "descriptives", "term": "Diagramme circulaire", "en": "pie chart", "def": "Graphique en secteurs qui montre la part (fréquence) de chaque classe ou catégorie." },
+    { "cat": "descriptives", "term": "Nuage de points", "en": "scatter plot", "def": "Graphique qui place chaque observation selon deux variables : X en abscisse, Y en ordonnée." },
+    { "cat": "descriptives", "term": "Effectif / fréquence", "en": "frequency / relative frequency", "def": "L'effectif est le nombre d'observations d'une classe ; la fréquence est effectif / effectif total (en %).", "extra": true },
+    { "cat": "descriptives", "term": "Effectifs cumulés", "en": "cumulative frequencies", "def": "Somme des effectifs jusqu'à la classe considérée (croissants) ou à partir d'elle (décroissants). La dernière valeur vaut le total.", "extra": true },
+    { "cat": "descriptives", "term": "Données quantitatives / qualitatives", "en": "quantitative / qualitative data", "def": "Quantitatives : des nombres (salaire, temps). Qualitatives : des catégories (sport pratiqué)." },
+    { "cat": "lois", "term": "Probabilité", "en": "probability", "def": "Chance qu'un événement se produise, toujours entre 0 et 1. × 100 = fréquence en %." },
+    { "cat": "lois", "term": "Variable aléatoire", "en": "random variable", "def": "Variable X qui modélise un phénomène aléatoire (score d'un dé, nombre de clients satisfaits…)." },
+    { "cat": "lois", "term": "Événement contraire", "en": "complementary event", "def": "Ā, l'événement « A ne se produit pas » : P(Ā) = 1 − P(A)." },
+    { "cat": "lois", "term": "Discret / continu", "en": "discrete / continuous", "def": "Discret : valeurs énumérables (nombre de tests positifs). Continu : infinité de valeurs dans un intervalle (taille) ; on ne calcule jamais P(X = a)." },
+    { "cat": "lois", "term": "Loi binomiale", "en": "binomial distribution", "def": "Nombre de succès de probabilité p dans n expériences indépendantes. Moyenne np, variance np(1 − p)." },
+    { "cat": "lois", "term": "Loi de Poisson", "en": "Poisson distribution", "def": "Nombre d'événements rares qui arrivent en moyenne a fois dans un intervalle fixe. Moyenne a, variance a." },
+    { "cat": "lois", "term": "Loi normale", "en": "normal (Gaussian) distribution", "def": "Loi continue en cloche centrée en la moyenne, N(μ ; σ²). 68 % des valeurs dans μ ± σ, 95 % dans μ ± 2σ." },
+    { "cat": "lois", "term": "Loi exponentielle", "en": "exponential distribution", "def": "Temps d'attente ou durées de vie sans vieillissement. Moyenne 1/λ, variance 1/λ²." },
+    { "cat": "lois", "term": "Loi géométrique", "en": "geometric distribution", "def": "Nombre d'essais avant le premier succès : P(X = k) = p(1 − p)^(k − 1). Moyenne 1/p." },
+    { "cat": "lois", "term": "Loi uniforme", "en": "uniform distribution", "def": "Modélise des événements équiprobables (toutes les valeurs de l'intervalle ont la même chance)." },
+    { "cat": "lois", "term": "Moyenne théorique / empirique", "en": "expected value / sample mean", "def": "Théorique : celle de la loi (np, a, μ…). Empirique : celle calculée sur les expériences réalisées, qui l'estime." },
+    { "cat": "lois", "term": "Courbe de distribution", "en": "probability distribution curve", "def": "Courbe des probabilités de chaque valeur ; pour une loi continue, la probabilité est l'aire sous la courbe." },
+    { "cat": "regression", "term": "Variable explicative / dépendante", "en": "explanatory (independent) / dependent variable", "def": "Explicative X (en abscisse) : celle qui explique. Dépendante Y (en ordonnée) : celle qu'on cherche à expliquer." },
+    { "cat": "regression", "term": "Corrélation", "en": "correlation", "def": "Le lien potentiel entre deux variables." },
+    { "cat": "regression", "term": "Droite de régression", "en": "regression line", "def": "Droite y = ax + b qui résume le nuage de points (sur Excel : courbe de tendance linéaire)." },
+    { "cat": "regression", "term": "Courbe de tendance", "en": "trendline", "def": "Option d'un graphique Excel qui trace la droite de régression sur le nuage de points." },
+    { "cat": "regression", "term": "Pente", "en": "slope", "def": "Coefficient a de la droite (« coefficient de régression ») : variation moyenne de y quand x augmente de 1 (=PENTE)." },
+    { "cat": "regression", "term": "Ordonnée à l'origine", "en": "intercept", "def": "Coefficient b de la droite : valeur de y quand x = 0 (=ORDONNEE.ORIGINE)." },
+    { "cat": "regression", "term": "Coefficient de corrélation r", "en": "correlation coefficient", "def": "Entre −1 et 1 : quantifie la force et le sens du lien linéaire." },
+    { "cat": "regression", "term": "Coefficient de détermination R²", "en": "coefficient of determination (R-squared)", "def": "Entre 0 et 1 : valide le modèle ; part de la variabilité de Y expliquée par X." },
+    { "cat": "regression", "term": "Méthode des moindres carrés", "en": "least squares method", "def": "Méthode qui calcule la droite de régression (TP 3, exo 0.2).", "extra": true },
+    { "cat": "regression", "term": "Loi normale centrée réduite", "en": "standard normal distribution", "def": "Loi N(0 ; 1) : moyenne 0, variance 1. P(−1,96 < Z < 1,96) = 0,95." },
+    { "cat": "regression", "term": "Centrer-réduire", "en": "standardize (z-score)", "def": "Passer de X ∼ N(μ ; σ²) à Z = (X − μ)/σ ∼ N(0 ; 1)." },
+    { "cat": "regression", "term": "Théorème central limite", "en": "central limit theorem", "def": "La somme de n variables indépendantes de même loi suit approximativement une loi normale : (S − nm)/(√n σ) ∼ N(0 ; 1), si n > 30." },
+    { "cat": "estimation", "term": "Estimation ponctuelle", "en": "point estimate", "def": "Une valeur unique qui approche le paramètre ({{x}}, {{σ}}², {{p}})." },
+    { "cat": "estimation", "term": "Intervalle de confiance", "en": "confidence interval", "def": "Plage dans laquelle le paramètre a une forte probabilité (souvent 95 %) de se trouver." },
+    { "cat": "estimation", "term": "Niveau de confiance", "en": "confidence level", "def": "1 − α : 95 % pour un risque α de 5 %." },
+    { "cat": "estimation", "term": "Degrés de liberté", "en": "degrees of freedom", "def": "Paramètre des lois de Student et du khi-deux : n − 1 pour un échantillon de taille n." },
+    { "cat": "estimation", "term": "Loi de Student", "en": "Student's t-distribution", "def": "Sert pour l'IC d'une moyenne quand σ est inconnu. Proche de la loi normale si n > 30." },
+    { "cat": "estimation", "term": "Loi du khi-deux", "en": "chi-square distribution", "def": "Sert pour l'IC d'une variance. Pas symétrique : on calcule deux bornes." },
+    { "cat": "estimation", "term": "Proportion empirique", "en": "sample proportion", "def": "{{p}} = x/n : part de succès observée dans l'échantillon." },
+    { "cat": "tests", "term": "Test d'hypothèse", "en": "hypothesis test", "def": "Méthode pour décider si une affirmation sur une population est compatible avec les données." },
+    { "cat": "tests", "term": "Hypothèse nulle H0", "en": "null hypothesis", "def": "L'hypothèse de référence (ex. : μ = 13,5)." },
+    { "cat": "tests", "term": "Hypothèse alternative H1", "en": "alternative hypothesis", "def": "L'hypothèse que l'on veut démontrer (ex. : μ < 13,5)." },
+    { "cat": "tests", "term": "Seuil de signification α", "en": "significance level", "def": "Le risque fixé au début du test (souvent 5 %) : probabilité de rejeter H0 alors qu'elle est vraie." },
+    { "cat": "tests", "term": "Erreur de 1re espèce", "en": "type I error (false positive)", "def": "Rejeter H0 alors qu'elle est vraie. Probabilité α." },
+    { "cat": "tests", "term": "Erreur de 2e espèce", "en": "type II error (false negative)", "def": "Ne pas rejeter H0 alors qu'elle est fausse. Probabilité β." },
+    { "cat": "tests", "term": "Puissance du test", "en": "statistical power", "def": "1 − β : probabilité que le test détecte un effet réel." },
+    { "cat": "tests", "term": "Variable de décision", "en": "test statistic", "def": "Valeur calculée à partir des données (t, z, χ²…) qui permet d'obtenir la p-valeur." },
+    { "cat": "tests", "term": "p-valeur", "en": "p-value", "def": "Comparée au risque : si p-valeur < α, on rejette H0." },
+    { "cat": "tests", "term": "Test bilatéral / unilatéral", "en": "two-tailed / one-tailed test", "def": "Bilatéral : H1 : μ ≠ μ0. Unilatéral : H1 : μ > μ0 (droite) ou μ < μ0 (gauche)." },
+    { "cat": "tests", "term": "Test de conformité", "en": "one-sample test", "def": "Compare une moyenne ou une proportion observée à une valeur de référence (μ0, p0)." },
+    { "cat": "tests", "term": "Test de comparaison", "en": "two-sample test", "def": "Compare les moyennes ou les proportions de deux jeux de données." },
+    { "cat": "tests", "term": "Test d'indépendance du khi-deux", "en": "chi-square test of independence", "def": "Teste le lien entre deux variables qualitatives (H0 : pas de lien)." },
+    { "cat": "tests", "term": "Effectifs théoriques", "en": "expected frequencies", "def": "Effectifs attendus sans lien : total de la ligne × total de la colonne / effectif total." },
+    { "cat": "excel", "term": "MOYENNE", "en": "AVERAGE", "def": "Moyenne des valeurs." },
+    { "cat": "excel", "term": "MEDIANE", "en": "MEDIAN", "def": "Médiane des valeurs." },
+    { "cat": "excel", "term": "NB", "en": "COUNT", "def": "Nombre de valeurs numériques (cardinal de l'échantillon)." },
+    { "cat": "excel", "term": "SOMME", "en": "SUM", "def": "Somme des valeurs." },
+    { "cat": "excel", "term": "VAR.S", "en": "VAR.S", "def": "Variance d'un échantillon (divisée par n − 1)." },
+    { "cat": "excel", "term": "ECARTYPE.STANDARD", "en": "STDEV.S", "def": "Écart-type d'un échantillon." },
+    { "cat": "excel", "term": "RACINE", "en": "SQRT", "def": "Racine carrée (ex. pour l'erreur-type)." },
+    { "cat": "excel", "term": "QUARTILE.EXCLURE", "en": "QUARTILE.EXC", "def": "Quartile : 1 pour Q1, 3 pour Q3." },
+    { "cat": "excel", "term": "NB.SI.ENS", "en": "COUNTIFS", "def": "Compte les valeurs qui respectent plusieurs conditions (effectif d'une classe)." },
+    { "cat": "excel", "term": "SOMMEPROD", "en": "SUMPRODUCT", "def": "Somme des produits (moyenne de données groupées : centres × effectifs)." },
+    { "cat": "excel", "term": "LOI.BINOMIALE.N", "en": "BINOM.DIST", "def": "Probabilité d'une loi binomiale (FAUX : exacte, VRAI : cumulée)." },
+    { "cat": "excel", "term": "LOI.POISSON.N", "en": "POISSON.DIST", "def": "Probabilité d'une loi de Poisson (FAUX : exacte, VRAI : cumulée)." },
+    { "cat": "excel", "term": "LOI.NORMALE.N", "en": "NORM.DIST", "def": "Probabilité cumulée P(X ≤ x) d'une loi normale (avec VRAI)." },
+    { "cat": "excel", "term": "LOI.NORMALE.INVERSE.N", "en": "NORM.INV", "def": "Valeur a telle que P(X < a) = p ; avec ALEA(), simule une valeur." },
+    { "cat": "excel", "term": "LOI.EXPONENTIELLE.N", "en": "EXPON.DIST", "def": "Probabilité d'une loi exponentielle." },
+    { "cat": "excel", "term": "ALEA", "en": "RAND", "def": "Nombre aléatoire entre 0 et 1, pour simuler." },
+    { "cat": "excel", "term": "ENT", "en": "INT", "def": "Partie entière. ENT(ALEA()<0,85) simule un succès (1) ou un échec (0)." },
+    { "cat": "excel", "term": "PENTE", "en": "SLOPE", "def": "Pente de la droite de régression." },
+    { "cat": "excel", "term": "ORDONNEE.ORIGINE", "en": "INTERCEPT", "def": "Ordonnée à l'origine de la droite de régression." },
+    { "cat": "excel", "term": "COEFFICIENT.CORRELATION", "en": "CORREL", "def": "Coefficient de corrélation r." },
+    { "cat": "excel", "term": "COEFFICIENT.DETERMINATION", "en": "RSQ", "def": "Coefficient de détermination R²." },
+    { "cat": "excel", "term": "DROITEREG", "en": "LINEST", "def": "Calcule d'un coup les coefficients de la régression linéaire." },
+    { "cat": "excel", "term": "LOI.STUDENT.INVERSE.N", "en": "T.INV", "def": "Valeur de la loi de Student (t pour un intervalle de confiance)." },
+    { "cat": "excel", "term": "LOI.KHIDEUX.INVERSE", "en": "CHISQ.INV", "def": "Valeurs de la loi du khi-deux (bornes de l'IC d'une variance)." },
+    { "cat": "excel", "term": "INTERVALLE.CONFIANCE.NORMAL / STUDENT", "en": "CONFIDENCE.NORM / CONFIDENCE.T", "def": "Marge (demi-largeur) de l'intervalle de confiance d'une moyenne." },
+    { "cat": "excel", "term": "LOI.STUDENT.BILATERALE / DROITE", "en": "T.DIST.2T / T.DIST.RT", "def": "p-valeur d'un test de Student (bilatéral / unilatéral droite)." },
+    { "cat": "excel", "term": "T.TEST", "en": "T.TEST", "def": "p-valeur de la comparaison de deux moyennes." },
+    { "cat": "excel", "term": "CHISQ.TEST", "en": "CHISQ.TEST", "def": "p-valeur du test d'indépendance du khi-deux." }
+  ]
+}

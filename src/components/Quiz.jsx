@@ -64,7 +64,7 @@ export default function Quiz({ matiere, level, onFinish, onBack }) {
 
   const submitWritten = () => {
     if (answered || !inputVal.trim()) return
-    const g = gradeAnswer(inputVal, q.answers)
+    const g = gradeAnswer(inputVal, q.answers, q.tol)
     setGrade(g)
     record(g.correct, inputVal)
   }

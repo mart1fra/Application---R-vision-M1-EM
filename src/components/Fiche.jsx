@@ -60,7 +60,17 @@ export default function Fiche({ matiere, onBack }) {
 // Texte avec des passages en gras **comme ceci**
 function Rich({ text }) {
   return text.split(/\*\*(.+?)\*\*/g).map((part, i) => (
-    i % 2 ? <strong key={i} className="font-semibold text-charcoal">{part}</strong> : part
+    i % 2
+      ? <strong key={i} className="font-semibold text-charcoal"><Bars text={part} /></strong>
+      : <Bars key={i} text={part} />
+  ))
+}
+
+// {{x}} : lettre surmontee d'une barre (moyenne x̄, proportion p̄). Le caractere combinant
+// « ̄ » s'affiche decale avec les polices de l'app, d'ou un trait CSS.
+function Bars({ text }) {
+  return text.split(/\{\{(.+?)\}\}/g).map((part, i) => (
+    i % 2 ? <span key={i} className="overline decoration-1">{part}</span> : part
   ))
 }
 
@@ -194,12 +204,16 @@ function Callout({ label, text, color }) {
   )
 }
 
+// wide: true → 560 px de large minimum ; un nombre (ex. 760) fixe une autre largeur minimale
 function Table({ block: b }) {
   return (
     <div>
       {b.title && <p className="text-[15px] font-semibold text-charcoal mb-2">{b.title}</p>}
       <div className="overflow-x-auto rounded-xl border border-sand bg-white">
-        <table className={`w-full text-left text-[13px] leading-snug ${b.wide ? 'min-w-[560px]' : ''}`}>
+        <table
+          className="w-full text-left text-[13px] leading-snug"
+          style={b.wide ? { minWidth: typeof b.wide === 'number' ? b.wide : 560 } : undefined}
+        >
           <thead className="bg-sand/60">
             <tr>
               {b.head.map((h, i) => (
@@ -415,7 +429,7 @@ function Entry({ entry: e, hidden, onReveal, color }) {
           )}
         </p>
       )}
-      <p className="text-[13px] leading-relaxed text-charcoal/70 mt-2">{e.def}</p>
+      <p className="text-[13px] leading-relaxed text-charcoal/70 mt-2"><Bars text={e.def} /></p>
     </article>
   )
 }

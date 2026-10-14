@@ -1,4 +1,4 @@
-import { DATA, DEVOIRS, FICHES } from '../data'
+import { DATA, DEVOIRS, FICHES, GLOSSAIRES } from '../data'
 import { SESSION_SIZE, KIND_LABEL } from '../utils'
 import { focusRing } from './ui'
 
@@ -14,17 +14,28 @@ const LEVEL_DESC = {
     moyen: 'Mots en contexte, pièges, traductions à écrire',
     difficile: 'Expressions à traduire, phrases à compléter',
   },
+  comportement_humain: {
+    facile: 'QCM : définitions, auteurs, films du cours',
+    moyen: 'Cas pratiques : quel mécanisme ? Auteurs à écrire',
+    difficile: 'Définitions à compléter, cas à analyser',
+  },
   systeme_information: {
     facile: 'QCM : définitions, acronymes, notions clés',
     moyen: 'QCM pièges, cas pratiques, acronymes à écrire',
     difficile: 'Définitions à compléter, termes anglais à écrire',
   },
+  statistique_informatique: {
+    facile: 'QCM : formules Excel, définitions, lois, règles',
+    moyen: 'Choisir la bonne loi ou le bon test, petits calculs',
+    difficile: 'Définitions à compléter, calculs des TP à écrire',
+  },
 }
 
-export default function LevelSelect({ matiere, onSelect, onDevoir, onFiche, onBack }) {
+export default function LevelSelect({ matiere, onSelect, onDevoir, onFiche, onGlossaire, onBack }) {
   const pool = DATA[matiere.id] || []
   const devoirs = DEVOIRS[matiere.id] || []
   const fiche = FICHES[matiere.id]
+  const glossaire = GLOSSAIRES[matiere.id]
   const docs = [...new Set(devoirs.map(d => d.doc))]
 
   return (
@@ -53,30 +64,29 @@ export default function LevelSelect({ matiere, onSelect, onDevoir, onFiche, onBa
         </p>
       </header>
 
-      {fiche && (
-        <button
-          onClick={onFiche}
-          className={`w-full text-left rounded-2xl p-5 mb-8 border elevated
-                     active:scale-[0.97] transition-transform duration-150 ${focusRing}`}
-          style={{
-            background: `color-mix(in srgb, ${matiere.color} 8%, white)`,
-            borderColor: `color-mix(in srgb, ${matiere.color} 28%, transparent)`,
-          }}
-        >
-          <div className="flex items-center gap-4">
-            <span className="text-2xl">📖</span>
-            <div className="flex-1 min-w-0">
-              <span className="block font-semibold text-[17px] text-charcoal">Fiche de cours</span>
-              <span className="block text-warm-gray text-[13px] mt-0.5">{fiche.cardDesc}</span>
-              <span className="block text-warm-gray/70 text-[12px] mt-1">
-                {fiche.sections.length} parties · {fiche.glossary.length} termes FR / EN
-              </span>
-            </div>
-            <svg className="w-5 h-5 text-warm-gray/40 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-            </svg>
-          </div>
-        </button>
+      {(fiche || glossaire) && (
+        <div className="flex flex-col gap-3 mb-8">
+          {fiche && (
+            <FeatureCard
+              color={matiere.color}
+              emoji="📖"
+              title="Fiche de cours"
+              desc={fiche.cardDesc}
+              meta={`${fiche.sections.length} parties · ${fiche.glossary.length} termes FR / EN`}
+              onClick={onFiche}
+            />
+          )}
+          {glossaire && (
+            <FeatureCard
+              color={matiere.color}
+              emoji="🗂️"
+              title={glossaire.title}
+              desc={glossaire.cardDesc}
+              meta={`${glossaire.entries.length} termes · 2 niveaux`}
+              onClick={onGlossaire}
+            />
+          )}
+        </div>
       )}
 
       <div className="flex flex-col gap-4">
@@ -174,5 +184,32 @@ function PageBadge({ page, color, muted }) {
       <span className="text-[10px] font-semibold uppercase tracking-[0.08em] opacity-70">page</span>
       <span className="font-display font-bold text-[20px] mt-1">{page}</span>
     </span>
+  )
+}
+
+// Carte mise en avant au-dessus des niveaux (fiche de cours, glossaire)
+function FeatureCard({ color, emoji, title, desc, meta, onClick }) {
+  return (
+    <button
+      onClick={onClick}
+      className={`w-full text-left rounded-2xl p-5 border elevated
+                 active:scale-[0.97] transition-transform duration-150 ${focusRing}`}
+      style={{
+        background: `color-mix(in srgb, ${color} 8%, white)`,
+        borderColor: `color-mix(in srgb, ${color} 28%, transparent)`,
+      }}
+    >
+      <div className="flex items-center gap-4">
+        <span className="text-2xl">{emoji}</span>
+        <div className="flex-1 min-w-0">
+          <span className="block font-semibold text-[17px] text-charcoal">{title}</span>
+          <span className="block text-warm-gray text-[13px] mt-0.5">{desc}</span>
+          <span className="block text-warm-gray/70 text-[12px] mt-1">{meta}</span>
+        </div>
+        <svg className="w-5 h-5 text-warm-gray/40 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+        </svg>
+      </div>
+    </button>
   )
 }

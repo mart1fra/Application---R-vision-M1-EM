@@ -5,8 +5,8 @@ Application de revision pour M1 Ecole de Management. Vite + React + Tailwind CSS
 ## Matieres
 
 - Anglais (traductions FR/EN, vocabulaire business)
-- Comportement humain (theories de la motivation, leadership, psychologie sociale)
-- Statistique informatique (stats descriptives, inferentielles, regression)
+- Comportement humain (polycopie « Comportements humains », Prof. S. Point : influence sociale, foules, normes, conformisme, obeissance, persuasion, influence minoritaire, groupe, pensee groupale, pouvoir, leadership) + fiche de cours avec exemples concrets et lexique FR / EN (auteurs, films du cours)
+- Statistique informatique (cours « Informatique et statistiques », seances 1 a 5 : stats descriptives, lois usuelles, regression, loi normale et theoreme central limite, intervalles de confiance, tests d'hypotheses) + fiche de cours avec les resultats des TP 1 a 3 et un lexique FR / EN (dont les noms anglais des fonctions Excel)
 - Systeme d'information (donnee / information, typologie STT, SIG, SIAD, SID, CRM, SCM, SIRH, ERP) + fiche de cours avec lexique FR / EN
 - Droit des affaires (formes juridiques, contrats, procedures collectives)
 
@@ -100,6 +100,10 @@ Les reponses ecrites sont comparees en ignorant :
 
 Une petite faute de frappe sur un mot long est acceptee mais signalee (`initiatve` -> correct, "attention a l'orthographe"). Une difference uniquement en fin de mot reste fausse, car c'est un autre mot ou une autre forme (`moral` ≠ `morale`, `value` ≠ `valued`).
 
+Les lettres grecques valent leur nom (`α` = `alpha`, `β` = `beta`) et les exposants des chiffres (`R²` = `R2`, different de `r`).
+
+**Reponses numeriques :** une reponse qui est un nombre est comparee par valeur, jamais par faute de frappe. Virgule ou point, signe moins (`-` ou `−`), espaces et `%` final sont acceptes ; `1/2` vaut 0,5. Donc `1,5` = `1.50`, mais `15` ≠ `1,5` et `−2` ≠ `2`. Champ optionnel `tol` (QCM exclus) : ecart d'arrondi accepte, par exemple `"answers": ["0,69"], "tol": 0.005` accepte 0,6915. Une variante en pourcentage (`"98 %"` a cote de `"0,98"`) a une tolerance 100 fois plus grande.
+
 Toujours fournir plusieurs formulations acceptees dans `answers`.
 
 ---
@@ -156,6 +160,10 @@ Une activite impossible a recreer (plateforme externe) peut etre listee avec `un
 
 **Systeme d'information :** les acronymes se revisent aussi en anglais, a tous les niveaux (ERP = Enterprise Resource Planning, STT = TPS, SIG = MIS, SIAD = DSS, SID = ESS, SIRH = HRIS…). Chaque mauvais choix de QCM a sa `note`.
 
+**Comportement humain :** questions fideles au polycopie (photographie, 34 pages), avec `source` (`"Ch. 1-2 · p. 8"`, `"Plan du cours"`). Pas de notion hors poly sans le dire : un auteur cite mais non nomme dans le poly (Moscovici, Tajfel) est signale. Niveau moyen et difficile : beaucoup de cas pratiques (« quel mecanisme ? »), car l'examen est l'analyse d'un texte ou d'une video. Les reponses ecrites sont un mot ou un nom, jamais une phrase entiere (impossible a corriger automatiquement).
+
+**Statistique informatique :** questions tirees des 5 fiches de cours et des corrections des TP 1 a 3 (`source` : `"Seance 2 · p. 1"`, `"TP 3 · Exo 2"`). Chaque mauvais choix de QCM a sa `note`. Les calculs a ecrire ont un `tol` et souvent un `hint` (la formule). Les resultats sont verifies dans les tableurs corriges ou recalcules : quand la correction PDF a une coquille, la fiche et l'explication le signalent et donnent le bon resultat.
+
 ### Regles generales
 
 - **Pas de QCM en difficile** (sauf anglais moyen)
@@ -166,7 +174,7 @@ Une activite impossible a recreer (plateforme externe) peut etre listee avec `un
 
 ## Fiches de cours
 
-Une matiere peut avoir une fiche de cours (resume + lexique FR / EN), accessible au-dessus des niveaux. Elle est dans `src/data/<matiere>-fiche.json` et declaree dans `FICHES` (`src/data/index.js`). Exemple : `systeme_information-fiche.json`.
+Une matiere peut avoir une fiche de cours (resume + lexique FR / EN), accessible au-dessus des niveaux. Elle est dans `src/data/<matiere>-fiche.json` et declaree dans `FICHES` (`src/data/index.js`). Exemples : `systeme_information-fiche.json`, `statistique_informatique-fiche.json`.
 
 - `title`, `subtitle`, `cardDesc` : en-tete de la fiche et texte de la carte
 - `sections[]` : `id`, `title`, `source` (ex. `"Seance 1 · p. 8-17"`), `blocks[]`
@@ -178,12 +186,21 @@ Une matiere peut avoir une fiche de cours (resume + lexique FR / EN), accessible
 | `list` | `items[]`, `title` optionnel |
 | `def` | `term`, `text`, optionnels `fr`, `en`, `author` |
 | `example` / `tip` | `text` (encadre « Exemple » / « A retenir ») |
-| `table` | `head[]`, `rows[][]`, `title` optionnel, `wide: true` pour un tableau large qui defile horizontalement |
+| `table` | `head[]`, `rows[][]`, `title` optionnel, `wide: true` pour un tableau large qui defile horizontalement (560 px), ou une largeur minimale en px (`wide: 780`) quand de longues formules ecrasent les autres colonnes |
 | `flow` | `steps[]` (schema en etapes), `title` et `note` optionnels |
 | `pyramid` | `levels[]` : `label`, `text`, `sub` (du sommet a la base) |
 | `stack` | `items[]` : `title`, `text`, `out`, `star` ; `links[]` entre les blocs |
 
 Dans tous les textes, `**gras**` est mis en evidence. Les nombres a milliers s'ecrivent avec une espace insecable (`100 000`) pour ne pas etre coupes en fin de ligne.
+
+## Glossaires (terme, definition, auteur)
+
+Une matiere peut avoir un glossaire du cours, accessible sous la fiche : `src/data/<matiere>-glossaire.json`, declare dans `GLOSSAIRES` (`src/data/index.js`). Exemple : `comportement_humain-glossaire.json` (40 termes du glossaire distribue en cours).
+
+- **Niveau 1 · Reconnaitre** (10 termes par serie) : la definition est affichee, on choisit le terme (2 a 4 choix, parmi ses `confusers`), puis son auteur (2 a 4 choix ; les auteurs des termes proches d'abord, jamais un auteur qui partage un nom avec la bonne reponse). Sous chaque mauvais choix : la definition du terme choisi, ou les termes de l'auteur choisi.
+- **Niveau 2 · Restituer** (5 termes par serie) : le terme est affiche, on ecrit la definition et l'auteur. Une definition libre ne peut pas etre corrigee mot a mot : l'app montre les **idees cles** retrouvees (`keys`), la definition du glossaire, et l'eleve s'auto-evalue. L'auteur est corrige automatiquement (un des noms suffit, faute de frappe toleree au-dela de 6 lettres).
+
+Champs d'une entree : `id`, `cat` (theme de `cats`), `term`, `def`, `authors` (noms separes : `["Darley", "Latané"]`), optionnels `authorLabel` (affichage si le regroupement compte : `"Freedman & Fraser, Cialdini"`), `en`, `alias`, `note`, `prompt` (definition a afficher au niveau 1 si `def` contient le terme ou le nom de l'auteur), `confusers` (3 `id` de termes proches) et `keys` : `[{ "label": "perte d'autonomie", "match": ["autonom"] }]` (racines sans accents ; le terme lui-meme est ignore dans la reponse).
 
 ## Ajouter des exercices
 

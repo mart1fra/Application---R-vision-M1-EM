@@ -1,0 +1,349 @@
+{
+  "title": "Glossaire du cours",
+  "subtitle": "40 termes, leur définition et leur auteur",
+  "cardDesc": "Retrouve le terme et l'auteur à partir de la définition, ou écris la définition toi-même",
+  "cats": [
+    { "id": "influence", "label": "Influence sociale et persuasion" },
+    { "id": "foules", "label": "Foules et mécanismes collectifs" },
+    { "id": "groupe", "label": "Le groupe" },
+    { "id": "identite", "label": "Identité, perception et cognition" },
+    { "id": "pouvoir", "label": "Pouvoir et leadership" }
+  ],
+  "entries": [
+    { "id": "agentique", "cat": "influence", "term": "État agentique", "en": "agentic state", "authors": ["Milgram"],
+      "def": "Perte d'autonomie où l'individu se considère comme l'instrument d'une autorité, déléguant sa responsabilité morale.",
+      "confusers": ["obeissance", "desindividuation", "dissonance"],
+      "keys": [
+        { "label": "perte d'autonomie", "match": ["autonom"] },
+        { "label": "l'instrument, l'exécutant", "match": ["instrument", "execut", "agent", "outil"] },
+        { "label": "d'une autorité", "match": ["autorit", "chef", "superieur", "hierarch"] },
+        { "label": "il délègue sa responsabilité", "match": ["responsab"] }
+      ] },
+    { "id": "ame", "cat": "foules", "term": "Âme collective", "authors": ["Le Bon"],
+      "def": "La conscience individuelle s'efface pour laisser place à une conscience collective, expliquant la suggestibilité et la contagion émotionnelle.",
+      "confusers": ["hypnose", "contagion", "desindividuation"],
+      "keys": [
+        { "label": "la conscience individuelle s'efface", "match": ["individu", "personnalit", "efface"] },
+        { "label": "une conscience collective", "match": ["collectiv"] },
+        { "label": "suggestibilité", "match": ["suggest", "hypno", "influencab"] },
+        { "label": "contagion émotionnelle", "match": ["contagi", "emotion"] }
+      ] },
+    { "id": "amorcage", "cat": "influence", "term": "Amorçage", "authors": ["Cialdini"],
+      "def": "Technique de persuasion consistant à faire accepter une proposition par des subterfuges ou avantages fictifs avant de proposer une alternative moins favorable.",
+      "confusers": ["pied", "porte", "persuasion"],
+      "keys": [
+        { "label": "technique de persuasion", "match": ["persua", "manipul", "technique", "influen"] },
+        { "label": "subterfuges, avantages fictifs (un appât)", "match": ["fictif", "subterfug", "appat", "leurre", "faux", "avantage"] },
+        { "label": "puis une alternative moins favorable", "match": ["alternati", "substitu", "moins favorable", "moins interessant", "moins avantageu", "autre offre", "autre proposition"] }
+      ] },
+    { "id": "autocategorisation", "cat": "identite", "term": "Autocatégorisation", "authors": ["Tajfel"],
+      "def": "La théorie de l'autocatégorisation favorise la capacité cognitive pour traiter intégralement les données de l'environnement de travail en créant des catégories.",
+      "prompt": "La théorie de l'… favorise la capacité cognitive pour traiter intégralement les données de l'environnement de travail en créant des catégories.",
+      "note": "La théorie de l'autocatégorisation est souvent attribuée à John Turner, élève de Tajfel ; le glossaire du cours retient Tajfel.",
+      "confusers": ["categorisation", "identite", "comparaison"],
+      "keys": [
+        { "label": "capacité cognitive", "match": ["cognit"] },
+        { "label": "traiter les données de l'environnement", "match": ["donnee", "information", "environnement", "traiter"] },
+        { "label": "en créant des catégories", "match": ["categor"] }
+      ] },
+    { "id": "autovalidation", "cat": "influence", "term": "Autovalidation", "en": "self-validation model", "authors": ["Briñol", "Petty"],
+      "def": "L'autovalidation persuasive montre que le traitement du message détermine l'attitude selon des variables de premier ordre (réponses cognitives) ou de second ordre (la validité du traitement d'information).",
+      "prompt": "L'… persuasive montre que le traitement du message détermine l'attitude selon des variables de premier ordre (réponses cognitives) ou de second ordre (la validité du traitement d'information).",
+      "confusers": ["elaboration", "dissonance", "persuasion"],
+      "keys": [
+        { "label": "le traitement du message", "match": ["message", "traitement"] },
+        { "label": "détermine l'attitude", "match": ["attitude"] },
+        { "label": "1er ordre : réponses cognitives", "match": ["premier", "cognit"] },
+        { "label": "2nd ordre : validité du traitement", "match": ["second", "validit", "confiance"] }
+      ] },
+    { "id": "spectateur", "cat": "foules", "term": "Effet spectateur", "en": "bystander effect", "authors": ["Darley", "Latané"],
+      "def": "Diminution de la probabilité d'intervenir en situation d'urgence lorsqu'il y a plusieurs témoins.",
+      "confusers": ["desindividuation", "conformisme", "pensee"],
+      "keys": [
+        { "label": "on intervient moins", "match": ["interven", "aide", "aider", "secour", "agir"] },
+        { "label": "en situation d'urgence", "match": ["urgen", "danger", "agress", "accident"] },
+        { "label": "quand il y a plusieurs témoins", "match": ["temoin", "plusieurs", "nombre", "foule", "presence"] }
+      ] },
+    { "id": "categorisation", "cat": "identite", "term": "Catégorisation sociale", "authors": ["Tajfel", "Turner"],
+      "def": "Processus cognitif par lequel les individus se définissent comme membres d'une catégorie sociale et s'identifient aux normes associées.",
+      "confusers": ["autocategorisation", "identite", "comparaison"],
+      "keys": [
+        { "label": "processus cognitif", "match": ["cognit", "processus"] },
+        { "label": "se définir membre d'une catégorie sociale", "match": ["categor", "membre"] },
+        { "label": "s'identifier aux normes associées", "match": ["identif", "norme"] }
+      ] },
+    { "id": "coalition", "cat": "pouvoir", "term": "Coalition", "authors": ["Crozier", "Friedberg"],
+      "def": "Alliance entre individus ou groupes visant à renforcer leur pouvoir dans une organisation.",
+      "confusers": ["pouvoir", "groupements", "minoritaire"],
+      "keys": [
+        { "label": "une alliance", "match": ["alli", "regroup", "union", "associ", "ensemble"] },
+        { "label": "pour renforcer leur pouvoir", "match": ["pouvoir", "force", "poids"] },
+        { "label": "dans une organisation", "match": ["organis", "entreprise"] }
+      ] },
+    { "id": "cohesion", "cat": "groupe", "term": "Cohésion de groupe", "authors": ["Lewin"],
+      "def": "Degré d'attraction mutuelle entre membres d'un groupe, favorisant sa stabilité et son efficacité.",
+      "confusers": ["dynamique", "constitutive", "pensee"],
+      "keys": [
+        { "label": "attraction mutuelle entre membres", "match": ["attract", "attir", "lien", "mutuel", "reciproq"] },
+        { "label": "stabilité", "match": ["stabil", "unit", "soud"] },
+        { "label": "efficacité", "match": ["effica", "performan"] }
+      ] },
+    { "id": "comparaison", "cat": "identite", "term": "Comparaison sociale", "authors": ["Festinger"],
+      "def": "Processus par lequel l'individu évalue ses opinions et capacités en se comparant aux autres.",
+      "confusers": ["reference", "categorisation", "conformisme"],
+      "keys": [
+        { "label": "évaluer", "match": ["evalu", "juge", "mesur"] },
+        { "label": "ses opinions et capacités", "match": ["opinion", "capacit", "competen", "aptitud"] },
+        { "label": "en se comparant aux autres", "match": ["compar", "autres"] }
+      ] },
+    { "id": "conformisme", "cat": "influence", "term": "Conformisme", "authors": ["Asch"],
+      "def": "Modification du comportement, des opinions ou perceptions sous l'influence réelle ou imaginée d'un groupe.",
+      "confusers": ["normalisation", "obeissance", "norme"],
+      "keys": [
+        { "label": "modification du comportement, des opinions", "match": ["modif", "chang", "aligne", "adapt"] },
+        { "label": "sous l'influence d'un groupe", "match": ["groupe", "majorit", "autres"] },
+        { "label": "réelle ou imaginée", "match": ["reel", "imagin", "implicit"] }
+      ] },
+    { "id": "consistance", "cat": "influence", "term": "Consistance comportementale", "authors": ["Moscovici"],
+      "def": "Capacité d'une minorité à maintenir ses positions dans le temps et à montrer une cohérence interne.",
+      "confusers": ["minoritaire", "dissonance", "normalisation"],
+      "keys": [
+        { "label": "une minorité", "match": ["minorit"] },
+        { "label": "maintenir ses positions dans le temps", "match": ["temps", "mainten", "constan", "durabl", "garder"] },
+        { "label": "cohérence interne", "match": ["coheren", "accord", "interne"] }
+      ] },
+    { "id": "contagion", "cat": "foules", "term": "Contagion sociale", "authors": ["Le Bon"],
+      "def": "Tendance à imiter un modèle dominant de comportement qui se propage d'une personne à l'autre par émotions et influences collectives.",
+      "confusers": ["ame", "hypnose", "conformisme"],
+      "keys": [
+        { "label": "imiter", "match": ["imit", "copi"] },
+        { "label": "un modèle dominant de comportement", "match": ["modele", "dominant"] },
+        { "label": "qui se propage", "match": ["propag", "diffus", "transmet", "repand"] },
+        { "label": "par les émotions", "match": ["emotion"] }
+      ] },
+    { "id": "constitutive", "cat": "groupe", "term": "Dépendance constitutive", "authors": ["Lewin"],
+      "def": "Dépendance entre membres d'un groupe nécessaires les uns aux autres pour atteindre leurs objectifs.",
+      "confusers": ["reference", "cohesion", "groupe"],
+      "keys": [
+        { "label": "membres nécessaires les uns aux autres", "match": ["necessair", "besoin", "les uns", "interdepend"] },
+        { "label": "pour atteindre leurs objectifs", "match": ["objectif", "but"] }
+      ] },
+    { "id": "reference", "cat": "groupe", "term": "Dépendance de référence", "authors": ["Lewin"],
+      "def": "Les membres d'un groupe constituent pour les autres un cadre de référence et d'évaluation.",
+      "confusers": ["constitutive", "comparaison", "norme"],
+      "keys": [
+        { "label": "un cadre de référence", "match": ["referen", "repere", "modele"] },
+        { "label": "et d'évaluation", "match": ["evalu", "compar", "juge"] },
+        { "label": "les membres, les uns pour les autres", "match": ["membre", "autres"] }
+      ] },
+    { "id": "desindividuation", "cat": "foules", "term": "Désindividuation", "authors": ["Zimbardo", "Le Bon"],
+      "def": "Phénomène où l'individu perd son identité personnelle au profit de l'anonymat collectif, favorisant comportements extrêmes.",
+      "confusers": ["ame", "spectateur", "agentique"],
+      "keys": [
+        { "label": "perte de l'identité personnelle", "match": ["identit", "perd", "perte"] },
+        { "label": "au profit de l'anonymat collectif", "match": ["anonym", "collectif", "foule"] },
+        { "label": "comportements extrêmes", "match": ["extrem", "violen", "antisoci"] }
+      ] },
+    { "id": "dissonance", "cat": "identite", "term": "Dissonance cognitive", "authors": ["Festinger"],
+      "def": "Inconfort psychologique provoqué par la contradiction entre croyances et comportements.",
+      "confusers": ["autovalidation", "halo", "consistance"],
+      "keys": [
+        { "label": "inconfort psychologique", "match": ["inconfort", "malaise", "tension", "mal a l"] },
+        { "label": "une contradiction", "match": ["contradi", "incoheren", "decalage", "oppos", "conflit"] },
+        { "label": "entre croyances et comportements", "match": ["croyanc", "pense", "valeur", "comportement", "action"] }
+      ] },
+    { "id": "dynamique", "cat": "groupe", "term": "Dynamique de groupe", "authors": ["Lewin"],
+      "def": "Ensemble des phénomènes psychosociaux qui influent sur les relations et interactions entre membres.",
+      "confusers": ["cohesion", "groupe", "influence"],
+      "keys": [
+        { "label": "phénomènes psychosociaux", "match": ["psycho", "phenomen"] },
+        { "label": "relations et interactions", "match": ["relation", "interact"] },
+        { "label": "entre membres du groupe", "match": ["membre", "groupe"] }
+      ] },
+    { "id": "halo", "cat": "identite", "term": "Effet de halo", "authors": ["Thorndike"],
+      "def": "Influence d'une impression générale sur l'évaluation de caractéristiques spécifiques.",
+      "confusers": ["pygmalion", "categorisation", "dissonance"],
+      "keys": [
+        { "label": "une impression générale", "match": ["impression", "general", "global", "premier"] },
+        { "label": "influence l'évaluation", "match": ["evalu", "jugement", "juge", "percep"] },
+        { "label": "de caractéristiques spécifiques", "match": ["caracteris", "specifique", "trait", "qualit"] }
+      ] },
+    { "id": "pygmalion", "cat": "pouvoir", "term": "Effet Pygmalion", "authors": ["Rosenthal"],
+      "def": "Les attentes des supérieurs influencent la performance des subordonnés.",
+      "confusers": ["halo", "leadership", "pouvoir"],
+      "keys": [
+        { "label": "les attentes", "match": ["attente", "attend", "croi", "confiance", "prophet"] },
+        { "label": "des supérieurs", "match": ["superieur", "manager", "chef", "professeur", "enseignant"] },
+        { "label": "influencent la performance des subordonnés", "match": ["performan", "resultat", "reussi", "subordon", "eleve"] }
+      ] },
+    { "id": "groupe", "cat": "groupe", "term": "Groupe", "authors": ["Lewin", "Festinger"],
+      "def": "Ensemble d'au moins trois individus en interaction, poursuivant des objectifs communs et liés par un sentiment d'appartenance.",
+      "confusers": ["groupements", "dynamique", "coalition"],
+      "keys": [
+        { "label": "au moins trois individus", "match": ["trois", " 3 ", "plusieurs"] },
+        { "label": "en interaction", "match": ["interact", "echang", "communiq"] },
+        { "label": "des objectifs communs", "match": ["objectif", "but"] },
+        { "label": "un sentiment d'appartenance", "match": ["appartenan"] }
+      ] },
+    { "id": "groupements", "cat": "groupe", "term": "Groupements sociaux", "authors": ["Fichter"],
+      "def": "L'idée de groupement social renvoie au fait que, dans chaque société, la plupart des individus se joignent à d'autres à un moment donné de leur vie pour atteindre certains de leurs objectifs.",
+      "prompt": "L'idée de … renvoie au fait que, dans chaque société, la plupart des individus se joignent à d'autres à un moment donné de leur vie pour atteindre certains de leurs objectifs.",
+      "confusers": ["groupe", "coalition", "secondaire"],
+      "keys": [
+        { "label": "les individus se joignent à d'autres", "match": ["joign", "rejoin", "regroup", "rassembl", "associ", "autres"] },
+        { "label": "pour atteindre leurs objectifs", "match": ["objectif", "but"] },
+        { "label": "dans chaque société, à un moment de leur vie", "match": ["societe", "vie", "moment"] }
+      ] },
+    { "id": "hypnose", "cat": "foules", "term": "Hypnose sociale", "authors": ["Le Bon"],
+      "def": "Métaphore utilisée par Le Bon pour expliquer la suggestibilité et la contagion dans les foules.",
+      "prompt": "Métaphore utilisée par cet auteur pour expliquer la suggestibilité et la contagion dans les foules.",
+      "confusers": ["ame", "contagion", "persuasion"],
+      "keys": [
+        { "label": "une métaphore", "match": ["metaphor", "comme", "image", "compar"] },
+        { "label": "la suggestibilité", "match": ["suggest", "influencab"] },
+        { "label": "la contagion", "match": ["contagi", "propag"] },
+        { "label": "dans les foules", "match": ["foule", "masse"] }
+      ] },
+    { "id": "identite", "cat": "identite", "term": "Identité sociale", "authors": ["Tajfel", "Turner"],
+      "def": "Conscience de son appartenance à un groupe et valeur associée à cette appartenance, participant à la construction du soi.",
+      "confusers": ["categorisation", "autocategorisation", "primaire"],
+      "keys": [
+        { "label": "conscience de son appartenance à un groupe", "match": ["appartenan", "conscien"] },
+        { "label": "la valeur associée", "match": ["valeur", "estime", "fiert"] },
+        { "label": "la construction du soi", "match": ["soi", "construct", "image de"] }
+      ] },
+    { "id": "minoritaire", "cat": "influence", "term": "Influence minoritaire", "authors": ["Moscovici"],
+      "def": "Processus par lequel une minorité cohérente et consistante influence la majorité.",
+      "confusers": ["consistance", "influence", "conformisme"],
+      "keys": [
+        { "label": "une minorité", "match": ["minorit"] },
+        { "label": "cohérente et consistante", "match": ["coheren", "consist", "constan"] },
+        { "label": "influence la majorité", "match": ["majorit"] }
+      ] },
+    { "id": "influence", "cat": "influence", "term": "Influence sociale", "authors": ["Moscovici"],
+      "def": "L'influence sociale est liée à la transformation que subissent les mécanismes généraux du jugement, de la perception, de la mémoire en raison d'un objet ou un stimulus commun.",
+      "prompt": "Ce phénomène est lié à la transformation que subissent les mécanismes généraux du jugement, de la perception, de la mémoire en raison d'un objet ou un stimulus commun.",
+      "confusers": ["minoritaire", "persuasion", "conformisme"],
+      "keys": [
+        { "label": "une transformation", "match": ["transform", "modif", "chang"] },
+        { "label": "du jugement, de la perception, de la mémoire", "match": ["jugement", "percep", "memoire"] },
+        { "label": "à cause d'un objet ou stimulus commun", "match": ["stimulus", "objet", "commun"] }
+      ] },
+    { "id": "leadership", "cat": "pouvoir", "term": "Leadership", "authors": ["Lévy-Leboyer"],
+      "def": "Processus d'influence sociale permettant de mobiliser un groupe vers des objectifs communs.",
+      "confusers": ["pouvoir", "theories", "pygmalion"],
+      "keys": [
+        { "label": "processus d'influence sociale", "match": ["influen"] },
+        { "label": "mobiliser un groupe", "match": ["mobilis", "entrain", "motiv", "groupe"] },
+        { "label": "vers des objectifs communs", "match": ["objectif", "but"] }
+      ] },
+    { "id": "normalisation", "cat": "influence", "term": "Normalisation", "authors": ["Sherif"],
+      "def": "Processus par lequel des individus en interaction convergent vers une norme de jugement commune.",
+      "confusers": ["norme", "conformisme", "consistance"],
+      "keys": [
+        { "label": "des individus en interaction", "match": ["interact", "echange", "reciproq", "ensemble"] },
+        { "label": "convergent", "match": ["converg", "rapproch", "compromis", "nivel"] },
+        { "label": "vers une norme de jugement commune", "match": ["norme", "commun"] }
+      ] },
+    { "id": "norme", "cat": "influence", "term": "Norme sociale", "authors": ["Sherif", "Doise"],
+      "def": "Règle explicite ou implicite qui organise la conduite sociale, produit une uniformité et résulte d'un compromis collectif (normalisation).",
+      "prompt": "Règle explicite ou implicite qui organise la conduite sociale, produit une uniformité et résulte d'un compromis collectif.",
+      "confusers": ["normalisation", "role", "conformisme"],
+      "keys": [
+        { "label": "règle explicite ou implicite", "match": ["regle", "explicit", "implicit"] },
+        { "label": "organise la conduite sociale", "match": ["conduite", "comportement", "organis"] },
+        { "label": "produit une uniformité", "match": ["uniform"] },
+        { "label": "résulte d'un compromis collectif", "match": ["compromis", "normalisation", "collectif"] }
+      ] },
+    { "id": "obeissance", "cat": "influence", "term": "Obéissance", "authors": ["Milgram"],
+      "def": "Soumission à une autorité légitime entraînant un changement psychologique et comportemental.",
+      "confusers": ["agentique", "conformisme", "pouvoir"],
+      "keys": [
+        { "label": "soumission", "match": ["soumi", "obei", "ordre"] },
+        { "label": "à une autorité légitime", "match": ["autorit", "legitim"] },
+        { "label": "changement psychologique et comportemental", "match": ["chang", "comportement", "psycholog"] }
+      ] },
+    { "id": "pensee", "cat": "groupe", "term": "Pensée groupale", "en": "groupthink", "authors": ["Janis"],
+      "def": "Biais collectif conduisant à rechercher le consensus au détriment de décisions rationnelles.",
+      "confusers": ["cohesion", "conformisme", "normalisation"],
+      "keys": [
+        { "label": "un biais collectif", "match": ["biais", "collectif"] },
+        { "label": "rechercher le consensus", "match": ["consensus", "accord", "unanim", "cohesion", "harmonie"] },
+        { "label": "au détriment de décisions rationnelles", "match": ["rationnel", "decision", "detriment"] }
+      ] },
+    { "id": "persuasion", "cat": "influence", "term": "Persuasion", "authors": ["Freedman", "Fraser", "Cialdini"], "authorLabel": "Freedman & Fraser, Cialdini",
+      "def": "Influence visant à modifier attitudes ou comportements par communication et techniques de soumission librement consentie (pied-dans-la-porte, porte-au-nez, amorçage).",
+      "confusers": ["influence", "amorcage", "elaboration"],
+      "keys": [
+        { "label": "modifier attitudes ou comportements", "match": ["modif", "chang", "attitude", "comportement", "opinion"] },
+        { "label": "par la communication", "match": ["communic", "message", "argument"] },
+        { "label": "techniques de soumission librement consentie", "match": ["librement", "consenti", "soumission", "technique", "pied", "porte", "amorc"] }
+      ] },
+    { "id": "pied", "cat": "influence", "term": "Pied-dans-la-porte", "authors": ["Freedman", "Fraser"],
+      "def": "Technique de persuasion consistant à obtenir un petit acte préalable pour favoriser l'acceptation ultérieure d'une requête plus coûteuse.",
+      "confusers": ["porte", "amorcage", "persuasion"],
+      "keys": [
+        { "label": "un petit acte préalable", "match": ["petit", "prealab", "faveur", "d abord"] },
+        { "label": "puis une requête plus coûteuse", "match": ["couteu", "importan", "grand", "exigean"] },
+        { "label": "technique de persuasion", "match": ["persua", "technique", "manipul"] }
+      ] },
+    { "id": "porte", "cat": "influence", "term": "Porte-au-nez", "authors": ["Cialdini"],
+      "def": "Technique de persuasion consistant à formuler d'abord une demande exagérée (refusée) pour faire accepter ensuite une demande plus raisonnable.",
+      "confusers": ["pied", "amorcage", "persuasion"],
+      "keys": [
+        { "label": "d'abord une demande exagérée (refusée)", "match": ["exager", "excessi", "enorme", "refus", "grande demande"] },
+        { "label": "puis une demande plus raisonnable", "match": ["raisonnab", "petite", "moins", "modest"] },
+        { "label": "technique de persuasion", "match": ["persua", "technique", "manipul"] }
+      ] },
+    { "id": "pouvoir", "cat": "pouvoir", "term": "Pouvoir", "authors": ["French", "Raven"],
+      "def": "Capacité d'obtenir d'autrui des comportements qu'il n'aurait pas eus autrement.",
+      "confusers": ["leadership", "coalition", "obeissance"],
+      "keys": [
+        { "label": "capacité d'obtenir", "match": ["capacit", "obten", "influen", "faire faire"] },
+        { "label": "des comportements d'autrui", "match": ["autrui", "autre", "comportement"] },
+        { "label": "qu'il n'aurait pas eus autrement", "match": ["autrement", "sans", "n aurait", "pas eu"] }
+      ] },
+    { "id": "elaboration", "cat": "influence", "term": "Probabilité d'élaboration", "en": "elaboration likelihood model", "alias": "modèle de vraisemblance", "authors": ["Petty", "Cacioppo"],
+      "def": "Deux voies permettent d'atteindre une attitude valide : une voie centrale (intégrer de nouvelles données) et une voie périphérique (modification sans messages persuasifs).",
+      "confusers": ["autovalidation", "persuasion", "dissonance"],
+      "keys": [
+        { "label": "deux voies", "match": ["deux", "voie", "route"] },
+        { "label": "une voie centrale (nouvelles données)", "match": ["central"] },
+        { "label": "une voie périphérique", "match": ["peripher"] },
+        { "label": "pour atteindre une attitude", "match": ["attitude"] }
+      ] },
+    { "id": "role", "cat": "groupe", "term": "Rôle", "authors": ["Zimbardo"],
+      "def": "Ensemble d'attentes comportementales associées à une fonction ou position dans un groupe.",
+      "confusers": ["norme", "identite", "groupe"],
+      "keys": [
+        { "label": "des attentes", "match": ["attente", "attend"] },
+        { "label": "comportementales", "match": ["comportement", "conduite"] },
+        { "label": "associées à une fonction ou position", "match": ["fonction", "position", "poste", "statut"] }
+      ] },
+    { "id": "primaire", "cat": "identite", "term": "Socialisation primaire", "authors": ["Durkheim", "Berger", "Luckmann"],
+      "def": "Transmission des normes et valeurs par la famille, l'éducation, la religion.",
+      "confusers": ["secondaire", "identite", "norme"],
+      "keys": [
+        { "label": "transmission des normes et valeurs", "match": ["transmi", "apprent", "norme", "valeur"] },
+        { "label": "par la famille", "match": ["famille", "parent"] },
+        { "label": "l'éducation, la religion", "match": ["educat", "ecole", "religion"] }
+      ] },
+    { "id": "secondaire", "cat": "identite", "term": "Socialisation secondaire", "authors": ["Durkheim", "Berger", "Luckmann"],
+      "def": "Intériorisation des normes et valeurs dans le milieu professionnel ou autres organisations sociales.",
+      "confusers": ["primaire", "groupements", "role"],
+      "keys": [
+        { "label": "intériorisation des normes et valeurs", "match": ["interior", "norme", "valeur", "apprent"] },
+        { "label": "dans le milieu professionnel", "match": ["profession", "travail", "entreprise", "emploi"] },
+        { "label": "ou d'autres organisations sociales", "match": ["organisation", "association", "institution"] }
+      ] },
+    { "id": "theories", "cat": "pouvoir", "term": "Théories du leadership", "authors": ["Burns", "Bass"],
+      "def": "Traits de personnalité (leader né) ; approches situationnelles et interactionnistes ; béhavioristes (orientation tâche / relation) ; néo-charismatiques (transactionnel, transformationnel).",
+      "confusers": ["leadership", "pouvoir", "pygmalion"],
+      "keys": [
+        { "label": "traits de personnalité (leader né)", "match": ["trait", "personnalit", "leader ne"] },
+        { "label": "situationnelles et interactionnistes", "match": ["situation", "interaction"] },
+        { "label": "béhavioristes (tâche / relation)", "match": ["behavior", "tache", "relation"] },
+        { "label": "néo-charismatiques (transactionnel, transformationnel)", "match": ["charism", "transaction", "transformation"] }
+      ] }
+  ]
+}

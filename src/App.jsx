@@ -5,6 +5,7 @@ import Quiz from './components/Quiz'
 import Devoir from './components/Devoir'
 import Fiche from './components/Fiche'
 import Score from './components/Score'
+import GlossaireQuiz, { GlossaireMenu } from './components/GlossaireCours'
 import { GlossaryProvider } from './components/Glossary'
 
 const Admin = lazy(() => import('./components/Admin'))
@@ -14,6 +15,8 @@ function App() {
   const [matiere, setMatiere] = useState(null)
   const [level, setLevel] = useState(null)
   const [devoir, setDevoir] = useState(null)
+  // Niveau du glossaire en cours (1 ou 2), null hors glossaire
+  const [gloss, setGloss] = useState(null)
   const [results, setResults] = useState(null)
   const [run, setRun] = useState(0)
 
@@ -39,6 +42,7 @@ function App() {
   const goLevels = () => {
     setScreen('level')
     setDevoir(null)
+    setGloss(null)
     setResults(null)
   }
 
@@ -58,6 +62,18 @@ function App() {
     setScreen('devoir')
   }
 
+  const openGlossaire = () => {
+    setGloss(null)
+    setResults(null)
+    setScreen('glossaire')
+  }
+
+  const startGlossaire = (l) => {
+    setGloss(l)
+    setDevoir(null)
+    setScreen('glossaire-quiz')
+  }
+
   const finish = (r) => {
     setResults(r)
     setScreen('score')
@@ -66,7 +82,7 @@ function App() {
   const retry = () => {
     setResults(null)
     setRun(n => n + 1)
-    setScreen(devoir ? 'devoir' : 'quiz')
+    setScreen(gloss ? 'glossaire-quiz' : devoir ? 'devoir' : 'quiz')
   }
 
   if (screen === 'admin') {
@@ -92,10 +108,15 @@ function App() {
               onSelect={selectLevel}
               onDevoir={selectDevoir}
               onFiche={() => setScreen('fiche')}
+              onGlossaire={openGlossaire}
               onBack={goHome}
             />
           )}
           {screen === 'fiche' && <Fiche matiere={matiere} onBack={goLevels} />}
+          {screen === 'glossaire' && <GlossaireMenu matiere={matiere} onStart={startGlossaire} onBack={goLevels} />}
+          {screen === 'glossaire-quiz' && (
+            <GlossaireQuiz key={`${gloss}-${run}`} matiere={matiere} level={gloss} onFinish={finish} onBack={openGlossaire} />
+          )}
           {screen === 'quiz' && (
             <Quiz key={run} matiere={matiere} level={level} onFinish={finish} onBack={goLevels} />
           )}
@@ -106,10 +127,10 @@ function App() {
             <Score
               results={results}
               matiere={matiere}
-              subtitle={devoir ? `${devoir.title} · p. ${devoir.page}` : undefined}
+              subtitle={gloss ? `Glossaire · niveau ${gloss}` : devoir ? `${devoir.title} · p. ${devoir.page}` : undefined}
               onRetry={retry}
-              onHome={devoir ? goLevels : goHome}
-              homeLabel={devoir ? 'Retour aux devoirs' : undefined}
+              onHome={gloss ? openGlossaire : devoir ? goLevels : goHome}
+              homeLabel={gloss ? 'Retour au glossaire' : devoir ? 'Retour aux devoirs' : undefined}
             />
           )}
         </div>
