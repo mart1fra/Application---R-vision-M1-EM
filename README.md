@@ -7,7 +7,7 @@ Application de revision pour M1 Ecole de Management. Vite + React + Tailwind CSS
 - Anglais (traductions FR/EN, vocabulaire business)
 - Comportement humain (theories de la motivation, leadership, psychologie sociale)
 - Statistique informatique (stats descriptives, inferentielles, regression)
-- Systeme d'information (ERP, BDD, architecture SI, gouvernance)
+- Systeme d'information (donnee / information, typologie STT, SIG, SIAD, SID, CRM, SCM, SIRH, ERP) + fiche de cours avec lexique FR / EN
 - Droit des affaires (formes juridiques, contrats, procedures collectives)
 
 ## Lancer le projet
@@ -154,6 +154,8 @@ Une activite impossible a recreer (plateforme externe) peut etre listee avec `un
 | **Moyen** | QCM + reponse courte a ecrire (`free`) | QCM plus pointus (nuances, cas d'application). Reponses courtes : un terme, un acronyme, une notion |
 | **Difficile** | Texte a trous (`fill`) + reponse a ecrire (`free`) | Textes a trous dans des definitions ou enonces. Reponses ecrites : definitions, notions cles, petits cas pratiques (droit) |
 
+**Systeme d'information :** les acronymes se revisent aussi en anglais, a tous les niveaux (ERP = Enterprise Resource Planning, STT = TPS, SIG = MIS, SIAD = DSS, SID = ESS, SIRH = HRIS…). Chaque mauvais choix de QCM a sa `note`.
+
 ### Regles generales
 
 - **Pas de QCM en difficile** (sauf anglais moyen)
@@ -161,6 +163,27 @@ Une activite impossible a recreer (plateforme externe) peut etre listee avec `un
 - **Reponses ecrites** : toujours accepter plusieurs formulations dans `answers`
 - **Exercices fideles aux cours** : generer uniquement a partir du contenu reel des fichiers de cours dans `/cours/<matiere>/`
 - **Progression claire** : facile = reconnaitre, moyen = comprendre et appliquer, difficile = formuler et analyser
+
+## Fiches de cours
+
+Une matiere peut avoir une fiche de cours (resume + lexique FR / EN), accessible au-dessus des niveaux. Elle est dans `src/data/<matiere>-fiche.json` et declaree dans `FICHES` (`src/data/index.js`). Exemple : `systeme_information-fiche.json`.
+
+- `title`, `subtitle`, `cardDesc` : en-tete de la fiche et texte de la carte
+- `sections[]` : `id`, `title`, `source` (ex. `"Seance 1 · p. 8-17"`), `blocks[]`
+- `glossaryCats[]` : `id`, `label` ; `glossary[]` : `cat`, `term`, `fr`, `en`, `def`, et `extra: true` si la definition n'est pas dans les diapos (badge « hors diapos »)
+
+| `type` de bloc | Donnees |
+|--------|---------|
+| `p` / `h` | `text` (paragraphe / sous-titre) |
+| `list` | `items[]`, `title` optionnel |
+| `def` | `term`, `text`, optionnels `fr`, `en`, `author` |
+| `example` / `tip` | `text` (encadre « Exemple » / « A retenir ») |
+| `table` | `head[]`, `rows[][]`, `title` optionnel, `wide: true` pour un tableau large qui defile horizontalement |
+| `flow` | `steps[]` (schema en etapes), `title` et `note` optionnels |
+| `pyramid` | `levels[]` : `label`, `text`, `sub` (du sommet a la base) |
+| `stack` | `items[]` : `title`, `text`, `out`, `star` ; `links[]` entre les blocs |
+
+Dans tous les textes, `**gras**` est mis en evidence. Les nombres a milliers s'ecrivent avec une espace insecable (`100 000`) pour ne pas etre coupes en fin de ligne.
 
 ## Ajouter des exercices
 

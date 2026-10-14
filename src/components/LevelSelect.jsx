@@ -1,4 +1,4 @@
-import { DATA, DEVOIRS } from '../data'
+import { DATA, DEVOIRS, FICHES } from '../data'
 import { SESSION_SIZE, KIND_LABEL } from '../utils'
 import { focusRing } from './ui'
 
@@ -14,11 +14,17 @@ const LEVEL_DESC = {
     moyen: 'Mots en contexte, pièges, traductions à écrire',
     difficile: 'Expressions à traduire, phrases à compléter',
   },
+  systeme_information: {
+    facile: 'QCM : définitions, acronymes, notions clés',
+    moyen: 'QCM pièges, cas pratiques, acronymes à écrire',
+    difficile: 'Définitions à compléter, termes anglais à écrire',
+  },
 }
 
-export default function LevelSelect({ matiere, onSelect, onDevoir, onBack }) {
+export default function LevelSelect({ matiere, onSelect, onDevoir, onFiche, onBack }) {
   const pool = DATA[matiere.id] || []
   const devoirs = DEVOIRS[matiere.id] || []
+  const fiche = FICHES[matiere.id]
   const docs = [...new Set(devoirs.map(d => d.doc))]
 
   return (
@@ -43,9 +49,35 @@ export default function LevelSelect({ matiere, onSelect, onDevoir, onBack }) {
           {matiere.label}
         </h1>
         <p className="text-warm-gray text-[15px] mt-2">
-          Choisis ton niveau de difficulté.
+          {fiche ? 'Relis la fiche de cours, puis choisis ton niveau.' : 'Choisis ton niveau de difficulté.'}
         </p>
       </header>
+
+      {fiche && (
+        <button
+          onClick={onFiche}
+          className={`w-full text-left rounded-2xl p-5 mb-8 border elevated
+                     active:scale-[0.97] transition-transform duration-150 ${focusRing}`}
+          style={{
+            background: `color-mix(in srgb, ${matiere.color} 8%, white)`,
+            borderColor: `color-mix(in srgb, ${matiere.color} 28%, transparent)`,
+          }}
+        >
+          <div className="flex items-center gap-4">
+            <span className="text-2xl">📖</span>
+            <div className="flex-1 min-w-0">
+              <span className="block font-semibold text-[17px] text-charcoal">Fiche de cours</span>
+              <span className="block text-warm-gray text-[13px] mt-0.5">{fiche.cardDesc}</span>
+              <span className="block text-warm-gray/70 text-[12px] mt-1">
+                {fiche.sections.length} parties · {fiche.glossary.length} termes FR / EN
+              </span>
+            </div>
+            <svg className="w-5 h-5 text-warm-gray/40 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
+        </button>
+      )}
 
       <div className="flex flex-col gap-4">
         {LEVELS.map((l) => {

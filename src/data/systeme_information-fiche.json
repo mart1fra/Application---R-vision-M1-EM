@@ -1,0 +1,443 @@
+{
+  "title": "Systèmes d'information",
+  "subtitle": "Séances 1 à 3 · Imad Haraoubia · EM Strasbourg",
+  "cardDesc": "Résumé des séances 1 à 3 et lexique des termes FR / EN",
+  "sections": [
+    {
+      "id": "apercu",
+      "title": "Le cours en un coup d'œil",
+      "source": "Séance 1 · p. 3-4",
+      "blocks": [
+        { "type": "p", "text": "Objectif du cours : comprendre le rôle **opérationnel**, **tactique** et **stratégique** des systèmes d'information (SI)." },
+        { "type": "list", "title": "À la fin du cours, tu dois savoir :", "items": [
+          "**catégoriser** les différents types de SI ;",
+          "**identifier** les différents rôles des SI dans l'entreprise ;",
+          "**décrire et définir** les stratégies des SI et leurs projets ;",
+          "**évaluer** le potentiel stratégique et les risques liés aux SI."
+        ] },
+        { "type": "table", "title": "Plan du cours", "head": ["#", "Partie", "Dans les PDF ?"], "rows": [
+          ["1", "Introduction aux SI", "Oui (séance 1)"],
+          ["2", "Positionnement des SI dans l'organisation", "Oui (séances 2-3)"],
+          ["3", "Typologie des SI", "Oui (séances 2-3)"],
+          ["4", "Progiciel de gestion intégré (ERP)", "Pas encore"],
+          ["5", "Stratégie et SI", "Pas encore"],
+          ["6", "Gouvernance des SI", "Pas encore"],
+          ["7", "Direction des systèmes d'information (DSI)", "Pas encore"],
+          ["8", "Sécurité des SI", "Pas encore"],
+          ["9", "Gestion de projet SI", "Pas encore"]
+        ] },
+        { "type": "tip", "text": "Les acronymes et leur traduction anglaise (ERP, CRM, SCM, STT = TPS…) sont regroupés dans l'onglet **Lexique FR / EN**, avec un mode pour t'entraîner à retrouver l'anglais." }
+      ]
+    },
+    {
+      "id": "donnee",
+      "title": "Donnée, information, connaissance",
+      "source": "Séance 1 · p. 8-17",
+      "blocks": [
+        { "type": "def", "term": "Donnée", "en": "data", "text": "Un fait **brut** exprimé par des symboles : la **trace d'un évènement**, une valeur à l'état brut qui représente un évènement ayant lieu dans ou en dehors de l'organisation. C'est la **matière première** de l'information." },
+        { "type": "p", "text": "Formule du cours : **Donnée = ensemble de signes + code**. Exemples : 07-10-2024, 70710-A-1, 4365 BD 38, 12101961. Sans contexte, impossible de savoir si c'est une date, une référence, une plaque d'immatriculation ou une date de naissance : les données ne sont **pas encore organisées** pour qu'on puisse les comprendre et s'en servir." },
+        { "type": "def", "term": "Information", "en": "information", "text": "Une donnée **contextualisée** : traitée, elle a du **sens** après interprétation. Formule : **Information = donnée + modèle d'interprétation**. Une donnée ne devient une information que si elle a un **impact sur le récepteur**." },
+        { "type": "flow", "steps": ["Données qualitatives ou quantitatives", "Interprétation (modèle interprétatif)", "Information (renseignement)"] },
+        { "type": "tip", "text": "Le **modèle interprétatif est propre au récepteur** : la même donnée peut être une information pour l'un et ne rien dire à l'autre." },
+        { "type": "example", "text": "La BCE annonce une **baisse de son taux d'intérêt directeur** : pour un gestionnaire de portefeuille, c'est une information, car il va réviser à la hausse la probabilité de voir monter les actions à la Bourse de Paris. De même, le **tableau des commandes à livrer** dans les 3 mois conduit le responsable des achats à réserver un composant chez son fournisseur." },
+        { "type": "example", "text": "La **facture d'électricité** est plus riche que celle du téléphone mobile : en plus de la consommation (en kWh), elle donne une information **décisionnelle**, le récapitulatif des 4 dernières factures. Objectif : donner au client une vision complète pour qu'il consomme mieux. L'information est une **plus-value** dans la relation client : elle augmente la satisfaction et la fidélité." },
+        { "type": "def", "term": "Connaissance", "en": "knowledge", "text": "« Résulte de l'interaction entre ce que nous percevons de la réalité et ce qui est déjà dans notre **mémoire**. »", "author": "F. Varela, 1993" },
+        { "type": "list", "items": [
+          "C'est le résultat d'une **expérience** réalisée par un acteur à partir des informations disponibles dans une situation.",
+          "Elle est **plus complexe** que l'information : elle combine les expériences antérieures, les idées, les valeurs et les avis des autres.",
+          "Elle joue le rôle de **filtre** quand on observe la réalité et fournit des **modèles d'interprétation**.",
+          "Elle évolue grâce à un processus complexe d'**apprentissage**."
+        ] },
+        { "type": "p", "text": "Le schéma de R. Reix (2002) parle de connaissance **explicite** ou **tacite**. Définitions complémentaires : la connaissance **explicite** (explicit knowledge) est formalisée et transmissible (procédure, manuel, modèle, programme) ; la connaissance **tacite** (tacit knowledge) est un savoir-faire personnel, issu de l'expérience, difficile à mettre par écrit." },
+        { "type": "flow", "title": "Utiliser et développer une connaissance (R. Reix, 2002)", "steps": ["Évènements, objets", "Observation, saisie", "Données", "Interprétation", "Information", "Utilisation", "Résultat"], "note": "La connaissance agit à chaque étape : elle **filtre** ce qu'on observe, fournit le **modèle interprétatif** et le **programme** d'utilisation. En retour, l'information enrichit la connaissance : c'est l'**apprentissage**." },
+        { "type": "table", "title": "L'exemple de la voiture", "head": ["", "Exemple", "Pourquoi"], "rows": [
+          ["**Donnée**", "« 2° dans la voiture »", "Valeur numérique brute relevée par le thermomètre"],
+          ["**Information**", "« Il fait froid dans la voiture »", "La donnée interprétée a un sens pour le conducteur"],
+          ["**Connaissance**", "« Pour avoir chaud, il suffit d'allumer le chauffage »", "Un savoir issu de l'expérience, qui permet d'agir"]
+        ] },
+        { "type": "flow", "title": "Dans un SI, 3 activités produisent l'information (Davis et al., 1986 ; Laudon, 2019)", "steps": ["Entrée : données brutes", "Traitement : classer, organiser, calculer (avec les données stockées)", "Sortie : information"], "note": "La **rétroaction** (feedback) renvoie la sortie vers l'entrée pour corriger ou ajuster le système." }
+      ]
+    },
+    {
+      "id": "flux",
+      "title": "Types d'information et types de flux",
+      "source": "Séance 1 · p. 18-20",
+      "blocks": [
+        { "type": "table", "title": "3 types d'information", "head": ["Type", "Rôle", "Exemples"], "rows": [
+          ["**Fonctionnement**", "Indispensable au fonctionnement « mécanique » de l'entreprise", "Commande du client, commande au fournisseur, bulletin de salaire"],
+          ["**Influence**", "Motiver, stimuler, coordonner", "Journal interne, note de service, bruit de couloir, publicité, sponsoring"],
+          ["**Anticipation**", "Voir venir les changements de l'environnement socio-économique pour en tirer un avantage ou éviter un risque ; nécessaire au **pilotage**", "Un concurrent travaille sur un produit révolutionnaire"]
+        ] },
+        { "type": "p", "text": "**3 types de flux** : les flux **entrants** (de l'environnement vers l'entreprise : fournisseurs, clients, banques, partenaires, actionnaires…), les flux **sortants** (de l'entreprise vers ces mêmes acteurs) et les flux **internes** (entre les services de l'entreprise)." },
+        { "type": "table", "wide": true, "title": "Croisement type d'information × flux (diapo p. 20)", "head": ["Flux", "Fonctionnement", "Influence", "Anticipation"], "rows": [
+          ["**Interne**", "Fiche de contrôle, bulletin de salaire, fiche de stock, info commerciale, info de production", "Note de service, journal interne, bruit de couloir, communication interne", "—"],
+          ["**Sortant**", "Facture au client, commande fournisseur, bilan de l'entreprise, prix pratiqués sur des produits concurrentiels", "Rapport annuel, publicité, catalogue de produits, rapports internes sur la performance", "Devis proposé sur un appel d'offres en cours"],
+          ["**Entrant**", "Facture d'un fournisseur, commande d'un client, banques de données", "Réclamation du client, enquête d'opinion, étude d'image", "Rumeur sur un changement de législation, un concurrent prépare un produit révolutionnaire"]
+        ] },
+        { "type": "tip", "text": "Méthode : cherche d'abord **le sens du flux** (qui émet, qui reçoit ?), puis **à quoi sert l'information** : faire tourner l'activité = fonctionnement ; agir sur les comportements = influence ; voir venir l'avenir = anticipation." }
+      ]
+    },
+    {
+      "id": "systeme",
+      "title": "Le système et l'entreprise",
+      "source": "Séance 1 · p. 22-30",
+      "blocks": [
+        { "type": "def", "term": "Système", "en": "system", "text": "« Un ensemble d'éléments **interdépendants** et **organisés** en vue d'atteindre un **but**. »" },
+        { "type": "p", "text": "Le concept de système sert à représenter la réalité en faisant **abstraction** du fonctionnement précis de chaque élément, pour mettre l'accent sur son **comportement dans l'environnement** où il se situe." },
+        { "type": "flow", "steps": ["Entrées", "Traitement", "Sorties"], "note": "Le **contrôle** compare les sorties aux mesures et aux objectifs, puis régule les entrées : c'est la **régulation** (rétroaction). Le tout est plongé dans un **environnement**, en relation avec **d'autres systèmes**." },
+        { "type": "list", "items": [
+          "**Entrées** (input) : par exemple les commandes saisies.",
+          "**Traitement** (processing) : le « système opérant » ou **boîte noire** (black box), dont on regarde ce qui entre et ce qui sort sans détailler le fonctionnement interne. Exemple : vérifier la disponibilité, calculer le prix, enregistrer la commande dans la base de données.",
+          "**Sorties** (output) : par exemple la confirmation de commande pour le client, la mise à jour du stock, un rapport pour la gestion logistique."
+        ] },
+        { "type": "p", "text": "**L'entreprise comme système** (Armand Saint-Pierre, 1992) : des **intrants** (ressources financières, humaines, matérielles et d'information) passent par un **processus de transformation** et deviennent des **extrants** (produits, services, informations). L'environnement pèse sur l'entreprise : fournisseurs, créanciers, actionnaires, syndicats, gouvernement, publics, concurrents, avec des **contraintes** économiques, technologiques, financières, juridiques…" },
+        { "type": "stack", "title": "Les 3 sous-systèmes de l'entreprise (J.-L. Le Moigne, 1977)", "items": [
+          { "title": "Sous-système de pilotage", "text": "Réfléchit, décide, contrôle", "out": "Flux de décision" },
+          { "title": "Sous-système d'information", "text": "Récolte, stocke, traite, diffuse", "out": "Flux d'information", "star": true },
+          { "title": "Sous-système opérant", "text": "Transforme, produit", "out": "Flux physiques : intrants (matière, finance, personnel) → extrants (produits finis, services)" }
+        ], "links": ["↓ décisions · ↑ informations traitées", "↓ renseignements · ↑ informations collectées"] },
+        { "type": "tip", "text": "Le SI est **au milieu** : il fait le lien entre ceux qui décident (pilotage) et ceux qui produisent (opérant)." },
+        { "type": "table", "title": "Les flux : SNCF et EM Strasbourg", "head": ["", "SNCF", "EM Strasbourg"], "rows": [
+          ["**Flux physique**", "Trains, wagons, voyageurs, billets, réservations", "Chaises, salles, ordinateurs, enseignants, étudiants, tableaux"],
+          ["**Flux d'information**", "Trajet (n°, villes, horaires, fréquence), n° de billet, de réservation, de siège ; infos synthétiques : voyageurs par période, CA d'un trajet par jour sur 3 mois", "Emploi du temps, n° de salle, nombre d'étudiants et d'enseignants"],
+          ["**Flux de décision**", "Grille tarifaire, trajets d'une période, nouveaux trajets, achat d'équipements", "Nombre de cours par master, nouvelles formations, plus d'étudiants par formation, recrutement d'enseignants, achat d'équipements"],
+          ["**Contraintes**", "Réglementation, inflation, syndicats", "Réglementation, syndicats"]
+        ] }
+      ]
+    },
+    {
+      "id": "si",
+      "title": "Le système d'information",
+      "source": "Séance 1 · p. 31-40 · Séances 2-3 · p. 8",
+      "blocks": [
+        { "type": "p", "text": "Concrètement, un SI, c'est : des **personnes**, des **processus d'affaires** (business processes), du **matériel** (hardware), des **logiciels** (software) et des **réseaux et télécoms**." },
+        { "type": "def", "term": "Système d'information (SI)", "en": "information system (IS)", "text": "« Un ensemble organisé de ressources : matériel, logiciel, personnel, données, procédures… permettant d'**acquérir**, de **traiter**, de **stocker** et **diffuser** des informations dans et entre des organisations. »", "author": "R. Reix, 2002" },
+        { "type": "def", "term": "Système d'information (SI)", "text": "« Un ensemble de composantes reliées entre elles, qui **recueillent** (ou récupèrent), **stockent**, **traitent** et **diffusent** l'information afin d'aider à la **prise de décision**, à la **coordination** et au **contrôle** au sein d'une organisation. »", "author": "K. Laudon, 2020" },
+        { "type": "def", "term": "En résumé", "text": "« Un ensemble de **moyens humains, techniques et organisationnels** capable de fournir **en temps et en heure** toute l'information nécessaire au fonctionnement de l'organisation. »", "author": "Assar et Courbon" },
+        { "type": "list", "title": "Le SI comporte :", "items": [
+          "des **ressources humaines** ;",
+          "des **moyens techniques** ;",
+          "des **données** et des **modèles d'interprétation** ;",
+          "des **procédures** et des règles de fonctionnement organisationnel."
+        ] },
+        { "type": "list", "title": "5 ressources, « structurées et finalisées » :", "items": [
+          "**Personnel** (spécialistes ou utilisateurs)",
+          "**Matériel** (machines, supports…)",
+          "**Logiciels et procédures** (programmes, méthodes)",
+          "**Données**",
+          "**Réseaux** (médias de communication et soutiens de réseaux)"
+        ] },
+        { "type": "table", "title": "Les 4 fonctions de base (+ restituer)", "head": ["Fonction", "En pratique"], "rows": [
+          ["**Acquérir** (collecter)", "Saisie et acquisition : clavier, lecteur de codes-barres, scanner, reconnaissance vocale, reconnaissance d'écriture manuscrite, reconnaissance de caractères (**OCR**)"],
+          ["**Stocker** (conserver, mémoriser)", "Conserver les données de façon **stable, fiable et durable** (base de données) ; archivage de courte et de longue durée ; disque dur, CD, DVD, bande magnétique, logiciel de gestion de fichiers, **SGBD** ; savoir où se trouve l'information + sécurité"],
+          ["**Traiter** (transformer)", "Créer des informations à partir des données brutes : **tri, calculs, regroupements** ; ordinateurs, serveurs, systèmes d'exploitation, logiciels"],
+          ["**Restituer**", "Mettre l'information à disposition de **ceux qui en ont besoin, quand ils en ont besoin**, sous une forme exploitable : rapports, **tableaux de bord**"],
+          ["**Communiquer** (diffuser, transmettre)", "Déplacer l'information d'un point à un autre : satellites, réseaux privés d'entreprise, fibre optique, messagerie électronique, Bluetooth. Tendance actuelle : l'**intégration des technologies**"]
+        ] },
+        { "type": "tip", "text": "**SI ≠ informatique.** Le système **informatique** (IT, information technology) n'est que la **partie technique** du SI : matériel, logiciels, réseaux. Le **SI** comprend aussi les **personnes**, les **procédures** et les **données**. (Distinction complémentaire, souvent demandée.)" }
+      ]
+    },
+    {
+      "id": "place",
+      "title": "La place des SI dans l'organisation",
+      "source": "Séances 2-3 · p. 3-8",
+      "blocks": [
+        { "type": "p", "text": "Aujourd'hui, les SI sont **essentiels** au **fonctionnement**, à la **performance** et à la **compétitivité** de l'entreprise. Le manager doit **comprendre** et **maîtriser** leurs risques et leurs opportunités." },
+        { "type": "list", "title": "Les SI sont :", "items": [
+          "**incontournables** ;",
+          "des **actifs importants** dans la capitalisation de l'entreprise ;",
+          "ils **accompagnent** la stratégie, mais peuvent aussi **aider à la bâtir**."
+        ] },
+        { "type": "list", "title": "Les 3 missions des SI", "items": [
+          "Soutenir l'**exploitation** de l'entreprise",
+          "Soutenir la **prise de décision** des gestionnaires",
+          "Soutenir la poursuite de l'**avantage stratégique**"
+        ] },
+        { "type": "list", "title": "Pourquoi le SI est important :", "items": [
+          "le **poids des investissements** ;",
+          "sa contribution au **fonctionnement** de l'entreprise (e-commerce, services spécifiques, ventes…) ;",
+          "l'augmentation de la **productivité** ;",
+          "des **avantages stratégiques concurrentiels**.",
+          "Conséquence : une forte **dépendance de l'organisation vis-à-vis des SI**."
+        ] },
+        { "type": "p", "text": "Pour intégrer le SI, deux acteurs travaillent main dans la main : la **maîtrise d'ouvrage (MOA)**, côté **métiers**, qui exprime le besoin, fixe les objectifs et valide le résultat ; et la **maîtrise d'œuvre (MOE)**, côté **IT**, qui conçoit et réalise la solution technique. (Définitions complémentaires : la diapo ne cite que les deux termes.)" },
+        { "type": "table", "title": "Les 6 objectifs stratégiques des SI", "head": ["Objectif", "En anglais", "L'idée"], "rows": [
+          ["**Excellence opérationnelle**", "operational excellence", "Faire mieux avec moins : efficacité, productivité, coûts réduits (ex. les tournées optimisées d'UPS)"],
+          ["**Nouveaux produits, services et modèles commerciaux**", "new products, services and business models", "Le SI permet de créer une offre ou une nouvelle façon de gagner de l'argent (ex. la vente en ligne)"],
+          ["**Rapports privilégiés avec les clients et les fournisseurs**", "customer and supplier intimacy", "Mieux connaître et servir ses clients, mieux travailler avec ses fournisseurs (ex. un CRM)"],
+          ["**Amélioration de la prise de décision**", "improved decision making", "Décider sur des données fiables et à jour plutôt qu'à l'intuition"],
+          ["**Avantage compétitif**", "competitive advantage", "Faire mieux que les concurrents : prix plus bas, meilleur service, réactivité"],
+          ["**Survie**", "survival", "Certains SI sont indispensables pour rester sur le marché : obligation légale ou standard du secteur (ex. les distributeurs de billets pour une banque)"]
+        ] },
+        { "type": "table", "title": "Les 3 dimensions des SI", "head": ["Dimension", "Ce que le manager doit saisir"], "rows": [
+          ["**Organisations** (organisationnelle)", "La structure, les processus opérationnels, la politique et la culture ; le fonctionnement des principaux processus de l'entreprise est intégré aux SI"],
+          ["**Management** (informationnelle)", "Les SI sont la source d'information des différents niveaux de gestion ; ils peuvent jouer un rôle essentiel dans la reconception de l'organisation"],
+          ["**Technologie** (technologique)", "Les ressources qui constituent l'infrastructure de TI (IT) : la base sur laquelle l'entreprise construit et exploite ses SI spécifiques"]
+        ] },
+        { "type": "p", "text": "Schéma d'Assar et Courbon : le SI se place **entre le système de pilotage et le système opérant**. Il assure la **saisie**, le **stockage**, le **traitement**, la **restitution** ainsi que la **transmission et la communication** de l'information." }
+      ]
+    },
+    {
+      "id": "ups",
+      "title": "Cas d'étude : UPS et CandleScience",
+      "source": "Séances 2-3 · p. 9-12",
+      "blocks": [
+        { "type": "p", "text": "Comment optimiser ses flux logistiques grâce aux technologies de l'information : UPS livre des colis dans le monde entier ; CandleScience, une entreprise qui vend en ligne, utilise les outils d'UPS directement sur son propre site web." },
+        { "type": "table", "title": "Q1. Le système de suivi des colis d'UPS", "head": ["", "Contenu"], "rows": [
+          ["**Entrées**", "Étiquette intelligente (expéditeur, destinataire…), scan des codes-barres, signature du client, informations de livraison"],
+          ["**Traitement**", "Base de données (centre informatique de Mahwah), matériel, algorithme **ORION** (itinéraire optimal, frais d'expédition, alertes de réacheminement), transmission aux centres informatiques puis au centre de distribution proche du destinataire"],
+          ["**Sorties**", "Tournée affichée sur le **DIAD** du chauffeur (interne) ; suivi et preuve de livraison sur le site web et l'appli (externe)"]
+        ] },
+        { "type": "list", "title": "Les termes du cas", "items": [
+          "**DIAD** — Delivery Information Acquisition Device : le terminal portable du chauffeur, qui scanne les colis, recueille la signature et transmet les données.",
+          "**ORION** — On-Road Integrated Optimization and Navigation : l'algorithme qui calcule l'itinéraire le plus efficace et le moins coûteux de chaque chauffeur."
+        ] },
+        { "type": "list", "title": "Q2-Q3. Technologies, stratégie et objectifs", "items": [
+          "Technologies : étiquettes intelligentes, lecteurs de codes-barres, DIAD, ORION, bases de données, site web et appli, logiciels qui intègrent les services d'UPS au site des clients.",
+          "Stratégie d'UPS : rester **leader** en offrant **le meilleur service au prix le plus bas**, grâce à la maîtrise des coûts (plus d'1 milliard de dollars investis chaque année dans les technologies).",
+          "Objectifs stratégiques visés : **excellence opérationnelle** (coûts, tournées), **service et satisfaction client** (suivi en temps réel, preuve de livraison), **avantage concurrentiel**, **nouveaux services** et relations clients renforcées (outils intégrés aux sites des clients comme CandleScience)."
+        ] },
+        { "type": "p", "text": "Q4. Si les SI d'UPS tombent en panne, CandleScience ne peut plus **calculer les frais d'expédition**, ni **informer ses clients du suivi** ; ses livraisons deviennent plus lentes, moins précises et plus coûteuses. Résultat : baisse de la qualité de service, de la confiance des clients et des bénéfices. C'est la **dépendance vis-à-vis des SI**, ici ceux d'un partenaire." }
+      ]
+    },
+    {
+      "id": "niveaux",
+      "title": "Les niveaux de décision",
+      "source": "Séances 2-3 · p. 14-15",
+      "blocks": [
+        { "type": "pyramid", "levels": [
+          { "label": "Stratégique", "text": "Cadres supérieurs et dirigeants", "sub": "Long terme · décisions uniques, occasionnelles" },
+          { "label": "Tactique (gestion et contrôle)", "text": "Cadres intermédiaires (gestionnaires de sous-divisions)", "sub": "Moyen terme · décisions peu fréquentes, peu prévisibles" },
+          { "label": "Opérationnel", "text": "Exécutants (gestionnaires d'opérations)", "sub": "Court terme · décisions fréquentes, très prévisibles" }
+        ] },
+        { "type": "p", "text": "Une organisation se structure sur **deux dimensions** : **hiérarchique** (les niveaux de management : stratégie, gestion, opérations) et **fonctionnelle** (les fonctions et métiers : vente & marketing, fabrication & logistique, finance & comptabilité, ressources humaines)." }
+      ]
+    },
+    {
+      "id": "types",
+      "title": "Les 4 types de SI",
+      "source": "Séances 2-3 · p. 16-34",
+      "blocks": [
+        { "type": "pyramid", "levels": [
+          { "label": "SID", "text": "Système d'information décisionnel", "sub": "Stratégie · dirigeants · EN : ESS" },
+          { "label": "SIAD", "text": "Système d'information d'aide à la décision", "sub": "Gestion · analystes, cadres intermédiaires · EN : DSS" },
+          { "label": "SIG", "text": "Système d'information de gestion", "sub": "Gestion · cadres intermédiaires · EN : MIS" },
+          { "label": "STT", "text": "Système de traitement transactionnel", "sub": "Opérations · équipes opérationnelles · EN : TPS" }
+        ] },
+        { "type": "h", "text": "STT : système de traitement transactionnel" },
+        { "type": "def", "term": "STT", "en": "TPS, transaction processing system", "text": "Supporte les **transactions**, les processus et les activités opérationnelles courantes. Ses applications gèrent le **synchronisme**, c'est-à-dire le **temps réel** du SI." },
+        { "type": "list", "items": [
+          "soutient les **opérations courantes** de l'entreprise ;",
+          "enregistre les transactions **routinières et quotidiennes** ;",
+          "se compose de tâches **fortement structurées et prédéterminées** ;",
+          "**toute entreprise possède un STT**."
+        ] },
+        { "type": "example", "text": "Caisse enregistreuse, gestion des stocks, traitement des commandes, contrôle des mouvements de matériel, tenue des dossiers du personnel. Les STT sont dans **toutes les fonctions** : direction commerciale (gestion des ventes, service client, suivi des promotions et des changements de prix), administrative et financière (budget, facturation), production (expéditions, réceptions, achats), RH (bulletins de salaire, formation, avantages sociaux). Exemple RH : le projet **Hiris** de Danone (recrutement, carrières et compétences, administration, rémunérations : un seul système pour 40 000 puis 100 000 personnes)." },
+        { "type": "p", "text": "STT des ventes : le **terminal au point de vente** saisit les données et affiche des messages de contrôle ; le système traite la vente, **met à jour les bases de données** (stocks, clientèle, ventes) et répond aux interrogations du poste de travail de l'utilisateur. Programme de fidélité : caisses, **télécollecte des TPE** (terminaux de paiement électronique), saisie des adhésions, envoi des cartes, base de données centrale." },
+        { "type": "tip", "text": "Une **transaction**, c'est une opération élémentaire de l'activité : une vente, un paiement, une commande, une réservation… Attention : ici **TPE** = terminal de paiement électronique, pas « très petite entreprise »." },
+        { "type": "h", "text": "SIG : système d'information de gestion" },
+        { "type": "def", "term": "SIG", "en": "MIS, management information system", "text": "Assiste les responsables des opérations courantes en leur fournissant des **indicateurs** et des **rapports réguliers** sur leur déroulement." },
+        { "type": "list", "items": [
+          "orienté vers la **production de rapports** et le **contrôle** ;",
+          "dépend des **données existantes** dans l'entreprise (celles des STT) ;",
+          "aide à décider avec des données **passées et présentes** ;",
+          "**relativement rigide** ;",
+          "orientation **interne** à l'entreprise."
+        ] },
+        { "type": "example", "text": "Rapports de ventes, rapports financiers, gestion des ventes, contrôle des stocks, calendrier de production, analyse des coûts, analyse des ventes régionales." },
+        { "type": "flow", "title": "Du STT au SIG", "steps": ["STT : traitement des commandes, planification des ressources, grand livre", "Fichiers SIG : ventes, coûts unitaires, changements de produits, dépenses", "SIG : rapports pour les gestionnaires"] },
+        { "type": "table", "title": "2 types de rapports de gestion", "head": ["Type", "Définition", "Exemple"], "rows": [
+          ["**Rapport périodique programmé**", "Format **prédéterminé**, fourni à **intervalles réguliers**", "Analyse des ventes hebdomadaire, états financiers mensuels"],
+          ["**Relevé des exceptions**", "Ne montre que les **situations exceptionnelles**", "Les clients qui dépassent leur limite de crédit"]
+        ] },
+        { "type": "p", "text": "**Exemple de rapport SIG** : pour chaque produit et chaque région, les ventes réelles, les ventes prévues et l'**écart = ventes réelles ÷ ventes prévues**." },
+        { "type": "table", "title": "Eau minérale plate (code 4469)", "head": ["Région", "Réelles", "Prévues", "Écart"], "rows": [
+          ["Rhône-Alpes", "100 000", "110 000", "**0,9**"],
+          ["Auvergne", "67 000", "66 500", "**1,007**"],
+          ["Bourgogne", "110 000", "89 000", "**1,23**"]
+        ] },
+        { "type": "table", "title": "Eau gazeuse (code 5674)", "head": ["Région", "Réelles", "Prévues", "Écart"], "rows": [
+          ["Rhône-Alpes", "55 000", "55 000", "**1**"],
+          ["Auvergne", "45 000", "66 500", "**0,67**"],
+          ["Bourgogne", "35 000", "20 000", "**1,75**"]
+        ] },
+        { "type": "tip", "text": "Écart **supérieur à 1** : on a vendu plus que prévu ; **inférieur à 1** : moins que prévu. Piège : en comptabilité, « SIG » veut aussi dire **soldes intermédiaires de gestion**, et en géographie **système d'information géographique**. Ici, c'est le système d'information de gestion." },
+        { "type": "h", "text": "SIAD : système d'information d'aide à la décision" },
+        { "type": "def", "term": "SIAD (ou SAD)", "en": "DSS, decision support system", "text": "Conçu pour **assister les décideurs** à un niveau opérationnel ou **tactique**, grâce à une **analyse de données plus poussée**." },
+        { "type": "list", "items": [
+          "utilise les données du **STT et du SIG**, plus des informations **externes** (ex. le prix des produits de la concurrence), avec des **modèles d'analyse avancée** ;",
+          "aide à résoudre des **problèmes spécifiques** : décisions à court ou moyen terme ;",
+          "outils de **modélisation**, de **simulation**, d'**analyse de scénarios** et d'**optimisation** ;",
+          "**interaction en temps réel** : l'utilisateur pose des questions et explore plusieurs alternatives ;",
+          "utilisé par des **analystes**, des **gestionnaires intermédiaires** ou des **experts**."
+        ] },
+        { "type": "example", "text": "Décider combien de marchandises commander selon la demande, les coûts et la capacité d'entreposage. Dans une usine, le responsable de production simule des scénarios pour planifier la production (commandes, capacités des machines, matières premières) : moins de temps d'arrêt, moins de coûts d'inventaire." },
+        { "type": "h", "text": "SID : système d'information décisionnel" },
+        { "type": "def", "term": "SID (« système pour dirigeants »)", "en": "ESS, executive support system (ou EIS)", "text": "Destiné aux **dirigeants et cadres supérieurs** : il donne une **vue d'ensemble** de la performance et aide aux **décisions stratégiques à long terme**." },
+        { "type": "list", "items": [
+          "intègre des données **internes et externes** (ex. une nouvelle loi fiscale, l'arrivée d'un nouveau concurrent) ;",
+          "**soutient la stratégie** de l'organisation ;",
+          "répond à des questions **sans solution a priori** : dans quel marché devrions-nous être ? que font nos concurrents ? quelles acquisitions faire pour nous protéger ?",
+          "**moins interactif** que le SIAD : représentations visuelles, **indicateurs synthétisés**, **tableaux de bord**, sans analyses complexes ni simulations."
+        ] },
+        { "type": "example", "text": "Un tableau de bord des ventes par région, des parts de marché et des tendances des coûts. Dans une entreprise de fabrication, les dirigeants suivent les **KPI** des usines (taux de rendement, coût de production par unité, taux de défaillance) pour décider d'investir : moderniser une chaîne ou augmenter la capacité des usines les plus performantes." },
+        { "type": "table", "title": "SIAD vs SID", "head": ["Critère", "SIAD (SAD)", "SID (système pour dirigeants)"], "rows": [
+          ["**Objectif**", "Décisions spécifiques et tactiques", "Décisions stratégiques et globales"],
+          ["**Utilisateurs**", "Gestionnaires intermédiaires, analystes", "Dirigeants et cadres supérieurs"],
+          ["**Fonctionnalités**", "Modélisation, simulation, analyses", "Tableaux de bord, rapports consolidés"],
+          ["**Données**", "Opérationnelles et transactionnelles", "Consolidées et historiques"],
+          ["**Interactivité**", "Forte, pour des analyses approfondies", "Limitée, visualisation"]
+        ] },
+        { "type": "table", "wide": true, "title": "Les 4 types en un tableau", "head": ["Type", "Entrées", "Traitement", "Sorties", "Utilisateurs"], "rows": [
+          ["**SID**", "Données globales externes et internes", "Mise en forme visuelle (graphiques…)", "Tableaux de bord stratégiques, projections, vision à long terme", "Cadres dirigeants"],
+          ["**SIAD**", "Bases de données massives optimisées pour l'analyse", "Analyses multidimensionnelles", "Recommandations pour résoudre un problème", "Experts, cadres intermédiaires"],
+          ["**SIG**", "Données internes des STT, résumés des transactions, gros volumes", "Contrôle et synthèse des données", "Rapports routiniers, rapports spéciaux", "Cadres intermédiaires"],
+          ["**STT**", "Données opérationnelles (commandes, paiements…)", "Calculs simples, mise à jour des bases de données", "Enregistrement et historisation des transactions (factures, tickets, confirmations)", "Équipes opérationnelles"]
+        ] },
+        { "type": "table", "title": "Exercice du cours : SIAD ou SID ?", "head": ["Organisation", "Application", "Piste de réponse"], "rows": [
+          ["Caisse d'Épargne", "Optimiser la localisation des GAB (distributeurs de billets)", "SIAD : un problème précis, résolu par optimisation"],
+          ["AXA", "Localiser et évaluer les risques", "SIAD : modélisation par des experts"],
+          ["Centres E. Leclerc", "Analyser les comportements clients pour cibler un marketing personnalisé", "SIAD : analyse poussée pour une action ciblée"],
+          ["APRR (autoroutes)", "Analyser l'évolution du trafic pour faire évoluer les infrastructures", "À discuter : analyse de données (SIAD) au service d'un investissement à long terme (SID)"],
+          ["Décathlon", "Stimuler les équipes de vente avec des indicateurs opérationnels quotidiens", "À discuter : des indicateurs visuels (logique de tableau de bord), mais pour les équipes de terrain"]
+        ] },
+        { "type": "tip", "text": "Le diaporama ne donne pas la correction de cet exercice : ces pistes appliquent les critères du tableau SIAD vs SID. À l'examen, **justifie toujours** avec les critères : utilisateurs, horizon de la décision, données, interactivité." }
+      ]
+    },
+    {
+      "id": "fonctions",
+      "title": "Les SI par fonction",
+      "source": "Séances 2-3 · p. 35-52",
+      "blocks": [
+        { "type": "p", "text": "Chaque fonction de l'entreprise a ses applications, à chaque niveau de la pyramide (stratégie, gestion, opérations)." },
+        { "type": "h", "text": "Vente & marketing" },
+        { "type": "list", "items": [
+          "**Stratégie** : suivi des tendances, surveillance des concurrents, prévisions de vente à 5 ans",
+          "**Gestion** : études de marché, publicité, promotions ; analyse des ventes et des rendements des collaborateurs ; détermination des prix",
+          "**Opérations** : localisation des clients potentiels, suivi des ventes, traitement des commandes"
+        ] },
+        { "type": "def", "term": "CRM", "en": "Customer Relationship Management", "fr": "GRC, gestion de la relation client", "text": "Optimise le traitement et l'analyse des données sur les **clients et les prospects**, et **capitalise** ces informations pour mieux cibler le discours commercial." },
+        { "type": "list", "title": "Un CRM permet :", "items": [
+          "la **fidélisation** : mieux connaître le client pour lui proposer des produits et services adaptés ;",
+          "le développement du **CA par client** : lui proposer des produits et services complémentaires ;",
+          "le développement du **portefeuille client** : mieux suivre les clients potentiels augmente les chances de contractualiser."
+        ] },
+        { "type": "p", "text": "Fonctionnalités d'un CRM : gestion des contacts, des **prospects** et des **opportunités commerciales** ; devis, commandes, factures ; campagnes (e-mailing, téléphone…) ; historique de la relation ; enquêtes de satisfaction ; suivi et relances. Exemple : **Salesforce**." },
+        { "type": "h", "text": "Fabrication & logistique" },
+        { "type": "list", "items": [
+          "**Stratégie** : emplacement des nouvelles installations, objectifs de fabrication à long terme (usine, investissement dans une technologie)",
+          "**Gestion** : analyse des coûts et des ressources (stocks, ventes, production, quantités), planification de la fabrication (quand et comment fabriquer)",
+          "**Opérations** : support des tâches logistiques, contrôle du fonctionnement des équipements"
+        ] },
+        { "type": "def", "term": "CAO", "fr": "Conception assistée par ordinateur", "en": "CAD, computer-aided design", "text": "Logiciels pour dessiner et modéliser un produit en 2D ou en 3D. Exemples : AutoCAD, SolidWorks, T-FLEX CAD." },
+        { "type": "def", "term": "GCVP", "fr": "Gestion du cycle de vie d'un produit", "en": "PLM, product lifecycle management", "text": "Gère toutes les informations d'un produit, de sa conception à sa fin de vie (fabrication, maintenance, retrait)." },
+        { "type": "def", "term": "SCM", "en": "Supply Chain Management", "fr": "gestion de la chaîne logistique (ou d'approvisionnement)", "text": "Gère simultanément plusieurs processus opérationnels de la chaîne logistique, **de la planification initiale jusqu'à la livraison**. But : optimiser les processus entre acheteurs, fournisseurs, production, stocks et logistique, pour une meilleure **rentabilité** (transport, stockage)." },
+        { "type": "list", "title": "Le SCM permet de définir :", "items": [
+          "la meilleure **prévision de ventes** possible ;",
+          "les quantités à **stocker** dans les entrepôts ;",
+          "les quantités à **produire** dans chaque usine ;",
+          "les quantités à **approvisionner** auprès des différents fournisseurs."
+        ] },
+        { "type": "p", "text": "Fonctionnalités d'un SCM : planification (demande, approvisionnement, distribution), achats, gestion des commandes, logistique (transport, entrepôts), production, gestion de la maintenance, gestion du cycle de vie du produit. Exemples : IBM Supply Chain Intelligence Suite, E-SCM." },
+        { "type": "h", "text": "Finance & comptabilité" },
+        { "type": "list", "items": [
+          "**Stratégie** : objectifs d'investissement, prévisions à long terme",
+          "**Gestion** : piloter et contrôler les ressources financières, déterminer les prix des produits et services",
+          "**Opérations** : suivre les mouvements de fonds (transactions avec les collaborateurs, partenaires, administrations, organismes publics…)"
+        ] },
+        { "type": "p", "text": "Le SI comptable permet de **saisir des écritures** (opérations courantes, abonnements…), de **consulter des données financières** (comptes, balance, journaux…) et de gérer des **procédures périodiques**. Exemples : QuickBooks, SAP Finance, Agicap." },
+        { "type": "h", "text": "Ressources humaines" },
+        { "type": "list", "items": [
+          "**Stratégie** : planifier les besoins en main-d'œuvre, en cohérence avec le plan d'affaires à long terme",
+          "**Gestion** : superviser le recrutement, l'affectation et la rémunération des collaborateurs",
+          "**Opérations** : suivi de la formation, évaluation du rendement, suivi du recrutement et du placement"
+        ] },
+        { "type": "def", "term": "SIRH", "fr": "Système d'information des ressources humaines", "en": "HRIS, human resource information system", "text": "« Un système intégré de **briques applicatives** partageant des informations pour traiter des processus RH en étant ouvert à différents acteurs internes et externes à l'entreprise. »", "author": "Storhaye, 2011" },
+        { "type": "list", "items": [
+          "un ensemble de briques logicielles **interreliées** : chaque **module** gère un processus RH (recrutement, formation, entretiens annuels, paie…) ;",
+          "sa fonction : **stocker, traiter, diffuser** les données RH ;",
+          "en moyenne **plus de 1 500 tables de données** ; existe aussi en version adaptée aux **PME** ;",
+          "facilite la **conformité réglementaire** et la **transparence** des processus RH ;",
+          "soutient la stratégie RH en connectant les acteurs via une **plateforme commune**."
+        ] },
+        { "type": "p", "text": "Fonctionnalités d'un SIRH : administration du personnel, paie, formation, **GTA** (gestion des temps et activités), gestion des carrières, recrutement, entretiens annuels. Exemples : Workday, ADP, Factorial, Keeple, Kelio." }
+      ]
+    },
+    {
+      "id": "erp",
+      "title": "Pour la suite : l'ERP",
+      "source": "Plan du cours (partie 4) · définitions complémentaires",
+      "blocks": [
+        { "type": "def", "term": "ERP", "en": "Enterprise Resource Planning", "fr": "PGI, progiciel de gestion intégré", "text": "Un **seul logiciel**, composé de **modules** (finance, RH, achats, ventes, production, logistique…) qui partagent **une base de données unique**. Une donnée saisie une fois est disponible partout : les processus de toute l'entreprise sont **intégrés**. Exemples : SAP, Oracle, Microsoft Dynamics, Odoo." },
+        { "type": "tip", "text": "**Progiciel** = **pro**duit + lo**giciel** : un logiciel standard, vendu à de nombreuses entreprises et **paramétré** pour chacune (en anglais : software package). Ne pas confondre : l'ERP couvre **toute** l'entreprise, alors qu'un CRM, un SCM ou un SIRH est spécialisé dans **une** fonction (il peut être un module de l'ERP ou s'y connecter)." },
+        { "type": "p", "text": "Suite du plan, pas encore dans les PDF : **stratégie et SI**, **gouvernance des SI** (IT governance), la **DSI** (direction des systèmes d'information ; son directeur, le DSI, se dit CIO, chief information officer), la **sécurité des SI** (information security) et la **gestion de projet SI**. Leurs définitions de base sont dans le lexique." }
+      ]
+    }
+  ],
+  "glossaryCats": [
+    { "id": "bases", "label": "Notions de base" },
+    { "id": "si", "label": "Le SI dans l'entreprise" },
+    { "id": "types", "label": "Typologie des SI" },
+    { "id": "fonctions", "label": "SI par fonction" },
+    { "id": "ups", "label": "Cas UPS" },
+    { "id": "suite", "label": "Suite du cours (pas encore dans les PDF)" }
+  ],
+  "glossary": [
+    { "cat": "bases", "term": "Donnée", "en": "data", "def": "Fait brut exprimé par des symboles, trace d'un évènement. Matière première de l'information (donnée = signes + code)." },
+    { "cat": "bases", "term": "Information", "en": "information", "def": "Donnée contextualisée, qui a du sens après interprétation (information = donnée + modèle d'interprétation). Elle doit avoir un impact sur le récepteur." },
+    { "cat": "bases", "term": "Connaissance", "en": "knowledge", "def": "Résulte de l'interaction entre ce qu'on perçoit et ce qu'on a en mémoire (Varela, 1993). Sert de filtre et de modèle d'interprétation ; évolue par apprentissage." },
+    { "cat": "bases", "term": "Connaissance explicite / tacite", "en": "explicit / tacit knowledge", "def": "Explicite : formalisée et transmissible (procédure, manuel, modèle). Tacite : savoir-faire personnel issu de l'expérience, difficile à mettre par écrit.", "extra": true },
+    { "cat": "bases", "term": "Système", "en": "system", "def": "Ensemble d'éléments interdépendants et organisés en vue d'atteindre un but. Composantes : entrées, traitement, sorties." },
+    { "cat": "bases", "term": "Entrées / traitement / sorties", "en": "input / processing / output", "def": "Les 3 composantes d'un système. Pour l'entreprise-système, on parle d'intrants (ressources) et d'extrants (produits, services, informations)." },
+    { "cat": "bases", "term": "Rétroaction", "fr": "Régulation", "en": "feedback", "def": "Retour de la sortie vers l'entrée : le contrôle compare les résultats aux objectifs et ajuste le système." },
+    { "cat": "bases", "term": "Boîte noire", "en": "black box", "def": "Traitement dont on ne regarde que les entrées et les sorties, sans détailler le fonctionnement interne.", "extra": true },
+    { "cat": "bases", "term": "Flux physique / d'information / de décision", "en": "physical / information / decision flows", "def": "Physique : ce qui circule matériellement (produits, personnes). Information : les données échangées. Décision : les choix du pilotage (tarifs, ouvertures, investissements)." },
+    { "cat": "bases", "term": "Information de fonctionnement / d'influence / d'anticipation", "def": "Fonctionnement : fait tourner l'activité (commande, facture, paie). Influence : motive, stimule, coordonne (journal interne, publicité). Anticipation : prévoit les changements de l'environnement (concurrent, législation)." },
+    { "cat": "bases", "term": "Sous-systèmes de pilotage / d'information / opérant", "def": "Modèle de Le Moigne (1977) : le pilotage décide, l'opérant produit, le SI fait le lien (récolte, stocke, traite, diffuse)." },
+
+    { "cat": "si", "term": "SI", "fr": "Système d'information", "en": "IS, information system", "def": "Ensemble organisé de ressources (personnes, matériel, logiciels, données, procédures, réseaux) qui acquiert, stocke, traite et diffuse l'information pour aider à décider, coordonner et contrôler." },
+    { "cat": "si", "term": "TI", "fr": "Technologies de l'information (l'informatique)", "en": "IT, information technology", "def": "La partie technique du SI : matériel, logiciels, réseaux. L'« infrastructure de TI » est la base sur laquelle on construit les SI. SI ≠ informatique.", "extra": true },
+    { "cat": "si", "term": "Matériel / logiciel", "en": "hardware / software", "def": "Matériel : les machines et supports (ordinateurs, serveurs, scanners…). Logiciel : les programmes." },
+    { "cat": "si", "term": "Processus d'affaires", "fr": "Processus métier", "en": "business process", "def": "Suite d'activités coordonnées qui produit un résultat pour l'entreprise (ex. traiter une commande, recruter quelqu'un).", "extra": true },
+    { "cat": "si", "term": "BD", "fr": "Base de données", "en": "DB, database", "def": "Ensemble structuré de données, stockées de manière stable, fiable et durable." },
+    { "cat": "si", "term": "SGBD", "fr": "Système de gestion de base de données", "en": "DBMS, database management system", "def": "Logiciel qui stocke, organise et donne accès aux données d'une base (ex. Oracle Database, MySQL, Microsoft SQL Server).", "extra": true },
+    { "cat": "si", "term": "OCR", "fr": "Reconnaissance optique de caractères", "en": "Optical Character Recognition", "def": "Technique qui lit un texte imprimé ou scanné et le transforme en texte numérique. Sert à collecter les données.", "extra": true },
+    { "cat": "si", "term": "Tableau de bord", "en": "dashboard", "def": "Écran ou rapport qui regroupe des indicateurs clés sous forme visuelle, pour piloter d'un coup d'œil." },
+    { "cat": "si", "term": "KPI", "fr": "Indicateur clé de performance", "en": "Key Performance Indicator", "def": "Mesure chiffrée qui suit l'atteinte d'un objectif (ex. taux de rendement d'une usine, coût de production par unité).", "extra": true },
+    { "cat": "si", "term": "MOA / MOE", "fr": "Maîtrise d'ouvrage / maîtrise d'œuvre", "en": "project owner / project contractor", "def": "MOA : les métiers, qui expriment le besoin et valident. MOE : l'équipe technique (IT, interne ou prestataire), qui conçoit et réalise la solution.", "extra": true },
+    { "cat": "si", "term": "Excellence opérationnelle", "en": "operational excellence", "def": "1er des 6 objectifs stratégiques des SI : améliorer l'efficacité et la productivité, réduire les coûts (ex. les tournées optimisées d'UPS)." },
+    { "cat": "si", "term": "Avantage compétitif", "fr": "Avantage concurrentiel", "en": "competitive advantage", "def": "Ce qui permet de faire mieux que les concurrents (coûts, service, réactivité). Un des 6 objectifs stratégiques des SI." },
+    { "cat": "si", "term": "Modèle commercial", "fr": "Modèle d'affaires", "en": "business model", "def": "La façon dont une entreprise crée de la valeur et gagne de l'argent. Les SI permettent d'en créer de nouveaux.", "extra": true },
+
+    { "cat": "types", "term": "STT", "fr": "Système de traitement transactionnel", "en": "TPS, transaction processing system", "def": "Niveau opérations. Enregistre en temps réel les transactions routinières et quotidiennes, avec des tâches très structurées. Toute entreprise en a un (ex. caisse enregistreuse)." },
+    { "cat": "types", "term": "Transaction", "en": "transaction", "def": "Opération élémentaire de l'activité : une vente, un paiement, une commande, une réservation…", "extra": true },
+    { "cat": "types", "term": "SIG", "fr": "Système d'information de gestion", "en": "MIS, management information system", "def": "Niveau gestion. Produit des rapports réguliers et des indicateurs à partir des données des STT ; plutôt rigide et tourné vers l'interne. Attention : en compta, SIG = soldes intermédiaires de gestion." },
+    { "cat": "types", "term": "Rapport périodique programmé", "en": "scheduled report", "def": "Rapport au format prédéterminé, fourni à intervalles réguliers (ex. analyse des ventes hebdomadaire)." },
+    { "cat": "types", "term": "Relevé des exceptions", "en": "exception report", "def": "Rapport qui ne montre que les situations anormales (ex. les clients au-delà de leur limite de crédit)." },
+    { "cat": "types", "term": "SIAD / SAD", "fr": "Système (d'information) d'aide à la décision", "en": "DSS, decision support system", "def": "Niveau gestion. Modélisation, simulation, scénarios, optimisation, très interactif, pour résoudre un problème précis. Pour les analystes, cadres intermédiaires et experts." },
+    { "cat": "types", "term": "SID", "fr": "Système d'information décisionnel (système pour dirigeants)", "en": "ESS, executive support system (ou EIS)", "def": "Niveau stratégie. Tableaux de bord et indicateurs synthétiques, données internes et externes consolidées ; peu interactif. Pour les dirigeants." },
+    { "cat": "types", "term": "Grand livre", "en": "general ledger", "def": "Registre comptable qui regroupe tous les comptes de l'entreprise. Dans le cours, le « système de grand livre » est un STT qui alimente le SIG.", "extra": true },
+    { "cat": "types", "term": "TPE", "fr": "Terminal de paiement électronique", "en": "card payment terminal (au point de vente : POS, point of sale)", "def": "Appareil qui encaisse les paiements par carte. La télécollecte envoie automatiquement les paiements enregistrés vers le système central. Piège : TPE = aussi « très petite entreprise ».", "extra": true },
+    { "cat": "types", "term": "GAB", "fr": "Guichet automatique bancaire", "en": "ATM, automated teller machine", "def": "Distributeur de billets. Exemple du cours : la Caisse d'Épargne optimise leur localisation.", "extra": true },
+
+    { "cat": "fonctions", "term": "CRM", "fr": "GRC, gestion de la relation client", "en": "Customer Relationship Management", "def": "Centralise et analyse les données clients et prospects pour fidéliser, augmenter le CA par client et développer le portefeuille. Ex. : Salesforce." },
+    { "cat": "fonctions", "term": "Prospect", "en": "prospect, lead", "def": "Client potentiel, qui n'a pas encore acheté. Une opportunité commerciale (sales opportunity) est une vente possible déjà identifiée.", "extra": true },
+    { "cat": "fonctions", "term": "CA", "fr": "Chiffre d'affaires", "en": "revenue (ou turnover)", "def": "Montant total des ventes sur une période.", "extra": true },
+    { "cat": "fonctions", "term": "SCM", "fr": "Gestion de la chaîne logistique (ou d'approvisionnement)", "en": "Supply Chain Management", "def": "Pilote les flux entre fournisseurs, production, stocks et livraison, de la planification à la livraison. Ex. : IBM Supply Chain Intelligence Suite." },
+    { "cat": "fonctions", "term": "CAO", "fr": "Conception assistée par ordinateur", "en": "CAD, computer-aided design", "def": "Logiciels de conception de produits en 2D/3D (AutoCAD, SolidWorks, T-FLEX CAD).", "extra": true },
+    { "cat": "fonctions", "term": "GCVP", "fr": "Gestion du cycle de vie d'un produit", "en": "PLM, product lifecycle management", "def": "Gère les informations d'un produit, de sa conception à sa fin de vie.", "extra": true },
+    { "cat": "fonctions", "term": "SIRH", "fr": "Système d'information des ressources humaines", "en": "HRIS, human resource information system", "def": "Modules RH interconnectés : administration, paie, recrutement, formation, carrières, entretiens annuels, temps et activités. Ex. : Workday, ADP, Factorial." },
+    { "cat": "fonctions", "term": "GTA", "fr": "Gestion des temps et des activités", "en": "time and attendance management", "def": "Module du SIRH qui suit les horaires, absences, congés et plannings.", "extra": true },
+    { "cat": "fonctions", "term": "Paie", "en": "payroll", "def": "Calcul et versement des salaires ; produit les bulletins de salaire (payslips)." },
+
+    { "cat": "ups", "term": "DIAD", "en": "Delivery Information Acquisition Device", "def": "Terminal portable du chauffeur UPS : scanne les colis, recueille la signature, affiche la tournée et transmet les données en temps réel.", "extra": true },
+    { "cat": "ups", "term": "ORION", "en": "On-Road Integrated Optimization and Navigation", "def": "Algorithme d'UPS qui calcule l'itinéraire le plus efficace (et le moins coûteux) de chaque chauffeur.", "extra": true },
+
+    { "cat": "suite", "term": "ERP", "fr": "PGI, progiciel de gestion intégré", "en": "Enterprise Resource Planning", "def": "Logiciel unique composé de modules (finance, RH, achats, ventes, production, logistique) qui partagent une base de données unique. Ex. : SAP, Oracle, Microsoft Dynamics, Odoo.", "extra": true },
+    { "cat": "suite", "term": "Progiciel", "en": "software package", "def": "Produit + logiciel : un logiciel standard, vendu à de nombreuses entreprises et paramétré pour chacune.", "extra": true },
+    { "cat": "suite", "term": "DSI", "fr": "Direction des systèmes d'information", "en": "IT department (le directeur : CIO, chief information officer)", "def": "Le service qui gère le SI de l'entreprise : infrastructures, applications, projets, sécurité.", "extra": true },
+    { "cat": "suite", "term": "Gouvernance des SI", "en": "IT governance", "def": "Les règles et décisions qui garantissent que le SI sert la stratégie, crée de la valeur et maîtrise ses risques et ses coûts.", "extra": true },
+    { "cat": "suite", "term": "Sécurité des SI", "en": "information security", "def": "Protéger l'information : sa disponibilité, son intégrité et sa confidentialité (availability, integrity, confidentiality).", "extra": true },
+    { "cat": "suite", "term": "Gestion de projet SI", "en": "IT project management", "def": "Organiser un projet SI (besoin, planning, budget, risques, équipe) jusqu'à sa mise en service.", "extra": true }
+  ]
+}

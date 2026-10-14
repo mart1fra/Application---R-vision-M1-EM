@@ -3,6 +3,7 @@ import Home from './components/Home'
 import LevelSelect from './components/LevelSelect'
 import Quiz from './components/Quiz'
 import Devoir from './components/Devoir'
+import Fiche from './components/Fiche'
 import Score from './components/Score'
 import { GlossaryProvider } from './components/Glossary'
 
@@ -86,8 +87,15 @@ function App() {
         <div className="max-w-[430px] mx-auto min-h-screen relative">
           {screen === 'home' && <Home onSelect={selectMatiere} />}
           {screen === 'level' && (
-            <LevelSelect matiere={matiere} onSelect={selectLevel} onDevoir={selectDevoir} onBack={goHome} />
+            <LevelSelect
+              matiere={matiere}
+              onSelect={selectLevel}
+              onDevoir={selectDevoir}
+              onFiche={() => setScreen('fiche')}
+              onBack={goHome}
+            />
           )}
+          {screen === 'fiche' && <Fiche matiere={matiere} onBack={goLevels} />}
           {screen === 'quiz' && (
             <Quiz key={run} matiere={matiere} level={level} onFinish={finish} onBack={goLevels} />
           )}
