@@ -5,7 +5,7 @@ Application de revision pour M1 Ecole de Management. Vite + React + Tailwind CSS
 ## Matieres
 
 - Anglais (traductions FR/EN, vocabulaire business)
-- Comportement humain (polycopie « Comportements humains », Prof. S. Point : influence sociale, foules, normes, conformisme, obeissance, persuasion, influence minoritaire, groupe, pensee groupale, pouvoir, leadership) + fiche de cours avec exemples concrets et lexique FR / EN (auteurs, films du cours)
+- Comportement humain (polycopie « Comportements humains », Prof. S. Point : influence sociale, foules, normes, conformisme, obeissance, persuasion, influence minoritaire, groupe, pensee groupale, pouvoir, leadership) + fiche de cours avec exemples concrets et lexique FR / EN (auteurs, films du cours) + « Preparer la dissertation » : les 90 termes du lexique a reperer dans une video (fiches reflexe, grilles d'observation, QCM et scenes d'examen)
 - Statistique informatique (cours « Informatique et statistiques », seances 1 a 5 : stats descriptives, lois usuelles, regression, loi normale et theoreme central limite, intervalles de confiance, tests d'hypotheses) + fiche de cours avec les resultats des TP 1 a 3 et un lexique FR / EN (dont les noms anglais des fonctions Excel)
 - Systeme d'information (donnee / information, typologie STT, SIG, SIAD, SID, CRM, SCM, SIRH, ERP) + fiche de cours avec lexique FR / EN
 - Droit des affaires (formes juridiques, contrats, procedures collectives)
@@ -207,6 +207,22 @@ Une matiere peut avoir un glossaire du cours, accessible sous la fiche : `src/da
 La liste « Comprendre les notions » affiche pour chaque terme la definition, « En clair » (`clair`), puis sur demande l'exemple (`exemple`), le piege (`confusion`) et un repere pour l'examen (`examen`) ; une recherche filtre par terme ou auteur.
 
 Champs d'une entree : `id`, `cat` (theme de `cats`), `term`, `def`, `clair`, `exemple`, `situation`, `confusion`, `examen`, optionnel `situationConfusers` (3 `id` si les `confusers` rendraient la situation ambigue), `authors` (noms separes : `["Darley", "Latané"]`), optionnels `authorLabel` (affichage si le regroupement compte : `"Freedman & Fraser, Cialdini"`), `en`, `alias`, `note`, `prompt` (definition a afficher au niveau 1 si `def` contient le terme ou le nom de l'auteur), `confusers` (3 `id` de termes proches) et `keys` : `[{ "label": "perte d'autonomie", "match": ["autonom"] }]` (racines sans accents ; le terme lui-meme est ignore dans la reponse).
+
+## Preparer la dissertation (lexique de la fiche)
+
+Pour les matieres dont l'examen est une analyse de video ou de texte : chaque terme du **lexique de la fiche de cours** avec quand l'utiliser et comment l'ecrire dans la copie. Fichier `src/data/<matiere>-dissertation.json`, declare dans `DISSERTATIONS` (`src/data/index.js`). Exemple : `comportement_humain-dissertation.json` (les 90 termes du lexique, auteurs et films compris).
+
+- **Fiches reflexe** : pour chaque terme, la definition du lexique, « je le repere quand » (`reperer`), puis sur demande la phrase type pour la copie (`ecrire`), les notions a enchainer (`enchainer`, liens vers leurs fiches) et le piege (`confondre`). Recherche et filtre « a revoir / pas maitrises ».
+- **Grilles d'observation** (`grilles`) : les questions a se poser pendant la video selon ce qu'elle montre (foule, reunion, ordre, persuasion…), chacune avec ses termes.
+- **Niveau 1 · Quel terme ?** (12 termes par serie) : la situation (`situation`) est decrite, on choisit le terme parmi 4 (le terme et ses 3 `pieges`).
+- **Niveau 2 · Quand je l'utilise ?** (10 termes par serie) : le terme est donne, on choisit sa situation parmi celles de ses pieges.
+- **Niveau 3 · Scene d'examen** (2 scenes par serie) : une scene en plusieurs moments (`scenes[].moments`), on coche toutes les notions presentes (`notions`, avec un `indice`) parmi des pieges (`pieges`, avec un `pourquoi`).
+
+Les QCM n'utilisent **que des termes du lexique**, et toujours du meme type que la bonne reponse (notion, auteur ou film). Un terme « parapluie » (influence sociale, pouvoir, groupe, role…) n'a jamais pour piege un de ses cas particuliers : au niveau 2, la situation du piege decrirait aussi la bonne reponse. Les definitions viennent de la fiche (jointure sur `terme` = `glossary[].term`) : modifier le lexique de la fiche met le module a jour.
+
+Progression : gardee sur l'appareil (`src/progress.js`, localStorage). Un terme est maitrise apres 2 bonnes reponses de suite ; les termes rates (« a revoir ») reviennent en premier dans les series.
+
+Apres toute modification du lexique ou du module : `npm run verifier-dissertation` (chaque terme du lexique a sa fiche, aucun terme hors lexique, renvois valides, pieges du meme type, chaque terme dans au moins une grille).
 
 ## Ajouter des exercices
 

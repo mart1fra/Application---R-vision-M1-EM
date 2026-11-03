@@ -1,4 +1,4 @@
-import { DATA, DEVOIRS, FICHES, GLOSSAIRES } from '../data'
+import { DATA, DEVOIRS, FICHES, GLOSSAIRES, DISSERTATIONS } from '../data'
 import { SESSION_SIZE, KIND_LABEL } from '../utils'
 import { focusRing } from './ui'
 
@@ -31,11 +31,12 @@ const LEVEL_DESC = {
   },
 }
 
-export default function LevelSelect({ matiere, onSelect, onDevoir, onFiche, onGlossaire, onBack }) {
+export default function LevelSelect({ matiere, onSelect, onDevoir, onFiche, onGlossaire, onDissertation, onBack }) {
   const pool = DATA[matiere.id] || []
   const devoirs = DEVOIRS[matiere.id] || []
   const fiche = FICHES[matiere.id]
   const glossaire = GLOSSAIRES[matiere.id]
+  const dissertation = DISSERTATIONS[matiere.id]
   const docs = [...new Set(devoirs.map(d => d.doc))]
 
   return (
@@ -64,7 +65,7 @@ export default function LevelSelect({ matiere, onSelect, onDevoir, onFiche, onGl
         </p>
       </header>
 
-      {(fiche || glossaire) && (
+      {(fiche || glossaire || dissertation) && (
         <div className="flex flex-col gap-3 mb-8">
           {fiche && (
             <FeatureCard
@@ -84,6 +85,16 @@ export default function LevelSelect({ matiere, onSelect, onDevoir, onFiche, onGl
               desc={glossaire.cardDesc}
               meta={`${glossaire.entries.length} termes · 3 niveaux`}
               onClick={onGlossaire}
+            />
+          )}
+          {dissertation && (
+            <FeatureCard
+              color={matiere.color}
+              emoji="🎬"
+              title={dissertation.title}
+              desc={dissertation.cardDesc}
+              meta={`${dissertation.termes.length} termes du lexique · ${dissertation.scenes.length} scènes d'examen`}
+              onClick={onDissertation}
             />
           )}
         </div>

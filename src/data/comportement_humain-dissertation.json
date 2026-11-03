@@ -1,0 +1,3364 @@
+{
+  "title": "Préparer la dissertation",
+  "subtitle": "Les 90 termes du lexique : les repérer dans la vidéo, les écrire dans la copie",
+  "cardDesc": "Pour chaque terme du lexique : quand l'utiliser face à une vidéo, et comment l'écrire. QCM et scènes d'examen.",
+  "methode": [
+    {
+      "titre": "Je décris",
+      "texte": "Un geste, une phrase, une réaction précise de la vidéo (avec le moment)."
+    },
+    {
+      "titre": "Je nomme",
+      "texte": "Le terme exact du lexique qui correspond à ce que je vois."
+    },
+    {
+      "titre": "Je cite",
+      "texte": "L'auteur ou l'expérience du cours, et un film du cours si possible."
+    },
+    {
+      "titre": "J'explique",
+      "texte": "Le mécanisme : pourquoi les personnages agissent ainsi, et ce que ça produit."
+    }
+  ],
+  "termes": [
+    {
+      "id": "influence",
+      "terme": "Influence sociale",
+      "reperer": "Le comportement, l'avis ou les croyances d'une personne changent sous la pression des autres ou du contexte, souvent sans qu'elle s'en rende compte.",
+      "ecrire": "Cette scène relève de l'influence sociale : le comportement du personnage change sous l'effet de pressions dominantes du contexte, et non d'une décision purement individuelle. Reste à préciser la forme : normes, conformisme, obéissance, persuasion, influence minoritaire ou contagion.",
+      "enchainer": [
+        "champ",
+        "norme",
+        "conformisme",
+        "obeissance",
+        "persuasion",
+        "minoritaire",
+        "contagion"
+      ],
+      "confondre": {
+        "avec": "persuasion",
+        "pourquoi": "La persuasion n'est qu'une des formes d'influence sociale (par un message argumenté). L'influence sociale est la notion « parapluie » : commence par elle, puis précise toujours la forme."
+      },
+      "situation": "Des témoins d'un accident discutent ensemble avant d'être interrogés. Leurs récits finissent par se ressembler, y compris sur des détails qu'aucun d'eux n'a réellement vus.",
+      "pieges": [
+        "comparaison",
+        "anomie",
+        "categorisation"
+      ]
+    },
+    {
+      "id": "champ",
+      "terme": "Champ normatif",
+      "reperer": "On voit ce qu'un milieu considère comme « normal », acceptable ou impensable : son cadre de référence global, qui change d'un milieu à l'autre.",
+      "ecrire": "L'influence sociale fixe ici le champ normatif des personnages : leur cadre de référence, qui définit ce qui est normal ou non dans ce milieu. C'est pour cela que personne ne remet en cause ce comportement.",
+      "enchainer": [
+        "influence",
+        "norme",
+        "interiorisation",
+        "socialisation"
+      ],
+      "confondre": {
+        "avec": "norme",
+        "pourquoi": "La norme est une règle précise (« on ne part pas avant 19 h »). Le champ normatif est le cadre de référence global dans lequel s'inscrivent toutes ces règles."
+      },
+      "situation": "Un salarié passe d'une start-up à une banque. Tutoyer, venir en baskets, contredire son chef en réunion : tout ce qui lui semblait évident paraît ici déplacé. Ce n'est pas une règle en particulier, c'est tout son cadre de référence sur ce qui est normal qui ne vaut plus.",
+      "pieges": [
+        "norme",
+        "normalisation",
+        "conformisme"
+      ]
+    },
+    {
+      "id": "contagion",
+      "terme": "Contagion sociale",
+      "auteur": "Le Bon",
+      "reperer": "Un comportement ou une émotion se propage d'une personne à l'autre par imitation : un premier commence, puis les autres suivent, de plus en plus nombreux.",
+      "ecrire": "On assiste à une contagion sociale au sens de Le Bon : le comportement se propage d'une personne à l'autre par imitation d'un modèle dominant, et les émotions se communiquent, se multiplient et se renforcent à mesure qu'elles se diffusent.",
+      "enchainer": [
+        "ame",
+        "suggestibilite",
+        "desindividuation",
+        "lebon"
+      ],
+      "confondre": {
+        "avec": "conformisme",
+        "pourquoi": "Dans le conformisme, on s'aligne sur la norme d'un groupe pour être accepté ou avoir raison. La contagion passe par l'imitation et l'émotion, de proche en proche, souvent dans une foule."
+      },
+      "situation": "Une vidéo de démission spectaculaire devient virale. En quelques jours, des dizaines de salariés d'autres entreprises publient à leur tour leur propre vidéo de démission, sur le même ton.",
+      "pieges": [
+        "conformisme",
+        "normalisation",
+        "persuasion"
+      ]
+    },
+    {
+      "id": "ame",
+      "terme": "Âme collective",
+      "auteur": "Le Bon",
+      "reperer": "La foule agit comme un seul bloc : mêmes cris, mêmes gestes, même direction, comme si une seule conscience avait remplacé celle de chacun.",
+      "ecrire": "On observe une âme collective au sens de Le Bon (Psychologie des foules, 1895) : les consciences individuelles s'effacent au profit d'une conscience commune (loi de l'unité mentale). La foule devient plus émotive et moins critique que chacun de ses membres pris seul.",
+      "enchainer": [
+        "contagion",
+        "suggestibilite",
+        "depersonnalisation",
+        "desindividuation",
+        "lebon"
+      ],
+      "confondre": {
+        "avec": "contagion",
+        "pourquoi": "La contagion sociale, c'est la propagation de proche en proche. L'âme collective, c'est le résultat : une conscience commune qui remplace les consciences individuelles."
+      },
+      "situation": "Pendant un grand meeting, des milliers de personnes aux opinions très variées se mettent à applaudir, huer et scander les mêmes phrases au même moment, comme si une seule conscience avait remplacé celle de chacun.",
+      "pieges": [
+        "contagion",
+        "conformisme",
+        "normalisation"
+      ]
+    },
+    {
+      "id": "suggestibilite",
+      "terme": "Suggestibilité",
+      "auteur": "Le Bon",
+      "reperer": "Un meneur lance un slogan ou une idée, et la foule l'exécute aussitôt, sans esprit critique, comme hypnotisée.",
+      "ecrire": "Les individus sont ici en état de suggestibilité (Le Bon) : comme un hypnotisé dans les mains d'un hypnotiseur, la foule suit les suggestions du meneur sans les examiner.",
+      "enchainer": [
+        "ame",
+        "contagion",
+        "lebon",
+        "referentiel"
+      ],
+      "confondre": {
+        "avec": "obeissance",
+        "pourquoi": "L'obéissance répond à l'ordre d'une autorité légitime et identifiable (uniforme, statut). La suggestibilité est l'état d'une foule qui suit un meneur comme hypnotisée, sans autorité officielle."
+      },
+      "situation": "Sur une place noire de monde, un inconnu monte sur un banc et crie « Tous à la préfecture ! ». Sans réfléchir ni savoir qui il est, des centaines de personnes se mettent aussitôt en marche dans la direction qu'il montre.",
+      "pieges": [
+        "obeissance",
+        "persuasion",
+        "normalisation"
+      ]
+    },
+    {
+      "id": "depersonnalisation",
+      "terme": "Dépersonnalisation",
+      "auteur": "Le Bon",
+      "reperer": "Une personne ne se reconnaît plus dans ce qu'elle a fait dans la foule : elle a perdu le sentiment d'être un individu unique (« ce n'était pas moi »).",
+      "ecrire": "Le personnage décrit une dépersonnalisation (Le Bon) : noyé dans la masse, il a abandonné sa conscience individuelle au profit de la conscience collective, au point de ne plus se reconnaître dans ses actes.",
+      "enchainer": [
+        "ame",
+        "desindividuation",
+        "dilution",
+        "lebon"
+      ],
+      "confondre": {
+        "avec": "desindividuation",
+        "pourquoi": "La dépersonnalisation (Le Bon) est la perte du sentiment d'être soi. La désindividuation désigne les comportements antisociaux que cet anonymat rend possibles (casser, insulter)."
+      },
+      "situation": "Après un concert où il a hurlé, chanté et sauté avec 50 000 personnes, un spectateur d'habitude très réservé raconte : « Pendant deux heures, je n'étais plus moi, juste une partie de la foule. Je ne me reconnais pas. »",
+      "pieges": [
+        "desindividuation",
+        "conformisme",
+        "identite"
+      ]
+    },
+    {
+      "id": "norme",
+      "terme": "Norme",
+      "reperer": "Tout le monde suit la même règle, écrite ou non (horaires, tenue, façon de parler), et celui qui s'en écarte attire les regards.",
+      "ecrire": "Le groupe obéit ici à une norme, explicite ou implicite : une règle qui impose un mode organisé de conduite et produit l'uniformité des comportements. La plupart des membres la respectent sans même s'en rendre compte.",
+      "enchainer": [
+        "interiorisation",
+        "conformisme",
+        "champ",
+        "normalisation",
+        "cercle"
+      ],
+      "confondre": {
+        "avec": "normalisation",
+        "pourquoi": "La normalisation est le processus par lequel une norme se crée (compromis, pression réciproque). La norme est le résultat : la règle partagée."
+      },
+      "situation": "Dans un cabinet d'audit, une règle jamais écrite s'est installée au fil des années : costume obligatoire, réponse aux mails dans l'heure, et on ne parle jamais de salaire. Elle rend tous les auditeurs très semblables.",
+      "pieges": [
+        "normalisation",
+        "role",
+        "polarisation"
+      ]
+    },
+    {
+      "id": "normalisation",
+      "terme": "Normalisation",
+      "reperer": "Des personnes aux avis différents discutent et convergent vers un compromis, une position moyenne acceptable par tous, sans que personne ne l'impose.",
+      "ecrire": "On assiste à une normalisation : par pression réciproque, chacun influence chacun, et les positions se nivellent jusqu'à une norme commune acceptable par tous.",
+      "enchainer": [
+        "norme",
+        "conformisme",
+        "schein"
+      ],
+      "confondre": {
+        "avec": "conformisme",
+        "pourquoi": "Dans le conformisme, un individu s'aligne sur une majorité déjà formée. Dans la normalisation, il n'y a pas encore de norme : tous s'influencent et la créent ensemble."
+      },
+      "situation": "Une équipe doit estimer le budget d'un salon. L'un propose 10 000 €, l'autre 30 000 €. Après discussion, tous s'accordent sur environ 20 000 €, sans que personne n'ait imposé son chiffre.",
+      "pieges": [
+        "conformisme",
+        "polarisation",
+        "pensee"
+      ]
+    },
+    {
+      "id": "conformisme",
+      "terme": "Conformisme",
+      "auteur": "Asch",
+      "reperer": "Une personne change d'avis, de comportement ou même de perception pour faire comme la majorité, alors que personne ne lui donne d'ordre.",
+      "ecrire": "Le personnage fait preuve de conformisme (Asch) : sous la pression réelle ou imaginée du groupe, il aligne son comportement sur celui de la majorité. C'est une influence passive : personne ne lui a rien demandé.",
+      "enchainer": [
+        "pression",
+        "asch",
+        "norme",
+        "interiorisation",
+        "minoritaire"
+      ],
+      "confondre": {
+        "avec": "obeissance",
+        "pourquoi": "Dans l'obéissance, il y a un ordre explicite d'une autorité. Le conformisme est une pression implicite du groupe, entre égaux, sans ordre."
+      },
+      "situation": "Un nouveau stagiaire remarque que personne ne quitte le bureau avant 19 h. Personne ne lui a rien demandé, mais il se met lui aussi à rester tard tous les soirs pour faire comme les autres.",
+      "pieges": [
+        "obeissance",
+        "normalisation",
+        "persuasion"
+      ]
+    },
+    {
+      "id": "pression",
+      "terme": "Pression normative / informationnelle",
+      "auteur": "Asch",
+      "reperer": "Quelqu'un s'aligne sur le groupe, soit pour être accepté et éviter le rejet (normative), soit parce qu'il n'est pas sûr de lui et pense que les autres savent (informationnelle).",
+      "ecrire": "Ce conformisme relève d'une pression normative : le personnage ne change pas vraiment d'avis, il veut éviter d'être rejeté. S'il doutait et suivait les autres parce qu'ils doivent savoir, on parlerait de pression informationnelle.",
+      "enchainer": [
+        "conformisme",
+        "asch",
+        "interiorisation"
+      ],
+      "confondre": {
+        "avec": "interiorisation",
+        "pourquoi": "Sous la pression normative, on fait comme les autres sans forcément y croire. L'intériorisation, c'est quand la norme du groupe devient vraiment la sienne."
+      },
+      "situation": "En réunion, tous les collègues trouvent « géniale » la présentation du directeur. Julien l'a trouvée confuse, mais il dit à son tour qu'elle était très réussie, pour ne pas se faire mal voir.",
+      "pieges": [
+        "interiorisation",
+        "obeissance",
+        "normalisation"
+      ]
+    },
+    {
+      "id": "interiorisation",
+      "terme": "Intériorisation de la norme",
+      "reperer": "La règle du groupe est devenue celle de la personne : elle la défend sincèrement et l'applique même quand personne ne la regarde.",
+      "ecrire": "On observe une intériorisation de la norme : la norme du groupe est devenue la norme de l'individu. Il ne s'y plie plus pour être accepté, il y croit, ce qui réduit son anxiété et le rend plus difficile à faire changer.",
+      "enchainer": [
+        "norme",
+        "socialisation",
+        "conformisme",
+        "obeissance"
+      ],
+      "confondre": {
+        "avec": "pression",
+        "pourquoi": "La pression normative fait agir comme les autres sans y croire, tant qu'on est observé. L'intériorisation, c'est y croire vraiment, même seul."
+      },
+      "situation": "Six mois après son arrivée, une consultante répond à ses mails à 23 h, même en vacances. Quand une stagiaire s'en étonne, elle lui explique très sincèrement que « c'est ça, être professionnel ».",
+      "pieges": [
+        "pression",
+        "normalisation",
+        "syntonisation"
+      ]
+    },
+    {
+      "id": "obeissance",
+      "terme": "Obéissance",
+      "auteur": "Milgram",
+      "reperer": "Un supérieur ou une personne en position d'autorité donne un ordre, et la personne l'exécute, même si elle n'est pas d'accord.",
+      "ecrire": "Le personnage obéit à l'autorité (Milgram) : il change de comportement pour se soumettre aux ordres d'une autorité qu'il perçoit comme légitime. C'est une influence directe : il y a un ordre.",
+      "enchainer": [
+        "agentique",
+        "dilution",
+        "syntonisation",
+        "autorite",
+        "legitime",
+        "milgram",
+        "icare"
+      ],
+      "confondre": {
+        "avec": "conformisme",
+        "pourquoi": "Le conformisme est une pression implicite d'égaux, sans ordre. L'obéissance répond à un ordre explicite d'une autorité."
+      },
+      "situation": "En plein vol, un copilote remarque une erreur du commandant de bord. Il n'ose pas le contredire et exécute ses instructions, par respect de la hiérarchie.",
+      "pieges": [
+        "conformisme",
+        "persuasion",
+        "slc"
+      ]
+    },
+    {
+      "id": "agentique",
+      "terme": "État agentique",
+      "auteur": "Milgram",
+      "reperer": "Phrases du type « je ne fais qu'obéir », « je ne suis qu'un exécutant » : la personne se vit comme le simple instrument de son supérieur.",
+      "ecrire": "Le personnage est dans un état agentique (Milgram) : intégré dans la hiérarchie, il se voit comme l'instrument de la volonté d'autrui et laisse l'autorité juger si son action est bonne ou mauvaise.",
+      "enchainer": [
+        "obeissance",
+        "dilution",
+        "syntonisation",
+        "milgram"
+      ],
+      "confondre": {
+        "avec": "obeissance",
+        "pourquoi": "L'obéissance est le comportement (exécuter l'ordre). L'état agentique est l'état psychologique qui l'accompagne : se voir comme un simple instrument."
+      },
+      "situation": "Lors d'un plan social, une responsable RH annonce les licenciements sans état d'âme. Le soir, elle confie à une amie : « Je ne suis qu'une exécutante, j'applique ce que la direction a décidé. Ce n'est pas à moi de juger si c'est bien ou mal. »",
+      "pieges": [
+        "obeissance",
+        "syntonisation",
+        "desindividuation"
+      ]
+    },
+    {
+      "id": "dilution",
+      "terme": "Dilution de la responsabilité",
+      "auteur": "Milgram",
+      "reperer": "Personne ne se sent responsable de ce qui arrive : la responsabilité est reportée sur l'autorité, ou diluée entre tous les membres du groupe.",
+      "ecrire": "On observe une dilution de la responsabilité : chacun se sent engagé envers l'autorité (ou le groupe) mais pas responsable des actes. En groupe, cette diffusion de la responsabilité explique aussi une plus grande prise de risque.",
+      "enchainer": [
+        "agentique",
+        "obeissance",
+        "desindividuation",
+        "polarisation",
+        "milgram"
+      ],
+      "confondre": {
+        "avec": "paresse",
+        "pourquoi": "La paresse sociale porte sur l'effort (on en fait moins quand on est peu identifiable). La dilution porte sur la responsabilité morale des actes."
+      },
+      "situation": "Dans une équipe de douze personnes qui a validé un dossier frauduleux, chacun explique : « Je n'ai signé qu'une étape, la décision était collective. Je ne me sens pas responsable. »",
+      "pieges": [
+        "agentique",
+        "paresse",
+        "censure"
+      ]
+    },
+    {
+      "id": "syntonisation",
+      "terme": "Syntonisation",
+      "auteur": "Milgram",
+      "reperer": "La personne n'écoute plus que l'autorité : elle ignore les cris, les objections ou les signaux qui viennent d'ailleurs, toute son attention est focalisée sur celui qui commande.",
+      "ecrire": "On peut parler de syntonisation (Milgram) : le personnage est réceptif à tout ce qui vient de l'autorité et presque sourd au reste, ici à la détresse de la victime.",
+      "enchainer": [
+        "obeissance",
+        "agentique",
+        "milgram",
+        "icare"
+      ],
+      "confondre": {
+        "avec": "agentique",
+        "pourquoi": "L'état agentique concerne la responsabilité (je ne suis qu'un instrument). La syntonisation concerne l'attention (je n'entends que l'autorité)."
+      },
+      "situation": "Pendant un exercice d'évacuation, une salariée signale de la fumée dans l'escalier B. L'agent de sécurité ne la regarde même pas : les yeux rivés sur son chef, il n'attend que ses consignes et continue de faire descendre tout le monde par l'escalier B.",
+      "pieges": [
+        "agentique",
+        "conformisme",
+        "dilution"
+      ]
+    },
+    {
+      "id": "persuasion",
+      "terme": "Persuasion",
+      "reperer": "Quelqu'un essaie de faire changer d'avis par des arguments, des chiffres, un discours, en laissant l'autre libre de décider.",
+      "ecrire": "Le personnage cherche à persuader : il veut modifier librement l'attitude de son public au moyen d'un message argumenté. L'efficacité dépend de la crédibilité de la source, de l'adaptation au public et de la qualité du message.",
+      "enchainer": [
+        "boomerang",
+        "slc",
+        "expertise",
+        "dontlookup",
+        "air"
+      ],
+      "confondre": {
+        "avec": "slc",
+        "pourquoi": "La persuasion argumente ouvertement. La soumission librement consentie obtient le comportement par une technique (pied dans la porte, porte au nez, amorçage) sans que la personne voie la pression."
+      },
+      "situation": "Pour convaincre ses équipes d'utiliser un nouveau logiciel, une directrice informatique fait venir un expert reconnu et adapte ses arguments aux préoccupations de chaque service. Les équipes l'adoptent sans qu'aucune consigne n'ait été donnée.",
+      "pieges": [
+        "obeissance",
+        "conformisme",
+        "normalisation"
+      ]
+    },
+    {
+      "id": "boomerang",
+      "terme": "Effet boomerang",
+      "reperer": "Plus on essaie de convaincre quelqu'un avec une position très éloignée de la sienne, plus il se braque et renforce son opinion de départ.",
+      "ecrire": "Le message produit un effet boomerang : trop éloigné des convictions du public, il renforce son attitude initiale au lieu de la changer, comme dans Don't Look Up où l'alerte des scientifiques nourrit le déni.",
+      "enchainer": [
+        "persuasion",
+        "dontlookup"
+      ],
+      "confondre": {
+        "avec": "polarisation",
+        "pourquoi": "La polarisation : les opinions d'un groupe deviennent plus extrêmes après discussion entre ses membres. L'effet boomerang : un message extérieur trop éloigné renforce l'opinion qu'il voulait combattre."
+      },
+      "situation": "Une association anti-tabac diffuse auprès de fumeurs une vidéo très culpabilisante. Après le visionnage, les fumeurs interrogés défendent leur liberté de fumer encore plus fort qu'avant.",
+      "pieges": [
+        "polarisation",
+        "persuasion",
+        "amorcage"
+      ]
+    },
+    {
+      "id": "slc",
+      "terme": "Soumission librement consentie",
+      "reperer": "Quelqu'un obtient ce qu'il veut par des demandes habilement enchaînées, sans pression apparente : l'autre a l'impression d'avoir choisi librement.",
+      "ecrire": "Il s'agit d'une soumission librement consentie : on amène le personnage à adopter le comportement voulu en lui donnant le sentiment de s'y engager librement. C'est proche de la manipulation ; il faut ensuite nommer la technique (pied dans la porte, porte au nez, amorçage).",
+      "enchainer": [
+        "pied",
+        "porte",
+        "amorcage",
+        "persuasion"
+      ],
+      "confondre": {
+        "avec": "persuasion",
+        "pourquoi": "La persuasion change l'avis par des arguments. La soumission librement consentie change le comportement par la façon dont les demandes sont structurées, sans que la personne perçoive la pression."
+      },
+      "situation": "Un manager ne demande jamais à son équipe de travailler le samedi. Il propose d'abord un « petit point facultatif » le samedi matin, puis un atelier, puis une journée entière. « Personne ne vous oblige », répète-t-il. Toute l'équipe finit par venir, convaincue de l'avoir décidé elle-même.",
+      "pieges": [
+        "obeissance",
+        "persuasion",
+        "conformisme"
+      ]
+    },
+    {
+      "id": "pied",
+      "terme": "Pied dans la porte",
+      "reperer": "On obtient d'abord un petit oui, facile, puis on enchaîne avec une demande beaucoup plus importante du même type.",
+      "ecrire": "Le personnage utilise la technique du pied dans la porte : une petite faveur facile à accepter, puis une demande plus coûteuse. Ayant dit oui une première fois, l'autre a du mal à refuser la suite (soumission librement consentie).",
+      "enchainer": [
+        "slc",
+        "porte",
+        "amorcage"
+      ],
+      "confondre": {
+        "avec": "porte",
+        "pourquoi": "La porte au nez commence par une demande énorme, refusée. Le pied dans la porte commence par une petite demande, acceptée."
+      },
+      "situation": "Un collègue vous demande de relire une seule diapositive de sa présentation. Vous acceptez. Le lendemain, il vous demande de préparer avec lui toute la partie financière, et vous acceptez encore.",
+      "pieges": [
+        "porte",
+        "amorcage",
+        "normalisation"
+      ]
+    },
+    {
+      "id": "porte",
+      "terme": "Porte au nez",
+      "reperer": "Une demande exagérée est refusée, puis la personne propose « un compromis » plus modeste, qui paraît alors raisonnable et est accepté.",
+      "ecrire": "C'est la technique de la porte au nez : une demande exagérée, refusée, puis une demande moins exigeante qui paraît raisonnable par contraste. C'est en réalité la seconde demande qui était visée.",
+      "enchainer": [
+        "slc",
+        "pied",
+        "amorcage"
+      ],
+      "confondre": {
+        "avec": "pied",
+        "pourquoi": "Pied dans la porte : une petite demande acceptée d'abord. Porte au nez : une grosse demande refusée d'abord."
+      },
+      "situation": "Un salarié demande 20 % d'augmentation, ce que la direction refuse. Il propose alors 5 % et une journée de télétravail, que la direction accepte aussitôt.",
+      "pieges": [
+        "pied",
+        "amorcage",
+        "boomerang"
+      ]
+    },
+    {
+      "id": "amorcage",
+      "terme": "Amorçage",
+      "reperer": "Une offre très avantageuse attire la personne ; une fois qu'elle a décidé, l'avantage disparaît et on lui propose une solution de remplacement, moins intéressante, qu'elle accepte quand même.",
+      "ecrire": "On reconnaît un amorçage : le personnage est attiré par un appât (un avantage fictif), puis on lui propose un comportement de substitution moins intéressant. Il l'accepte, car il n'aime pas renoncer à ce qu'il avait décidé.",
+      "enchainer": [
+        "slc",
+        "pied",
+        "porte"
+      ],
+      "confondre": {
+        "avec": "pied",
+        "pourquoi": "Dans le pied dans la porte, le premier acte est réel et petit. Dans l'amorçage, l'avantage de départ est fictif ou impossible : il disparaît après la décision."
+      },
+      "situation": "Un recruteur promet à un candidat un poste de chef de projet. Une fois la promesse d'embauche signée, il lui annonce que le poste est « gelé » et lui propose un poste d'assistant, moins bien payé. Le candidat accepte.",
+      "pieges": [
+        "pied",
+        "porte",
+        "persuasion"
+      ]
+    },
+    {
+      "id": "minoritaire",
+      "terme": "Influence minoritaire",
+      "auteur": "Moscovici",
+      "reperer": "Une personne ou un petit groupe défend une idée contre la majorité, avec constance, et finit par faire douter puis changer le groupe.",
+      "ecrire": "On assiste à une influence minoritaire (Moscovici) : une minorité consistante oblige la majorité à réexaminer en profondeur sa position, ce qui introduit l'innovation et peut faire changer la norme, comme dans 12 Hommes en colère.",
+      "enchainer": [
+        "agissante",
+        "consistance",
+        "moscovici",
+        "douzehommes",
+        "conformisme"
+      ],
+      "confondre": {
+        "avec": "conformisme",
+        "pourquoi": "Le conformisme (influence majoritaire) va du groupe vers l'individu, avec un traitement superficiel. L'influence minoritaire va de la minorité vers le groupe et provoque un examen approfondi."
+      },
+      "situation": "Dans une entreprise, deux salariés militent depuis des années pour des réunions plus courtes. D'abord moqués, ils voient la direction finir par adopter leur règle : pas de réunion de plus de 30 minutes.",
+      "pieges": [
+        "conformisme",
+        "normalisation",
+        "polarisation"
+      ]
+    },
+    {
+      "id": "agissante",
+      "terme": "Minorité agissante",
+      "auteur": "Moscovici",
+      "reperer": "Un individu ou un petit noyau ose exprimer son désaccord avec le groupe et défend son point de vue pour faire changer la règle.",
+      "ecrire": "Ce personnage forme une minorité agissante : en désaccord avec l'ensemble du groupe, il exprime son point de vue pour faire évoluer la norme, au risque de subir la pression du groupe, qui cherche à ramener le déviant dans le rang.",
+      "enchainer": [
+        "minoritaire",
+        "consistance",
+        "moscovici",
+        "douzehommes"
+      ],
+      "confondre": {
+        "avec": "minoritaire",
+        "pourquoi": "La minorité agissante désigne les acteurs (qui ?). L'influence minoritaire désigne le phénomène : l'effet qu'ils finissent par produire sur la majorité."
+      },
+      "situation": "Lors de l'assemblée du service, trois infirmières se lèvent et contestent publiquement le nouveau planning que tous les autres ont accepté sans discuter. Elles savent qu'on les regarde de travers, mais elles exposent leurs arguments.",
+      "pieges": [
+        "conformisme",
+        "normalisation",
+        "pression"
+      ]
+    },
+    {
+      "id": "consistance",
+      "terme": "Consistance synchronique / diachronique",
+      "auteur": "Moscovici",
+      "reperer": "Les membres de la minorité disent tous exactement la même chose (synchronique) et ne varient pas au fil du temps (diachronique).",
+      "ecrire": "La minorité est efficace parce qu'elle est consistante : consistance synchronique (ses membres sont d'accord entre eux) et diachronique (elle garde la même position dans le temps). C'est la condition n° 1 de l'influence minoritaire (Moscovici).",
+      "enchainer": [
+        "minoritaire",
+        "agissante",
+        "moscovici",
+        "douzehommes"
+      ],
+      "confondre": {
+        "avec": "cohesion",
+        "pourquoi": "La cohésion est l'attraction entre les membres d'un groupe. La consistance est l'accord et la constance d'une minorité sur sa position."
+      },
+      "situation": "Depuis des années, trois élus d'opposition votent toujours de la même façon sur l'écologie, sans jamais varier, et défendent tous exactement le même message, quels que soient les débats.",
+      "pieges": [
+        "cohesion",
+        "conformisme",
+        "normalisation"
+      ]
+    },
+    {
+      "id": "groupe",
+      "terme": "Groupe",
+      "auteur": "Lewin",
+      "reperer": "Au moins trois personnes interagissent régulièrement, dépendent les unes des autres et poursuivent un objectif commun : ce n'est pas une simple addition d'individus.",
+      "ecrire": "Ces personnages forment un groupe au sens du cours : au moins trois personnes qui s'influencent réciproquement et collaborent régulièrement à un objectif commun. C'est un système d'interactions et d'interdépendances, pas une simple addition d'individus.",
+      "enchainer": [
+        "interdependance",
+        "appartenance",
+        "dynamique",
+        "equipe",
+        "lewin"
+      ],
+      "confondre": {
+        "avec": "equipe",
+        "pourquoi": "L'équipe est un groupe particulier : compétences complémentaires et responsabilité collective. Tout groupe n'est pas une équipe."
+      },
+      "situation": "Trois voisins qui ne se parlaient pas créent un potager partagé. Ils se retrouvent chaque samedi, décident ensemble de ce qu'ils plantent, se répartissent l'arrosage et s'influencent sur la façon de jardiner.",
+      "pieges": [
+        "appartenance",
+        "comparaison",
+        "contagion"
+      ]
+    },
+    {
+      "id": "interdependance",
+      "terme": "Interdépendance",
+      "auteur": "Lewin",
+      "reperer": "Personne ne peut réussir seul : chacun a besoin du travail des autres pour atteindre l'objectif commun.",
+      "ecrire": "Les membres sont en interdépendance : ils ont besoin les uns des autres pour atteindre leurs objectifs (ce que Lewin appelle la dépendance constitutive). C'est ce qui fait de ces individus un véritable groupe.",
+      "enchainer": [
+        "groupe",
+        "equipe",
+        "lewin",
+        "dynamique"
+      ],
+      "confondre": {
+        "avec": "cohesion",
+        "pourquoi": "La cohésion, c'est l'envie d'être ensemble (attraction). L'interdépendance, c'est le besoin les uns des autres pour réussir, même sans s'apprécier."
+      },
+      "situation": "Pour lancer un nouveau produit, le marketing ne peut rien faire sans les données terrain des commerciaux, et les commerciaux ne peuvent rien vendre sans la campagne du marketing.",
+      "pieges": [
+        "cohesion",
+        "appartenance",
+        "facilitation"
+      ]
+    },
+    {
+      "id": "appartenance",
+      "terme": "Sentiment d'appartenance",
+      "reperer": "Les personnes disent « nous », portent les mêmes couleurs, défendent leur groupe : quelque chose les lie à lui.",
+      "ecrire": "Le sentiment d'appartenance lie ici l'individu au groupe : il se reconnaît comme membre, ce qui l'amène à en adopter les normes (identification sociale).",
+      "enchainer": [
+        "identite",
+        "gappartenance",
+        "cohesion",
+        "socialisation"
+      ],
+      "confondre": {
+        "avec": "cohesion",
+        "pourquoi": "Le sentiment d'appartenance est le lien d'un individu avec son groupe. La cohésion est la force d'attraction entre tous les membres du groupe."
+      },
+      "situation": "Au mariage d'une amie, Léa croise une inconnue qui porte le sweat de son école. Elles se tutoient aussitôt et parlent de « chez nous », alors qu'elles ne se sont jamais vues.",
+      "pieges": [
+        "interdependance",
+        "comparaison",
+        "facilitation"
+      ]
+    },
+    {
+      "id": "equipe",
+      "terme": "Équipe",
+      "reperer": "Chacun a des compétences différentes, tous travaillent activement au même objectif et se sentent responsables ensemble du résultat.",
+      "ecrire": "Il s'agit d'une équipe : un groupe aux compétences complémentaires, qui collabore activement à un objectif commun et se sent collectivement responsable du résultat.",
+      "enchainer": [
+        "groupe",
+        "interdependance",
+        "cohesion",
+        "role",
+        "partage"
+      ],
+      "confondre": {
+        "avec": "groupe",
+        "pourquoi": "Le groupe : au moins trois personnes en interaction autour d'objectifs communs. L'équipe ajoute les compétences complémentaires et la responsabilité collective."
+      },
+      "situation": "Au bloc opératoire, le chirurgien, l'anesthésiste et deux infirmières, chacun dans sa spécialité, enchaînent les gestes sans un mot. Quand l'opération réussit, ils disent tous « on a réussi ».",
+      "pieges": [
+        "facilitation",
+        "contagion",
+        "anomie"
+      ]
+    },
+    {
+      "id": "gformel",
+      "terme": "Groupe formel / informel",
+      "reperer": "Formel : le groupe est désigné officiellement (service, comité). Informel : il se forme spontanément autour d'affinités (ceux qui déjeunent ou font la pause ensemble).",
+      "ecrire": "À côté du groupe formel désigné par l'organisation apparaît un groupe informel, formé spontanément autour d'intérêts communs : c'est souvent là que circulent les vraies informations.",
+      "enchainer": [
+        "pformel",
+        "leader",
+        "groupe"
+      ],
+      "confondre": {
+        "avec": "pformel",
+        "pourquoi": "Groupe formel / informel : des ensembles de personnes. Pouvoir formel / informel : la nature, officielle ou non, des relations de pouvoir."
+      },
+      "situation": "Dans un hôpital, l'équipe officielle du service se réunit le lundi. Mais tous les jours, à la pause café, trois aides-soignantes et un brancardier de services différents se retrouvent, échangent les nouvelles et s'entraident.",
+      "pieges": [
+        "reference",
+        "comparaison",
+        "contagion"
+      ]
+    },
+    {
+      "id": "primaire",
+      "terme": "Groupe primaire / secondaire",
+      "reperer": "Primaire : un petit groupe où tout le monde se connaît vraiment (famille, équipe de foot). Secondaire : une appartenance purement intellectuelle (fans d'une marque, anciens d'une école).",
+      "ecrire": "Pour ce personnage, sa famille est un groupe primaire (restreint, liens forts, rôles multiples), alors que la communauté des clients de la marque n'est qu'un groupe secondaire : une appartenance purement intellectuelle.",
+      "enchainer": [
+        "groupe",
+        "socialisation",
+        "gappartenance"
+      ],
+      "confondre": {
+        "avec": "socialisation",
+        "pourquoi": "Groupe primaire / secondaire : des types de groupes. Socialisation primaire / secondaire : les deux grands moments où l'on apprend les normes (enfance, puis monde professionnel)."
+      },
+      "situation": "Thomas fait partie d'un club de passionnés d'une marque de motos : 200 000 membres dans le monde qu'il ne rencontrera jamais, mais dont il partage la passion.",
+      "pieges": [
+        "socialisation",
+        "reference",
+        "comparaison"
+      ]
+    },
+    {
+      "id": "reference",
+      "terme": "Groupe de référence",
+      "reperer": "Le personnage imite ou admire un groupe dont il tire ses modèles de conduite, même s'il n'en fait pas (encore) partie.",
+      "ecrire": "Ce groupe joue le rôle de groupe de référence : le personnage en tire ses modèles de conduite. Il remplit trois fonctions : normative (se plier aux règles du jeu), évaluative (se comparer, Festinger) et protectrice (sécurité, mais aussi pression sociale).",
+      "enchainer": [
+        "gappartenance",
+        "comparaison",
+        "festinger",
+        "norme"
+      ],
+      "confondre": {
+        "avec": "gappartenance",
+        "pourquoi": "Le groupe d'appartenance est celui dont on est membre ou auquel on aspire. Le groupe de référence est celui dont on tire ses modèles de conduite : les deux ne coïncident pas toujours."
+      },
+      "situation": "Un apprenti cuisinier passe ses soirées à regarder les vidéos des grands chefs étoilés : il copie leur façon de dresser les assiettes, leurs gestes et leur vocabulaire en cuisine.",
+      "pieges": [
+        "primaire",
+        "socialisation",
+        "appartenance"
+      ]
+    },
+    {
+      "id": "gappartenance",
+      "terme": "Groupe d'appartenance",
+      "reperer": "Le groupe dont la personne est membre, ou celui qu'elle cherche à rejoindre et auquel elle veut s'identifier.",
+      "ecrire": "Le personnage revendique son groupe d'appartenance : il s'y rattache comme membre et s'y identifie, ce qui façonne une partie de son identité sociale.",
+      "enchainer": [
+        "appartenance",
+        "identite",
+        "reference"
+      ],
+      "confondre": {
+        "avec": "reference",
+        "pourquoi": "Le groupe de référence fournit des modèles de conduite, même si l'on n'en fait pas partie. Le groupe d'appartenance est celui dont on est membre, ou auquel on aspire."
+      },
+      "situation": "Lors d'un forum, un étudiant se présente : « Je suis en M1 à l'EM Strasbourg, promo 2027. » Il porte le sweat de sa promo et se sent concerné dès qu'on parle de l'école.",
+      "pieges": [
+        "reference",
+        "comparaison",
+        "facilitation"
+      ]
+    },
+    {
+      "id": "comparaison",
+      "terme": "Comparaison sociale",
+      "auteur": "Festinger",
+      "reperer": "Quelqu'un ne sait pas s'il est bon et se compare aux autres, surtout à ceux qui lui ressemblent, pour s'évaluer et se rassurer.",
+      "ecrire": "Le personnage procède à une comparaison sociale (Festinger) : dans l'incertitude, il évalue ses opinions et ses capacités en se comparant à des personnes proches de lui. C'est la fonction évaluative du groupe de référence.",
+      "enchainer": [
+        "festinger",
+        "reference",
+        "identite"
+      ],
+      "confondre": {
+        "avec": "conformisme",
+        "pourquoi": "Dans le conformisme, on change de comportement pour s'aligner. Dans la comparaison sociale, on se compare pour s'évaluer, sans forcément changer."
+      },
+      "situation": "Une commerciale ne sait pas si son chiffre du mois est bon. Elle consulte le classement de l'équipe et se compare surtout aux collègues qui ont la même ancienneté qu'elle pour se situer.",
+      "pieges": [
+        "conformisme",
+        "categorisation",
+        "facilitation"
+      ]
+    },
+    {
+      "id": "dynamique",
+      "terme": "Dynamique de groupe",
+      "auteur": "Lewin",
+      "reperer": "L'arrivée ou le départ de quelqu'un, une tension ou une alliance modifie tout l'équilibre du groupe : les relations, les rôles, l'ambiance.",
+      "ecrire": "La scène illustre la dynamique de groupe (Lewin) : l'ensemble des phénomènes psychosociaux et des interactions qui influent sur les relations entre membres. Le groupe est une totalité dynamique, qui a ses propres propriétés.",
+      "enchainer": [
+        "lewin",
+        "cohesion",
+        "role",
+        "tuckman"
+      ],
+      "confondre": {
+        "avec": "cohesion",
+        "pourquoi": "La cohésion n'est qu'un aspect (l'attraction entre membres). La dynamique de groupe englobe tous les phénomènes et toutes les interactions du groupe."
+      },
+      "situation": "Depuis qu'un commercial très ambitieux a rejoint l'équipe, les anciens se rapprochent entre eux, les réunions sont tendues et la répartition informelle des rôles a complètement changé.",
+      "pieges": [
+        "comparaison",
+        "contagion",
+        "pression"
+      ]
+    },
+    {
+      "id": "cohesion",
+      "terme": "Cohésion",
+      "reperer": "Les membres aiment être ensemble, s'entraident spontanément, refusent d'être séparés : une forte attraction les relie.",
+      "ecrire": "Le groupe montre une forte cohésion : des forces réciproques d'attraction entre ses membres, qui renforcent le respect des normes, la loyauté et la sécurité de chacun. Poussée à l'excès, elle peut mener à la pensée groupale (Janis).",
+      "enchainer": [
+        "pensee",
+        "appartenance",
+        "dynamique",
+        "interdependance"
+      ],
+      "confondre": {
+        "avec": "pensee",
+        "pourquoi": "La cohésion est en soi positive. La pensée groupale est un excès de cohésion qui fait passer l'accord du groupe avant la qualité de la décision."
+      },
+      "situation": "Après un projet difficile mené ensemble, une équipe refuse une réorganisation qui la séparerait. Ses membres disent se sentir « comme une famille » et n'ont jamais aimé autant travailler ensemble.",
+      "pieges": [
+        "interdependance",
+        "polarisation",
+        "normalisation"
+      ]
+    },
+    {
+      "id": "role",
+      "terme": "Rôle",
+      "auteur": "Stanford",
+      "reperer": "On attend d'une personne certains comportements à cause de sa place (chef, nouveau, gardien) : elle « endosse un costume ».",
+      "ecrire": "Le personnage endosse un rôle : un ensemble d'attentes associées à sa position dans le groupe. Comme dans l'expérience de Stanford, le rôle peut transformer profondément les comportements.",
+      "enchainer": [
+        "conflitrole",
+        "stanford",
+        "dasexperiment",
+        "norme"
+      ],
+      "confondre": {
+        "avec": "norme",
+        "pourquoi": "La norme vaut pour tout le groupe. Le rôle, ce sont les attentes liées à une position particulière."
+      },
+      "situation": "Promue cheffe d'équipe, Julie s'aperçoit qu'on attend désormais d'elle qu'elle tranche les conflits et annonce les mauvaises nouvelles, ce qu'on ne lui demandait jamais quand elle était simple collègue.",
+      "pieges": [
+        "norme",
+        "appartenance",
+        "facilitation"
+      ]
+    },
+    {
+      "id": "conflitrole",
+      "terme": "Conflit / surcharge de rôle",
+      "reperer": "La personne reçoit des attentes contradictoires (conflit), beaucoup trop d'attentes (surcharge) ou presque aucune (insuffisance), et son travail en souffre.",
+      "ecrire": "Le personnage vit un conflit de rôle : il reçoit des attentes contradictoires (rester l'ami de ses anciens collègues ou les évaluer en tant que chef). Des rôles flous ou conflictuels créent des problèmes de rendement.",
+      "enchainer": [
+        "role",
+        "leader"
+      ],
+      "confondre": {
+        "avec": "role",
+        "pourquoi": "Le rôle, ce sont les attentes liées à une position. Le conflit de rôle, c'est quand ces attentes se contredisent (et la surcharge, quand elles sont trop nombreuses)."
+      },
+      "situation": "Promu chef de son équipe, Karim doit maintenant évaluer ses anciens collègues, avec qui il déjeune tous les jours. Il ne sait plus s'il doit rester « le pote » ou les noter sévèrement.",
+      "pieges": [
+        "role",
+        "anomie",
+        "dynamique"
+      ]
+    },
+    {
+      "id": "desindividuation",
+      "terme": "Désindividuation",
+      "auteur": "Stanford",
+      "reperer": "Protégés par l'anonymat (masque, uniforme, foule, pseudo), des gens ordinaires insultent, cassent ou humilient, ce qu'ils ne feraient jamais seuls.",
+      "ecrire": "On observe une désindividuation : noyés dans le groupe et protégés par l'anonymat, les individus adoptent des comportements antisociaux qu'ils n'auraient jamais seuls, comme les gardiens de l'expérience de Stanford.",
+      "enchainer": [
+        "depersonnalisation",
+        "ame",
+        "stanford",
+        "dasexperiment",
+        "dilution"
+      ],
+      "confondre": {
+        "avec": "ame",
+        "pourquoi": "L'âme collective est la conscience commune de la foule (Le Bon). La désindividuation insiste sur la perte d'identité et l'anonymat qui rendent possibles des comportements antisociaux."
+      },
+      "situation": "Sous pseudonyme, des internautes d'habitude polis inondent de messages haineux le compte d'une inconnue. Interrogés plus tard, la plupart disent qu'ils n'auraient jamais dit ça en face.",
+      "pieges": [
+        "ame",
+        "conformisme",
+        "polarisation"
+      ]
+    },
+    {
+      "id": "anomie",
+      "terme": "Anomie",
+      "reperer": "Le groupe ou l'organisation se désagrège : plus de règles reconnues, plus de repères, chacun fait ce qu'il veut.",
+      "ecrire": "On peut parler d'anomie : le groupe se déstructure, ses normes ne sont plus reconnues ni respectées, et les membres perdent leurs repères.",
+      "enchainer": [
+        "norme",
+        "dynamique",
+        "desindividuation",
+        "stanford"
+      ],
+      "confondre": {
+        "avec": "desindividuation",
+        "pourquoi": "La désindividuation concerne l'individu (perte d'identité, actes antisociaux). L'anomie concerne le groupe ou la société (disparition des règles)."
+      },
+      "situation": "Après le départ du fondateur et trois plans sociaux, plus personne ne respecte les horaires ni les procédures dans l'agence. Chacun travaille dans son coin : les règles d'avant ne veulent plus rien dire.",
+      "pieges": [
+        "desindividuation",
+        "paresse",
+        "conflitrole"
+      ]
+    },
+    {
+      "id": "facilitation",
+      "terme": "Facilitation sociale",
+      "reperer": "La simple présence des autres fait que quelqu'un en fait plus, ou va plus vite.",
+      "ecrire": "On observe une facilitation sociale : la présence des autres stimule la performance, chacun en fait plus que s'il était seul.",
+      "enchainer": [
+        "paresse",
+        "equipe",
+        "dynamique"
+      ],
+      "confondre": {
+        "avec": "paresse",
+        "pourquoi": "C'est l'effet inverse : la paresse sociale fait en faire moins quand sa contribution est peu identifiable."
+      },
+      "situation": "Seule, Inès court 5 km en 30 minutes. Avec son club, au milieu des autres coureurs, elle passe sous les 27 minutes sans s'en rendre compte.",
+      "pieges": [
+        "paresse",
+        "comparaison",
+        "conformisme"
+      ]
+    },
+    {
+      "id": "paresse",
+      "terme": "Paresse sociale",
+      "reperer": "Dans un travail à plusieurs, l'un se cache derrière les autres et en fait moins, parce qu'on ne peut pas voir ce qu'il apporte.",
+      "ecrire": "Ce membre fait preuve de paresse sociale : sa contribution étant peu identifiable dans le travail collectif, il fournit moins d'effort que s'il travaillait seul.",
+      "enchainer": [
+        "facilitation",
+        "dilution",
+        "equipe"
+      ],
+      "confondre": {
+        "avec": "dilution",
+        "pourquoi": "La dilution de la responsabilité porte sur la responsabilité morale des actes. La paresse sociale porte sur l'effort fourni."
+      },
+      "situation": "Pour un exposé à six, Hugo se contente de relire une diapositive et laisse les autres tout préparer : sur la note de groupe, personne ne verra la différence.",
+      "pieges": [
+        "dilution",
+        "facilitation",
+        "censure"
+      ]
+    },
+    {
+      "id": "polarisation",
+      "terme": "Polarisation",
+      "reperer": "Après discussion, le groupe sort avec une position plus extrême que celle de chacun au départ (plus risquée ou plus prudente).",
+      "ecrire": "La discussion produit une polarisation : les opinions du groupe deviennent plus extrêmes qu'au départ. La diffusion de la responsabilité en groupe explique en partie cette prise de risque accrue.",
+      "enchainer": [
+        "pensee",
+        "dilution",
+        "normalisation"
+      ],
+      "confondre": {
+        "avec": "normalisation",
+        "pourquoi": "La normalisation mène à un compromis, une position moyenne. La polarisation mène à une position plus extrême."
+      },
+      "situation": "Avant la réunion, les cinq membres du comité étaient « plutôt favorables » au rachat d'un concurrent. Après deux heures de discussion, ils votent pour l'acheter à tout prix, même bien plus cher que prévu.",
+      "pieges": [
+        "normalisation",
+        "conformisme",
+        "boomerang"
+      ]
+    },
+    {
+      "id": "identite",
+      "terme": "Identité sociale",
+      "auteur": "Tajfel",
+      "reperer": "Les personnes valorisent leur groupe (« nous, on est meilleurs »), en sont fières et vivent mal qu'on le critique : leur image d'elles-mêmes en dépend.",
+      "ecrire": "On voit à l'œuvre l'identité sociale (Tajfel) : la conscience d'appartenir à un groupe et la valeur attachée à cette appartenance. En valorisant leur groupe face aux autres, les membres valorisent leur propre estime de soi.",
+      "enchainer": [
+        "tajfel",
+        "categorisation",
+        "appartenance",
+        "comparaison",
+        "socialisation"
+      ],
+      "confondre": {
+        "avec": "categorisation",
+        "pourquoi": "La catégorisation sociale est le processus de classement (« eux » et « nous »). L'identité sociale est le résultat : la conscience d'appartenir et la fierté qu'on en tire."
+      },
+      "situation": "Après le rachat de sa PME par un grand groupe, une salariée continue de se présenter comme « une ancienne de la PME », en est fière et vit très mal qu'on critique l'ancienne équipe.",
+      "pieges": [
+        "categorisation",
+        "conformisme",
+        "reference"
+      ]
+    },
+    {
+      "id": "categorisation",
+      "terme": "Catégorisation sociale",
+      "auteur": "Tajfel",
+      "reperer": "Les gens se rangent et rangent les autres dans des catégories (« les commerciaux », « ceux de chez A ») et parlent en « nous » contre « eux ».",
+      "ecrire": "Les personnages procèdent à une catégorisation sociale : ils se classent, et classent les autres, dans des catégories. C'est la première étape de l'identification, avant d'adopter les normes de leur catégorie.",
+      "enchainer": [
+        "identite",
+        "tajfel",
+        "norme"
+      ],
+      "confondre": {
+        "avec": "identite",
+        "pourquoi": "La catégorisation, c'est le classement. L'identité sociale, c'est la conscience et la valeur de l'appartenance qui en découlent."
+      },
+      "situation": "Après la fusion de deux entreprises, les salariés parlent spontanément de « ceux de chez A » et de « ceux de chez B ». Chacun range les autres, et se range lui-même, dans l'une des deux catégories.",
+      "pieges": [
+        "identite",
+        "normalisation",
+        "polarisation"
+      ]
+    },
+    {
+      "id": "socialisation",
+      "terme": "Socialisation primaire / secondaire",
+      "reperer": "On voit d'où viennent les normes d'une personne : de son éducation et de sa famille (primaire), ou de son entreprise et de son milieu professionnel (secondaire).",
+      "ecrire": "Ce comportement s'explique par la socialisation du personnage : primaire (famille, école, éducation) ou secondaire (le monde professionnel, où l'entreprise crée un sentiment d'appartenance « un peu comme une tribu »).",
+      "enchainer": [
+        "interiorisation",
+        "norme",
+        "identite",
+        "appartenance"
+      ],
+      "confondre": {
+        "avec": "primaire",
+        "pourquoi": "Groupe primaire / secondaire : des types de groupes. Socialisation primaire / secondaire : les deux grands moments où l'on apprend les normes."
+      },
+      "situation": "Dans une équipe internationale, un manager a beaucoup de mal à tutoyer ses collaborateurs et à les appeler par leur prénom : très jeune, ses parents lui ont appris que c'était un manque de respect.",
+      "pieges": [
+        "primaire",
+        "conformisme",
+        "comparaison"
+      ]
+    },
+    {
+      "id": "pensee",
+      "terme": "Pensée groupale",
+      "auteur": "Janis",
+      "reperer": "Un groupe très soudé prend une décision mauvaise ou dangereuse : personne n'ose objecter, les alertes sont ignorées, tout le monde se croit invincible.",
+      "ecrire": "Le groupe tombe dans la pensée groupale (Janis) : la recherche du consensus à tout prix passe avant la pertinence de la décision. On en voit les deux symptômes : l'illusion collective (unanimité, invulnérabilité) et la censure collective, comme dans Oppenheimer.",
+      "enchainer": [
+        "censure",
+        "cohesion",
+        "janis",
+        "oppenheimer",
+        "polarisation"
+      ],
+      "confondre": {
+        "avec": "conformisme",
+        "pourquoi": "Le conformisme est l'alignement d'un individu sur la majorité. La pensée groupale est un phénomène du groupe entier, qui mène à une décision irrationnelle."
+      },
+      "situation": "Dans une start-up, l'équipe dirigeante, très soudée, ignore les alertes de la trésorière. Ceux qui ont des doutes se taisent pour ne pas « casser la dynamique », et l'entreprise frôle la faillite.",
+      "pieges": [
+        "conformisme",
+        "polarisation",
+        "normalisation"
+      ]
+    },
+    {
+      "id": "censure",
+      "terme": "Censure collective",
+      "auteur": "Janis",
+      "reperer": "Quelqu'un garde ses doutes pour lui, ou se fait couper dès qu'il objecte, pour ne pas briser l'accord du groupe.",
+      "ecrire": "On observe la censure collective, symptôme de la pensée groupale (Janis) : les membres s'autocensurent et font pression sur ceux qui expriment une objection, si bien que les doutes ne sont jamais discutés.",
+      "enchainer": [
+        "pensee",
+        "janis",
+        "conformisme"
+      ],
+      "confondre": {
+        "avec": "pensee",
+        "pourquoi": "La censure collective n'est que l'un des deux symptômes de la pensée groupale (avec l'illusion collective)."
+      },
+      "situation": "Au comité, la directrice financière commence à exprimer ses doutes sur le projet. Le PDG la coupe : « On ne va pas casser la dynamique. » Les semaines suivantes, elle ne dit plus rien, et les autres non plus.",
+      "pieges": [
+        "conformisme",
+        "dilution",
+        "syntonisation"
+      ]
+    },
+    {
+      "id": "pouvoir",
+      "terme": "Pouvoir",
+      "reperer": "Quelqu'un obtient des autres des comportements qu'ils n'auraient pas eus sans lui, grâce à une ressource : sanction, récompense, compétence, information, alliance.",
+      "ecrire": "Le personnage exerce un pouvoir : il obtient d'autrui des comportements qu'il n'aurait pas eus sans son intervention. Reste à préciser sa base (French et Raven) ou la ressource qu'il contrôle (Crozier et Friedberg).",
+      "enchainer": [
+        "coercition",
+        "recompense",
+        "expertise",
+        "referentiel",
+        "legitime",
+        "incertitude",
+        "frenchraven",
+        "prada"
+      ],
+      "confondre": {
+        "avec": "leadership",
+        "pourquoi": "Le leadership entraîne par l'adhésion volontaire. Le pouvoir peut s'exercer sans adhésion (sanction, contrôle d'une ressource)."
+      },
+      "situation": "Un propriétaire obtient de son locataire qu'il repeigne tout l'appartement à ses frais avant de partir, ce que le locataire n'aurait jamais fait de lui-même : il sait que le propriétaire peut retenir sa caution.",
+      "pieges": [
+        "conformisme",
+        "cohesion",
+        "normalisation"
+      ]
+    },
+    {
+      "id": "coercition",
+      "terme": "Coercition",
+      "auteur": "French et Raven",
+      "reperer": "On obtient un comportement par la menace d'une sanction : « si tu ne le fais pas, tu seras puni ».",
+      "ecrire": "Le personnage s'appuie sur la coercition, première base du pouvoir social (French et Raven) : la cible se conforme pour éviter la sanction. Ce pouvoir produit une soumission visible mais demande une surveillance constante.",
+      "enchainer": [
+        "pouvoir",
+        "recompense",
+        "frenchraven",
+        "obeissance",
+        "prada"
+      ],
+      "confondre": {
+        "avec": "legitime",
+        "pourquoi": "Le pouvoir légitime repose sur le droit reconnu de donner des ordres (la position). La coercition repose sur la capacité de punir."
+      },
+      "situation": "« Si le rapport n'est pas sur mon bureau lundi, tu peux oublier ta prime de fin d'année. » Le collaborateur passe son week-end à le terminer.",
+      "pieges": [
+        "legitime",
+        "recompense",
+        "transactionnel"
+      ]
+    },
+    {
+      "id": "recompense",
+      "terme": "Pouvoir de récompense",
+      "auteur": "French et Raven",
+      "reperer": "On obtient un comportement en promettant un avantage : promotion, prime, reconnaissance.",
+      "ecrire": "Le pouvoir s'appuie sur la récompense (French et Raven) : la cible agit parce qu'elle désire obtenir un avantage que la source peut lui accorder.",
+      "enchainer": [
+        "coercition",
+        "transactionnel",
+        "frenchraven",
+        "pouvoir"
+      ],
+      "confondre": {
+        "avec": "transactionnel",
+        "pourquoi": "Le pouvoir de récompense est une base de pouvoir (ce que la source contrôle). Le leadership transactionnel est un style de leadership fondé sur cet échange : récompense contingente contre soutien."
+      },
+      "situation": "Le directeur annonce que celui qui décrochera le contrat chinois prendra la tête de la nouvelle filiale. Dès le lendemain, trois commerciaux restent tous les soirs jusqu'à 22 h.",
+      "pieges": [
+        "coercition",
+        "referentiel",
+        "legitime"
+      ]
+    },
+    {
+      "id": "expertise",
+      "terme": "Pouvoir d'expertise",
+      "auteur": "French et Raven",
+      "reperer": "Les autres dépendent de la compétence de quelqu'un : on le consulte, on suit son avis parce qu'il est le seul à savoir.",
+      "ecrire": "Ce personnage détient un pouvoir d'expertise (French et Raven) : sa compétence perçue rend les autres dépendants de lui pour l'information. Il peut ainsi influencer bien au-delà de sa position hiérarchique.",
+      "enchainer": [
+        "incertitude",
+        "pformel",
+        "frenchraven",
+        "crozier",
+        "air"
+      ],
+      "confondre": {
+        "avec": "incertitude",
+        "pourquoi": "Le pouvoir d'expertise vient de la compétence perçue. La zone d'incertitude (Crozier et Friedberg) est plus large : maîtriser un risque, une information ou une relation dont les autres ont besoin."
+      },
+      "situation": "Pendant la réunion sur le nouveau médicament, tout le monde se tourne vers la pharmacologue de l'équipe : c'est son avis qui tranche, même face au directeur, parce qu'elle est la seule à vraiment maîtriser le sujet.",
+      "pieges": [
+        "legitime",
+        "referentiel",
+        "recompense"
+      ]
+    },
+    {
+      "id": "referentiel",
+      "terme": "Pouvoir référentiel",
+      "auteur": "French et Raven",
+      "reperer": "Les gens admirent quelqu'un et veulent lui ressembler : ils l'imitent et le suivent par identification, pas par obligation.",
+      "ecrire": "Le personnage exerce un pouvoir référentiel (French et Raven) : les autres s'identifient à lui, l'admirent et veulent lui ressembler. Comme dans Gourou, ce pouvoir peut aussi créer de la dépendance.",
+      "enchainer": [
+        "leadership",
+        "gourou",
+        "frenchraven",
+        "suggestibilite"
+      ],
+      "confondre": {
+        "avec": "expertise",
+        "pourquoi": "Avec l'expertise, on suit quelqu'un parce qu'il sait. Avec le pouvoir référentiel, on le suit parce qu'on l'admire et qu'on veut lui ressembler."
+      },
+      "situation": "Depuis l'arrivée de la nouvelle directrice, très charismatique, plusieurs jeunes managers se mettent à parler comme elle, à s'habiller comme elle et à reprendre ses expressions en réunion.",
+      "pieges": [
+        "expertise",
+        "legitime",
+        "conformisme"
+      ]
+    },
+    {
+      "id": "legitime",
+      "terme": "Pouvoir légitime",
+      "auteur": "French et Raven",
+      "reperer": "On exécute les décisions de quelqu'un parce que sa position hiérarchique lui donne le droit de les prendre.",
+      "ecrire": "Le pouvoir est ici légitime (French et Raven) : il repose sur la position hiérarchique, qui donne un droit reconnu de donner des ordres. C'est ce qui rend l'obéissance possible.",
+      "enchainer": [
+        "autorite",
+        "obeissance",
+        "pformel",
+        "frenchraven"
+      ],
+      "confondre": {
+        "avec": "coercition",
+        "pourquoi": "La coercition repose sur la menace de sanction. Le pouvoir légitime repose sur le droit reconnu de commander, lié à la position."
+      },
+      "situation": "La nouvelle directrice fixe le planning des congés d'été. Même ceux qui ne sont pas d'accord l'appliquent : « c'est elle la directrice, c'est à elle de décider ».",
+      "pieges": [
+        "coercition",
+        "referentiel",
+        "expertise"
+      ]
+    },
+    {
+      "id": "pformel",
+      "terme": "Pouvoir formel / informel",
+      "auteur": "Crozier et Friedberg",
+      "reperer": "D'un côté le pouvoir officiel (organigramme, titre) ; de l'autre un pouvoir réel mais non officiel, qui passe par les réseaux, les relations et le contrôle de l'information.",
+      "ecrire": "On voit ici l'écart entre pouvoir formel et pouvoir informel : la personne qui a le titre (pouvoir légitimé par les règles) n'est pas celle qui influence vraiment les décisions, grâce à ses réseaux et au contrôle de l'incertitude.",
+      "enchainer": [
+        "incertitude",
+        "crozier",
+        "gformel",
+        "leader",
+        "prada"
+      ],
+      "confondre": {
+        "avec": "gformel",
+        "pourquoi": "Groupe formel / informel : des ensembles de personnes. Pouvoir formel / informel : la nature, officielle ou non, des relations de pouvoir."
+      },
+      "situation": "Officiellement, c'est le directeur commercial qui décide. En réalité, tout le monde passe d'abord par son assistante, là depuis vingt ans, qui connaît tous les clients et décide qui obtient un rendez-vous.",
+      "pieges": [
+        "gformel",
+        "conformisme",
+        "comparaison"
+      ]
+    },
+    {
+      "id": "incertitude",
+      "terme": "Zone d'incertitude",
+      "auteur": "Crozier et Friedberg",
+      "reperer": "Une personne maîtrise une ressource dont les autres ont absolument besoin (une panne qu'elle seule sait réparer, une information, un contact) : elle en tire du pouvoir, quel que soit son grade.",
+      "ecrire": "Ce personnage contrôle une zone d'incertitude (Crozier et Friedberg) : il maîtrise un risque ou une ressource dont l'organisation a besoin. Comme le dit le cours, « la position hiérarchique donne du pouvoir, ce n'est pas une garantie de pouvoir ».",
+      "enchainer": [
+        "crozier",
+        "pformel",
+        "expertise",
+        "rapport"
+      ],
+      "confondre": {
+        "avec": "expertise",
+        "pourquoi": "Le pouvoir d'expertise vient de la compétence perçue. La zone d'incertitude insiste sur la maîtrise d'un aléa dont les autres dépendent (panne, information, relation)."
+      },
+      "situation": "Dans l'usine, seul le vieux technicien sait relancer la machine principale quand elle tombe en panne. Le directeur a beau être le chef, c'est le technicien qui obtient ses horaires et ses congés comme il veut.",
+      "pieges": [
+        "legitime",
+        "referentiel",
+        "coercition"
+      ]
+    },
+    {
+      "id": "rapport",
+      "terme": "Rapport de force",
+      "reperer": "Deux camps mesurent ce que chacun peut imposer à l'autre : grève, menace collective, alliance, bras de fer.",
+      "ecrire": "La scène montre un rapport de force, premier aspect du pouvoir : en s'unissant (le pouvoir des coalitions, la grève), les salariés obtiennent ce qu'aucun n'aurait obtenu seul face à la direction.",
+      "enchainer": [
+        "pouvoir",
+        "pformel",
+        "incertitude",
+        "crozier"
+      ],
+      "confondre": {
+        "avec": "coercition",
+        "pourquoi": "La coercition est la capacité d'une source de punir sa cible. Le rapport de force décrit l'équilibre entre deux parties qui mesurent ce que chacune peut imposer à l'autre."
+      },
+      "situation": "Les contrôleurs aériens menacent de faire grève pendant les vacances. En une semaine, la direction, qui refusait toute discussion, accepte de revoir les plannings.",
+      "pieges": [
+        "coercition",
+        "legitime",
+        "porte"
+      ]
+    },
+    {
+      "id": "leadership",
+      "terme": "Leadership",
+      "auteur": "Lévy-Leboyer",
+      "reperer": "Quelqu'un entraîne les autres derrière lui : ils le suivent par adhésion, parce qu'ils y croient, pas parce qu'on les y oblige.",
+      "ecrire": "Le personnage fait preuve de leadership (Lévy-Leboyer) : un processus d'influence sociale par lequel il amène le groupe à atteindre des objectifs, en changeant les attitudes et en obtenant l'adhésion, et pas seulement en « faisant faire ».",
+      "enchainer": [
+        "levyleboyer",
+        "autorite",
+        "leader",
+        "transformationnel",
+        "gourou",
+        "air"
+      ],
+      "confondre": {
+        "avec": "autorite",
+        "pourquoi": "L'autorité est prescrite par l'organisation et unidirectionnelle. Le leadership émerge des relations, et tout le monde peut en exercer : « un leader inspire, une autorité impose »."
+      },
+      "situation": "Sans aucun titre officiel, une ingénieure convainc son équipe d'adopter une nouvelle méthode de travail : elle explique ses bénéfices, montre l'exemple et répond aux craintes. Tout le monde finit par la suivre.",
+      "pieges": [
+        "autorite",
+        "legitime",
+        "coercition"
+      ]
+    },
+    {
+      "id": "autorite",
+      "terme": "Autorité",
+      "reperer": "Quelqu'un impose une décision parce que l'organisation lui en donne le droit : cela vient de son poste et va du haut vers le bas.",
+      "ecrire": "Le personnage s'appuie sur son autorité : un pouvoir prescrit par l'organisation, unidirectionnel et lié à la hiérarchie formelle. Ce n'est pas incompatible avec le leadership, mais « un leader inspire, une autorité impose ».",
+      "enchainer": [
+        "leadership",
+        "legitime",
+        "obeissance",
+        "gourou"
+      ],
+      "confondre": {
+        "avec": "leadership",
+        "pourquoi": "Le leadership émerge des relations et suppose l'adhésion. L'autorité vient du poste et s'impose."
+      },
+      "situation": "Le nouveau directeur d'usine, que personne ne connaît encore, annonce en réunion la suppression de l'équipe de nuit. Les salariés n'adhèrent pas du tout à sa décision, mais savent qu'elle lui revient et l'appliquent.",
+      "pieges": [
+        "leadership",
+        "referentiel",
+        "expertise"
+      ]
+    },
+    {
+      "id": "leader",
+      "terme": "Leader formel / informel",
+      "auteur": "Bales",
+      "reperer": "Le chef nommé fixe les objectifs et contrôle (fonction-tâche), mais c'est souvent un autre membre, sans titre, qui remonte le moral et que tous consultent (fonction socio-émotionnelle).",
+      "ecrire": "On distingue ici le leader formel, nommé, qui assure la fonction-tâche (objectifs, organisation, contrôle), et un leader informel, qui émerge du groupe et assure la fonction socio-émotionnelle (écoute, cohésion), selon Bales.",
+      "enchainer": [
+        "bales",
+        "leadership",
+        "pformel",
+        "gformel",
+        "partage"
+      ],
+      "confondre": {
+        "avec": "partage",
+        "pourquoi": "Leader formel / informel : deux leaders aux fonctions différentes (tâche et socio-émotionnelle). Leadership partagé : les fonctions de leadership sont réparties entre plusieurs membres selon les compétences."
+      },
+      "situation": "Dans l'open space, la cheffe d'équipe nommée fixe les objectifs et suit les chiffres. Mais c'est Marc, sans aucun titre, qui désamorce les conflits, remonte le moral de chacun et que tout le monde consulte avant de décider.",
+      "pieges": [
+        "servant",
+        "transactionnel",
+        "situationnel"
+      ]
+    },
+    {
+      "id": "transactionnel",
+      "terme": "Leadership transactionnel",
+      "reperer": "Le chef négocie : « si tu atteins tes objectifs, tu auras ta prime ». La relation est un échange donnant-donnant.",
+      "ecrire": "Le style de ce manager est transactionnel : la relation est une négociation d'objectifs, une récompense contingente contre le soutien de l'équipe. Il obtient des résultats, mais ne motive pas au-delà des intérêts personnels.",
+      "enchainer": [
+        "transformationnel",
+        "recompense",
+        "leadership"
+      ],
+      "confondre": {
+        "avec": "transformationnel",
+        "pourquoi": "Le transformationnel motive au-delà des intérêts personnels en transformant une vision en réalité. Le transactionnel reste un échange : objectif atteint contre récompense."
+      },
+      "situation": "À chaque réunion, le manager rappelle le deal : « 120 % de l'objectif, c'est la prime et un jour de congé en plus. » L'équipe suit, mais personne ne parle jamais du sens du projet.",
+      "pieges": [
+        "transformationnel",
+        "servant",
+        "situationnel"
+      ]
+    },
+    {
+      "id": "transformationnel",
+      "terme": "Leadership transformationnel",
+      "reperer": "Le leader porte une vision qui donne du sens : les gens s'engagent au-delà de leur intérêt personnel parce qu'ils y croient.",
+      "ecrire": "Ce leader est transformationnel : il motive son équipe au-delà des intérêts personnels et transforme une vision en réalité, comme Sonny Vaccaro dans Air, qui embarque Nike dans le pari Michael Jordan.",
+      "enchainer": [
+        "transactionnel",
+        "leadership",
+        "air",
+        "referentiel"
+      ],
+      "confondre": {
+        "avec": "transactionnel",
+        "pourquoi": "Le transactionnel échange une récompense contre des résultats. Le transformationnel mobilise par le sens et la vision."
+      },
+      "situation": "La PDG explique sa vision d'une entreprise zéro carbone en 2030. Sans prime ni obligation, des salariés de tous les services se portent volontaires pour monter des projets sur leur temps libre.",
+      "pieges": [
+        "transactionnel",
+        "servant",
+        "situationnel"
+      ]
+    },
+    {
+      "id": "servant",
+      "terme": "Servant leadership",
+      "reperer": "Le leader se met d'abord au service de son équipe : il retire les obstacles, fait grandir ses collaborateurs, veille à leur autonomie et à leur bien-être.",
+      "ecrire": "On reconnaît un servant leadership : le leader inverse la perspective et se met d'abord au service de ses collaborateurs (leur développement, leur autonomie, leur bien-être).",
+      "enchainer": [
+        "leadership",
+        "authentique",
+        "partage"
+      ],
+      "confondre": {
+        "avec": "leader",
+        "pourquoi": "Le leader informel assure la fonction socio-émotionnelle sans titre officiel. Le servant leadership est un style que peut adopter n'importe quel leader, y compris le chef nommé."
+      },
+      "situation": "La nouvelle cheffe de service commence chaque semaine par demander à chacun : « De quoi as-tu besoin pour bien travailler ? » Elle règle elle-même les problèmes de matériel et finance les formations que son équipe demande.",
+      "pieges": [
+        "transactionnel",
+        "authentique",
+        "situationnel"
+      ]
+    },
+    {
+      "id": "authentique",
+      "terme": "Leadership authentique / éthique",
+      "reperer": "Le leader fait ce qu'il dit : il est transparent et cohérent avec ses valeurs (authentique), exemplaire et juste (éthique).",
+      "ecrire": "Ce dirigeant incarne un leadership authentique et éthique : cohérence entre les valeurs affichées et les comportements, transparence, exemplarité morale et équité.",
+      "enchainer": [
+        "leadership",
+        "servant"
+      ],
+      "confondre": {
+        "avec": "transformationnel",
+        "pourquoi": "Le transformationnel mobilise par une vision. L'authentique et l'éthique se définissent par la cohérence et l'exemplarité morale du leader."
+      },
+      "situation": "Alors que l'entreprise traverse une crise, le PDG annonce qu'il renonce à son bonus, explique franchement la situation aux salariés et s'applique à lui-même les règles qu'il impose aux autres.",
+      "pieges": [
+        "transformationnel",
+        "transactionnel",
+        "servant"
+      ]
+    },
+    {
+      "id": "partage",
+      "terme": "Leadership partagé / distribué",
+      "reperer": "Il n'y a pas un seul chef : selon le moment ou le sujet, c'est l'un ou l'autre qui mène, en fonction de ses compétences.",
+      "ecrire": "Le leadership est ici partagé (ou distribué) : les fonctions de leadership ne sont pas concentrées sur une seule personne, elles sont réparties entre les membres selon les compétences et les situations.",
+      "enchainer": [
+        "leadership",
+        "equipe",
+        "leader"
+      ],
+      "confondre": {
+        "avec": "leader",
+        "pourquoi": "Leader formel / informel : deux personnes avec deux fonctions. Leadership partagé : la conduite du groupe passe d'un membre à l'autre selon les besoins."
+      },
+      "situation": "Dans cette start-up de quatre associés, il n'y a pas de patron : la développeuse mène les décisions techniques, le commercial pilote les négociations, et chacun prend la tête quand le sujet relève de sa compétence.",
+      "pieges": [
+        "leader",
+        "situationnel",
+        "servant"
+      ]
+    },
+    {
+      "id": "situationnel",
+      "terme": "Leadership situationnel",
+      "auteur": "Hersey et Blanchard",
+      "reperer": "Le même leader change de style selon la personne et le moment : très directif avec un débutant, il délègue tout à un expert.",
+      "ecrire": "Le manager pratique un leadership situationnel (Hersey et Blanchard) : il adapte son style (directif, persuasif, participatif, délégatif) au contexte, à la personne et aux objectifs.",
+      "enchainer": [
+        "hersey",
+        "leadership"
+      ],
+      "confondre": {
+        "avec": "partage",
+        "pourquoi": "Dans le leadership partagé, plusieurs personnes exercent le leadership. Dans le leadership situationnel, c'est un même leader qui change de style selon la situation."
+      },
+      "situation": "Le premier jour, la cheffe de chantier donne au stagiaire des consignes précises et vérifie chacun de ses gestes. Avec le chef d'équipe expérimenté, elle se contente de fixer l'objectif et le laisse s'organiser.",
+      "pieges": [
+        "partage",
+        "transactionnel",
+        "autorite"
+      ]
+    },
+    {
+      "id": "lebon",
+      "terme": "Gustave Le Bon",
+      "reperer": "La vidéo montre une foule : manifestation, émeute, stade, meeting, emballement sur les réseaux.",
+      "ecrire": "Comme l'a montré Gustave Le Bon dans Psychologie des foules (1895), l'individu noyé dans la masse perd son sens critique : il se forme une âme collective, portée par la contagion mentale et la suggestibilité, et l'intelligence de la foule est inférieure à celle de ses membres.",
+      "enchainer": [
+        "ame",
+        "contagion",
+        "suggestibilite",
+        "depersonnalisation"
+      ],
+      "confondre": {
+        "avec": "asch",
+        "pourquoi": "Asch étudie le conformisme dans un petit groupe, sans émotion collective. Le Bon étudie la foule, ses émotions et sa perte de sens critique."
+      },
+      "situation": "Après une défaite, des supporters envahissent le terrain en hurlant les mêmes slogans ; certains, d'habitude calmes, arrachent les sièges.",
+      "pieges": [
+        "asch",
+        "milgram",
+        "janis"
+      ]
+    },
+    {
+      "id": "asch",
+      "terme": "Solomon Asch",
+      "reperer": "Quelqu'un donne une réponse ou adopte une conduite qu'il sait fausse, simplement pour ne pas se démarquer de la majorité.",
+      "ecrire": "Cette scène rappelle l'expérience de Solomon Asch : face à une majorité unanime, le sujet finit par donner la mauvaise réponse pour ne pas se démarquer. Le conformisme augmente avec la taille du groupe (jusqu'à trois personnes) et son unanimité.",
+      "enchainer": [
+        "conformisme",
+        "pression",
+        "norme"
+      ],
+      "confondre": {
+        "avec": "milgram",
+        "pourquoi": "Milgram : un ordre d'une autorité (obéissance). Asch : la pression implicite d'une majorité d'égaux (conformisme)."
+      },
+      "situation": "Cinq collègues affirment tour à tour que le chiffre affiché à l'écran est 12 %. La dernière à parler voit clairement 21 %, hésite… et répond « 12 % » comme les autres.",
+      "pieges": [
+        "milgram",
+        "moscovici",
+        "festinger"
+      ]
+    },
+    {
+      "id": "milgram",
+      "terme": "Stanley Milgram",
+      "reperer": "Une personne en position d'autorité donne un ordre contraire à la morale, et quelqu'un d'ordinaire l'exécute en se disant « je ne fais qu'obéir ».",
+      "ecrire": "On retrouve les mécanismes mis en évidence par Stanley Milgram : des individus ordinaires peuvent obéir à une autorité perçue comme légitime contre leurs convictions, par état agentique, dilution de la responsabilité et syntonisation. Le film I… comme Icare reconstitue cette expérience.",
+      "enchainer": [
+        "obeissance",
+        "agentique",
+        "dilution",
+        "syntonisation",
+        "icare"
+      ],
+      "confondre": {
+        "avec": "asch",
+        "pourquoi": "Asch : le conformisme à une majorité, sans ordre. Milgram : l'obéissance à une autorité qui donne un ordre."
+      },
+      "situation": "Un médecin chef ordonne à une jeune infirmière d'administrer une dose qu'elle juge dangereuse. Elle proteste, il insiste (« c'est moi qui prends la responsabilité »), et elle s'exécute.",
+      "pieges": [
+        "asch",
+        "moscovici",
+        "frenchraven"
+      ]
+    },
+    {
+      "id": "moscovici",
+      "terme": "Serge Moscovici",
+      "reperer": "Une personne seule ou un petit groupe tient tête à la majorité, avec constance, et finit par la faire changer.",
+      "ecrire": "Cette scène illustre l'influence minoritaire théorisée par Serge Moscovici : par sa consistance (synchronique et diachronique), une minorité agissante pousse la majorité à réexaminer sa position, comme le juré n° 8 de 12 Hommes en colère.",
+      "enchainer": [
+        "minoritaire",
+        "agissante",
+        "consistance",
+        "douzehommes"
+      ],
+      "confondre": {
+        "avec": "asch",
+        "pourquoi": "Asch montre la force de la majorité sur l'individu. Moscovici montre l'inverse : la minorité qui fait changer la majorité."
+      },
+      "situation": "Une seule élève refuse de signer la pétition de toute la classe. Semaine après semaine, elle répète calmement les mêmes arguments ; à la fin du trimestre, la moitié de la classe s'est rangée à son avis.",
+      "pieges": [
+        "asch",
+        "festinger",
+        "janis"
+      ]
+    },
+    {
+      "id": "festinger",
+      "terme": "Leon Festinger",
+      "reperer": "Quelqu'un, incertain de sa valeur ou de ses opinions, se compare aux autres pour se situer.",
+      "ecrire": "Selon la théorie de la comparaison sociale de Leon Festinger, le personnage, dans l'incertitude, s'évalue en se comparant à des personnes proches de lui : c'est la fonction évaluative du groupe de référence.",
+      "enchainer": [
+        "comparaison",
+        "reference"
+      ],
+      "confondre": {
+        "avec": "tajfel",
+        "pourquoi": "Tajfel : l'identité sociale, la valorisation de son groupe face aux autres. Festinger : la comparaison individuelle pour s'évaluer."
+      },
+      "situation": "Après sa première plaidoirie, une jeune avocate demande à chacun de ses collègues de promotion combien de temps ils ont parlé et ce que le juge leur a dit, pour savoir si elle s'en est bien sortie.",
+      "pieges": [
+        "tajfel",
+        "asch",
+        "lewin"
+      ]
+    },
+    {
+      "id": "lewin",
+      "terme": "Kurt Lewin",
+      "reperer": "La vidéo montre la vie d'un groupe comme un tout : interactions, interdépendance, équilibre qui change quand quelqu'un arrive ou part.",
+      "ecrire": "Avec Kurt Lewin, on peut analyser cette scène comme une dynamique de groupe : le groupe est une totalité dynamique, et ses membres sont liés par une dépendance constitutive (ils ont besoin les uns des autres) et une dépendance de référence (ils se servent mutuellement de repère).",
+      "enchainer": [
+        "dynamique",
+        "interdependance",
+        "groupe",
+        "cohesion"
+      ],
+      "confondre": {
+        "avec": "tuckman",
+        "pourquoi": "Tuckman décrit les 5 étapes de la vie d'un groupe dans le temps. Lewin analyse les forces et les interdépendances qui animent le groupe."
+      },
+      "situation": "L'arrivée d'un nouveau membre dans une petite équipe de laboratoire modifie toutes les relations : alliances, rôles, ambiance. Tu veux analyser le groupe comme une « totalité dynamique ».",
+      "pieges": [
+        "tuckman",
+        "festinger",
+        "bales"
+      ]
+    },
+    {
+      "id": "tajfel",
+      "terme": "Henri Tajfel",
+      "reperer": "Les gens se définissent par leur groupe et le valorisent face aux autres (« nous » contre « eux ») : écoles, services, clubs, entreprises rivales.",
+      "ecrire": "Avec la théorie de l'identité sociale d'Henri Tajfel, on comprend que les personnages valorisent leur groupe pour valoriser leur estime de soi : catégorisation sociale, puis identification et adoption des normes du groupe.",
+      "enchainer": [
+        "identite",
+        "categorisation",
+        "appartenance"
+      ],
+      "confondre": {
+        "avec": "festinger",
+        "pourquoi": "Festinger : on se compare individuellement pour s'évaluer. Tajfel : on se définit par son groupe et on le valorise face aux autres groupes."
+      },
+      "situation": "Lors d'un tournoi inter-écoles, les étudiants de deux écoles de commerce se moquent les uns des autres et répètent que « chez nous, on est quand même meilleurs ».",
+      "pieges": [
+        "festinger",
+        "schein",
+        "bales"
+      ]
+    },
+    {
+      "id": "schein",
+      "terme": "Edgar Schein",
+      "reperer": "On voit comment un groupe prend sa décision : personne ne réagit, le chef tranche, une minorité impose, on vote, on négocie un consensus, ou tout le monde est vraiment d'accord.",
+      "ecrire": "Selon les six modes de décision d'Edgar Schein, la décision est prise ici par absence de réaction (« qui ne dit mot consent ») : personne ne s'oppose, donc la proposition passe.",
+      "enchainer": [
+        "normalisation",
+        "pensee",
+        "minoritaire",
+        "autorite"
+      ],
+      "confondre": {
+        "avec": "janis",
+        "pourquoi": "Janis analyse un piège de la décision (la pensée groupale). Schein classe les façons dont un groupe décide (6 modes)."
+      },
+      "situation": "Le président du conseil lit sa proposition, attend trois secondes dans le silence, puis conclut : « Pas d'objection ? Adopté. » Tu veux nommer ce mode de décision.",
+      "pieges": [
+        "janis",
+        "lewin",
+        "bales"
+      ]
+    },
+    {
+      "id": "janis",
+      "terme": "Irving Janis",
+      "reperer": "Un groupe très soudé prend une décision catastrophique : illusion d'invulnérabilité, unanimité de façade, doutes tus.",
+      "ecrire": "Irving Janis appelle ce phénomène la pensée groupale : la recherche du consensus à tout prix conduit un groupe soudé à une décision irrationnelle, avec ses deux symptômes, l'illusion collective et la censure collective.",
+      "enchainer": [
+        "pensee",
+        "censure",
+        "cohesion",
+        "oppenheimer"
+      ],
+      "confondre": {
+        "avec": "schein",
+        "pourquoi": "Schein classe les modes de décision. Janis décrit le piège qui guette les groupes trop soudés."
+      },
+      "situation": "Un état-major très uni ignore les rapports alarmants de ses services de renseignement ; chacun garde ses doutes, persuadé que « nous ne pouvons pas échouer ».",
+      "pieges": [
+        "schein",
+        "lebon",
+        "moscovici"
+      ]
+    },
+    {
+      "id": "stanford",
+      "terme": "Expérience de Stanford",
+      "reperer": "Des gens ordinaires, placés dans un rôle (gardien, chef, prisonnier), changent radicalement de comportement en très peu de temps.",
+      "ecrire": "Cette scène rappelle l'expérience de Stanford (adaptée dans le film Das Experiment) : en quelques jours, des étudiants équilibrés sont devenus des gardiens sadiques ou des prisonniers brisés selon le rôle qu'on leur avait donné. Le rôle et la désindividuation transforment l'individu.",
+      "enchainer": [
+        "role",
+        "desindividuation",
+        "anomie",
+        "dasexperiment"
+      ],
+      "confondre": {
+        "avec": "milgram",
+        "pourquoi": "Milgram : l'obéissance à des ordres. Stanford : la transformation par le rôle et la situation, sans ordre explicite de faire du mal."
+      },
+      "situation": "Des vigiles de supermarché recrutés la veille, en uniforme, se mettent à humilier les clients qu'ils contrôlent, alors que personne ne le leur a demandé.",
+      "pieges": [
+        "milgram",
+        "asch",
+        "janis"
+      ]
+    },
+    {
+      "id": "frenchraven",
+      "terme": "French et Raven (1959)",
+      "reperer": "On se demande sur quoi repose le pouvoir d'un personnage : sanction, récompense, compétence, admiration ou position hiérarchique.",
+      "ecrire": "Avec les cinq bases du pouvoir social de French et Raven (1959), on peut décomposer le pouvoir du personnage : pouvoir légitime (sa position), coercition (la menace), récompense (la promotion), expertise (sa compétence) ou pouvoir référentiel (l'admiration qu'il suscite).",
+      "enchainer": [
+        "pouvoir",
+        "coercition",
+        "recompense",
+        "expertise",
+        "referentiel",
+        "legitime",
+        "prada"
+      ],
+      "confondre": {
+        "avec": "crozier",
+        "pourquoi": "Crozier et Friedberg : le pouvoir vient du contrôle de zones d'incertitude. French et Raven : cinq bases du pouvoir (coercition, récompense, expertise, référentiel, légitime)."
+      },
+      "situation": "Une rédactrice en chef obtient tout de son équipe : elle peut licencier, accorder des promotions, elle connaît le métier mieux que personne, on l'admire, et c'est la patronne. Tu veux classer les bases de son pouvoir.",
+      "pieges": [
+        "bales",
+        "levyleboyer",
+        "hersey"
+      ]
+    },
+    {
+      "id": "crozier",
+      "terme": "Crozier et Friedberg",
+      "reperer": "Quelqu'un qui n'est pas le chef a pourtant du pouvoir, parce qu'il maîtrise une incertitude : une panne, une information, un contact.",
+      "ecrire": "Selon Crozier et Friedberg, le pouvoir vient du contrôle de ressources et de zones d'incertitude dont les autres ont besoin : il ne découle pas seulement de la hiérarchie, c'est le produit d'une situation.",
+      "enchainer": [
+        "incertitude",
+        "pformel",
+        "rapport",
+        "expertise"
+      ],
+      "confondre": {
+        "avec": "frenchraven",
+        "pourquoi": "French et Raven classent les bases du pouvoir (dont l'expertise). Crozier et Friedberg insistent sur la maîtrise des zones d'incertitude : le pouvoir est le produit d'une situation."
+      },
+      "situation": "Seul l'informaticien connaît les mots de passe du serveur. Le jour d'une cyberattaque, toute la direction attend ses décisions et accepte ses conditions.",
+      "pieges": [
+        "levyleboyer",
+        "bales",
+        "schein"
+      ]
+    },
+    {
+      "id": "levyleboyer",
+      "terme": "Claude Lévy-Leboyer",
+      "reperer": "Un personnage entraîne un groupe vers un objectif en obtenant son adhésion, pas seulement en donnant des ordres.",
+      "ecrire": "Selon la définition de Claude Lévy-Leboyer, le leadership est un processus d'influence sociale par lequel un individu amène un groupe à atteindre des objectifs : ici, il ne se contente pas de faire faire, il change les attitudes et obtient l'adhésion.",
+      "enchainer": [
+        "leadership",
+        "autorite",
+        "leader"
+      ],
+      "confondre": {
+        "avec": "bales",
+        "pourquoi": "Bales distingue les deux fonctions du leader (tâche, socio-émotionnelle). Lévy-Leboyer définit le leadership comme un processus d'influence sociale."
+      },
+      "situation": "Une capitaine d'équipe, sans aucun pouvoir de sanction, convainc ses coéquipières démoralisées de changer de tactique à la mi-temps, et elles la suivent avec enthousiasme. Tu veux définir ce qu'est le leadership.",
+      "pieges": [
+        "bales",
+        "hersey",
+        "frenchraven"
+      ]
+    },
+    {
+      "id": "bales",
+      "terme": "Robert Bales (1958)",
+      "reperer": "Deux personnes se partagent la conduite du groupe : l'une organise et contrôle le travail, l'autre veille à l'ambiance et aux relations.",
+      "ecrire": "Selon Robert Bales (1958), le leader assure deux fonctions : la fonction-tâche (planifier, évaluer, décider), exercée ici par le chef nommé, et la fonction socio-émotionnelle (écoute, cohésion), exercée par le leader informel.",
+      "enchainer": [
+        "leader",
+        "leadership",
+        "cohesion"
+      ],
+      "confondre": {
+        "avec": "hersey",
+        "pourquoi": "Hersey et Blanchard : un même leader adapte son style à la situation. Bales : deux fonctions du leadership, souvent tenues par deux personnes différentes."
+      },
+      "situation": "Le capitaine du navire donne les ordres de manœuvre et contrôle tout, tandis que le vieux maître d'équipage, sans grade particulier, rassure l'équipage et apaise les disputes.",
+      "pieges": [
+        "hersey",
+        "levyleboyer",
+        "tuckman"
+      ]
+    },
+    {
+      "id": "tuckman",
+      "terme": "Bruce Tuckman",
+      "reperer": "On voit un groupe évoluer dans le temps : découverte polie, tensions et clans, mise d'accord, efficacité, puis séparation.",
+      "ecrire": "Le groupe traverse les étapes décrites par Bruce Tuckman : constitution (forming), tensions (storming), cohésion (norming), intégration totale (performing), puis dissolution (adjourning). Les tensions du début sont normales.",
+      "enchainer": [
+        "dynamique",
+        "cohesion",
+        "groupe",
+        "lewin"
+      ],
+      "confondre": {
+        "avec": "lewin",
+        "pourquoi": "Lewin analyse la dynamique et les interdépendances du groupe. Tuckman décrit les 5 étapes successives de son développement."
+      },
+      "situation": "Une équipe projet se rencontre poliment, se dispute ensuite sur qui fait quoi, finit par se mettre d'accord sur un plan, livre un excellent travail, puis se sépare un peu nostalgique.",
+      "pieges": [
+        "lewin",
+        "bales",
+        "schein"
+      ]
+    },
+    {
+      "id": "hersey",
+      "terme": "Hersey et Blanchard",
+      "reperer": "Le même leader change de style selon la personne : il dirige un débutant, explique, associe, ou délègue tout à un expert.",
+      "ecrire": "Le manager applique le leadership situationnel de Hersey et Blanchard : il adapte son style (directif, persuasif, participatif, délégatif) au niveau de son interlocuteur et à la situation.",
+      "enchainer": [
+        "situationnel",
+        "leadership"
+      ],
+      "confondre": {
+        "avec": "bales",
+        "pourquoi": "Bales : deux fonctions du leader (tâche, socio-émotionnelle). Hersey et Blanchard : quatre styles qu'un même leader choisit selon la situation."
+      },
+      "situation": "Un entraîneur donne des consignes précises à un jeune joueur, demande l'avis de ses cadres sur la tactique et laisse le capitaine expérimenté organiser seul l'échauffement.",
+      "pieges": [
+        "bales",
+        "tuckman",
+        "levyleboyer"
+      ]
+    },
+    {
+      "id": "icare",
+      "terme": "I… comme Icare (1979)",
+      "reperer": "La vidéo montre quelqu'un qui obéit à une autorité contre sa conscience (un ordre, une blouse, une hiérarchie).",
+      "ecrire": "Comme dans I… comme Icare (Henri Verneuil, 1979), qui reconstitue l'expérience de Milgram, le personnage hésite devant la souffrance de l'autre, mais l'autorité insiste et il se soumet.",
+      "enchainer": [
+        "milgram",
+        "obeissance",
+        "agentique",
+        "syntonisation"
+      ],
+      "confondre": {
+        "avec": "dasexperiment",
+        "pourquoi": "Das Experiment illustre la transformation par le rôle (Stanford). I… comme Icare illustre l'obéissance à l'autorité (Milgram)."
+      },
+      "situation": "Un employé, sur ordre de son supérieur, continue d'appliquer une procédure qui fait clairement souffrir un client, en répétant qu'il n'a pas le choix.",
+      "pieges": [
+        "dasexperiment",
+        "douzehommes",
+        "oppenheimer"
+      ]
+    },
+    {
+      "id": "dontlookup",
+      "terme": "Don't Look Up : Déni cosmique (2021)",
+      "reperer": "La vidéo montre un message important qui ne passe pas : des médias qui le détournent, un public dans le déni, une alerte qui renforce l'incrédulité.",
+      "ecrire": "Comme dans Don't Look Up, la persuasion échoue : la source manque de crédibilité aux yeux du public, les médias détournent le message, et l'alerte, trop éloignée des croyances, produit un effet boomerang et nourrit le déni.",
+      "enchainer": [
+        "persuasion",
+        "boomerang"
+      ],
+      "confondre": {
+        "avec": "air",
+        "pourquoi": "Air montre une persuasion réussie (vision, expertise). Don't Look Up montre son échec (déni, effet boomerang)."
+      },
+      "situation": "Un expert alerte sur un danger sanitaire pendant un talk-show ; les animateurs plaisantent, le public rit, et sur les réseaux, l'alerte conforte ceux qui pensaient déjà que « tout ça est exagéré ».",
+      "pieges": [
+        "air",
+        "douzehommes",
+        "gourou"
+      ]
+    },
+    {
+      "id": "douzehommes",
+      "terme": "12 Hommes en colère (1957)",
+      "reperer": "La vidéo montre une personne seule qui doute face à un groupe unanime, et qui finit par le retourner.",
+      "ecrire": "Comme le juré n° 8 de 12 Hommes en colère (Sidney Lumet, 1957), ce personnage seul contre tous fait douter la majorité par sa constance : la minorité influence, son pouvoir est limité mais réel.",
+      "enchainer": [
+        "minoritaire",
+        "agissante",
+        "consistance",
+        "moscovici"
+      ],
+      "confondre": {
+        "avec": "cercle",
+        "pourquoi": "Le Cercle des poètes disparus illustre la remise en cause des normes et du conformisme. 12 Hommes en colère illustre l'influence minoritaire."
+      },
+      "situation": "Un conseil municipal s'apprête à voter un projet à l'unanimité ; une seule élue demande qu'on vérifie les chiffres, puis, point par point, fait changer d'avis ses collègues.",
+      "pieges": [
+        "cercle",
+        "oppenheimer",
+        "icare"
+      ]
+    },
+    {
+      "id": "cercle",
+      "terme": "Le Cercle des poètes disparus (1989)",
+      "reperer": "La vidéo montre des normes rigides, et quelqu'un qui pousse les autres à les questionner, à ne plus faire comme tout le monde.",
+      "ecrire": "Comme le professeur Keating dans Le Cercle des poètes disparus, ce personnage pousse les autres à questionner les normes rigides et le conformisme de leur institution (« I sound my barbaric yawp »).",
+      "enchainer": [
+        "norme",
+        "conformisme",
+        "interiorisation"
+      ],
+      "confondre": {
+        "avec": "douzehommes",
+        "pourquoi": "12 Hommes en colère montre une minorité qui fait changer une décision. Le Cercle des poètes disparus montre le poids des normes et l'appel à s'en libérer."
+      },
+      "situation": "Dans une école très stricte, tous les élèves portent le même uniforme et récitent les mêmes réponses ; un nouveau professeur les invite à refuser de penser comme tout le monde.",
+      "pieges": [
+        "douzehommes",
+        "dasexperiment",
+        "gourou"
+      ]
+    },
+    {
+      "id": "oppenheimer",
+      "terme": "Oppenheimer (2023)",
+      "reperer": "La vidéo montre un groupe soudé qui avance vers une décision lourde sans écouter les doutes ni les réalités extérieures.",
+      "ecrire": "Comme dans Oppenheimer (Christopher Nolan, 2023), la cohésion du groupe devient un piège pour la décision : c'est la pensée groupale décrite par Janis.",
+      "enchainer": [
+        "pensee",
+        "censure",
+        "janis",
+        "cohesion"
+      ],
+      "confondre": {
+        "avec": "dontlookup",
+        "pourquoi": "Don't Look Up : l'échec de la persuasion d'un public. Oppenheimer : la pensée groupale à l'intérieur d'un groupe soudé."
+      },
+      "situation": "Une équipe de direction enthousiaste accélère un projet risqué ; ceux qui expriment des doutes sont vite mis à l'écart, et plus personne n'ose rien dire.",
+      "pieges": [
+        "dontlookup",
+        "douzehommes",
+        "air"
+      ]
+    },
+    {
+      "id": "dasexperiment",
+      "terme": "Das Experiment (2001)",
+      "reperer": "La vidéo montre des gens qui deviennent cruels ou soumis à cause du rôle et de la parcelle de pouvoir qu'on leur donne.",
+      "ecrire": "Comme dans Das Experiment, inspiré de l'expérience de Stanford, le rôle et la parcelle de pouvoir donnés aux personnages transforment leurs comportements : « si on lui donne une parcelle de pouvoir, il peut devenir le pire des monstres ».",
+      "enchainer": [
+        "stanford",
+        "role",
+        "desindividuation"
+      ],
+      "confondre": {
+        "avec": "icare",
+        "pourquoi": "I… comme Icare : l'obéissance à un ordre (Milgram). Das Experiment : la transformation par le rôle (Stanford), sans ordre explicite."
+      },
+      "situation": "Des surveillants de colonie de vacances, ravis d'avoir reçu un sifflet et un brassard, se mettent en quelques jours à punir les enfants pour un rien.",
+      "pieges": [
+        "icare",
+        "cercle",
+        "gourou"
+      ]
+    },
+    {
+      "id": "prada",
+      "terme": "Le Diable s'habille en Prada (2006)",
+      "reperer": "La vidéo montre une figure de pouvoir : on se demande sur quoi repose ce pouvoir (sanction, récompense, expertise, admiration, position) et qui l'a vraiment.",
+      "ecrire": "Comme dans l'infographie du cours inspirée du Diable s'habille en Prada, on peut décomposer le pouvoir du personnage selon les cinq bases de French et Raven et distinguer pouvoir formel et informel : « le pouvoir n'est pas seulement ce que l'on a, c'est aussi ce que les autres acceptent de nous accorder ».",
+      "enchainer": [
+        "frenchraven",
+        "pouvoir",
+        "pformel",
+        "coercition",
+        "referentiel"
+      ],
+      "confondre": {
+        "avec": "gourou",
+        "pourquoi": "Gourou porte sur le leadership et la dépendance au leader. Le Diable s'habille en Prada sert à illustrer les bases du pouvoir et le pouvoir formel / informel."
+      },
+      "situation": "Une directrice de magazine redoutée : un regard d'elle suffit à faire refaire une page, tous craignent son jugement et rêvent de son approbation. Tu veux analyser les bases de son pouvoir.",
+      "pieges": [
+        "gourou",
+        "air",
+        "oppenheimer"
+      ]
+    },
+    {
+      "id": "gourou",
+      "terme": "Gourou (2026)",
+      "reperer": "La vidéo montre un leader qui fascine : on le suit parce qu'on croit en lui, au risque de devenir dépendant.",
+      "ecrire": "Comme dans Gourou (Yann Gozlan, 2026), le personnage entraîne les autres parce qu'ils croient en lui et en ce qu'il représente, pas parce qu'il est le chef. Mais le même pouvoir référentiel peut glisser vers la dépendance.",
+      "enchainer": [
+        "leadership",
+        "referentiel",
+        "autorite"
+      ],
+      "confondre": {
+        "avec": "air",
+        "pourquoi": "Air montre un leadership qui mobilise autour d'un projet (vision, expertise, risque). Gourou montre la fascination pour la personne du leader et la dérive vers la dépendance."
+      },
+      "situation": "Un coach en développement personnel est adulé : ses disciples boivent ses paroles, quittent leur travail pour le suivre et ne prennent plus aucune décision sans lui.",
+      "pieges": [
+        "air",
+        "prada",
+        "cercle"
+      ]
+    },
+    {
+      "id": "air",
+      "terme": "Air (2023)",
+      "reperer": "La vidéo montre quelqu'un qui porte une vision ambitieuse, prend des risques et convainc des interlocuteurs différents de le suivre.",
+      "ecrire": "Comme Sonny Vaccaro dans Air (Ben Affleck, 2023), le personnage mobilise par la vision, la persuasion, l'expertise et la prise de risque : il transforme une vision en action collective (leadership transformationnel).",
+      "enchainer": [
+        "transformationnel",
+        "leadership",
+        "persuasion",
+        "expertise"
+      ],
+      "confondre": {
+        "avec": "gourou",
+        "pourquoi": "Gourou : la fascination pour le leader et la dépendance. Air : un leadership de projet, qui fédère autour d'une vision."
+      },
+      "situation": "Une jeune cheffe de produit, contre l'avis de tous, convainc la direction de tout miser sur une idée risquée : elle apporte ses chiffres et sa connaissance du marché, et finit par embarquer toute l'entreprise.",
+      "pieges": [
+        "gourou",
+        "dontlookup",
+        "prada"
+      ]
+    }
+  ],
+  "grilles": [
+    {
+      "id": "toujours",
+      "emoji": "🧭",
+      "titre": "Pour toutes les vidéos",
+      "quand": "Les trois questions à se poser d'abord, avant de choisir une grille plus précise.",
+      "questions": [
+        {
+          "q": "Les comportements changent-ils sous la pression des autres ou du contexte ? Si oui, de quelle forme d'influence s'agit-il ?",
+          "termes": [
+            "influence",
+            "norme",
+            "conformisme",
+            "obeissance",
+            "persuasion",
+            "minoritaire",
+            "contagion"
+          ]
+        },
+        {
+          "q": "Y a-t-il une foule, un groupe, une équipe ?",
+          "termes": [
+            "lebon",
+            "groupe",
+            "equipe"
+          ]
+        },
+        {
+          "q": "Qui a du pouvoir, qui mène les autres ?",
+          "termes": [
+            "pouvoir",
+            "autorite",
+            "leadership"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "foule",
+      "emoji": "📣",
+      "titre": "Une foule",
+      "quand": "Manifestation, stade, concert, meeting, emballement sur les réseaux sociaux.",
+      "questions": [
+        {
+          "q": "Tout le monde fait-il la même chose au même moment, comme une seule personne ?",
+          "termes": [
+            "ame",
+            "lebon"
+          ]
+        },
+        {
+          "q": "Le comportement se propage-t-il d'une personne à l'autre, de proche en proche ?",
+          "termes": [
+            "contagion"
+          ]
+        },
+        {
+          "q": "Un meneur lance-t-il des slogans que la foule reprend sans réfléchir ?",
+          "termes": [
+            "suggestibilite",
+            "referentiel"
+          ]
+        },
+        {
+          "q": "Quelqu'un dit-il « ce n'était plus moi », « j'étais juste dans la masse » ?",
+          "termes": [
+            "depersonnalisation"
+          ]
+        },
+        {
+          "q": "L'anonymat (capuche, masque, pseudo) permet-il des actes violents ou humiliants ?",
+          "termes": [
+            "desindividuation",
+            "stanford"
+          ]
+        },
+        {
+          "q": "Personne ne se sent responsable de ce qui arrive ?",
+          "termes": [
+            "dilution"
+          ]
+        },
+        {
+          "q": "La foule se définit-elle contre un autre groupe (supporters, « nous » contre « eux ») ?",
+          "termes": [
+            "categorisation",
+            "identite",
+            "tajfel"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "decision",
+      "emoji": "🗳️",
+      "titre": "Un groupe qui décide",
+      "quand": "Réunion, comité de direction, jury, conseil, groupe de travail.",
+      "questions": [
+        {
+          "q": "Comment la décision est-elle prise : silence, chef, minorité, vote, consensus, unanimité ?",
+          "termes": [
+            "schein"
+          ]
+        },
+        {
+          "q": "Les avis différents convergent-ils vers un compromis ?",
+          "termes": [
+            "normalisation"
+          ]
+        },
+        {
+          "q": "Quelqu'un se range-t-il à l'avis de la majorité sans être convaincu ?",
+          "termes": [
+            "conformisme",
+            "pression",
+            "asch"
+          ]
+        },
+        {
+          "q": "Les doutes sont-ils tus, les objections coupées ?",
+          "termes": [
+            "censure",
+            "pensee",
+            "janis"
+          ]
+        },
+        {
+          "q": "Le groupe est-il si soudé qu'il ne voit plus la réalité extérieure ?",
+          "termes": [
+            "cohesion",
+            "pensee",
+            "oppenheimer"
+          ]
+        },
+        {
+          "q": "Le groupe sort-il de la discussion avec une position plus extrême qu'au départ ?",
+          "termes": [
+            "polarisation"
+          ]
+        },
+        {
+          "q": "Une personne seule tient-elle tête et fait-elle douter les autres ?",
+          "termes": [
+            "minoritaire",
+            "douzehommes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ordre",
+      "emoji": "🫡",
+      "titre": "Un ordre, une hiérarchie",
+      "quand": "Un manager, un médecin, un policier, un professeur ou un chef donne des ordres.",
+      "questions": [
+        {
+          "q": "Quelqu'un exécute-t-il un ordre avec lequel il n'est pas d'accord ?",
+          "termes": [
+            "obeissance",
+            "milgram",
+            "icare"
+          ]
+        },
+        {
+          "q": "Dit-il « je ne fais qu'obéir », « ce n'est pas ma décision » ?",
+          "termes": [
+            "agentique",
+            "dilution"
+          ]
+        },
+        {
+          "q": "N'écoute-t-il plus que l'autorité, sourd à la victime ou aux objections ?",
+          "termes": [
+            "syntonisation"
+          ]
+        },
+        {
+          "q": "Sur quoi repose l'ordre : la position, la menace, la promesse ?",
+          "termes": [
+            "legitime",
+            "autorite",
+            "coercition",
+            "recompense",
+            "frenchraven"
+          ]
+        },
+        {
+          "q": "Obéir est-il devenu une évidence, une habitude apprise ?",
+          "termes": [
+            "interiorisation",
+            "socialisation"
+          ]
+        },
+        {
+          "q": "Un uniforme, un grade, un rôle transforme-t-il le comportement ?",
+          "termes": [
+            "role",
+            "stanford",
+            "dasexperiment"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "convaincre",
+      "emoji": "🗣️",
+      "titre": "Quelqu'un qui cherche à convaincre",
+      "quand": "Vente, négociation, publicité, discours politique, débat télévisé, médias.",
+      "questions": [
+        {
+          "q": "Argumente-t-il ouvertement pour faire changer d'avis ?",
+          "termes": [
+            "persuasion"
+          ]
+        },
+        {
+          "q": "La source est-elle crédible (compétente, digne de confiance) ?",
+          "termes": [
+            "expertise",
+            "persuasion"
+          ]
+        },
+        {
+          "q": "Le message, trop éloigné, renforce-t-il l'opinion contraire ?",
+          "termes": [
+            "boomerang",
+            "dontlookup"
+          ]
+        },
+        {
+          "q": "Commence-t-il par une petite demande, puis une plus grosse ?",
+          "termes": [
+            "pied",
+            "slc"
+          ]
+        },
+        {
+          "q": "Commence-t-il par une demande exagérée, puis propose-t-il un « compromis » ?",
+          "termes": [
+            "porte",
+            "slc"
+          ]
+        },
+        {
+          "q": "Une offre alléchante disparaît-elle une fois la décision prise ?",
+          "termes": [
+            "amorcage",
+            "slc"
+          ]
+        },
+        {
+          "q": "Le public suit-il parce qu'il admire la personne ?",
+          "termes": [
+            "referentiel",
+            "gourou"
+          ]
+        },
+        {
+          "q": "Porte-t-il une vision qui embarque les autres ?",
+          "termes": [
+            "transformationnel",
+            "air"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seul",
+      "emoji": "🧍",
+      "titre": "Une personne seule face au groupe",
+      "quand": "Un dissident, un rebelle, un nouveau qui ne fait pas comme les autres.",
+      "questions": [
+        {
+          "q": "Quelle est la règle, écrite ou non, que cette personne ne suit pas ?",
+          "termes": [
+            "norme",
+            "champ",
+            "cercle"
+          ]
+        },
+        {
+          "q": "Le groupe fait-il pression pour la ramener dans le rang ?",
+          "termes": [
+            "conformisme",
+            "pression",
+            "censure"
+          ]
+        },
+        {
+          "q": "Finit-elle par céder pour ne pas se démarquer ?",
+          "termes": [
+            "conformisme",
+            "asch"
+          ]
+        },
+        {
+          "q": "Tient-elle bon, avec les mêmes arguments, dans le temps ? D'autres la rejoignent-ils ?",
+          "termes": [
+            "agissante",
+            "consistance",
+            "moscovici"
+          ]
+        },
+        {
+          "q": "Finit-elle par faire changer la majorité ?",
+          "termes": [
+            "minoritaire",
+            "douzehommes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nouveau",
+      "emoji": "🚪",
+      "titre": "Un nouveau qui arrive",
+      "quand": "Intégration dans une entreprise, une école, une équipe : codes, culture, appartenance.",
+      "questions": [
+        {
+          "q": "Quelles règles non écrites découvre-t-il ? Son ancien cadre de référence vaut-il encore ?",
+          "termes": [
+            "norme",
+            "champ"
+          ]
+        },
+        {
+          "q": "Les adopte-t-il pour être accepté, ou parce qu'il pense que les autres savent ?",
+          "termes": [
+            "pression",
+            "conformisme"
+          ]
+        },
+        {
+          "q": "Finit-il par y croire vraiment, même seul ?",
+          "termes": [
+            "interiorisation"
+          ]
+        },
+        {
+          "q": "Ses réactions viennent-elles de son éducation, ou de son ancienne entreprise ?",
+          "termes": [
+            "socialisation"
+          ]
+        },
+        {
+          "q": "Se range-t-il dans une catégorie (« les commerciaux », « les anciens ») et en adopte-t-il les codes ?",
+          "termes": [
+            "categorisation",
+            "identite",
+            "tajfel"
+          ]
+        },
+        {
+          "q": "Quel groupe imite-t-il ? À qui se compare-t-il pour s'évaluer ?",
+          "termes": [
+            "reference",
+            "comparaison",
+            "festinger"
+          ]
+        },
+        {
+          "q": "De quel groupe se sent-il membre ?",
+          "termes": [
+            "gappartenance",
+            "appartenance",
+            "primaire"
+          ]
+        },
+        {
+          "q": "Où sont les vrais réseaux (déjeuners, pauses, affinités) ?",
+          "termes": [
+            "gformel"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "leader",
+      "emoji": "🧑‍✈️",
+      "titre": "Un manager ou un leader",
+      "quand": "Un chef face à son équipe, un leader qui entraîne les autres.",
+      "questions": [
+        {
+          "q": "Le suit-on parce qu'il est le chef, ou parce qu'on croit en lui ?",
+          "termes": [
+            "autorite",
+            "leadership",
+            "levyleboyer"
+          ]
+        },
+        {
+          "q": "Qui organise le travail, qui s'occupe de l'ambiance ?",
+          "termes": [
+            "leader",
+            "bales"
+          ]
+        },
+        {
+          "q": "Échange-t-il des récompenses contre des résultats ?",
+          "termes": [
+            "transactionnel",
+            "recompense"
+          ]
+        },
+        {
+          "q": "Porte-t-il une vision qui donne du sens ?",
+          "termes": [
+            "transformationnel",
+            "air"
+          ]
+        },
+        {
+          "q": "Se met-il au service de son équipe ? Est-il cohérent et exemplaire ?",
+          "termes": [
+            "servant",
+            "authentique"
+          ]
+        },
+        {
+          "q": "Adapte-t-il son style à chaque personne ?",
+          "termes": [
+            "situationnel",
+            "hersey"
+          ]
+        },
+        {
+          "q": "Le leadership passe-t-il d'un membre à l'autre selon les sujets ?",
+          "termes": [
+            "partage"
+          ]
+        },
+        {
+          "q": "Les gens l'admirent-ils au point d'en dépendre ?",
+          "termes": [
+            "referentiel",
+            "gourou"
+          ]
+        },
+        {
+          "q": "Le chef, récemment promu, est-il pris entre des attentes contradictoires ?",
+          "termes": [
+            "conflitrole",
+            "role"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pouvoir",
+      "emoji": "♟️",
+      "titre": "Une question de pouvoir",
+      "quand": "Conflit, négociation, grève, personne indispensable, rivalités.",
+      "questions": [
+        {
+          "q": "Qui obtient des autres ce qu'ils n'auraient pas fait sans lui ?",
+          "termes": [
+            "pouvoir"
+          ]
+        },
+        {
+          "q": "Sur quelle base repose ce pouvoir ?",
+          "termes": [
+            "coercition",
+            "recompense",
+            "expertise",
+            "referentiel",
+            "legitime",
+            "frenchraven",
+            "prada"
+          ]
+        },
+        {
+          "q": "Le pouvoir réel est-il ailleurs que dans l'organigramme ?",
+          "termes": [
+            "pformel",
+            "gformel"
+          ]
+        },
+        {
+          "q": "Quelqu'un maîtrise-t-il une ressource ou une incertitude dont les autres dépendent ?",
+          "termes": [
+            "incertitude",
+            "crozier",
+            "expertise"
+          ]
+        },
+        {
+          "q": "Deux camps mesurent-ils ce qu'ils peuvent s'imposer (grève, alliance, menace) ?",
+          "termes": [
+            "rapport"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "equipe",
+      "emoji": "🤝",
+      "titre": "Une équipe au travail",
+      "quand": "Projet de groupe, équipe de sport, service, équipe soignante.",
+      "questions": [
+        {
+          "q": "Est-ce un vrai groupe ? Une équipe ? Les membres ont-ils besoin les uns des autres ?",
+          "termes": [
+            "groupe",
+            "equipe",
+            "interdependance"
+          ]
+        },
+        {
+          "q": "À quelle étape en est le groupe : découverte, tensions, accord, efficacité, séparation ?",
+          "termes": [
+            "tuckman"
+          ]
+        },
+        {
+          "q": "Comment les relations et l'équilibre du groupe évoluent-ils ?",
+          "termes": [
+            "dynamique",
+            "lewin",
+            "cohesion"
+          ]
+        },
+        {
+          "q": "Quelqu'un en fait-il plus grâce aux autres, ou moins en se cachant derrière eux ?",
+          "termes": [
+            "facilitation",
+            "paresse"
+          ]
+        },
+        {
+          "q": "Chacun a-t-il un rôle clair ? Trop ou trop peu d'attentes ?",
+          "termes": [
+            "role",
+            "conflitrole"
+          ]
+        },
+        {
+          "q": "Le groupe se désagrège-t-il, sans plus aucune règle ?",
+          "termes": [
+            "anomie"
+          ]
+        },
+        {
+          "q": "Le lien d'appartenance est-il fort ? Est-ce un petit groupe où tous se connaissent ?",
+          "termes": [
+            "appartenance",
+            "primaire"
+          ]
+        }
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "id": "manif",
+      "titre": "La manifestation qui dégénère",
+      "moments": [
+        {
+          "t": "0:00",
+          "texte": "Une manifestation pacifique avance. Peu à peu, tout le cortège scande les mêmes slogans au même rythme ; les visages expriment la même colère."
+        },
+        {
+          "t": "0:40",
+          "texte": "Un homme cagoulé monte sur un abribus et crie « On ne lâche rien ! ». Des centaines de personnes reprennent aussitôt sa phrase et le suivent vers les forces de l'ordre."
+        },
+        {
+          "t": "1:20",
+          "texte": "Quelques personnes brisent une vitrine ; en quelques minutes, des manifestants jusque-là calmes les imitent, protégés par la foule et leurs capuches."
+        },
+        {
+          "t": "2:00",
+          "texte": "Interviewé le lendemain, un étudiant raconte : « Je ne me reconnais pas. Ce n'était pas moi, j'étais juste dans la masse. »"
+        }
+      ],
+      "notions": [
+        {
+          "id": "ame",
+          "indice": "0:00 · tout le cortège crie et ressent la même chose, comme une seule conscience."
+        },
+        {
+          "id": "suggestibilite",
+          "indice": "0:40 · la foule reprend aussitôt le slogan d'un meneur inconnu et le suit sans réfléchir."
+        },
+        {
+          "id": "contagion",
+          "indice": "1:20 · la casse se propage de quelques personnes à des manifestants jusque-là calmes, par imitation."
+        },
+        {
+          "id": "desindividuation",
+          "indice": "1:20 · protégés par l'anonymat (foule, capuches), des gens ordinaires cassent."
+        },
+        {
+          "id": "depersonnalisation",
+          "indice": "2:00 · « ce n'était pas moi » : il a perdu le sentiment d'être un individu unique."
+        },
+        {
+          "id": "lebon",
+          "indice": "Toute la scène : l'auteur à citer pour une foule (Psychologie des foules)."
+        }
+      ],
+      "pieges": [
+        {
+          "id": "obeissance",
+          "pourquoi": "Le meneur n'est pas une autorité légitime et identifiée : la foule le suit par suggestibilité, pas par obéissance."
+        },
+        {
+          "id": "pensee",
+          "pourquoi": "Il n'y a ni groupe soudé ni décision à prendre : la pensée groupale concerne les décisions de groupe."
+        },
+        {
+          "id": "normalisation",
+          "pourquoi": "Personne ne cherche un compromis : les positions ne se nivellent pas, elles s'enflamment."
+        },
+        {
+          "id": "porte",
+          "pourquoi": "Aucune demande exagérée suivie d'un compromis."
+        },
+        {
+          "id": "milgram",
+          "pourquoi": "Milgram porte sur l'obéissance à une autorité, absente ici."
+        }
+      ]
+    },
+    {
+      "id": "comite",
+      "titre": "Le comité de direction",
+      "moments": [
+        {
+          "t": "0:00",
+          "texte": "Un comité de direction très soudé (ses membres travaillent ensemble depuis quinze ans) examine le lancement d'un produit. Le PDG ouvre : « On a toujours réussi, on ne va pas commencer à douter. »"
+        },
+        {
+          "t": "0:30",
+          "texte": "La directrice marketing présente une étude défavorable. Le PDG la coupe : « On ne va pas casser la dynamique. » Elle range ses diapositives et ne dit plus rien."
+        },
+        {
+          "t": "1:10",
+          "texte": "Un autre membre, qui partageait ses doutes, hoche la tête et dit « je suis d'accord » quand tout le monde approuve."
+        },
+        {
+          "t": "1:50",
+          "texte": "Le groupe traite ses concurrents d'« amateurs » et vote, unanime, un budget deux fois plus élevé que celui prévu au départ."
+        }
+      ],
+      "notions": [
+        {
+          "id": "pensee",
+          "indice": "Toute la scène · le consensus passe avant la pertinence ; illusion d'invulnérabilité (« on a toujours réussi ») et stéréotypes sur les concurrents."
+        },
+        {
+          "id": "censure",
+          "indice": "0:30 · la directrice est coupée, puis s'autocensure."
+        },
+        {
+          "id": "cohesion",
+          "indice": "0:00 · un groupe très soudé depuis quinze ans : la cohésion devient un piège."
+        },
+        {
+          "id": "conformisme",
+          "indice": "1:10 · il s'aligne sur la majorité malgré ses doutes."
+        },
+        {
+          "id": "polarisation",
+          "indice": "1:50 · le groupe adopte une position plus extrême qu'au départ (budget doublé)."
+        },
+        {
+          "id": "janis",
+          "indice": "L'auteur de la pensée groupale."
+        },
+        {
+          "id": "oppenheimer",
+          "indice": "Le film du cours qui illustre la pensée groupale."
+        }
+      ],
+      "pieges": [
+        {
+          "id": "minoritaire",
+          "pourquoi": "La directrice est une minorité, mais elle renonce aussitôt : elle ne fait pas changer le groupe."
+        },
+        {
+          "id": "normalisation",
+          "pourquoi": "Pas de compromis entre des positions différentes : le groupe va vers l'extrême."
+        },
+        {
+          "id": "boomerang",
+          "pourquoi": "Aucun message extérieur qui renforcerait l'opinion contraire."
+        },
+        {
+          "id": "desindividuation",
+          "pourquoi": "Pas d'anonymat ni d'actes antisociaux."
+        },
+        {
+          "id": "milgram",
+          "pourquoi": "Le PDG coupe la parole mais ne donne pas d'ordre contraire à la morale : il n'y a pas d'obéissance à la Milgram."
+        }
+      ]
+    },
+    {
+      "id": "seule",
+      "titre": "Seule contre tous",
+      "moments": [
+        {
+          "t": "0:00",
+          "texte": "Réunion d'équipe : onze collègues veulent maintenir le séminaire annuel en avion à Lisbonne. Une seule, Claire, propose de le faire en train, plus près."
+        },
+        {
+          "t": "0:30",
+          "texte": "Les autres lèvent les yeux au ciel. Un collègue lui glisse : « Tu vas te faire mal voir, laisse tomber. » Claire répond calmement, avec les mêmes chiffres qu'à la réunion précédente."
+        },
+        {
+          "t": "1:15",
+          "texte": "Deux collègues l'ont rejointe et reprennent exactement ses arguments. Ils acceptent d'adapter la date, mais pas le principe."
+        },
+        {
+          "t": "2:00",
+          "texte": "Trois mois plus tard, la direction adopte le séminaire en train. Un ancien opposant reconnaît : « Elle nous a obligés à vraiment réfléchir. »"
+        }
+      ],
+      "notions": [
+        {
+          "id": "agissante",
+          "indice": "0:00 · Claire exprime seule son désaccord pour faire changer la règle."
+        },
+        {
+          "id": "pression",
+          "indice": "0:30 · « tu vas te faire mal voir » : la pression normative du groupe sur la déviante."
+        },
+        {
+          "id": "consistance",
+          "indice": "0:30 et 1:15 · mêmes chiffres dans le temps (diachronique), mêmes arguments entre ses alliés (synchronique)."
+        },
+        {
+          "id": "minoritaire",
+          "indice": "2:00 · la majorité réexamine sa position et change : influence minoritaire."
+        },
+        {
+          "id": "moscovici",
+          "indice": "L'auteur de l'influence minoritaire."
+        },
+        {
+          "id": "douzehommes",
+          "indice": "Le film du cours : un seul juré retourne les onze autres."
+        }
+      ],
+      "pieges": [
+        {
+          "id": "obeissance",
+          "pourquoi": "Personne ne donne d'ordre : la décision finale vient d'un changement d'avis."
+        },
+        {
+          "id": "porte",
+          "pourquoi": "Claire ne fait pas de demande exagérée pour obtenir moins : elle garde la même position."
+        },
+        {
+          "id": "polarisation",
+          "pourquoi": "Le groupe ne devient pas plus extrême : il change de position grâce à la minorité."
+        },
+        {
+          "id": "paresse",
+          "pourquoi": "La scène ne parle pas de l'effort fourni dans un travail collectif."
+        },
+        {
+          "id": "janis",
+          "pourquoi": "Le groupe finit par réfléchir vraiment : c'est l'inverse de la pensée groupale."
+        }
+      ]
+    },
+    {
+      "id": "vente",
+      "titre": "Le vendeur",
+      "moments": [
+        {
+          "t": "0:00",
+          "texte": "Dans un magasin d'électroménager, un vendeur demande à une cliente de répondre à « trois petites questions » sur ses habitudes. Elle accepte."
+        },
+        {
+          "t": "0:35",
+          "texte": "Il lui propose ensuite de tester gratuitement un robot pendant un mois, avec un abonnement « résiliable à tout moment ». Elle accepte encore."
+        },
+        {
+          "t": "1:10",
+          "texte": "Elle voulait le modèle en promotion affiché à 199 € en vitrine. « Désolé, il n'y en a plus. » Il lui propose le modèle au-dessus, à 349 €, qu'elle achète."
+        },
+        {
+          "t": "1:50",
+          "texte": "Le vendeur s'appuie sur son badge « conseiller expert » et sur des résultats de tests. La cliente repart convaincue d'avoir fait son propre choix."
+        }
+      ],
+      "notions": [
+        {
+          "id": "pied",
+          "indice": "0:00 → 0:35 · une petite demande acceptée, puis une demande plus engageante."
+        },
+        {
+          "id": "amorcage",
+          "indice": "1:10 · l'offre à 199 € (l'appât) n'existe plus ; on propose un produit de substitution plus cher."
+        },
+        {
+          "id": "slc",
+          "indice": "1:50 · elle a le sentiment d'avoir choisi librement, sans pression apparente."
+        },
+        {
+          "id": "persuasion",
+          "indice": "1:50 · des arguments et des chiffres pour convaincre."
+        },
+        {
+          "id": "expertise",
+          "indice": "1:50 · la crédibilité de la source repose sur sa compétence affichée (« conseiller expert »)."
+        }
+      ],
+      "pieges": [
+        {
+          "id": "porte",
+          "pourquoi": "Il ne commence pas par une demande exagérée refusée : il commence petit."
+        },
+        {
+          "id": "boomerang",
+          "pourquoi": "Le message ne provoque pas de rejet : la cliente est convaincue."
+        },
+        {
+          "id": "obeissance",
+          "pourquoi": "Aucun ordre : tout passe par des demandes acceptées « librement »."
+        },
+        {
+          "id": "conformisme",
+          "pourquoi": "Aucun groupe sur lequel elle s'alignerait."
+        },
+        {
+          "id": "dontlookup",
+          "pourquoi": "Ce film illustre l'échec de la persuasion ; ici, elle réussit."
+        }
+      ]
+    },
+    {
+      "id": "ordre",
+      "titre": "L'ordre de la directrice",
+      "moments": [
+        {
+          "t": "0:00",
+          "texte": "Dans une agence bancaire, la directrice ordonne à Paul de vendre une assurance coûteuse et inutile à un client âgé : « Ce sont les objectifs du siège, c'est non négociable. »"
+        },
+        {
+          "t": "0:40",
+          "texte": "Paul hésite, mais s'exécute. Le client pose des questions inquiètes ; Paul ne l'écoute plus vraiment et regarde sans cesse vers le bureau de sa directrice."
+        },
+        {
+          "t": "1:20",
+          "texte": "Après le rendez-vous, il dit à une collègue : « Je ne fais qu'appliquer ce qu'on me demande, je ne suis qu'un exécutant. Ce n'est pas moi qui suis responsable. »"
+        },
+        {
+          "t": "2:00",
+          "texte": "La directrice rappelle à l'équipe que ceux qui n'atteindront pas leurs ventes « auront une discussion » sur leur prime."
+        }
+      ],
+      "notions": [
+        {
+          "id": "obeissance",
+          "indice": "0:40 · Paul exécute un ordre avec lequel il n'est pas d'accord."
+        },
+        {
+          "id": "legitime",
+          "indice": "0:00 · l'ordre repose sur la position hiérarchique de la directrice."
+        },
+        {
+          "id": "syntonisation",
+          "indice": "0:40 · son attention est focalisée sur l'autorité, plus sur le client."
+        },
+        {
+          "id": "agentique",
+          "indice": "1:20 · « je ne suis qu'un exécutant » : il se vit comme un instrument."
+        },
+        {
+          "id": "dilution",
+          "indice": "1:20 · « ce n'est pas moi qui suis responsable »."
+        },
+        {
+          "id": "coercition",
+          "indice": "2:00 · la menace sur la prime : la capacité de punir."
+        },
+        {
+          "id": "milgram",
+          "indice": "L'auteur des mécanismes de l'obéissance."
+        },
+        {
+          "id": "icare",
+          "indice": "Le film du cours qui reconstitue l'expérience de Milgram."
+        }
+      ],
+      "pieges": [
+        {
+          "id": "conformisme",
+          "pourquoi": "La pression vient d'un ordre de la hiérarchie, pas d'un groupe d'égaux."
+        },
+        {
+          "id": "referentiel",
+          "pourquoi": "Paul n'admire pas sa directrice et ne veut pas lui ressembler."
+        },
+        {
+          "id": "porte",
+          "pourquoi": "Aucune demande exagérée suivie d'un compromis."
+        },
+        {
+          "id": "normalisation",
+          "pourquoi": "Personne ne cherche un compromis : l'ordre est « non négociable »."
+        },
+        {
+          "id": "moscovici",
+          "pourquoi": "Aucune minorité qui fait changer le groupe."
+        }
+      ]
+    },
+    {
+      "id": "stagiaire",
+      "titre": "Le premier mois du stagiaire",
+      "moments": [
+        {
+          "t": "0:00",
+          "texte": "Lucas commence son stage dans un cabinet de conseil. Le premier jour, il arrive en sweat ; tout le monde est en costume. Personne ne lui dit rien, mais on le regarde."
+        },
+        {
+          "t": "0:30",
+          "texte": "Le lendemain, il vient en costume. Il remarque aussi que personne ne part avant 20 h : il reste, lui aussi, jusqu'à 20 h."
+        },
+        {
+          "t": "1:10",
+          "texte": "Il ne sait pas comment remplir ses notes de frais : il copie exactement la façon de faire de ses voisins, « ils doivent savoir »."
+        },
+        {
+          "t": "1:50",
+          "texte": "Trois mois plus tard, il explique sincèrement à un nouveau stagiaire qu'« un vrai consultant ne compte pas ses heures » et se présente fièrement comme « consultant chez nous »."
+        }
+      ],
+      "notions": [
+        {
+          "id": "norme",
+          "indice": "0:00 · des règles non écrites (tenue, horaires) que tout le monde suit."
+        },
+        {
+          "id": "conformisme",
+          "indice": "0:30 · personne ne lui demande rien, mais il s'aligne sur la majorité."
+        },
+        {
+          "id": "pression",
+          "indice": "0:30 et 1:10 · pression normative (les regards) puis informationnelle (« ils doivent savoir »)."
+        },
+        {
+          "id": "interiorisation",
+          "indice": "1:50 · il y croit sincèrement : la norme du groupe est devenue la sienne."
+        },
+        {
+          "id": "socialisation",
+          "indice": "1:50 · socialisation secondaire : il apprend les valeurs du monde professionnel."
+        },
+        {
+          "id": "identite",
+          "indice": "1:50 · « consultant chez nous », avec fierté : son groupe fait partie de son image de lui-même."
+        }
+      ],
+      "pieges": [
+        {
+          "id": "obeissance",
+          "pourquoi": "Personne ne lui donne d'ordre : tout est implicite."
+        },
+        {
+          "id": "minoritaire",
+          "pourquoi": "Lucas ne fait pas changer le groupe : c'est le groupe qui le change."
+        },
+        {
+          "id": "pied",
+          "pourquoi": "Aucune demande qui augmenterait petit à petit."
+        },
+        {
+          "id": "anomie",
+          "pourquoi": "Au contraire, les règles du groupe sont très fortes."
+        },
+        {
+          "id": "milgram",
+          "pourquoi": "Il n'y a pas d'ordre d'une autorité."
+        }
+      ]
+    },
+    {
+      "id": "manager",
+      "titre": "La nouvelle cheffe de service",
+      "moments": [
+        {
+          "t": "0:00",
+          "texte": "Sarah est nommée cheffe d'un service de huit personnes. Elle fixe les objectifs du trimestre et organise un point d'avancement chaque lundi."
+        },
+        {
+          "t": "0:40",
+          "texte": "Avec Tom, arrivé la semaine dernière, elle détaille chaque tâche et vérifie tout. Avec Nadia, experte depuis dix ans, elle fixe l'objectif et la laisse s'organiser."
+        },
+        {
+          "t": "1:20",
+          "texte": "Mais quand l'ambiance se tend, c'est Marc, sans titre particulier, qui calme les esprits ; tout le monde va le voir avant les décisions importantes."
+        },
+        {
+          "t": "2:00",
+          "texte": "Sarah présente sa vision : faire du service une référence pour l'accueil des patients. Plusieurs collègues proposent spontanément des idées, en dehors de leurs heures."
+        }
+      ],
+      "notions": [
+        {
+          "id": "leader",
+          "indice": "0:00 et 1:20 · Sarah, leader formel (fonction-tâche) ; Marc, leader informel (fonction socio-émotionnelle)."
+        },
+        {
+          "id": "bales",
+          "indice": "L'auteur des deux fonctions du leader."
+        },
+        {
+          "id": "situationnel",
+          "indice": "0:40 · directive avec le débutant, délégative avec l'experte."
+        },
+        {
+          "id": "hersey",
+          "indice": "Les auteurs du leadership situationnel."
+        },
+        {
+          "id": "transformationnel",
+          "indice": "2:00 · une vision qui donne du sens et engage au-delà des intérêts personnels."
+        },
+        {
+          "id": "leadership",
+          "indice": "2:00 · elle obtient l'adhésion, pas seulement l'exécution."
+        }
+      ],
+      "pieges": [
+        {
+          "id": "transactionnel",
+          "pourquoi": "Aucune prime promise en échange des résultats."
+        },
+        {
+          "id": "coercition",
+          "pourquoi": "Aucune menace de sanction."
+        },
+        {
+          "id": "anomie",
+          "pourquoi": "Le service est structuré, avec des règles et des rôles clairs."
+        },
+        {
+          "id": "gourou",
+          "pourquoi": "Personne n'est fasciné ni dépendant de Sarah."
+        },
+        {
+          "id": "pensee",
+          "pourquoi": "Aucune décision irrationnelle prise pour préserver l'accord."
+        }
+      ]
+    },
+    {
+      "id": "projet",
+      "titre": "Le projet de groupe",
+      "moments": [
+        {
+          "t": "0:00",
+          "texte": "Cinq étudiants qui ne se connaissent pas sont réunis pour un projet de six mois. La première réunion est polie : chacun se présente et attend de voir qui prend la parole."
+        },
+        {
+          "t": "0:30",
+          "texte": "Deux semaines plus tard, désaccord sur le sujet et sur qui fait quoi : deux camps se forment, le ton monte."
+        },
+        {
+          "t": "1:10",
+          "texte": "Ils finissent par se mettre d'accord sur un plan. Chacun prend une partie selon ses compétences : les chiffres pour l'un, le design pour l'autre, la rédaction pour une troisième."
+        },
+        {
+          "t": "1:50",
+          "texte": "Antoine, lui, se contente de relire une diapositive : sur la note de groupe, personne ne verra la différence."
+        },
+        {
+          "t": "2:20",
+          "texte": "Après une soutenance réussie, le groupe se sépare avec un peu de nostalgie."
+        }
+      ],
+      "notions": [
+        {
+          "id": "tuckman",
+          "indice": "Toute la scène · constitution, tensions, cohésion, intégration, dissolution."
+        },
+        {
+          "id": "equipe",
+          "indice": "1:10 · des compétences complémentaires au service d'un objectif commun."
+        },
+        {
+          "id": "dynamique",
+          "indice": "0:30 · alliances, camps, tensions : l'équilibre du groupe évolue."
+        },
+        {
+          "id": "cohesion",
+          "indice": "1:10 · le groupe se soude et se coordonne (étape de cohésion)."
+        },
+        {
+          "id": "paresse",
+          "indice": "1:50 · sa contribution n'est pas identifiable, il en fait moins."
+        }
+      ],
+      "pieges": [
+        {
+          "id": "facilitation",
+          "pourquoi": "Antoine en fait moins, pas plus : c'est l'effet inverse."
+        },
+        {
+          "id": "pensee",
+          "pourquoi": "Le groupe débat vraiment avant de se mettre d'accord, et le résultat est bon."
+        },
+        {
+          "id": "obeissance",
+          "pourquoi": "Aucune autorité ne donne d'ordre au groupe."
+        },
+        {
+          "id": "anomie",
+          "pourquoi": "Le groupe se structure au lieu de se désagréger."
+        },
+        {
+          "id": "milgram",
+          "pourquoi": "Aucune obéissance à une autorité."
+        }
+      ]
+    },
+    {
+      "id": "panne",
+      "titre": "La panne à l'usine",
+      "moments": [
+        {
+          "t": "0:00",
+          "texte": "Dans une usine, la machine principale tombe en panne. Le directeur, furieux, exige qu'on la répare dans l'heure."
+        },
+        {
+          "t": "0:40",
+          "texte": "Personne ne sait faire, sauf Gérard, le technicien de maintenance, trente ans de maison. Il prend son temps et rappelle qu'il est le seul à connaître cette machine."
+        },
+        {
+          "t": "1:20",
+          "texte": "Le directeur finit par accepter les conditions de Gérard : une prime et ses congés en août."
+        },
+        {
+          "t": "2:00",
+          "texte": "Le soir, les opérateurs de la chaîne, réunis, menacent d'arrêter le travail si les cadences ne baissent pas."
+        }
+      ],
+      "notions": [
+        {
+          "id": "incertitude",
+          "indice": "0:40 · Gérard maîtrise la panne, l'incertitude majeure de l'usine."
+        },
+        {
+          "id": "crozier",
+          "indice": "Les auteurs du pouvoir lié aux zones d'incertitude."
+        },
+        {
+          "id": "expertise",
+          "indice": "0:40 · il est le seul à savoir : les autres dépendent de sa compétence."
+        },
+        {
+          "id": "pformel",
+          "indice": "1:20 · le directeur a le pouvoir formel, Gérard le pouvoir réel."
+        },
+        {
+          "id": "rapport",
+          "indice": "2:00 · les opérateurs unis menacent d'arrêter : le pouvoir des coalitions."
+        },
+        {
+          "id": "pouvoir",
+          "indice": "1:20 · Gérard obtient ce que le directeur n'aurait jamais accordé sans lui."
+        }
+      ],
+      "pieges": [
+        {
+          "id": "referentiel",
+          "pourquoi": "Personne n'admire Gérard ni ne veut lui ressembler : on a besoin de lui."
+        },
+        {
+          "id": "servant",
+          "pourquoi": "Aucun leader qui se met au service de son équipe."
+        },
+        {
+          "id": "conformisme",
+          "pourquoi": "Personne ne s'aligne sur la majorité."
+        },
+        {
+          "id": "tajfel",
+          "pourquoi": "La scène ne porte pas sur l'identité sociale."
+        },
+        {
+          "id": "boomerang",
+          "pourquoi": "Aucun message de persuasion qui se retournerait."
+        }
+      ]
+    },
+    {
+      "id": "plateau",
+      "titre": "Le débat télévisé",
+      "moments": [
+        {
+          "t": "0:00",
+          "texte": "Sur un plateau, une climatologue présente des chiffres alarmants sur la sécheresse. Les animateurs l'interrompent pour plaisanter, le public rit."
+        },
+        {
+          "t": "0:40",
+          "texte": "Un humoriste très populaire affirme que « ça a toujours existé ». Le public l'applaudit ; ses fans reprennent sa phrase mot pour mot."
+        },
+        {
+          "t": "1:20",
+          "texte": "La climatologue durcit son discours : « Vous êtes tous responsables ! » Un sondage montre que les sceptiques sont encore plus convaincus qu'avant."
+        },
+        {
+          "t": "2:00",
+          "texte": "En quelques heures, le hashtag moqueur lancé par l'humoriste est repris par des milliers de comptes."
+        }
+      ],
+      "notions": [
+        {
+          "id": "persuasion",
+          "indice": "0:00 · la climatologue tente de convaincre par des chiffres, sans y parvenir."
+        },
+        {
+          "id": "boomerang",
+          "indice": "1:20 · un message trop éloigné renforce l'attitude initiale des sceptiques."
+        },
+        {
+          "id": "referentiel",
+          "indice": "0:40 · les fans suivent l'humoriste parce qu'ils l'admirent."
+        },
+        {
+          "id": "contagion",
+          "indice": "2:00 · le hashtag se propage de compte en compte, par imitation."
+        },
+        {
+          "id": "dontlookup",
+          "indice": "Le film du cours sur l'échec de la persuasion et le déni."
+        }
+      ],
+      "pieges": [
+        {
+          "id": "pied",
+          "pourquoi": "Aucune petite demande suivie d'une plus grande."
+        },
+        {
+          "id": "amorcage",
+          "pourquoi": "Aucune offre alléchante qui disparaît."
+        },
+        {
+          "id": "obeissance",
+          "pourquoi": "Personne ne donne d'ordre."
+        },
+        {
+          "id": "pensee",
+          "pourquoi": "Il n'y a pas de groupe soudé qui prend une décision."
+        },
+        {
+          "id": "moscovici",
+          "pourquoi": "La climatologue est seule, mais elle ne fait pas changer la majorité."
+        }
+      ]
+    },
+    {
+      "id": "derby",
+      "titre": "Le derby",
+      "moments": [
+        {
+          "t": "0:00",
+          "texte": "Avant un derby, les supporters des deux clubs se rassemblent : maillots, chants, « nous » contre « eux ». Chacun se présente par son club."
+        },
+        {
+          "t": "0:40",
+          "texte": "Dans le stade, 40 000 personnes chantent, sautent et huent l'arbitre d'une seule voix."
+        },
+        {
+          "t": "1:20",
+          "texte": "Sur un but adverse, un supporter lance un fumigène ; des dizaines d'autres, cachés derrière leurs écharpes, l'imitent aussitôt."
+        },
+        {
+          "t": "2:00",
+          "texte": "Un jeune supporter reconnaît : « Dans le virage, je ne réfléchis plus, je ne suis plus moi : je suis la foule. »"
+        }
+      ],
+      "notions": [
+        {
+          "id": "categorisation",
+          "indice": "0:00 · « nous » contre « eux » : chacun se range dans une catégorie."
+        },
+        {
+          "id": "identite",
+          "indice": "0:00 · ils se définissent par leur club et le valorisent face à l'autre."
+        },
+        {
+          "id": "ame",
+          "indice": "0:40 · 40 000 personnes d'une seule voix : une conscience commune."
+        },
+        {
+          "id": "contagion",
+          "indice": "1:20 · le geste se propage aussitôt par imitation."
+        },
+        {
+          "id": "desindividuation",
+          "indice": "1:20 · cachés derrière leurs écharpes, ils commettent des actes dangereux."
+        },
+        {
+          "id": "depersonnalisation",
+          "indice": "2:00 · « je ne suis plus moi : je suis la foule »."
+        },
+        {
+          "id": "lebon",
+          "indice": "L'auteur à citer pour la foule."
+        }
+      ],
+      "pieges": [
+        {
+          "id": "obeissance",
+          "pourquoi": "Aucune autorité ne donne d'ordre aux supporters."
+        },
+        {
+          "id": "normalisation",
+          "pourquoi": "Aucun compromis entre des positions différentes."
+        },
+        {
+          "id": "paresse",
+          "pourquoi": "La scène ne parle pas de l'effort dans un travail collectif."
+        },
+        {
+          "id": "pied",
+          "pourquoi": "Aucune technique de demandes successives."
+        },
+        {
+          "id": "schein",
+          "pourquoi": "Aucune décision de groupe à analyser."
+        }
+      ]
+    }
+  ]
+}

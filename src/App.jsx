@@ -6,6 +6,7 @@ import Devoir from './components/Devoir'
 import Fiche from './components/Fiche'
 import Score from './components/Score'
 import GlossaireQuiz, { GlossaireMenu } from './components/GlossaireCours'
+import DissertationQuiz, { DissertationMenu, DissertationFiches, DissertationGrilles } from './components/Dissertation'
 import { GlossaryProvider } from './components/Glossary'
 
 const Admin = lazy(() => import('./components/Admin'))
@@ -17,6 +18,9 @@ function App() {
   const [devoir, setDevoir] = useState(null)
   // Niveau du glossaire en cours (1 ou 2), null hors glossaire
   const [gloss, setGloss] = useState(null)
+  // Niveau de la serie « Préparer la dissertation » (1 a 3), null hors de ces series ; terme a afficher dans les fiches reflexe
+  const [dissert, setDissert] = useState(null)
+  const [focusTerm, setFocusTerm] = useState(null)
   const [results, setResults] = useState(null)
   const [run, setRun] = useState(0)
 
@@ -43,6 +47,7 @@ function App() {
     setScreen('level')
     setDevoir(null)
     setGloss(null)
+    setDissert(null)
     setResults(null)
   }
 
@@ -74,6 +79,23 @@ function App() {
     setScreen('glossaire-quiz')
   }
 
+  const openDissertation = () => {
+    setDissert(null)
+    setResults(null)
+    setScreen('dissert')
+  }
+
+  const startDissertation = (l) => {
+    setDissert(l)
+    setDevoir(null)
+    setScreen('dissert-quiz')
+  }
+
+  const openFiches = (id = null) => {
+    setFocusTerm(id)
+    setScreen('dissert-fiches')
+  }
+
   const finish = (r) => {
     setResults(r)
     setScreen('score')
@@ -82,7 +104,7 @@ function App() {
   const retry = () => {
     setResults(null)
     setRun(n => n + 1)
-    setScreen(gloss ? 'glossaire-quiz' : devoir ? 'devoir' : 'quiz')
+    setScreen(dissert ? 'dissert-quiz' : gloss ? 'glossaire-quiz' : devoir ? 'devoir' : 'quiz')
   }
 
   if (screen === 'admin') {
@@ -109,6 +131,7 @@ function App() {
               onDevoir={selectDevoir}
               onFiche={() => setScreen('fiche')}
               onGlossaire={openGlossaire}
+              onDissertation={openDissertation}
               onBack={goHome}
             />
           )}
@@ -116,6 +139,20 @@ function App() {
           {screen === 'glossaire' && <GlossaireMenu matiere={matiere} onStart={startGlossaire} onBack={goLevels} />}
           {screen === 'glossaire-quiz' && (
             <GlossaireQuiz key={`${gloss}-${run}`} matiere={matiere} level={gloss} onFinish={finish} onBack={openGlossaire} />
+          )}
+          {screen === 'dissert' && (
+            <DissertationMenu
+              matiere={matiere}
+              onStart={startDissertation}
+              onFiches={() => openFiches()}
+              onGrilles={() => setScreen('dissert-grilles')}
+              onBack={goLevels}
+            />
+          )}
+          {screen === 'dissert-fiches' && <DissertationFiches key={focusTerm} matiere={matiere} focus={focusTerm} onBack={openDissertation} />}
+          {screen === 'dissert-grilles' && <DissertationGrilles matiere={matiere} onOpenTerm={openFiches} onBack={openDissertation} />}
+          {screen === 'dissert-quiz' && (
+            <DissertationQuiz key={`${dissert}-${run}`} matiere={matiere} level={dissert} onFinish={finish} onBack={openDissertation} />
           )}
           {screen === 'quiz' && (
             <Quiz key={run} matiere={matiere} level={level} onFinish={finish} onBack={goLevels} />
@@ -127,10 +164,10 @@ function App() {
             <Score
               results={results}
               matiere={matiere}
-              subtitle={gloss ? `Glossaire · niveau ${gloss}` : devoir ? `${devoir.title} · p. ${devoir.page}` : undefined}
+              subtitle={dissert ? `Dissertation · niveau ${dissert}` : gloss ? `Glossaire · niveau ${gloss}` : devoir ? `${devoir.title} · p. ${devoir.page}` : undefined}
               onRetry={retry}
-              onHome={gloss ? openGlossaire : devoir ? goLevels : goHome}
-              homeLabel={gloss ? 'Retour au glossaire' : devoir ? 'Retour aux devoirs' : undefined}
+              onHome={dissert ? openDissertation : gloss ? openGlossaire : devoir ? goLevels : goHome}
+              homeLabel={dissert ? 'Retour à la dissertation' : gloss ? 'Retour au glossaire' : devoir ? 'Retour aux devoirs' : undefined}
             />
           )}
         </div>

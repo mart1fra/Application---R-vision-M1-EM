@@ -1,6 +1,7 @@
-import { useState, useRef, useEffect } from 'react'
+import { useState } from 'react'
 import { GLOSSAIRES } from '../data'
 import { shuffle, matchNames, findKeys, authorLabel } from '../utils'
+import { useFocusWhen } from '../hooks'
 import {
   BackButton, ChoiceList, FeedbackCard, PrimaryButton, ProgressBar, TypeBadge, focusRing,
 } from './ui'
@@ -129,7 +130,7 @@ function AuthorPill({ entry, color }) {
 }
 
 // Paragraphe avec un intitule en petites capitales (En clair, Exemple…)
-function Labeled({ label, children, color, className = '' }) {
+export function Labeled({ label, children, color, className = '' }) {
   return (
     <div className={className}>
       <p className="text-[11px] font-bold uppercase tracking-[0.08em] mb-0.5" style={{ color: color || undefined }}>
@@ -252,15 +253,7 @@ export default function GlossaireQuiz({ matiere, level, onFinish, onBack }) {
   )
 }
 
-function useFocusWhen(flag) {
-  const ref = useRef(null)
-  useEffect(() => {
-    if (flag) ref.current?.focus()
-  }, [flag])
-  return ref
-}
-
-function QuoteCard({ label, text, color }) {
+export function QuoteCard({ label, text, color }) {
   return (
     <div className="rounded-2xl bg-white border border-sand px-4 py-4 mb-6 elevated">
       <p className="text-[11px] font-bold uppercase tracking-[0.1em] mb-1.5" style={{ color }}>{label}</p>

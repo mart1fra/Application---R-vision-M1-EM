@@ -9,6 +9,7 @@ import ficheSysteme from './systeme_information-fiche.json'
 import ficheStatistique from './statistique_informatique-fiche.json'
 import ficheComportement from './comportement_humain-fiche.json'
 import glossaireComportement from './comportement_humain-glossaire.json'
+import dissertationComportement from './comportement_humain-dissertation.json'
 
 export const DATA = { anglais, comportement_humain, statistique_informatique, systeme_information, droit_affaires }
 
@@ -21,6 +22,9 @@ export const FICHES = {
 
 // Glossaires : definition → terme + auteur (niveau 1), terme → definition + auteur (niveau 2)
 export const GLOSSAIRES = { comportement_humain: glossaireComportement }
+
+// Préparer la dissertation : chaque terme du lexique de la fiche, quand l'utiliser face à une vidéo et comment l'écrire
+export const DISSERTATIONS = { comportement_humain: dissertationComportement }
 
 // Exercices "AT HOME" des documents de cours, recrees en interactif
 export const DEVOIRS = { anglais: devoirsAnglais }
