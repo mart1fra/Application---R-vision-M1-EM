@@ -35,7 +35,7 @@ async function main() {
   // Filter to only folders (matieres have null metadata)
   const matieres = folders.filter(f => f.id === null || f.metadata === null)
   // Also try listing known matiere names directly
-  const MATIERE_IDS = ['anglais', 'comportement_humain', 'statistique_informatique', 'systeme_information', 'droit_affaires']
+  const MATIERE_IDS = ['anglais', 'comportement_humain', 'statistique_informatique', 'systeme_information', 'intercultural_management', 'droit_affaires']
 
   let totalDownloaded = 0
   let totalSkipped = 0

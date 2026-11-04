@@ -29,6 +29,11 @@ const LEVEL_DESC = {
     moyen: 'Choisir la bonne loi ou le bon test, petits calculs',
     difficile: 'Définitions à compléter, calculs des TP à écrire',
   },
+  intercultural_management: {
+    facile: 'QCM en anglais : définitions, auteurs, notions clés',
+    moyen: 'Classer pays et comportements, comparer les modèles',
+    difficile: 'Mises en situation et pièges type examen',
+  },
 }
 
 export default function LevelSelect({ matiere, onSelect, onDevoir, onFiche, onGlossaire, onDissertation, onBack }) {

@@ -3,7 +3,7 @@ import { shuffle, gradeAnswer, SESSION_SIZE } from '../utils'
 import { TappableText, GlossaryHint } from './Glossary'
 import {
   ChoiceList, FeedbackCard, GapSentence, TextAnswer, HintButton, BackButton,
-  ProgressBar, TypeBadge, PrimaryButton, GhostButton,
+  ProgressBar, TypeBadge, PrimaryButton, GhostButton, focusRing,
 } from './ui'
 
 import { DATA } from '../data'
@@ -28,6 +28,8 @@ export default function Quiz({ matiere, level, onFinish, onBack }) {
   const [grade, setGrade] = useState(null)
   const [hintShown, setHintShown] = useState(false)
   const [results, setResults] = useState([])
+  // QCM en anglais avec traduction (`questionFr`) : le choix d'afficher le francais reste d'une question a l'autre
+  const [showFr, setShowFr] = useState(false)
   const nextRef = useRef(null)
 
   const q = questions[current]
@@ -96,6 +98,8 @@ export default function Quiz({ matiere, level, onFinish, onBack }) {
     ? (q.direction === 'fr-en' ? 'Traduis en anglais' : 'Traduis en français')
     : q.type === 'fill' ? 'Complète la phrase' : null)
   const hasEnglishText = english && (q.definition || gapText || q.example)
+  const bilingual = Boolean(q.questionFr)
+  const fr = bilingual && showFr
 
   return (
     <div className="px-5 pt-6 pb-8 flex flex-col min-h-screen">
@@ -111,6 +115,18 @@ export default function Quiz({ matiere, level, onFinish, onBack }) {
       <div className="mb-3 flex items-center gap-2">
         <TypeBadge color={matiere.color}>{q.context ? 'Étude de cas' : TYPE_LABEL[q.type]}</TypeBadge>
         {q.source && <span className="text-[11px] text-warm-gray/80">{q.source}</span>}
+        {bilingual && (
+          <button
+            onClick={() => setShowFr(s => !s)}
+            aria-pressed={showFr}
+            className={`ml-auto shrink-0 rounded-full px-3 py-1.5 text-[12px] font-semibold border
+                        transition-transform duration-150 ease-out active:scale-95 ${focusRing}
+                        ${showFr ? 'text-white border-transparent' : 'bg-white text-warm-gray border-sand hover:border-warm-gray/40'}`}
+            style={showFr ? { background: matiere.color } : undefined}
+          >
+            {showFr ? 'Masquer FR' : 'Traduire FR'}
+          </button>
+        )}
       </div>
 
       {hasEnglishText && !answered && <GlossaryHint />}
@@ -119,7 +135,8 @@ export default function Quiz({ matiere, level, onFinish, onBack }) {
       {q.context && (
         <div className="rounded-2xl bg-white border border-sand px-4 py-4 mb-5 elevated">
           <p className="text-[11px] font-bold uppercase tracking-[0.1em] mb-1.5" style={{ color: matiere.color }}>Situation</p>
-          <p className="text-[16px] leading-relaxed text-charcoal">{q.context}</p>
+          <p className="text-[16px] leading-relaxed text-charcoal" lang={bilingual ? 'en' : undefined}>{q.context}</p>
+          {fr && q.contextFr && <p className="pop-in text-[14px] leading-relaxed text-warm-gray mt-2" lang="fr">{q.contextFr}</p>}
         </div>
       )}
 
@@ -152,9 +169,12 @@ export default function Quiz({ matiere, level, onFinish, onBack }) {
             />
           </h2>
         ) : (
-          <h2 className="font-display font-bold text-[20px] leading-snug tracking-[-0.02em] text-charcoal">
-            {q.question}
-          </h2>
+          <>
+            <h2 lang={bilingual ? 'en' : undefined} className="font-display font-bold text-[20px] leading-snug tracking-[-0.02em] text-charcoal">
+              {q.question}
+            </h2>
+            {fr && <p className="pop-in text-[15px] leading-snug text-warm-gray mt-2" lang="fr">{q.questionFr}</p>}
+          </>
         )}
       </div>
 
@@ -168,7 +188,8 @@ export default function Quiz({ matiere, level, onFinish, onBack }) {
             answered={answered}
             onPick={pickChoice}
             notes={q.notes}
-            english={q.choicesLang === 'en'}
+            english={q.choicesLang === 'en' || bilingual}
+            translations={fr ? q.choicesFr : undefined}
           />
         )}
 
@@ -200,7 +221,10 @@ export default function Quiz({ matiere, level, onFinish, onBack }) {
       {answered && (
         <FeedbackCard status={grade.typo ? 'typo' : isCorrect ? 'correct' : 'wrong'}>
           {!isCorrect && q.type === 'qcm' && (
-            <p>Réponse correcte : <strong lang={q.choicesLang === 'en' ? 'en' : undefined}>{q.answer}</strong></p>
+            <p>
+              Réponse correcte : <strong lang={q.choicesLang === 'en' || bilingual ? 'en' : undefined}>{q.answer}</strong>
+              {q.choicesFr?.[q.answer] && <> ({q.choicesFr[q.answer]})</>}
+            </p>
           )}
           {isWritten && !isCorrect && (
             <p>

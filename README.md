@@ -8,6 +8,7 @@ Application de revision pour M1 Ecole de Management. Vite + React + Tailwind CSS
 - Comportement humain (polycopie « Comportements humains », Prof. S. Point : influence sociale, foules, normes, conformisme, obeissance, persuasion, influence minoritaire, groupe, pensee groupale, pouvoir, leadership) + fiche de cours avec exemples concrets et lexique FR / EN (auteurs, films du cours) + « Preparer la dissertation » : les 90 termes du lexique a reperer dans une video (fiches reflexe, grilles d'observation, QCM et scenes d'examen)
 - Statistique informatique (cours « Informatique et statistiques », seances 1 a 5 : stats descriptives, lois usuelles, regression, loi normale et theoreme central limite, intervalles de confiance, tests d'hypotheses) + fiche de cours avec les resultats des TP 1 a 3 et un lexique FR / EN (dont les noms anglais des fonctions Excel)
 - Systeme d'information (donnee / information, typologie STT, SIG, SIAD, SID, CRM, SCM, SIRH, ERP) + fiche de cours avec lexique FR / EN
+- Management interculturel (notes « Intercultural Management » : culture, Hall, Hofstede, d'Iribarne, GLOBE) + fiche de cours bilingue (le cours en francais, puis le meme cours en anglais avec traduction au toucher) et QCM en anglais avec bouton « Traduire FR » (l'examen est un QCM)
 - Droit des affaires (formes juridiques, contrats, procedures collectives)
 
 ## Lancer le projet
@@ -52,6 +53,7 @@ Champs optionnels (QCM) :
 - `definition` : definition anglaise affichee en citation
 - `sentence` : phrase anglaise avec `___` (QCM "mot en contexte")
 - `choicesLang: "en"` : les choix sont en anglais
+- `questionFr` + `choicesFr` (`{ "choix anglais": "traduction" }`) et `contextFr` : QCM en anglais avec un bouton « Traduire FR » qui affiche la traduction de la question, de la situation et de chaque choix (management interculturel)
 
 Chaque serie tire au hasard 20 questions du niveau (`SESSION_SIZE` dans `src/utils.js`).
 
@@ -167,6 +169,8 @@ Une activite impossible a recreer (plateforme externe) peut etre listee avec `un
 
 **Statistique informatique :** questions tirees des 5 fiches de cours et des corrections des TP 1 a 3 (`source` : `"Seance 2 · p. 1"`, `"TP 3 · Exo 2"`). Chaque mauvais choix de QCM a sa `note`. Les calculs a ecrire ont un `tol` et souvent un `hint` (la formule). Les resultats sont verifies dans les tableurs corriges ou recalcules : quand la correction PDF a une coquille, la fiche et l'explication le signalent et donnent le bon resultat.
 
+**Management interculturel :** l'examen est un QCM, donc exception aux regles generales : **QCM aux trois niveaux** (facile = definitions, auteurs ; moyen = classer pays et comportements, comparer les modeles ; difficile = mises en situation `context` et pieges). Questions et choix en anglais, comme le cours, avec leur traduction (`questionFr`, `choicesFr`, `contextFr`) ; explications et `notes` en francais. Les notes de cours ont des coquilles et quelques exemples douteux (signales dans la fiche) : le QCM n'utilise pas les exemples contestables (collectivisme de groupe Pays-Bas / Chine-Inde, Grece en performance). Apres toute modification : `npm run verifier-bilingue` (traductions et notes completes, et la bonne reponse n'est pas trop souvent le choix le plus long ou le plus court).
+
 ### Regles generales
 
 - **Pas de QCM en difficile** (sauf anglais moyen)
@@ -188,11 +192,15 @@ Une matiere peut avoir une fiche de cours (resume + lexique FR / EN), accessible
 | `p` / `h` | `text` (paragraphe / sous-titre) |
 | `list` | `items[]`, `title` optionnel |
 | `def` | `term`, `text`, optionnels `fr`, `en`, `author` |
-| `example` / `tip` | `text` (encadre « Exemple » / « A retenir ») |
+| `example` / `tip` / `warn` | `text` (encadre « Exemple » / « A retenir » / « Attention », ex. une coquille des notes) |
 | `table` | `head[]`, `rows[][]`, `title` optionnel, `wide: true` pour un tableau large qui defile horizontalement (560 px), ou une largeur minimale en px (`wide: 780`) quand de longues formules ecrasent les autres colonnes |
 | `flow` | `steps[]` (schema en etapes), `title` et `note` optionnels |
 | `pyramid` | `levels[]` : `label`, `text`, `sub` (du sommet a la base) |
 | `stack` | `items[]` : `title`, `text`, `out`, `star` ; `links[]` entre les blocs |
+
+`searchPlaceholder` (optionnel) : exemple affiche dans la recherche du lexique.
+
+**Fiche bilingue** (`bilingual: true`, ex. `intercultural_management-fiche.json`) : trois onglets, **Francais** (le cours), **Anglais** (le meme cours, avec trois affichages : « Au toucher » = chaque passage en francais et un bouton « Traduire » qui affiche l'anglais dessous ; « FR + EN » ; « Anglais seul ») et **Lexique**. Tout texte traduit s'ecrit `{ "fr": "…", "en": "…" }` (titres de section, `source`, textes, items de liste, cellules de tableau, `term` d'une definition, qui affiche alors son terme dans l'autre langue). Un texte simple vaut pour les deux langues (noms, pays) ; un bloc sans aucun texte traduit (remarque sur les notes, pieges en francais) n'apparait que dans l'onglet Francais.
 
 Dans tous les textes, `**gras**` est mis en evidence. Les nombres a milliers s'ecrivent avec une espace insecable (`100 000`) pour ne pas etre coupes en fin de ligne.
 

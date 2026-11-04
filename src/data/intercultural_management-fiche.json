@@ -1,0 +1,623 @@
+{
+  "title": "Management interculturel",
+  "subtitle": "Introduction et chapitres 1 à 4 · Hall, Hofstede, d’Iribarne, GLOBE",
+  "cardDesc": "Le cours en français, puis en anglais avec traduction",
+  "bilingual": true,
+  "searchPlaceholder": "Chercher un terme (power distance, Hall…)",
+  "sections": [
+    {
+      "id": "apercu",
+      "title": { "fr": "Le cours en un coup d’œil", "en": "The course at a glance" },
+      "source": { "fr": "Notes · p. 1 à 7", "en": "Notes · p. 1-7" },
+      "blocks": [
+        { "type": "p", "text": {
+          "fr": "Le management interculturel étudie comment la **culture** influence la façon dont les gens **communiquent, travaillent et dirigent**.",
+          "en": "Intercultural management studies how **culture** shapes the way people **communicate, work and lead**."
+        } },
+        { "type": "p", "text": {
+          "fr": "Le cours part d’une définition de la culture, puis présente **quatre approches** pour comparer les cultures au travail : Hall, Hofstede, d’Iribarne et le projet GLOBE.",
+          "en": "The course starts with a definition of culture, then presents **four approaches** to compare cultures at work: Hall, Hofstede, d'Iribarne and the GLOBE project."
+        } },
+        { "type": "table", "title": { "fr": "Le plan du cours", "en": "Course outline" },
+          "head": [{ "fr": "Partie", "en": "Part" }, { "fr": "Auteur", "en": "Author" }, { "fr": "Idée clé", "en": "Key idea" }],
+          "rows": [
+            ["Intro", "Hall, Hofstede", { "fr": "Ce qu’est la culture et comment on la vit (choc culturel, stéréotypes…)", "en": "What culture is and how we experience it (cultural shock, stereotypes…)" }],
+            [{ "fr": "Ch. 1", "en": "Ch. 1" }, "Edward T. Hall", { "fr": "Contexte, temps et espace : ce qui se communique sans les mots", "en": "Context, time and space: what is communicated without words" }],
+            [{ "fr": "Ch. 2", "en": "Ch. 2" }, "Geert Hofstede", { "fr": "6 dimensions pour mesurer et comparer les cultures nationales", "en": "6 dimensions to measure and compare national cultures" }],
+            [{ "fr": "Ch. 3", "en": "Ch. 3" }, "Philippe d’Iribarne", { "fr": "Approche qualitative : le sens donné au travail (honneur, contrat, consensus)", "en": "Qualitative approach: the meaning given to work (honour, contract, consensus)" }],
+            [{ "fr": "Ch. 4", "en": "Ch. 4" }, "Robert House (GLOBE)", { "fr": "9 dimensions culturelles et les styles de leadership jugés efficaces", "en": "9 cultural dimensions and the leadership styles seen as effective" }]
+          ] },
+        { "type": "tip", "text": "Ton cours est en anglais : à l’examen, les questions risquent de l’être aussi. Chaque définition de cette fiche affiche son **terme anglais**, l’onglet **Anglais** reprend tout le cours avec la traduction, et le **Lexique** te permet de t’entraîner à retrouver les mots anglais." },
+        { "type": "warn", "text": "Tes notes contiennent quelques coquilles, corrigées dans la fiche : « Proximix » = **proxemics** (la proxémie), « D’iribarm » = **Philippe d’Iribarne**, « Confuses Asian » = **Confucian Asia** (Asie confucéenne), « Femineity » = **femininity** (féminité), « statues » = **status** (statut)." }
+      ]
+    },
+    {
+      "id": "culture",
+      "title": { "fr": "Introduction : qu’est-ce que la culture ?", "en": "Introduction: what is culture?" },
+      "source": { "fr": "Notes · p. 1", "en": "Notes · p. 1" },
+      "blocks": [
+        { "type": "def", "term": { "fr": "Culture", "en": "Culture" }, "text": {
+          "fr": "Un **système appris** de **normes, croyances, comportements et valeurs**, partagé par un groupe. Elle décrit comment les gens **pensent, procèdent et agissent** en société.",
+          "en": "A **learned system** of **norms, beliefs, behaviour and values** shared by a group. It describes how people **think, proceed and act** in society."
+        } },
+        { "type": "p", "text": {
+          "fr": "Le cours la résume par une chaîne : **culture = normes = valeurs / règles**, qui reposent sur des **croyances**.",
+          "en": "The course sums it up as a chain: **culture = norms = values / rules**, which rest on **beliefs**."
+        } },
+        { "type": "p", "text": {
+          "fr": "On **apprend** la culture parce qu’on a des **normes** : elles nous disent **comment nous comporter**.",
+          "en": "We **learn** culture because we have **norms**: they tell us **how to behave**."
+        } },
+        { "type": "p", "text": {
+          "fr": "La culture est le **produit des interactions humaines** : elle est **partagée** et **apprise**.",
+          "en": "Culture is a **product of human interaction**: it is **shared** and **learned**."
+        } },
+        { "type": "def", "term": { "fr": "La culture selon Hall", "en": "Culture according to Hall" }, "author": "Edward T. Hall", "text": {
+          "fr": "La culture est une **communication globale** et un **système de significations** (system of meaning) : ce que l’on fait a un sens pour les autres membres du groupe.",
+          "en": "Culture is a **global communication** and a **system of meaning**: what we do carries a meaning for the other members of the group."
+        } },
+        { "type": "def", "term": { "fr": "La culture selon Hofstede", "en": "Culture according to Hofstede" }, "author": "Geert Hofstede", "text": {
+          "fr": "La culture est la **programmation collective de l’esprit** (collective programming of the mind). C’est la **métaphore du logiciel** : la culture fonctionne comme un logiciel installé dans la tête des membres d’un groupe, qui les distingue des autres groupes.",
+          "en": "Culture is the **collective programming of the mind**. This is the **software metaphor**: culture works like software installed in the minds of a group's members, which distinguishes them from other groups."
+        } },
+        { "type": "tip", "text": {
+          "fr": "Ne les confonds pas : **Hall** → « système de significations », la culture comme communication. **Hofstede** → « programmation collective de l’esprit », la métaphore du logiciel.",
+          "en": "Don't mix them up: **Hall** → 'system of meaning', culture as communication. **Hofstede** → 'collective programming of the mind', the software metaphor."
+        } },
+        { "type": "p", "text": {
+          "fr": "La culture donne une **identité** et sert à **catégoriser** : elle aide à définir qui fait **partie du groupe** (insider) et qui est **extérieur** (outsider).",
+          "en": "Culture gives you an **identity** and helps you **categorize**: it helps define who is an **insider** and who is an **outsider**."
+        } },
+        { "type": "p", "text": {
+          "fr": "La culture agit sur trois plans : la **cognition** (ce que l’on pense), les **émotions** (ce que l’on ressent) et le **comportement** (ce que l’on fait).",
+          "en": "Culture shapes three levels: **cognition** (what we think), **emotions** (what we feel) and **behaviour** (what we do)."
+        } },
+        { "type": "list", "title": { "fr": "Les 4 caractéristiques de la culture", "en": "The 4 characteristics of culture" }, "items": [
+          { "fr": "**Partagée** : c’est un état d’esprit collectif, pas individuel.", "en": "**Shared**: it is a collective mindset, not an individual one." },
+          { "fr": "**Apprise** : on ne naît pas avec, on l’acquiert.", "en": "**Learned**: we are not born with it, we acquire it." },
+          { "fr": "**Dynamique et symbolique** : elle évolue, et elle porte de nombreuses significations.", "en": "**Dynamic and symbolic**: it changes over time and carries many meanings." },
+          { "fr": "**Inconsciente** : on l’applique sans s’en rendre compte, comme une évidence.", "en": "**Unconscious**: we apply it without realising it, as if it were obvious." }
+        ] }
+      ]
+    },
+    {
+      "id": "rencontre",
+      "title": { "fr": "Rencontrer une autre culture", "en": "Meeting another culture" },
+      "source": { "fr": "Notes · p. 1", "en": "Notes · p. 1" },
+      "blocks": [
+        { "type": "def", "term": { "fr": "Choc culturel", "en": "Cultural shock" }, "text": {
+          "fr": "Ce que l’on ressent face à une culture très différente : une source de **désorientation**, d’où naît l’**anxiété**. Nos repères habituels ne fonctionnent plus.",
+          "en": "What you feel when facing a very different culture: a source of **disorientation**, from which **anxiety** emerges. Your usual reference points no longer work."
+        } },
+        { "type": "p", "text": {
+          "fr": "Face à une autre culture, le cours distingue quatre attitudes, de la capacité générale à s’adapter jusqu’à l’adoption complète.",
+          "en": "When facing another culture, the course distinguishes four attitudes, from the general ability to adapt to full adoption."
+        } },
+        { "type": "table",
+          "head": [{ "fr": "Terme", "en": "Term" }, { "fr": "Sens", "en": "Meaning" }],
+          "rows": [
+            [{ "fr": "Intelligence culturelle", "en": "Cultural intelligence" }, { "fr": "La **capacité à s’adapter** à une autre culture", "en": "The **capacity to adapt** to another culture" }],
+            [{ "fr": "Ouverture culturelle", "en": "Cultural openness" }, { "fr": "On **commence à s’adapter**, on **essaie de comprendre**", "en": "You **start to adapt** and **try to understand**" }],
+            [{ "fr": "Acceptation culturelle", "en": "Cultural acceptance" }, { "fr": "On **respecte** l’autre culture, sans forcément l’adopter", "en": "You **respect** the other culture, without necessarily adopting it" }],
+            [{ "fr": "Assimilation culturelle", "en": "Cultural assimilation" }, { "fr": "On **adopte** l’autre culture comme la sienne", "en": "You **adopt** the other culture as your own" }]
+          ] },
+        { "type": "tip", "text": {
+          "fr": "Les mots-clés du cours : intelligence = **adapt**, ouverture = **try to understand**, acceptation = **respect**, assimilation = **adopt**.",
+          "en": "The course's key words: intelligence = **adapt**, openness = **try to understand**, acceptance = **respect**, assimilation = **adopt**."
+        } },
+        { "type": "def", "term": { "fr": "Stéréotypes", "en": "Stereotypes" }, "text": {
+          "fr": "Des images qui **simplifient la réalité** et **généralisent** des croyances et des images à tout un groupe (« les Allemands sont ponctuels »).",
+          "en": "Images that **simplify reality** and **generalize** beliefs and images to a whole group ('Germans are punctual')."
+        } },
+        { "type": "def", "term": { "fr": "Jugement / préjugé", "en": "Judgment / prejudice" }, "text": {
+          "fr": "**Différent du stéréotype** : le préjugé ajoute un **jugement**, souvent négatif, sur le groupe. Le stéréotype simplifie, le préjugé juge.",
+          "en": "**Different from a stereotype**: a prejudice adds a **judgment**, often negative, about the group. A stereotype simplifies; a prejudice judges."
+        } },
+        { "type": "def", "term": { "fr": "Ethnocentrisme", "en": "Ethnocentrism" }, "text": {
+          "fr": "Voir sa propre culture comme **unique** et comme la **norme universelle** : on juge les autres cultures à partir de la sienne.",
+          "en": "Viewing your own culture as **unique** and as the **universal norm**: you judge other cultures through your own."
+        } },
+        { "type": "example", "text": {
+          "fr": "Un manager français qui trouve ses collègues allemands « impolis » parce qu’ils vont droit au but fait preuve d’**ethnocentrisme** : il prend ses propres codes pour la norme.",
+          "en": "A French manager who finds German colleagues 'rude' because they get straight to the point shows **ethnocentrism**: this manager takes their own codes as the norm."
+        } }
+      ]
+    },
+    {
+      "id": "hall",
+      "title": { "fr": "Chapitre 1 – Hall : contexte, temps et espace", "en": "Chapter 1 – Hall: context, time and space" },
+      "source": { "fr": "Notes · p. 2", "en": "Notes · p. 2" },
+      "blocks": [
+        { "type": "p", "text": {
+          "fr": "**Edward T. Hall** est un **anthropologue américain** qui s’intéresse aux **interactions sociales**.",
+          "en": "**Edward T. Hall** is an **American anthropologist** who focuses on **social interaction**."
+        } },
+        { "type": "p", "text": {
+          "fr": "Pour lui, la culture ne se limite pas à ce que les gens disent ou font : elle comprend aussi la **communication non verbale**, l’**orientation dans le temps** et l’**espace personnel**.",
+          "en": "For him, culture is not only what people say or do: it also includes **non-verbal communication**, **time orientation** and **personal space**."
+        } },
+        { "type": "h", "text": { "fr": "1. Le langage : cultures à contexte fort ou faible", "en": "1. Language: high-context and low-context cultures" } },
+        { "type": "p", "text": {
+          "fr": "Les cultures n’ont pas besoin de la même **quantité d’information explicite** pour se comprendre.",
+          "en": "Cultures do not need the same **amount of explicit information** to understand each other."
+        } },
+        { "type": "table",
+          "head": ["", { "fr": "Contexte fort", "en": "High context" }, { "fr": "Contexte faible", "en": "Low context" }],
+          "rows": [
+            [{ "fr": "Communication", "en": "Communication" }, { "fr": "**Implicite**, interactive : le sens passe par le contexte", "en": "**Implicit**, interactive: meaning comes from the context" }, { "fr": "**Explicite** et **directe** : tout passe par les mots", "en": "**Explicit** and **direct**: everything is put into words" }],
+            [{ "fr": "Priorité", "en": "Priority" }, { "fr": "**Garder la relation**", "en": "**Keep the relationship**" }, { "fr": "Transmettre l’information clairement", "en": "Pass on the information clearly" }],
+            [{ "fr": "Ce qui n’est pas dit", "en": "What is not said" }, { "fr": "Va de soi (**taken for granted**)", "en": "Is **taken for granted**" }, { "fr": "Doit être dit ou écrit", "en": "Must be said or written" }],
+            [{ "fr": "Exemples", "en": "Examples" }, { "fr": "Japon, France", "en": "Japan, France" }, { "fr": "Allemagne, États-Unis", "en": "Germany, USA" }]
+          ] },
+        { "type": "example", "text": {
+          "fr": "Contexte fort : au Japon, « c’est difficile » peut vouloir dire « non ». Contexte faible : en Allemagne, un contrat détaille tout par écrit.",
+          "en": "High context: in Japan, 'that would be difficult' can mean 'no'. Low context: in Germany, a contract spells everything out in writing."
+        } },
+        { "type": "h", "text": { "fr": "2. L’orientation dans le temps", "en": "2. Time orientation" } },
+        { "type": "p", "text": {
+          "fr": "Chaque culture a sa **perception du temps** : c’est la façon dont une société **organise sa vie**.",
+          "en": "Each culture has its own **perception of time**: it is how a society **organizes its life**."
+        } },
+        { "type": "table",
+          "head": ["", { "fr": "Monochrone", "en": "Monochronic" }, { "fr": "Polychrone", "en": "Polychronic" }],
+          "rows": [
+            [{ "fr": "Le temps est…", "en": "Time is…" }, { "fr": "**Linéaire**, une ressource **limitée**", "en": "**Linear**, a **limited resource**" }, { "fr": "**Cyclique**, **flexible**", "en": "**Cyclical**, **flexible**" }],
+            [{ "fr": "Devise", "en": "Motto" }, { "fr": "« **Time is money** »", "en": "'**Time is money**'" }, { "fr": "« **Time is life** »", "en": "'**Time is life**'" }],
+            [{ "fr": "Activités", "en": "Activities" }, { "fr": "Une chose à la fois", "en": "One thing at a time" }, { "fr": "**Plusieurs activités en même temps**", "en": "**Multiple activities at the same time**" }],
+            [{ "fr": "Priorité", "en": "Priority" }, { "fr": "Le planning", "en": "The schedule" }, { "fr": "Les **relations** passent avant le planning ; l’horaire peut changer selon le contexte", "en": "**Relationships** matter more than schedules; timing can change with the context" }],
+            [{ "fr": "Exemples", "en": "Examples" }, { "fr": "États-Unis, Allemagne, pays du Nord", "en": "USA, Germany, Northern countries" }, { "fr": "France, pays asiatiques et arabes", "en": "France, Asian and Arab countries" }]
+          ] },
+        { "type": "h", "text": { "fr": "3. La proxémie : l’espace personnel", "en": "3. Proxemics: personal space" } },
+        { "type": "def", "term": { "fr": "Proxémie", "en": "Proxemics" }, "author": "Edward T. Hall", "text": {
+          "fr": "L’usage de l’**espace personnel** : la **distance physique** dans la communication, la façon de **s’asseoir** les uns par rapport aux autres, la façon de **se toucher**, et la territorialité.",
+          "en": "The use of **personal space**: **physical distance** in communication, **seating arrangements**, the way people **touch**, and territoriality."
+        } },
+        { "type": "list", "title": { "fr": "Les 4 distances de Hall, de la plus proche à la plus éloignée", "en": "Hall's 4 distances, from closest to furthest" }, "items": [
+          { "fr": "**Intime** : la famille, le couple", "en": "**Intimate**: family, partners" },
+          { "fr": "**Personnelle** : les amis, les proches", "en": "**Personal**: friends, people you know well" },
+          { "fr": "**Sociale** : les collègues, les relations de travail", "en": "**Social**: colleagues, work relationships" },
+          { "fr": "**Publique** : parler devant un groupe, un public", "en": "**Public**: speaking to a group, an audience" }
+        ] },
+        { "type": "warn", "text": "Tes notes listent les distances dans le désordre (public, personnel, social, intime). L’ordre logique, du plus proche au plus loin : **intime → personnelle → sociale → publique**. Les exemples (famille, amis…) ne sont pas dans tes notes : ils servent à les retenir." },
+        { "type": "p", "text": {
+          "fr": "La distance traduit la façon dont on **respecte les autres**, selon le **statut** et le degré de **familiarité**.",
+          "en": "Distance reflects how you **respect others**, depending on **status** and **familiarity**."
+        } },
+        { "type": "table",
+          "head": ["", { "fr": "Contact fort", "en": "High contact" }, { "fr": "Contact faible", "en": "Low contact" }],
+          "rows": [
+            [{ "fr": "Distance", "en": "Distance" }, { "fr": "**Proche**", "en": "**Close**" }, { "fr": "On garde de l’**espace**", "en": "People keep their **space**" }],
+            [{ "fr": "Toucher", "en": "Touch" }, { "fr": "**Fréquent**", "en": "**Frequent**" }, { "fr": "**Limité**", "en": "**Limited**" }],
+            [{ "fr": "Attitude", "en": "Attitude" }, { "fr": "**Expressive**", "en": "**Expressive**" }, { "fr": "**Réservée**", "en": "**Reserved**" }],
+            [{ "fr": "Exemples", "en": "Examples" }, { "fr": "Cultures latines", "en": "Latin cultures" }, { "fr": "Allemagne, Asie", "en": "Germany, Asia" }]
+          ] },
+        { "type": "tip", "text": {
+          "fr": "Piège classique : **contact** fort (proxémie : on se touche, on est proche) ≠ **contexte** fort (langage : communication implicite).",
+          "en": "Classic trap: high **contact** (proxemics: touching, standing close) ≠ high **context** (language: implicit communication)."
+        } },
+        { "type": "h", "text": { "fr": "4. La territorialité", "en": "4. Territoriality" } },
+        { "type": "def", "term": { "fr": "Territorialité", "en": "Territoriality" }, "text": {
+          "fr": "La façon dont on **revendique** et **défend son espace**. Chaque culture a ses **normes territoriales**.",
+          "en": "How people **claim** and **defend their space**. Each culture has its own **territorial norms**."
+        } },
+        { "type": "table",
+          "head": [{ "fr": "Territoire", "en": "Territory" }, { "fr": "Sens", "en": "Meaning" }, { "fr": "Exemple", "en": "Example" }],
+          "rows": [
+            [{ "fr": "Primaire", "en": "Primary" }, { "fr": "Il **t’appartient** : ton domaine personnel", "en": "It **belongs to you**: your personal domain" }, { "fr": "Ton bureau, ta chambre", "en": "Your office, your bedroom" }],
+            [{ "fr": "Secondaire", "en": "Secondary" }, { "fr": "**Partagé mais familier**", "en": "**Shared but familiar**" }, { "fr": "La salle de pause de l’équipe", "en": "The team's break room" }],
+            [{ "fr": "Tertiaire (« third »)", "en": "Third (tertiary)" }, { "fr": "**Public**", "en": "**Public**" }, { "fr": "Un parc, une gare", "en": "A park, a train station" }]
+          ] },
+        { "type": "p", "text": {
+          "fr": "**Territorialité faible** : les possessions, le « c’est à moi », comptent peu. À l’inverse, une territorialité forte signifie qu’on tient beaucoup à son espace et à ses affaires.",
+          "en": "**Low territoriality**: belongings, the sense of 'this is mine', are not important. Conversely, high territoriality means people care a lot about their space and their belongings."
+        } }
+      ]
+    },
+    {
+      "id": "hofstede1",
+      "title": { "fr": "Chapitre 2 – Hofstede (1/2) : hiérarchie, individu, performance", "en": "Chapter 2 – Hofstede (1/2): hierarchy, individual, performance" },
+      "source": { "fr": "Notes · p. 3", "en": "Notes · p. 3" },
+      "blocks": [
+        { "type": "p", "text": {
+          "fr": "**Geert Hofstede** compare les cultures nationales avec des **dimensions**, mesurées par des **enquêtes quantitatives** (questionnaires). Chaque pays obtient un score sur chaque dimension.",
+          "en": "**Geert Hofstede** compares national cultures using **dimensions** measured through **quantitative surveys** (questionnaires). Each country gets a score on each dimension."
+        } },
+        { "type": "list", "title": { "fr": "Les 6 dimensions de Hofstede", "en": "Hofstede's 6 dimensions" }, "items": [
+          { "fr": "**Distance hiérarchique** (power distance)", "en": "**Power distance**" },
+          { "fr": "**Individualisme / collectivisme** (individualism / collectivism)", "en": "**Individualism / collectivism**" },
+          { "fr": "**Masculinité / féminité** (masculinity / femininity)", "en": "**Masculinity / femininity**" },
+          { "fr": "**Évitement de l’incertitude** (uncertainty avoidance)", "en": "**Uncertainty avoidance**" },
+          { "fr": "**Orientation long terme / court terme** (long / short-term orientation)", "en": "**Long-term / short-term orientation**" },
+          { "fr": "**Indulgence / retenue** (indulgence / restraint)", "en": "**Indulgence / restraint**" }
+        ] },
+        { "type": "warn", "text": "Tes notes disent « 4 dimensions » puis en listent 6. Les **4 premières** sont les dimensions d’origine ; l’**orientation long terme** et l’**indulgence** ont été ajoutées plus tard. Le modèle complet compte donc **6 dimensions**." },
+        { "type": "h", "text": { "fr": "1. La distance hiérarchique", "en": "1. Power distance index" } },
+        { "type": "def", "term": { "fr": "Distance hiérarchique", "en": "Power distance" }, "author": "Geert Hofstede", "text": {
+          "fr": "Le degré auquel les gens sont **à l’aise avec l’inégalité et la hiérarchie** : jusqu’où les membres **les moins puissants** d’une organisation **acceptent et attendent** que le pouvoir soit **réparti de façon inégale**.",
+          "en": "The degree to which people are **comfortable with inequality and hierarchy**: how far the **less powerful members** of an organization **accept and expect** power to be **distributed unequally**."
+        } },
+        { "type": "warn", "text": "Tes notes écrivent « accept and expect an **equal** power distribution » : c’est une coquille. La définition de Hofstede parle d’un pouvoir réparti de façon **inégale** (unequally)." },
+        { "type": "table",
+          "head": ["", { "fr": "Distance forte", "en": "High power distance" }, { "fr": "Distance faible", "en": "Low power distance" }],
+          "rows": [
+            [{ "fr": "La hiérarchie…", "en": "Hierarchy…" }, { "fr": "Est **naturelle**", "en": "Is **natural**" }, { "fr": "Existe **par commodité**", "en": "Exists **for convenience**" }],
+            [{ "fr": "Qui décide ?", "en": "Who decides?" }, { "fr": "Le **chef** (boss), décisions **descendantes** (top-down)", "en": "The **boss**, **top-down** decisions" }, { "fr": "L’**équipe**, décisions **partagées**", "en": "The **team**, **shared** decisions" }],
+            [{ "fr": "Les subordonnés", "en": "Subordinates" }, { "fr": "Ne **contestent jamais** l’autorité ; **pas de feedback**", "en": "**Never challenge** authority; **no feedback**" }, { "fr": "Sont **consultés** ; **dialogue ouvert**", "en": "Are **consulted**; **open dialogue**" }],
+            [{ "fr": "Titres et statuts", "en": "Titles and status" }, { "fr": "**Acceptés**, ils comptent", "en": "**Accepted**, they matter" }, { "fr": "On attend un **traitement égal**", "en": "Employees expect **equal treatment**" }],
+            [{ "fr": "Communication", "en": "Communication" }, { "fr": "Formelle", "en": "Formal" }, { "fr": "**Informelle et participative**", "en": "**Informal and participative**" }],
+            [{ "fr": "Valeur clé", "en": "Key value" }, { "fr": "**Autorité**", "en": "**Authority**" }, { "fr": "**Égalité**", "en": "**Equality**" }],
+            [{ "fr": "Exemples", "en": "Examples" }, { "fr": "France, Russie, Asie", "en": "France, Russia, Asia" }, { "fr": "États-Unis, Suède", "en": "USA, Sweden" }]
+          ] },
+        { "type": "h", "text": { "fr": "2. Individualisme et collectivisme", "en": "2. Individualism and collectivism" } },
+        { "type": "p", "text": {
+          "fr": "**Culture individualiste** : la **liberté personnelle** et la **réussite** individuelle passent avant tout ; la communication est **directe et expressive** (États-Unis, France, Royaume-Uni).",
+          "en": "**Individualist culture**: **personal freedom** and individual **achievement** come first; communication is **direct and expressive** (USA, France, UK)."
+        } },
+        { "type": "p", "text": {
+          "fr": "**Culture collectiviste** (peu individualiste) : l’**harmonie du groupe** et la **loyauté** passent d’abord ; on prend les décisions de façon à **préserver les relations** (Japon, Chine, Vietnam).",
+          "en": "**Collectivist culture** (low individualism): **group harmony** and **loyalty** come first; decisions are made to **maintain relationships** (Japan, China, Vietnam)."
+        } },
+        { "type": "table",
+          "head": ["", { "fr": "Individualiste", "en": "Individualist" }, { "fr": "Collectiviste", "en": "Collectivist" }],
+          "rows": [
+            [{ "fr": "Valeur", "en": "Value" }, { "fr": "**Autonomie**", "en": "**Autonomy**" }, { "fr": "**Harmonie**", "en": "**Harmony**" }],
+            [{ "fr": "Récompense", "en": "Reward" }, { "fr": "**Individuelle**", "en": "**Individual** reward" }, { "fr": "**Collective** (le groupe)", "en": "**Group** reward" }],
+            [{ "fr": "Confiance", "en": "Trust" }, { "fr": "**Contractuelle** (le contrat)", "en": "**Contractual** trust" }, { "fr": "**Relationnelle** (la relation)", "en": "**Relational** trust" }],
+            [{ "fr": "Priorité", "en": "Priority" }, { "fr": "La **tâche**", "en": "The **task**" }, { "fr": "Les **relations**", "en": "**Relationships**" }]
+          ] },
+        { "type": "h", "text": { "fr": "3. Masculinité et féminité", "en": "3. Masculinity and femininity" } },
+        { "type": "p", "text": {
+          "fr": "**Culture masculine** : la **performance** et la **réussite** priment ; le **travail passe en premier** (États-Unis, Japon).",
+          "en": "**Masculine culture**: **performance** and **achievement** come first; **work comes first** (USA, Japan)."
+        } },
+        { "type": "p", "text": {
+          "fr": "**Culture féminine** : la **qualité de vie**, le **soin de soi**, la **famille d’abord** (Suède).",
+          "en": "**Feminine culture**: **quality of life**, **self-care**, **family first** (Sweden)."
+        } },
+        { "type": "table",
+          "head": ["", { "fr": "Masculinité", "en": "Masculinity" }, { "fr": "Féminité", "en": "Femininity" }],
+          "rows": [
+            [{ "fr": "Relations", "en": "Relations" }, { "fr": "**Compétition**", "en": "**Competition**" }, { "fr": "**Collaboration**", "en": "**Collaboration**" }],
+            [{ "fr": "Ce qui compte", "en": "What matters" }, { "fr": "La **performance**", "en": "**Performance**" }, { "fr": "Le **bien-être**", "en": "**Well-being**" }],
+            [{ "fr": "Face au conflit", "en": "In a conflict" }, { "fr": "On **se bat** (fighting)", "en": "**Fighting**" }, { "fr": "On fait des **compromis**", "en": "**Compromising**" }]
+          ] },
+        { "type": "tip", "text": {
+          "fr": "Il ne s’agit pas d’hommes et de femmes, mais de **valeurs** : compétition et performance d’un côté, collaboration et qualité de vie de l’autre.",
+          "en": "It is not about men and women but about **values**: competition and performance on one side, collaboration and quality of life on the other."
+        } },
+        { "type": "warn", "text": "Tes notes placent « work-life balance » côté masculinité. Il faut le lire ainsi : dans l’équilibre vie pro / vie perso, la culture masculine fait passer le **travail d’abord**, la culture féminine la **famille d’abord**." }
+      ]
+    },
+    {
+      "id": "hofstede2",
+      "title": { "fr": "Chapitre 2 – Hofstede (2/2) : incertitude, temps, plaisir", "en": "Chapter 2 – Hofstede (2/2): uncertainty, time horizon, enjoyment" },
+      "source": { "fr": "Notes · p. 3-4", "en": "Notes · p. 3-4" },
+      "blocks": [
+        { "type": "h", "text": { "fr": "4. L’évitement de l’incertitude", "en": "4. Uncertainty avoidance" } },
+        { "type": "def", "term": { "fr": "Évitement de l’incertitude", "en": "Uncertainty avoidance" }, "author": "Geert Hofstede", "text": {
+          "fr": "Mesure à quel point les gens sont **à l’aise avec le risque et l’ambiguïté**. Un score élevé veut dire qu’on les supporte mal et qu’on cherche à les **éviter** avec des règles.",
+          "en": "Measures how **comfortable** people are **with risk and ambiguity**. A high score means people dislike them and try to **avoid** them with rules."
+        } },
+        { "type": "table",
+          "head": ["", { "fr": "Évitement fort", "en": "High uncertainty avoidance" }, { "fr": "Évitement faible", "en": "Low uncertainty avoidance" }],
+          "rows": [
+            [{ "fr": "Réflexe", "en": "Reflex" }, { "fr": "**Règles formelles**, planification, structure", "en": "**Formal rules**, planning, structure" }, { "fr": "On **tolère le risque** et l’ambiguïté", "en": "People **tolerate risk** and ambiguity" }],
+            [{ "fr": "Face au changement", "en": "Towards change" }, { "fr": "**Résistance** ; on veut la **sécurité de l’emploi**", "en": "**Resistance**; people want **job security**" }, { "fr": "On accepte le **changement**, la **flexibilité**", "en": "People accept **change** and **flexibility**" }],
+            [{ "fr": "Réunions", "en": "Meetings" }, { "fr": "**Structurées**", "en": "**Structured**" }, { "fr": "**Informelles**", "en": "**Informal**" }],
+            [{ "fr": "Exemples", "en": "Examples" }, { "fr": "Chine, France, Allemagne", "en": "China, France, Germany" }, { "fr": "États-Unis, Suède, Inde", "en": "USA, Sweden, India" }]
+          ] },
+        { "type": "tip", "text": {
+          "fr": "Piège : évitement de l’incertitude **fort** = on **n’aime pas** l’incertitude, donc on multiplie les règles. Ce n’est pas « une culture incertaine ».",
+          "en": "Trap: **high** uncertainty avoidance = people **dislike** uncertainty, so they create many rules. It does not mean 'an uncertain culture'."
+        } },
+        { "type": "warn", "text": "Les exemples de pays sont ceux de tes notes. Dans les scores publiés par Hofstede, la **Chine** est plutôt **faible** en évitement de l’incertitude : appuie-toi d’abord sur France et Allemagne (fort), États-Unis et Suède (faible), qui ne posent aucun doute." },
+        { "type": "h", "text": { "fr": "5. L’orientation long terme", "en": "5. Long-term orientation" } },
+        { "type": "def", "term": { "fr": "Orientation long terme", "en": "Long-term orientation" }, "author": "Geert Hofstede", "text": {
+          "fr": "L’**horizon temporel** d’une société : préfère-t-on des **récompenses futures** ou des **résultats immédiats** ?",
+          "en": "A society's **time horizon**: do people prefer **future rewards** or **immediate results**?"
+        } },
+        { "type": "table",
+          "head": ["", { "fr": "Long terme", "en": "Long term" }, { "fr": "Court terme", "en": "Short term" }],
+          "rows": [
+            [{ "fr": "Tourné vers…", "en": "Focused on…" }, { "fr": "L’**avenir**", "en": "The **future**" }, { "fr": "Les **résultats immédiats**", "en": "**Immediate results**" }],
+            [{ "fr": "Récompense", "en": "Reward" }, { "fr": "**Gratification** différée : on accepte d’attendre", "en": "Delayed **gratification**: people accept to wait" }, { "fr": "**Retour sur investissement rapide** (quick ROI)", "en": "**Quick ROI** (return on investment)" }],
+            [{ "fr": "Valeurs", "en": "Values" }, { "fr": "**Adaptabilité**, respect des **engagements à long terme** ; les relations se construisent **lentement**", "en": "**Adaptability**, respect for **long-term commitment**; relationships evolve **slowly**" }, { "fr": "**Respect de la face** (ne pas perdre la face)", "en": "**Respect for face** (not losing face)" }],
+            [{ "fr": "Exemples", "en": "Examples" }, { "fr": "Pays asiatiques", "en": "Asian countries" }, { "fr": "Pays anglo-saxons", "en": "Anglo-Saxon countries" }]
+          ] },
+        { "type": "h", "text": { "fr": "6. Indulgence ou retenue", "en": "6. Indulgence or restraint" } },
+        { "type": "def", "term": { "fr": "Indulgence / retenue", "en": "Indulgence / restraint" }, "author": "Geert Hofstede", "text": {
+          "fr": "À quel point on **s’autorise à profiter de la vie** : le degré auquel une société **permet de satisfaire** les désirs humains de base.",
+          "en": "How much people **allow themselves to enjoy life**: the degree to which a society **permits the gratification** of basic human desires."
+        } },
+        { "type": "p", "text": {
+          "fr": "**Indulgence** : émotions **positives**, **optimisme** (États-Unis, Australie). **Retenue** : **pessimisme**, poids des **normes sociales** (Asie, Russie).",
+          "en": "**Indulgence**: **positive** emotions, **optimism** (USA, Australia). **Restraint**: **pessimism**, strong **social norms** (Asia, Russia)."
+        } },
+        { "type": "table",
+          "head": ["", { "fr": "Indulgente", "en": "Indulgent" }, { "fr": "Retenue", "en": "Restraint" }],
+          "rows": [
+            [{ "fr": "Ambiance", "en": "Mood" }, { "fr": "**Détendue**", "en": "**Relaxed**" }, { "fr": "**Sérieuse**", "en": "**Serious**" }],
+            [{ "fr": "Priorité", "en": "Priority" }, { "fr": "Le **cadre de vie**, l’équilibre **vie pro / vie perso**", "en": "The **environment**, **work-life** balance" }, { "fr": "Le **travail**, la **discipline**", "en": "**Work**, **discipline**" }],
+            [{ "fr": "On recherche…", "en": "People seek…" }, { "fr": "L’**expérience** (vivre des choses)", "en": "**Experience**" }, { "fr": "La **sécurité**", "en": "**Security**" }]
+          ] },
+        { "type": "tip", "text": {
+          "fr": "Ne confonds pas **indulgence** et **féminité** : l’indulgence porte sur le **plaisir** que la société autorise (profiter de la vie), la féminité sur les **valeurs** au travail (collaboration plutôt que compétition).",
+          "en": "Don't confuse **indulgence** with **femininity**: indulgence is about the **enjoyment** society allows (enjoying life); femininity is about **values** at work (collaboration rather than competition)."
+        } }
+      ]
+    },
+    {
+      "id": "iribarne",
+      "title": { "fr": "Chapitre 3 – Philippe d’Iribarne : le sens du travail", "en": "Chapter 3 – Philippe d'Iribarne: the meaning of work" },
+      "source": { "fr": "Notes · p. 5", "en": "Notes · p. 5" },
+      "blocks": [
+        { "type": "table", "title": { "fr": "Deux méthodes opposées", "en": "Two opposite methods" },
+          "head": ["", "Hofstede", "d’Iribarne"],
+          "rows": [
+            [{ "fr": "Méthode", "en": "Method" }, { "fr": "**Quantitative** : enquêtes, questionnaires, scores", "en": "**Quantitative**: surveys, questionnaires, scores" }, { "fr": "**Qualitative** : observation, entretiens", "en": "**Qualitative**: observation, interviews" }],
+            [{ "fr": "Ce qu’il étudie", "en": "What he studies" }, { "fr": "Des **dimensions** pour comparer les pays", "en": "**Dimensions** to compare countries" }, { "fr": "Les **interactions**, les **conflits au travail**, les **obligations professionnelles** et le **sens donné au travail**", "en": "**Interactions**, **workplace conflicts**, **professional obligations** and the **meanings attached to work**" }]
+          ] },
+        { "type": "p", "text": {
+          "fr": "Pour d’Iribarne, **la culture est une question de sens** : une même pratique de management n’a pas la même signification d’un pays à l’autre.",
+          "en": "For d'Iribarne, **culture is a question of meanings**: the same management practice does not mean the same thing from one country to another."
+        } },
+        { "type": "h", "text": { "fr": "La France : la logique de l’honneur", "en": "France: the logic of honour" } },
+        { "type": "p", "text": {
+          "fr": "En France, les pratiques de management prennent leur sens dans l’**histoire et la culture**. Les salariés tiennent beaucoup à leur **identité professionnelle** : **compétence, expertise, responsabilité, dignité** (tes notes disent « performance identity »).",
+          "en": "In France, management practices take their meaning from **history and culture**. Employees attach great importance to their **professional identity**: **competence, expertise, responsibility, dignity**."
+        } },
+        { "type": "p", "text": {
+          "fr": "Chacun a des **obligations liées à son métier** (the obligation to your job) et les respecte par honneur. La coopération fonctionne quand les managers **reconnaissent l’expertise et la responsabilité** des salariés.",
+          "en": "Everyone has **obligations linked to their job** and meets them out of honour. Cooperation is effective when managers **recognize the professional expertise and responsibility** of employees."
+        } },
+        { "type": "h", "text": { "fr": "Les États-Unis : la logique du contrat", "en": "The USA: the logic of contract" } },
+        { "type": "p", "text": {
+          "fr": "Aux États-Unis, le travail se définit par des **responsabilités**, la **responsabilité individuelle** (individual accountability), un **accord explicite** et l’**équité** (fairness).",
+          "en": "In the USA, work is defined through **responsibilities**, **individual accountability**, **explicit agreement** and **fairness**."
+        } },
+        { "type": "p", "text": {
+          "fr": "Les salariés veulent savoir **ce qu’ils doivent accomplir**. Ils acceptent des **objectifs exigeants** si les responsabilités et les **procédures d’évaluation** sont **clairement établies**.",
+          "en": "Employees want to know **what they have to accomplish**. They accept **demanding objectives** when responsibilities and **evaluation procedures** are **clearly established**."
+        } },
+        { "type": "h", "text": { "fr": "Les Pays-Bas : la logique du consensus", "en": "The Netherlands: the logic of consensus" } },
+        { "type": "p", "text": {
+          "fr": "Aux Pays-Bas, on cherche la **convergence des points de vue**. L’autorité repose sur le **dialogue** et l’accord de tous.",
+          "en": "In the Netherlands, people seek the **convergence of points of view**. Authority is based on **dialogue** and everyone's agreement."
+        } },
+        { "type": "p", "text": {
+          "fr": "Le risque : des **décisions lentes**, voire jamais prises, parce qu’il faut discuter et négocier jusqu’à ce que tout le monde soit d’accord.",
+          "en": "The risk: **slow decision-making**, or decisions that are never taken, because people must discuss and negotiate until everyone agrees."
+        } },
+        { "type": "warn", "text": "Tes notes disent « Authority is based on Netherlands » (phrase incomplète) et « when we have conflicts there is no discussion/negotiation ». D’après le tableau du cours, l’autorité néerlandaise repose sur le **dialogue** et les conflits se règlent par **discussion et négociation** : le risque, c’est la **lenteur** des décisions." },
+        { "type": "table", "title": { "fr": "Le tableau à connaître", "en": "The table to know" }, "wide": true,
+          "head": ["", "France", { "fr": "États-Unis", "en": "USA" }, { "fr": "Pays-Bas", "en": "Netherlands" }],
+          "rows": [
+            [{ "fr": "Logique", "en": "Logic" }, { "fr": "**Honneur**", "en": "**Honour**" }, { "fr": "**Contrat**", "en": "**Contract**" }, { "fr": "**Consensus**", "en": "**Consensus**" }],
+            [{ "fr": "Légitimité", "en": "Legitimacy" }, { "fr": "Expertise, responsabilités", "en": "Expertise, responsibilities" }, { "fr": "Clarté", "en": "Clearness" }, { "fr": "Dialogue, accord", "en": "Dialogue, agreement" }],
+            [{ "fr": "Motivation", "en": "Motivation" }, { "fr": "Reconnaissance, fierté", "en": "Recognition, pride" }, { "fr": "Évaluation, récompenses", "en": "Evaluation, rewards" }, { "fr": "Participation", "en": "Participation" }],
+            [{ "fr": "Autorité", "en": "Authority" }, { "fr": "Expertise professionnelle", "en": "Professional expertise" }, { "fr": "Missions clairement définies", "en": "Clear duties" }, { "fr": "Dialogue", "en": "Dialogue" }],
+            [{ "fr": "Conflit", "en": "Conflict" }, { "fr": "Ajustement informel", "en": "Informal adjustment" }, { "fr": "Règles formelles", "en": "Formal rules" }, { "fr": "Discussion, négociation", "en": "Discussion, negotiation" }],
+            [{ "fr": "Risques", "en": "Risks" }, { "fr": "Rivalités", "en": "Rivalries" }, { "fr": "Trop de formalisme", "en": "Too much formality" }, { "fr": "Décisions lentes", "en": "Slow decision-making" }]
+          ] },
+        { "type": "list", "title": { "fr": "Les 3 limites de l’approche", "en": "The 3 limits of the approach" }, "items": [
+          { "fr": "**Une seule entreprise** étudiée : difficile de généraliser à tout un pays.", "en": "**Only one company** was studied: it is hard to generalize to a whole country." },
+          { "fr": "Le risque de **stéréotypes** : réduire chaque pays à une seule logique.", "en": "The risk of **stereotypes**: reducing each country to a single logic." },
+          { "fr": "La **culture nationale** se mélange avec l’**identité professionnelle** (ingénieur, ouvrier…) : tout n’est pas national.", "en": "**National culture interacts with professional identity** (engineer, worker…): not everything is national." }
+        ] },
+        { "type": "tip", "text": {
+          "fr": "Conclusion : réussir dans le management international, ce n’est **pas seulement transférer des « best practices »**. Il faut comprendre ce que les salariés considèrent comme **juste, légitime et honorable** (fair, legitimate and honourable).",
+          "en": "Conclusion: succeeding in international management is **more than transferring best practices**. You have to understand what employees consider **fair, legitimate and honourable**."
+        } },
+        { "type": "p", "text": "Pour situer (hors notes) : cette étude est publiée dans **La Logique de l’honneur** (1989). D’Iribarne y compare trois usines d’un même groupe, en France, aux États-Unis et aux Pays-Bas, d’où la limite « une seule entreprise »." }
+      ]
+    },
+    {
+      "id": "globe",
+      "title": { "fr": "Chapitre 4 – Le projet GLOBE", "en": "Chapter 4 – The GLOBE project" },
+      "source": { "fr": "Notes · p. 5-7", "en": "Notes · p. 5-7" },
+      "blocks": [
+        { "type": "def", "term": { "fr": "GLOBE", "en": "GLOBE" }, "author": "Robert House, 1991", "text": {
+          "fr": "**Global Leadership and Organizational Behavior Effectiveness**. Projet lancé par **Robert House** en **1991** pour étudier les relations entre **culture, leadership et efficacité des organisations**. Il s’intéresse aux **valeurs** qui influencent ce qu’on perçoit comme un **leadership efficace**.",
+          "en": "**Global Leadership and Organizational Behavior Effectiveness**. A project launched by **Robert House** in **1991** to study the relationships between **culture, leadership and organizational effectiveness**. It focuses on the **values** that influence the perception of **effective leadership**."
+        } },
+        { "type": "list", "title": { "fr": "Ses 2 objectifs", "en": "Its 2 goals" }, "items": [
+          { "fr": "**Mesurer les dimensions culturelles** qui façonnent les comportements.", "en": "To **measure the cultural dimensions** that shape behaviour." },
+          { "fr": "Découvrir s’il existe un **modèle de leadership universel**, et comment le **leadership dépend de la culture**.", "en": "To discover a **universally adopted leadership model**, and how **leadership depends on culture**." }
+        ] },
+        { "type": "p", "text": {
+          "fr": "GLOBE mesure **9 dimensions**, qui montrent comment la culture façonne les valeurs, la communication et le leadership. Les deux premières reprennent celles de Hofstede.",
+          "en": "GLOBE measures **9 dimensions**, which show how culture shapes values, communication and leadership. The first two come from Hofstede."
+        } },
+        { "type": "table", "title": { "fr": "Les 9 dimensions de GLOBE", "en": "The 9 GLOBE dimensions" }, "wide": 640,
+          "head": [{ "fr": "Dimension", "en": "Dimension" }, { "fr": "En clair", "en": "Meaning" }, { "fr": "Score fort", "en": "High" }, { "fr": "Score faible", "en": "Low" }],
+          "rows": [
+            [{ "fr": "1. Distance hiérarchique", "en": "1. Power distance" }, { "fr": "Comme chez Hofstede : l’acceptation de la hiérarchie", "en": "As in Hofstede: acceptance of hierarchy" }, "–", "–"],
+            [{ "fr": "2. Évitement de l’incertitude", "en": "2. Uncertainty avoidance" }, { "fr": "À quel point on **s’appuie sur les règles et les normes** pour éviter l’incertitude", "en": "How much people **rely on rules and norms** to avoid uncertainty" }, "–", "–"],
+            [{ "fr": "3. Orientation humaine", "en": "3. Humane orientation" }, { "fr": "La société valorise la **gentillesse**, la **générosité** et l’**équité**", "en": "Society values **kindness**, **generosity** and **fairness**" }, { "fr": "Irlande", "en": "Ireland" }, { "fr": "France, Allemagne", "en": "France, Germany" }],
+            [{ "fr": "4. Collectivisme institutionnel", "en": "4. Institutional collectivism" }, { "fr": "Les **institutions** (lois, entreprises) encouragent l’action **collective**", "en": "**Institutions** (laws, companies) encourage **collective** action" }, { "fr": "Asie, pays du Nord", "en": "Asia, Northern countries" }, { "fr": "France, États-Unis", "en": "France, USA" }],
+            [{ "fr": "5. Collectivisme de groupe (in-group)", "en": "5. In-group collectivism" }, { "fr": "**Loyauté et fierté** envers sa **famille** et son **organisation**", "en": "**Loyalty and pride** in one's **family** and **organization**" }, { "fr": "Pays-Bas (voir ci-dessous)", "en": "Netherlands" }, { "fr": "Chine, Inde (voir ci-dessous)", "en": "China, India" }],
+            [{ "fr": "6. Affirmation de soi", "en": "6. Assertiveness" }, { "fr": "Tendance à **rivaliser / s’affronter** avec les autres, à être **dur** (dimension de réussite)", "en": "Tendency to **compete / confront** others, to be **tough** (achievement dimension)" }, { "fr": "Allemagne, États-Unis", "en": "Germany, USA" }, { "fr": "Japon", "en": "Japan" }],
+            [{ "fr": "7. Égalité des sexes", "en": "7. Gender egalitarianism" }, { "fr": "Degré d’**égalité entre les femmes et les hommes**", "en": "Degree of **equality between women and men**" }, { "fr": "Suède", "en": "Sweden" }, { "fr": "Corée du Sud, Maroc", "en": "South Korea, Morocco" }],
+            [{ "fr": "8. Orientation vers le futur", "en": "8. Future orientation" }, { "fr": "Façon de **planifier, investir** ou au contraire **remettre à plus tard**", "en": "How people **plan, invest** or **delay**" }, { "fr": "Suisse, Pays-Bas", "en": "Switzerland, Netherlands" }, { "fr": "Russie", "en": "Russia" }],
+            [{ "fr": "9. Orientation vers la performance", "en": "9. Performance orientation" }, { "fr": "La société **récompense la performance et l’excellence**", "en": "Society **rewards performance and excellence**" }, { "fr": "États-Unis, Grèce (voir ci-dessous)", "en": "USA, Greece" }, "–"]
+          ] },
+        { "type": "warn", "text": "Deux exemples de tes notes sont à l’inverse des résultats publiés de GLOBE : le **collectivisme de groupe** y est **fort en Chine et en Inde** et **faible aux Pays-Bas**, et la **Grèce** fait partie des pays **les moins** orientés performance. Vérifie avec le support du prof ; dans le doute, le QCM n’utilise pas ces exemples." },
+        { "type": "tip", "text": {
+          "fr": "Deux collectivismes à ne pas confondre : **institutionnel** = la société et ses institutions organisent l’action collective ; **in-group** = la loyauté et la fierté envers sa famille ou son entreprise.",
+          "en": "Two kinds of collectivism not to confuse: **institutional** = society and its institutions organize collective action; **in-group** = loyalty and pride in one's family or company."
+        } },
+        { "type": "p", "text": {
+          "fr": "GLOBE ne compare pas pays par pays mais par **groupes de cultures** (clusters).",
+          "en": "GLOBE does not work country by country but by **groups of cultures** (clusters)."
+        } },
+        { "type": "list", "title": { "fr": "Les 10 clusters", "en": "The 10 clusters" }, "items": [
+          { "fr": "Anglo-Saxon", "en": "Anglo-Saxon" },
+          { "fr": "Europe latine", "en": "Latin Europe" },
+          { "fr": "Amérique latine", "en": "Latin America" },
+          { "fr": "Europe nordique", "en": "Nordic Europe" },
+          { "fr": "Europe de l’Est", "en": "Eastern Europe" },
+          { "fr": "Afrique subsaharienne", "en": "Sub-Saharan Africa" },
+          { "fr": "Moyen-Orient", "en": "Middle East" },
+          { "fr": "Asie du Sud", "en": "Southern Asia" },
+          { "fr": "Asie confucéenne", "en": "Confucian Asia" },
+          { "fr": "Europe germanique", "en": "Germanic Europe" }
+        ] },
+        { "type": "h", "text": { "fr": "Les styles de leadership", "en": "Leadership styles" } },
+        { "type": "table",
+          "head": [{ "fr": "Style", "en": "Style" }, { "fr": "Où ?", "en": "Where?" }],
+          "rows": [
+            [{ "fr": "**Charismatique**", "en": "**Charismatic**" }, { "fr": "**Universel** : apprécié partout", "en": "**Universal**: valued everywhere" }],
+            [{ "fr": "Orienté équipe", "en": "Team-oriented" }, { "fr": "Asie", "en": "Asia" }],
+            [{ "fr": "Participatif", "en": "Participative" }, { "fr": "France, cultures à faible distance hiérarchique", "en": "France, low power distance cultures" }],
+            [{ "fr": "Humain (humane)", "en": "Humane" }, { "fr": "Irlande", "en": "Ireland" }],
+            [{ "fr": "Affirmé (assertive)", "en": "Assertive" }, { "fr": "Cultures individualistes", "en": "Individualist cultures" }]
+          ] },
+        { "type": "tip", "text": {
+          "fr": "Le seul style présenté comme **universel** est le leadership **charismatique**.",
+          "en": "The only style presented as **universal** is **charismatic** leadership."
+        } },
+        { "type": "list", "title": { "fr": "Conclusion du cours", "en": "Course conclusion" }, "items": [
+          { "fr": "**Éviter les stéréotypes** : raisonner en **tendances** (patterns), pas en clichés.", "en": "**Avoid stereotyping**: focus on **patterns**, not clichés." },
+          { "fr": "**La culture est communication** : construire la **confiance** par l’**empathie** et le **dialogue**.", "en": "**Culture is communication**: build **trust** through **empathy** and **dialogue**." },
+          { "fr": "Équilibrer le **global** et le **local** : c’est la **glocalisation**.", "en": "Balance what is **global** with what is **local**: this is **glocalization**." },
+          { "fr": "Ne pas miser sur un seul type de leadership : **il n’y a pas de « best practice » mondiale**.", "en": "Don't focus on one type of leadership: **there is no best practice worldwide**." }
+        ] }
+      ]
+    },
+    {
+      "id": "synthese",
+      "title": { "fr": "Synthèse : comparer les quatre approches", "en": "Summary: comparing the four approaches" },
+      "source": { "fr": "Tout le cours", "en": "Whole course" },
+      "blocks": [
+        { "type": "table", "wide": 680,
+          "head": [{ "fr": "Auteur", "en": "Author" }, { "fr": "Méthode", "en": "Method" }, { "fr": "Ce qu’il apporte", "en": "Main contribution" }, { "fr": "Mots-clés", "en": "Key words" }],
+          "rows": [
+            ["Hall", { "fr": "Anthropologue : observe les interactions sociales", "en": "Anthropologist: observes social interaction" }, { "fr": "La culture passe aussi par le **non-verbal**, le **temps** et l’**espace**", "en": "Culture also lies in **non-verbal** communication, **time** and **space**" }, { "fr": "contexte fort / faible, monochrone / polychrone, proxémie, territorialité", "en": "high / low context, monochronic / polychronic, proxemics, territoriality" }],
+            ["Hofstede", { "fr": "**Quantitative** (enquêtes)", "en": "**Quantitative** (surveys)" }, { "fr": "6 **dimensions** pour mesurer les cultures nationales", "en": "6 **dimensions** to measure national cultures" }, { "fr": "programmation collective de l’esprit, distance hiérarchique, évitement de l’incertitude…", "en": "collective programming of the mind, power distance, uncertainty avoidance…" }],
+            ["d’Iribarne", { "fr": "**Qualitative**", "en": "**Qualitative**" }, { "fr": "Le **sens** que chaque culture donne au travail", "en": "The **meaning** each culture gives to work" }, { "fr": "honneur, contrat, consensus ; juste, légitime, honorable", "en": "honour, contract, consensus; fair, legitimate, honourable" }],
+            ["House (GLOBE)", { "fr": "Mesure de **9 dimensions**, par clusters", "en": "Measures **9 dimensions**, by clusters" }, { "fr": "Les styles de **leadership** jugés efficaces selon la culture", "en": "The **leadership** styles seen as effective in each culture" }, { "fr": "orientation humaine, affirmation de soi, leadership charismatique universel", "en": "humane orientation, assertiveness, universal charismatic leadership" }]
+          ] },
+        { "type": "list", "title": "Les pièges classiques du QCM", "items": [
+          "« Programmation collective de l’esprit » = **Hofstede** ; « système de significations » = **Hall**.",
+          "**Contexte fort** = implicite (Japon, France) ; **contexte faible** = explicite (Allemagne, États-Unis).",
+          "**Contact fort** = proximité, toucher (cultures latines) : c’est la proxémie, pas le langage.",
+          "**Monochrone** = linéaire, « time is money » ; **polychrone** = cyclique, plusieurs choses à la fois.",
+          "**Ouverture** = essayer de comprendre ; **acceptation** = respecter ; **assimilation** = adopter.",
+          "**Stéréotype** = simplifier ; **préjugé** = juger ; **ethnocentrisme** = sa culture comme norme universelle.",
+          "Évitement de l’incertitude **fort** = on **n’aime pas** l’incertitude → beaucoup de règles.",
+          "Masculinité / féminité = des **valeurs** (compétition / qualité de vie), pas une question d’hommes et de femmes.",
+          "Hofstede = **quantitatif** ; d’Iribarne = **qualitatif**.",
+          "France = **honneur** ; États-Unis = **contrat** ; Pays-Bas = **consensus**.",
+          "GLOBE = **Robert House, 1991**, **9 dimensions**, **10 clusters** ; le leadership **charismatique** est universel."
+        ] }
+      ]
+    }
+  ],
+  "glossaryCats": [
+    { "id": "intro", "label": "La culture" },
+    { "id": "hall", "label": "Hall : contexte, temps, espace" },
+    { "id": "hofstede", "label": "Hofstede : les 6 dimensions" },
+    { "id": "iribarne", "label": "D’Iribarne : le sens du travail" },
+    { "id": "globe", "label": "GLOBE et leadership" }
+  ],
+  "glossary": [
+    { "cat": "intro", "term": "Culture", "en": "culture", "def": "Système appris de normes, croyances, comportements et valeurs, partagé par un groupe : comment les gens pensent, procèdent et agissent." },
+    { "cat": "intro", "term": "Norme", "en": "norm", "def": "Règle qui dit comment se comporter. On apprend la culture parce qu’on a des normes." },
+    { "cat": "intro", "term": "Croyance", "en": "belief", "def": "Ce que le groupe tient pour vrai ; les normes et les valeurs reposent sur des croyances." },
+    { "cat": "intro", "term": "Valeur", "en": "value", "def": "Ce qui compte pour un groupe ; le cours résume : culture = normes = valeurs / règles." },
+    { "cat": "intro", "term": "Système de significations", "en": "system of meaning", "def": "Définition de la culture selon Hall, avec « communication globale »." },
+    { "cat": "intro", "term": "Programmation collective de l’esprit", "en": "collective programming of the mind", "def": "Définition de la culture selon Hofstede (métaphore du logiciel)." },
+    { "cat": "intro", "term": "Métaphore du logiciel", "en": "software metaphor", "def": "Image de Hofstede : la culture est comme un logiciel installé dans l’esprit des membres d’un groupe." },
+    { "cat": "intro", "term": "Interaction humaine", "en": "human interaction", "def": "La culture est le produit des interactions humaines." },
+    { "cat": "intro", "term": "Membre du groupe / personne extérieure", "en": "insider / outsider", "def": "La culture donne une identité et aide à catégoriser : qui fait partie du groupe, qui n’en fait pas partie." },
+    { "cat": "intro", "term": "État d’esprit collectif", "en": "collective mindset", "def": "La culture est partagée : c’est un état d’esprit collectif, pas individuel." },
+    { "cat": "intro", "term": "Choc culturel", "en": "cultural shock", "def": "Source de désorientation, d’où naît l’anxiété, face à une culture très différente." },
+    { "cat": "intro", "term": "Intelligence culturelle", "en": "cultural intelligence", "def": "La capacité à s’adapter à une autre culture." },
+    { "cat": "intro", "term": "Ouverture culturelle", "en": "cultural openness", "def": "On commence à s’adapter, on essaie de comprendre." },
+    { "cat": "intro", "term": "Acceptation culturelle", "en": "cultural acceptance", "def": "On respecte l’autre culture." },
+    { "cat": "intro", "term": "Assimilation culturelle", "en": "cultural assimilation", "def": "On adopte l’autre culture comme la sienne." },
+    { "cat": "intro", "term": "Stéréotype", "en": "stereotype", "def": "Image qui simplifie la réalité et généralise des croyances et des images à tout un groupe." },
+    { "cat": "intro", "term": "Préjugé, jugement", "en": "prejudice, judgment", "def": "Différent du stéréotype : il ajoute un jugement (souvent négatif) sur le groupe." },
+    { "cat": "intro", "term": "Ethnocentrisme", "en": "ethnocentrism", "def": "Voir sa propre culture comme unique et comme la norme universelle." },
+
+    { "cat": "hall", "term": "Communication non verbale", "en": "non-verbal communication", "def": "Pour Hall, la culture passe aussi par le non-verbal, le temps et l’espace, pas seulement par ce qu’on dit." },
+    { "cat": "hall", "term": "Culture à contexte fort", "en": "high-context culture", "def": "Communication implicite et interactive, on garde la relation, beaucoup de choses vont de soi (Japon, France)." },
+    { "cat": "hall", "term": "Culture à contexte faible", "en": "low-context culture", "def": "Communication explicite et directe, tout passe par les mots (Allemagne, États-Unis)." },
+    { "cat": "hall", "term": "Aller de soi", "en": "to be taken for granted", "def": "Ce qui n’a pas besoin d’être dit dans une culture à contexte fort." },
+    { "cat": "hall", "term": "Monochrone", "en": "monochronic", "def": "Temps linéaire et limité, « time is money », une chose à la fois (États-Unis, Allemagne, pays du Nord)." },
+    { "cat": "hall", "term": "Polychrone", "en": "polychronic", "def": "Temps cyclique et flexible, « time is life », plusieurs activités en même temps, les relations avant le planning (France, Asie, pays arabes)." },
+    { "cat": "hall", "term": "Proxémie", "en": "proxemics", "def": "Usage de l’espace personnel : distance physique, façon de s’asseoir, de se toucher, territorialité." },
+    { "cat": "hall", "term": "Espace personnel", "en": "personal space", "def": "L’espace autour de soi que chaque culture règle différemment." },
+    { "cat": "hall", "term": "Distance intime", "en": "intimate distance", "def": "La plus proche des 4 distances de Hall." },
+    { "cat": "hall", "term": "Distance personnelle", "en": "personal distance", "def": "Deuxième distance de Hall, entre l’intime et le social." },
+    { "cat": "hall", "term": "Distance sociale", "en": "social distance", "def": "Troisième distance de Hall, celle des relations de travail." },
+    { "cat": "hall", "term": "Distance publique", "en": "public distance", "def": "La plus éloignée des 4 distances de Hall (parler devant un public)." },
+    { "cat": "hall", "term": "Disposition des places", "en": "seating arrangement", "def": "La façon de s’asseoir les uns par rapport aux autres, qui fait partie de la proxémie." },
+    { "cat": "hall", "term": "Culture de contact fort", "en": "high-contact culture", "def": "On se tient proche, on se touche souvent, on est expressif (cultures latines)." },
+    { "cat": "hall", "term": "Culture de contact faible", "en": "low-contact culture", "def": "On garde de l’espace, on se touche peu, on est réservé (Allemagne, Asie)." },
+    { "cat": "hall", "term": "Territorialité", "en": "territoriality", "def": "Façon de revendiquer et de défendre son espace." },
+    { "cat": "hall", "term": "Territoire primaire", "en": "primary territory", "def": "Espace qui t’appartient, ton domaine personnel." },
+    { "cat": "hall", "term": "Territoire secondaire", "en": "secondary territory", "def": "Espace partagé mais familier." },
+    { "cat": "hall", "term": "Territoire tertiaire (public)", "en": "third (tertiary) territory", "def": "Espace public." },
+
+    { "cat": "hofstede", "term": "Enquête quantitative", "en": "quantitative survey", "def": "Méthode de Hofstede : des questionnaires donnent un score à chaque pays." },
+    { "cat": "hofstede", "term": "Distance hiérarchique", "en": "power distance", "def": "Degré auquel on est à l’aise avec l’inégalité et la hiérarchie. Forte : France, Russie, Asie. Faible : États-Unis, Suède." },
+    { "cat": "hofstede", "term": "Décision descendante", "en": "top-down decision", "def": "Le chef décide et transmet : typique d’une distance hiérarchique forte." },
+    { "cat": "hofstede", "term": "Subordonné", "en": "subordinate", "def": "Personne placée sous l’autorité d’une autre ; en distance forte, il ne conteste jamais l’autorité." },
+    { "cat": "hofstede", "term": "Individualisme", "en": "individualism", "def": "Liberté personnelle, réussite, communication directe (États-Unis, France, Royaume-Uni)." },
+    { "cat": "hofstede", "term": "Collectivisme", "en": "collectivism", "def": "Harmonie du groupe, loyauté, décisions qui préservent les relations (Japon, Chine, Vietnam)." },
+    { "cat": "hofstede", "term": "Confiance contractuelle", "en": "contractual trust", "def": "On fait confiance au contrat : culture individualiste." },
+    { "cat": "hofstede", "term": "Confiance relationnelle", "en": "relational trust", "def": "On fait confiance à la relation : culture collectiviste." },
+    { "cat": "hofstede", "term": "Masculinité", "en": "masculinity", "def": "Performance, réussite, compétition, le travail d’abord (États-Unis, Japon)." },
+    { "cat": "hofstede", "term": "Féminité", "en": "femininity", "def": "Qualité de vie, soin de soi, collaboration, la famille d’abord (Suède)." },
+    { "cat": "hofstede", "term": "Équilibre vie pro / vie perso", "en": "work-life balance", "def": "Arbitrage entre travail et vie personnelle : le travail d’abord (masculin) ou la famille d’abord (féminin)." },
+    { "cat": "hofstede", "term": "Bien-être", "en": "well-being", "def": "Valeur des cultures féminines, face à la performance." },
+    { "cat": "hofstede", "term": "Évitement de l’incertitude", "en": "uncertainty avoidance", "def": "À quel point on est à l’aise avec le risque et l’ambiguïté. Fort : règles, planification, sécurité. Faible : tolérance du risque, flexibilité." },
+    { "cat": "hofstede", "term": "Ambiguïté", "en": "ambiguity", "def": "Situation floue, que les cultures à fort évitement de l’incertitude supportent mal." },
+    { "cat": "hofstede", "term": "Sécurité de l’emploi", "en": "job security", "def": "Recherchée par les cultures à fort évitement de l’incertitude." },
+    { "cat": "hofstede", "term": "Orientation long terme", "en": "long-term orientation", "def": "Horizon temporel lointain : récompenses futures, adaptabilité, engagements durables (pays asiatiques)." },
+    { "cat": "hofstede", "term": "Orientation court terme", "en": "short-term orientation", "def": "Résultats immédiats, retour sur investissement rapide, respect de la face (pays anglo-saxons)." },
+    { "cat": "hofstede", "term": "Horizon temporel", "en": "time horizon", "def": "Définition de l’orientation long terme : préfère-t-on des récompenses futures ou des résultats immédiats ?" },
+    { "cat": "hofstede", "term": "Retour sur investissement rapide", "en": "quick ROI (return on investment)", "def": "Ce que recherchent les cultures orientées court terme." },
+    { "cat": "hofstede", "term": "Gratification", "en": "gratification", "def": "Satisfaction d’un désir ; différée dans les cultures long terme, permise dans les cultures indulgentes." },
+    { "cat": "hofstede", "term": "Indulgence", "en": "indulgence", "def": "On s’autorise à profiter de la vie : émotions positives, optimisme (États-Unis, Australie)." },
+    { "cat": "hofstede", "term": "Retenue", "en": "restraint", "def": "Pessimisme, poids des normes sociales, discipline (Asie, Russie)." },
+
+    { "cat": "iribarne", "term": "Approche qualitative", "en": "qualitative approach", "def": "Méthode de d’Iribarne : étudier les interactions, les conflits et le sens donné au travail." },
+    { "cat": "iribarne", "term": "Conflit au travail", "en": "workplace conflict", "def": "Un des objets d’étude de d’Iribarne : comment chaque culture règle ses conflits." },
+    { "cat": "iribarne", "term": "Obligation professionnelle", "en": "professional obligation", "def": "Ce que l’on doit à son métier ; au cœur de la logique de l’honneur française." },
+    { "cat": "iribarne", "term": "Logique de l’honneur", "en": "logic of honour", "def": "France : expertise, responsabilité, reconnaissance et fierté du métier." },
+    { "cat": "iribarne", "term": "Logique du contrat", "en": "logic of contract", "def": "États-Unis : responsabilités claires, accord explicite, évaluation et récompenses." },
+    { "cat": "iribarne", "term": "Logique du consensus", "en": "logic of consensus", "def": "Pays-Bas : convergence des points de vue, dialogue, participation." },
+    { "cat": "iribarne", "term": "Identité professionnelle", "en": "professional identity", "def": "Compétence, expertise, responsabilité, dignité ; elle se mélange à la culture nationale (une des 3 limites)." },
+    { "cat": "iribarne", "term": "Légitimité", "en": "legitimacy", "def": "Ce qui rend une autorité acceptable : l’expertise (France), la clarté (États-Unis), le dialogue (Pays-Bas)." },
+    { "cat": "iribarne", "term": "Responsabilité individuelle", "en": "individual accountability", "def": "Aux États-Unis, chacun répond de ses résultats." },
+    { "cat": "iribarne", "term": "Accord explicite", "en": "explicit agreement", "def": "Aux États-Unis, ce que chacun doit faire est dit et convenu clairement." },
+    { "cat": "iribarne", "term": "Équité", "en": "fairness", "def": "Valeur centrale de la logique du contrat américaine." },
+    { "cat": "iribarne", "term": "Ajustement informel", "en": "informal adjustment", "def": "Façon française de régler les conflits." },
+    { "cat": "iribarne", "term": "Rivalités", "en": "rivalries", "def": "Risque de la logique de l’honneur française." },
+    { "cat": "iribarne", "term": "Décisions lentes", "en": "slow decision-making", "def": "Risque de la logique du consensus néerlandaise." },
+    { "cat": "iribarne", "term": "Bonnes pratiques", "en": "best practices", "def": "Les transférer ne suffit pas : il faut comprendre ce qui est vu comme juste, légitime et honorable." },
+    { "cat": "iribarne", "term": "Juste, légitime, honorable", "en": "fair, legitimate, honourable", "def": "Ce qu’il faut comprendre chez les salariés pour réussir à l’international (conclusion de d’Iribarne)." },
+
+    { "cat": "globe", "term": "GLOBE", "en": "Global Leadership and Organizational Behavior Effectiveness", "def": "Projet de Robert House (1991) : culture, leadership et efficacité des organisations." },
+    { "cat": "globe", "term": "Efficacité organisationnelle", "en": "organizational effectiveness", "def": "Ce que GLOBE relie à la culture et au leadership." },
+    { "cat": "globe", "term": "Leadership efficace", "en": "effective leadership", "def": "GLOBE étudie les valeurs qui influencent ce qu’on perçoit comme un leadership efficace." },
+    { "cat": "globe", "term": "Orientation humaine", "en": "humane orientation", "def": "La société valorise la gentillesse, la générosité, l’équité. Forte : Irlande. Faible : France, Allemagne." },
+    { "cat": "globe", "term": "Collectivisme institutionnel", "en": "institutional collectivism", "def": "Les institutions encouragent l’action collective. Fort : Asie, pays du Nord. Faible : France, États-Unis." },
+    { "cat": "globe", "term": "Collectivisme de groupe", "en": "in-group collectivism", "def": "Loyauté et fierté envers sa famille et son organisation." },
+    { "cat": "globe", "term": "Affirmation de soi", "en": "assertiveness", "def": "Tendance à rivaliser, à s’affronter, à être dur. Forte : Allemagne, États-Unis. Faible : Japon." },
+    { "cat": "globe", "term": "Égalité des sexes", "en": "gender egalitarianism", "def": "Égalité entre les femmes et les hommes. Forte : Suède. Faible : Corée du Sud, Maroc." },
+    { "cat": "globe", "term": "Orientation vers le futur", "en": "future orientation", "def": "Façon de planifier, d’investir ou de remettre à plus tard. Forte : Suisse, Pays-Bas. Faible : Russie." },
+    { "cat": "globe", "term": "Orientation vers la performance", "en": "performance orientation", "def": "La société récompense la performance et l’excellence (forte : États-Unis)." },
+    { "cat": "globe", "term": "Cluster", "en": "cluster", "def": "Groupe de pays aux cultures proches ; GLOBE en compte 10 (anglo-saxon, Europe latine, Asie confucéenne…)." },
+    { "cat": "globe", "term": "Asie confucéenne", "en": "Confucian Asia", "def": "Un des 10 clusters de GLOBE (écrit « Confuses Asian » dans tes notes)." },
+    { "cat": "globe", "term": "Leadership charismatique", "en": "charismatic leadership", "def": "Le seul style présenté comme universel." },
+    { "cat": "globe", "term": "Leadership orienté équipe", "en": "team-oriented leadership", "def": "Associé à l’Asie." },
+    { "cat": "globe", "term": "Leadership participatif", "en": "participative leadership", "def": "Associé à la France et aux cultures à faible distance hiérarchique." },
+    { "cat": "globe", "term": "Leadership humain", "en": "humane leadership", "def": "Associé à l’Irlande." },
+    { "cat": "globe", "term": "Leadership affirmé", "en": "assertive leadership", "def": "Associé aux cultures individualistes." },
+    { "cat": "globe", "term": "Glocalisation", "en": "glocalization", "def": "Équilibrer ce qui est global et ce qui est local (conclusion du cours)." },
+    { "cat": "globe", "term": "Tendances (plutôt que clichés)", "en": "patterns", "def": "Pour éviter les stéréotypes, raisonner en tendances." }
+  ]
+}

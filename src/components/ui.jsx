@@ -32,7 +32,8 @@ export function GhostButton({ children, className = '', ...props }) {
 }
 
 // Liste de choix (QCM). Apres correction, chaque mauvais choix affiche sa note "pourquoi c'est faux".
-export function ChoiceList({ choices, answer, selected, answered, onPick, notes, english }) {
+// `translations` : { choix: traduction francaise } affichee sous chaque choix (QCM en anglais, bouton « Traduire FR »).
+export function ChoiceList({ choices, answer, selected, answered, onPick, notes, english, translations }) {
   return (
     <div className="flex flex-col gap-3">
       {choices.map((choice, i) => {
@@ -62,6 +63,11 @@ export function ChoiceList({ choices, answer, selected, answered, onPick, notes,
               </span>
               <span className="flex-1 min-w-0 pt-1">
                 <span className="block leading-snug" lang={english ? 'en' : undefined}>{choice}</span>
+                {translations?.[choice] && (
+                  <span className="pop-in block text-[13px] font-normal text-warm-gray mt-1 leading-snug" lang="fr">
+                    {translations[choice]}
+                  </span>
+                )}
                 {note && (
                   <span className="pop-in block text-[13px] font-normal text-charcoal/65 mt-1.5 leading-relaxed">
                     {note}

@@ -9,7 +9,8 @@
     "lint": "oxlint",
     "preview": "vite preview",
     "recuperer-cours": "node scripts/recuperer-cours.mjs",
-    "verifier-dissertation": "node scripts/verifier-dissertation.mjs"
+    "verifier-dissertation": "node scripts/verifier-dissertation.mjs",
+    "verifier-bilingue": "node scripts/verifier-bilingue.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.117.2",

@@ -7,10 +7,20 @@ const TABS = [
   { id: 'lexique', label: 'Lexique FR / EN' },
 ]
 
+// Fiche bilingue (`bilingual: true`) : le cours en francais, puis le meme cours avec sa traduction anglaise
+const BILINGUAL_TABS = [
+  { id: 'resume', label: 'Français' },
+  { id: 'anglais', label: 'Anglais' },
+  { id: 'lexique', label: 'Lexique' },
+]
+
 // Fiche de cours d'une matiere : resume par parties + lexique des termes avec leur traduction anglaise
 export default function Fiche({ matiere, onBack }) {
   const fiche = FICHES[matiere.id]
+  const tabs = fiche.bilingual ? BILINGUAL_TABS : TABS
   const [tab, setTab] = useState('resume')
+  // Affichage de l'onglet Anglais, garde quand on change d'onglet
+  const [mode, setMode] = useState('tap')
 
   const switchTab = (id) => {
     setTab(id)
@@ -33,8 +43,8 @@ export default function Fiche({ matiere, onBack }) {
       </header>
 
       <div className="sticky top-0 z-10 -mx-5 px-5 py-3 bg-cream">
-        <div role="tablist" className="grid grid-cols-2 gap-1 rounded-xl bg-sand p-1">
-          {TABS.map(t => (
+        <div role="tablist" className={`grid ${tabs.length === 3 ? 'grid-cols-3' : 'grid-cols-2'} gap-1 rounded-xl bg-sand p-1`}>
+          {tabs.map(t => (
             <button
               key={t.id}
               role="tab"
@@ -50,12 +60,35 @@ export default function Fiche({ matiere, onBack }) {
         </div>
       </div>
 
-      {tab === 'resume'
-        ? <Resume fiche={fiche} color={matiere.color} />
-        : <Lexique fiche={fiche} color={matiere.color} />}
+      {tab === 'lexique' ? (
+        <Lexique fiche={fiche} color={matiere.color} />
+      ) : tab === 'anglais' ? (
+        <Bilingue sections={fiche.sections} color={matiere.color} mode={mode} onMode={setMode} />
+      ) : (
+        <Resume sections={fiche.bilingual ? localize(fiche.sections, 'fr') : fiche.sections} color={matiere.color} />
+      )}
     </div>
   )
 }
+
+// Fiche bilingue : un texte traduit s'ecrit { "fr": "…", "en": "…" } ; un texte sans paire est le meme
+// dans les deux langues (noms, pays…) ou reserve au francais. On garde la langue demandee.
+// Une definition garde aussi son terme dans l'autre langue (ligne FR ou EN sous le terme).
+const isPair = (v) => v !== null && typeof v === 'object' && !Array.isArray(v)
+  && Object.keys(v).length === 2 && 'fr' in v && 'en' in v
+
+function localize(v, lang) {
+  if (Array.isArray(v)) return v.map(x => localize(x, lang))
+  if (isPair(v)) return v[lang]
+  if (v === null || typeof v !== 'object') return v
+  const out = Object.fromEntries(Object.entries(v).map(([k, x]) => [k, localize(x, lang)]))
+  const other = lang === 'fr' ? 'en' : 'fr'
+  if (v.type === 'def' && isPair(v.term) && v.term.fr !== v.term.en) out[other] = v.term[other]
+  return out
+}
+
+// Un bloc sans aucun texte traduit (remarque sur les notes, piege en francais) n'apparait pas dans l'onglet Anglais
+const hasPair = (v) => isPair(v) || (v !== null && typeof v === 'object' && Object.values(v).some(hasPair))
 
 // Texte avec des passages en gras **comme ceci**
 function Rich({ text }) {
@@ -80,15 +113,15 @@ const tint = (color, pct) => `color-mix(in srgb, ${color} ${pct}%, white)`
 /* Resume                                                              */
 /* ------------------------------------------------------------------ */
 
-function Resume({ fiche, color }) {
-  const goTo = (id) => document.getElementById(`fiche-${id}`)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+const goTo = (id) => document.getElementById(`fiche-${id}`)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
 
+function Resume({ sections, color }) {
   return (
     <div className="pt-4">
       <nav aria-label="Sommaire" className="mb-10">
         <p className="text-[11px] font-bold uppercase tracking-[0.1em] text-warm-gray mb-2">Sommaire</p>
         <ol className="flex flex-col">
-          {fiche.sections.map((s, i) => (
+          {sections.map((s, i) => (
             <li key={s.id}>
               <button
                 onClick={() => goTo(s.id)}
@@ -104,7 +137,7 @@ function Resume({ fiche, color }) {
       </nav>
 
       <div className="flex flex-col gap-14">
-        {fiche.sections.map((s, i) => (
+        {sections.map((s, i) => (
           <section key={s.id} id={`fiche-${s.id}`} className="scroll-mt-20">
             <p className="text-[11px] font-bold uppercase tracking-[0.1em] text-warm-gray">
               Partie {i + 1} · {s.source}
@@ -136,6 +169,8 @@ function Block({ block: b, color }) {
       return <Callout label="Exemple" text={b.text} />
     case 'tip':
       return <Callout label="À retenir" text={b.text} color={color} />
+    case 'warn':
+      return <Callout label="Attention" text={b.text} />
     case 'table':
       return <Table block={b} />
     case 'flow':
@@ -303,6 +338,137 @@ function Stack({ block: b, color }) {
 }
 
 /* ------------------------------------------------------------------ */
+/* Cours en anglais (fiche bilingue)                                   */
+/* ------------------------------------------------------------------ */
+
+const MODES = [
+  { id: 'tap', label: 'Au toucher', desc: 'Lis en français, puis touche « Traduire » pour voir l’anglais.' },
+  { id: 'both', label: 'FR + EN', desc: 'Chaque passage en français, suivi de sa version anglaise.' },
+  { id: 'en', label: 'Anglais seul', desc: 'Tout le cours en anglais, comme à l’examen.' },
+]
+
+function Bilingue({ sections, color, mode, onMode }) {
+  const [open, setOpen] = useState(() => new Set())
+  const toggle = (key) => setOpen(prev => {
+    const next = new Set(prev)
+    if (next.has(key)) next.delete(key)
+    else next.add(key)
+    return next
+  })
+  const enOnly = mode === 'en'
+
+  return (
+    <div className="pt-4">
+      <div role="radiogroup" aria-label="Affichage du cours" className="grid grid-cols-3 gap-2">
+        {MODES.map(m => {
+          const active = mode === m.id
+          return (
+            <button
+              key={m.id}
+              role="radio"
+              aria-checked={active}
+              onClick={() => onMode(m.id)}
+              className={`rounded-full border px-2 py-2 text-[13px] font-semibold
+                          active:scale-[0.97] transition-transform duration-150 ${focusRing} ${
+                active ? 'text-white border-transparent' : 'bg-white border-sand text-warm-gray hover:text-charcoal'
+              }`}
+              style={active ? { background: color } : undefined}
+            >
+              {m.label}
+            </button>
+          )
+        })}
+      </div>
+      <p className="text-[13px] text-warm-gray leading-snug mt-2.5">{MODES.find(m => m.id === mode).desc}</p>
+
+      <nav aria-label="Sommaire" className="mt-8 mb-10">
+        <p className="text-[11px] font-bold uppercase tracking-[0.1em] text-warm-gray mb-2">{enOnly ? 'Contents' : 'Sommaire'}</p>
+        <ol className="flex flex-col">
+          {sections.map((s, i) => (
+            <li key={s.id}>
+              <button
+                onClick={() => goTo(s.id)}
+                className={`flex w-full items-baseline gap-3 rounded-lg px-1 py-1.5 text-left text-[15px] text-charcoal
+                            hover:bg-sand/60 active:opacity-60 transition-opacity ${focusRing}`}
+              >
+                <span className="font-display font-bold tabular-nums w-5 shrink-0" style={{ color }}>{i + 1}</span>
+                <span className="leading-snug" lang="en">{localize(s.title, 'en')}</span>
+              </button>
+            </li>
+          ))}
+        </ol>
+      </nav>
+
+      <div className="flex flex-col gap-14">
+        {sections.map((s, i) => (
+          <section key={s.id} id={`fiche-${s.id}`} className="scroll-mt-20">
+            <p className="text-[11px] font-bold uppercase tracking-[0.1em] text-warm-gray">
+              {enOnly ? 'Part' : 'Partie'} {i + 1} · {localize(s.source, enOnly ? 'en' : 'fr')}
+            </p>
+            <h2 lang="en" className="font-display font-bold text-[21px] tracking-[-0.02em] leading-tight text-charcoal mt-1">
+              {localize(s.title, 'en')}
+            </h2>
+            {!enOnly && <p className="text-[14px] text-warm-gray leading-snug mt-1">{localize(s.title, 'fr')}</p>}
+            <div className="flex flex-col gap-4 mt-5">
+              {s.blocks.map((b, j) => hasPair(b) && (
+                <BiBlock
+                  key={j}
+                  block={b}
+                  color={color}
+                  mode={mode}
+                  open={open.has(`${s.id}-${j}`)}
+                  onToggle={() => toggle(`${s.id}-${j}`)}
+                />
+              ))}
+            </div>
+          </section>
+        ))}
+      </div>
+    </div>
+  )
+}
+
+// Un bloc du cours : en francais avec sa version anglaise (au toucher ou toujours visible), ou en anglais seul
+function BiBlock({ block, color, mode, open, onToggle }) {
+  const en = <Block block={localize(block, 'en')} color={color} />
+  if (mode === 'en') return <div lang="en">{en}</div>
+
+  // Un sous-titre affiche directement ses deux langues : un bouton sous chaque titre serait du bruit
+  if (block.type === 'h') {
+    return (
+      <div className="mt-5">
+        <h3 className="font-display font-bold text-[18px] text-charcoal" lang="en">{localize(block.text, 'en')}</h3>
+        <p className="text-[13px] text-warm-gray mt-0.5">{localize(block.text, 'fr')}</p>
+      </div>
+    )
+  }
+
+  const showEn = mode === 'both' || open
+  return (
+    <div>
+      <Block block={localize(block, 'fr')} color={color} />
+      {showEn && (
+        <div lang="en" className="pop-in mt-2 rounded-2xl px-3.5 pt-2.5 pb-3.5" style={{ background: tint(color, 7) }}>
+          <p className="text-[10px] font-bold tracking-[0.12em] mb-2" style={{ color }}>ENGLISH</p>
+          {en}
+        </div>
+      )}
+      {mode === 'tap' && (
+        <button
+          onClick={onToggle}
+          aria-expanded={open}
+          className={`mt-2 inline-flex items-center gap-1.5 rounded-lg border px-2.5 py-1 text-[13px] font-semibold
+                      active:scale-[0.97] transition-transform duration-150 ${focusRing} ${open ? 'border-sand bg-white text-warm-gray' : 'border-dashed'}`}
+          style={open ? undefined : { color, borderColor: `color-mix(in srgb, ${color} 45%, transparent)` }}
+        >
+          {open ? 'Masquer l’anglais' : 'EN · Traduire'}
+        </button>
+      )}
+    </div>
+  )
+}
+
+/* ------------------------------------------------------------------ */
 /* Lexique                                                             */
 /* ------------------------------------------------------------------ */
 
@@ -333,15 +499,17 @@ function Lexique({ fiche, color }) {
   return (
     <div className="pt-4">
       <p className="text-[14px] text-warm-gray leading-relaxed mb-4">
-        {fiche.glossary.length} termes avec leur traduction anglaise. Ceux marqués <ExtraBadge /> ne sont pas définis
-        dans les diapos : leur définition complète le cours.
+        {fiche.glossary.length} termes avec leur traduction anglaise.
+        {fiche.glossary.some(e => e.extra) && (
+          <> Ceux marqués <ExtraBadge /> ne sont pas définis dans les diapos : leur définition complète le cours.</>
+        )}
       </p>
 
       <input
         type="search"
         value={query}
         onChange={e => setQuery(e.target.value)}
-        placeholder="Chercher un terme (ERP, donnée, SIG…)"
+        placeholder={fiche.searchPlaceholder || 'Chercher un terme (ERP, donnée, SIG…)'}
         aria-label="Chercher un terme"
         className="w-full rounded-xl border border-sand bg-white px-4 py-3.5 text-[16px]
                    placeholder:text-warm-gray/50 focus:outline-2 focus:outline-offset-0 focus:border-transparent"

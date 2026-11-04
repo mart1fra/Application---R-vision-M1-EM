@@ -146,5 +146,6 @@ export const MATIERES = [
   { id: 'comportement_humain', label: 'Comportement humain', icon: '🧠', color: 'var(--color-comportement)' },
   { id: 'statistique_informatique', label: 'Statistique informatique', icon: '📊', color: 'var(--color-statistique)' },
   { id: 'systeme_information', label: "Systeme d'information", icon: '💻', color: 'var(--color-systeme)' },
+  { id: 'intercultural_management', label: 'Management interculturel', icon: '🌍', color: 'var(--color-interculturel)' },
   { id: 'droit_affaires', label: 'Droit des affaires', icon: '⚖️', color: 'var(--color-droit)' },
 ]
